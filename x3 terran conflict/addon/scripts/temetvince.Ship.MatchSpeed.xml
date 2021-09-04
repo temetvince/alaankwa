@@ -7,7 +7,8 @@
 	<engineversion>50</engineversion>
 	<description></description>
 	<arguments>
-		<argument index="1" name="target" type="Var/Ship" desc="The target to match speed" />
+		<argument index="1" name="terminate" type="Var/Boolean" desc="Should script return immediately" />
+		<argument index="2" name="target" type="Var/Ship" desc="The target to match speed" />
 	</arguments>
 	<sourcetext>
 		<line linenr="001" indent="">
@@ -645,10 +646,10 @@
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
 			<sval type="array" size="12">
+				<sval type="string" val="terminate" />
 				<sval type="string" val="target" />
 				<sval type="string" val="waitTime" />
 				<sval type="string" val="speedDuration" />
-				<sval type="string" val="terminate" />
 				<sval type="string" val="Action" />
 				<sval type="string" val="this.max.speed" />
 				<sval type="string" val="target.speed" />
@@ -661,7 +662,7 @@
 			<sval type="array" size="70">
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="1" />
+					<sval type="int" val="2" />
 					<sval type="int" val="1" />
 					<sval type="int" val="4" />
 					<sval type="int" val="10000" />
@@ -670,7 +671,7 @@
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="2" />
+					<sval type="int" val="3" />
 					<sval type="int" val="1" />
 					<sval type="int" val="4" />
 					<sval type="int" val="50" />
@@ -682,7 +683,7 @@
 					<sval type="int" val="-1610611704" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="3" />
+					<sval type="int" val="0" />
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
 				</sval>
@@ -705,7 +706,7 @@
 					<sval type="int" val="-1610610936" />
 					<sval type="int" val="2" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="0" />
+					<sval type="int" val="1" />
 					<sval type="int" val="15" />
 					<sval type="int" val="65556" />
 					<sval type="int" val="2" />
@@ -881,7 +882,7 @@
 				<sval type="array" size="4">
 					<sval type="int" val="706" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="0" />
+					<sval type="int" val="1" />
 					<sval type="int" val="-536861948" />
 				</sval>
 				<sval type="array" size="2">
@@ -897,7 +898,7 @@
 				<sval type="array" size="4">
 					<sval type="int" val="1131" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="0" />
+					<sval type="int" val="1" />
 					<sval type="int" val="6" />
 				</sval>
 				<sval type="array" size="4">
@@ -1277,7 +1278,7 @@
 					<sval type="int" val="105" />
 					<sval type="int" val="-2147483647" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="2" />
+					<sval type="int" val="3" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
@@ -1296,13 +1297,17 @@
 					<sval type="int" val="105" />
 					<sval type="int" val="-2147483647" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="1" />
+					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="1">
 					<sval type="int" val="1168" />
 				</sval>
 			</sval>
-			<sval type="array" size="1">
+			<sval type="array" size="2">
+				<sval type="array" size="2">
+					<sval type="int" val="63" />
+					<sval type="string" val="Should script return immediately" />
+				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="21" />
 					<sval type="string" val="The target to match speed" />

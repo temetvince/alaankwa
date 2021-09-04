@@ -1,0 +1,455 @@
+<?xml version="1.0" standalone="yes"?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
+<!-- Generated using X-Studio -->
+<script>
+	<name>temetvince.RandomizeArray</name>
+	<version>1</version>
+	<engineversion>50</engineversion>
+	<description></description>
+	<arguments>
+		<argument index="1" name="toRandomize" type="Var/Array" desc="The array to randomize" />
+	</arguments>
+	<sourcetext>
+		<line linenr="001" indent="">
+			<comment>* ************************************************</comment>
+		</line>
+		<line linenr="002" indent="">
+			<comment>* SCRIPT NAME: temetvince.RandomizeArray.xml</comment>
+		</line>
+		<line linenr="003" indent="">
+			<comment>* DESCRIPTION: Takes in an array and returns a copy with each</comment>
+		</line>
+		<line linenr="004" indent="">
+			<comment>*                         element in a random position. The original array</comment>
+		</line>
+		<line linenr="005" indent="">
+			<comment>*                         is left untouched.</comment>
+		</line>
+		<line linenr="006" indent="">
+			<comment>* </comment>
+		</line>
+		<line linenr="007" indent="">
+			<comment>* AUTHOR:  temetvince         DATE: 11 June 2021</comment>
+		</line>
+		<line linenr="008" indent="">
+			<comment>* ************************************************</comment>
+		</line>
+		<line linenr="009" indent="" />
+		<line linenr="010" indent="">
+			<var>$size</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>size</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<var>$toRandomize</var>
+		</line>
+		<line linenr="011" indent="">
+			<var>$copiedArray</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>alloc</text>
+			<text>:</text>
+			<text> </text>
+			<text>size</text>
+			<text>=</text>
+			<var>$size</var>
+		</line>
+		<line linenr="012" indent="">
+			<var>$randomized</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>alloc</text>
+			<text>:</text>
+			<text> </text>
+			<text>size</text>
+			<text>=</text>
+			<var>$size</var>
+		</line>
+		<line linenr="013" indent="" />
+		<line linenr="014" indent="">
+			<var>$i</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>size</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<var>$toRandomize</var>
+		</line>
+		<line linenr="015" indent="&#160;">
+			<text>while</text>
+			<text> </text>
+			<var>$i</var>
+		</line>
+		<line linenr="016" indent="">
+			<text>dec</text>
+			<text> </text>
+			<var>$i</var>
+		</line>
+		<line linenr="017" indent="">
+			<var>$value</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$toRandomize</var>
+			<text>[</text>
+			<var>$i</var>
+			<text>]</text>
+		</line>
+		<line linenr="018" indent="">
+			<var>$copiedArray</var>
+			<text>[</text>
+			<var>$i</var>
+			<text>]</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$value</var>
+		</line>
+		<line linenr="019" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="020" indent="&#160;" />
+		<line linenr="021" indent="&#160;">
+			<text>dec</text>
+			<text> </text>
+			<var>$size</var>
+		</line>
+		<line linenr="022" indent="&#160;">
+			<var>$i</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$size</var>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>1</var>
+		</line>
+		<line linenr="023" indent="">
+			<text>while</text>
+			<text> </text>
+			<var>$i</var>
+			<text> </text>
+			<text>&gt;</text>
+			<text> </text>
+			<var>0</var>
+		</line>
+		<line linenr="024" indent="">
+			<var>$i</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$i</var>
+			<text> </text>
+			<text>-</text>
+			<text> </text>
+			<var>1</var>
+		</line>
+		<line linenr="025" indent="">
+			<var>$rand</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>random</text>
+			<text> </text>
+			<text>value</text>
+			<text> </text>
+			<text>between</text>
+			<text> </text>
+			<var>0</var>
+			<text> </text>
+			<text>and</text>
+			<text> </text>
+			<var>$i</var>
+		</line>
+		<line linenr="026" indent="">
+			<var>$randomized</var>
+			<text>[</text>
+			<var>$i</var>
+			<text>]</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$copiedArray</var>
+			<text>[</text>
+			<var>$rand</var>
+			<text>]</text>
+		</line>
+		<line linenr="027" indent="">
+			<var>$copiedArray</var>
+			<text>[</text>
+			<var>$rand</var>
+			<text>]</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$copiedArray</var>
+			<text>[</text>
+			<var>$i</var>
+			<text>]</text>
+		</line>
+		<line linenr="028" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="029" indent="" />
+		<line linenr="030" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>$randomized</var>
+		</line>
+	</sourcetext>
+	<codearray>
+		<sval type="array" size="10">
+			<sval type="string" val="temetvince.RandomizeArray" />
+			<sval type="int" val="50" />
+			<sval type="string" val="" />
+			<sval type="int" val="1" />
+			<sval type="int" val="0" />
+			<sval type="array" size="7">
+				<sval type="string" val="toRandomize" />
+				<sval type="string" val="size" />
+				<sval type="string" val="copiedArray" />
+				<sval type="string" val="randomized" />
+				<sval type="string" val="value" />
+				<sval type="string" val="i" />
+				<sval type="string" val="rand" />
+			</sval>
+			<sval type="array" size="18">
+				<sval type="array" size="4">
+					<sval type="int" val="131" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="128" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="128" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="131" />
+					<sval type="int" val="5" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610610423" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="143" />
+					<sval type="int" val="5" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="129" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="130" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="143" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="5" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610608375" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="15" />
+					<sval type="int" val="2" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="2" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="5" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="15" />
+					<sval type="int" val="12" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="12" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="110" />
+					<sval type="int" val="6" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+				</sval>
+				<sval type="array" size="9">
+					<sval type="int" val="1092" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+				</sval>
+				<sval type="array" size="9">
+					<sval type="int" val="1092" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="11" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+				</sval>
+			</sval>
+			<sval type="array" size="1">
+				<sval type="array" size="2">
+					<sval type="int" val="45" />
+					<sval type="string" val="The array to randomize" />
+				</sval>
+			</sval>
+			<sval type="array" size="14">
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="************************************************" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="SCRIPT NAME: temetvince.RandomizeArray.xml" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="DESCRIPTION: Takes in an array and returns a copy with each" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="                        element in a random position. The original array" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="                        is left untouched." />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="AUTHOR:  temetvince         DATE: 11 June 2021" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="************************************************" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="0" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="3" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="9" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="9" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="17" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="17" />
+					<sval type="int" val="2" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+		</sval>
+	</codearray>
+</script>
