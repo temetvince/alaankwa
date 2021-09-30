@@ -5,6 +5,10 @@ To download, go to the latest release and click 'Source code (zip)': https://git
 * All ships orient themselves upright with respect to "up"
 * Improved escort behavior
 * Added a Map Gates command that tells a ship to map the gates in its current sector
+* Cheat: A script called 'temetvince.Cheat.AddSats' that adds sats to all connected sectors which don't already have satellites.
+* Phanon+ fixes for SWLU
+    * Phanon+ Salvagers no longer claim ships with full hull
+    * Phanon+ no longer conflicts with SWLU game initialization text
 * Debug scripts. See Development Features below
 * An optional Graphics Improvement mod utilizing ReShade is included
 * An optional font change is included, disabled by default. It is Fantasque Sans Mono, you can find the original here: https://github.com/belluzj/fantasque-sans 
@@ -15,8 +19,9 @@ If you don't want to use Reshade and want to skip the Graphics Improvement mod f
 2. When asked for the game, browse and select X3AP.exe in your x3 install folder
 3. The game uses Direct3D 9
 4. When asked, install all the shaders. Everything. All of them
-5. Copy this mods 'x3 terran conflict' folder into your game's 'x3 terran conflict' folder. When asked, overwrite everything
-6. If you want to use the optional font, then go to your game's 'x3 terran conflict' folder. Rename the folder 'RenameMeTof' to 'f'. Notice the LicenseAndCopyright file for your information
+5. Install Phanon+ by Wanabe by copying the contents of Phanon+'s 'Phanon Plus/Addon' folder into your game's 'x3 terran conflict/addon' folder: https://forum.egosoft.com/viewtopic.php?t=381078
+6. Copy this mods 'x3 terran conflict' folder into your game's 'x3 terran conflict' folder. When asked, overwrite everything
+7. If you want to use the optional font, then go to your game's 'x3 terran conflict' folder. Rename the folder 'RenameMeTof' to 'f'. Notice the LicenseAndCopyright file for your information
 
 ## Graphics Improvement Mod
 You can take before/after screenshots that save to your root install folder with the PrintScrn button on your keyboard. To access the options in game, press [SHIFT]+[~] (or [SHIFT]+[`])
