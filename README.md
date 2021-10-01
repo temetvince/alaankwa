@@ -5,6 +5,7 @@ To download, go to the latest release and click 'Source code (zip)': https://git
 * All ships orient themselves upright with respect to "up"
 * Improved escort behavior
 * Added a Map Gates command that tells a ship to map the gates in its current sector
+* Cheat: Saving with the hotkey no longer requires Salvage Insurance, removes the confirmation prompt to save, and removes the awful sound when saving to Slot 10
 * Cheat: A script called 'temetvince.Cheat.AddSats' that adds sats to all connected sectors which don't already have satellites
 * Satellite Monitoring: Joubarbe's Satellite Monitoring script now considers player owned ships as satellites
 * Phanon+ fixes for Star Wars LU and Galaxy in Chaos.
