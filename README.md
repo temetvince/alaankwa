@@ -10,6 +10,7 @@ To download, go to the latest release and click 'Source code (zip)': https://git
     * Phanon+ Salvagers no longer claim ships with full hull
     * Phanon+ no longer conflicts with SWLU/GiC game initialization texts
 * Debug scripts. See Development Features below
+* An optional production speed increase to Sepa's SWLU Mothership Mod
 * An optional Graphics Improvement mod utilizing ReShade is included
 * An optional font change is included, disabled by default. It is Fantasque Sans Mono, you can find the original here: https://github.com/belluzj/fantasque-sans 
 
@@ -20,8 +21,9 @@ If you don't want to use Reshade and want to skip the Graphics Improvement mod f
 3. The game uses Direct3D 9
 4. When asked, install all the shaders. Everything. All of them
 5. Install Phanon+ by Wanabe by copying the contents of Phanon+'s 'Phanon Plus/Addon' folder into your game's 'x3 terran conflict/addon' folder: https://forum.egosoft.com/viewtopic.php?t=381078
-6. Copy this mods 'x3 terran conflict' folder into your game's 'x3 terran conflict' folder. When asked, overwrite everything
-7. If you want to use the optional font, then go to your game's 'x3 terran conflict' folder. Rename the folder 'RenameMeTof' to 'f'. Notice the LicenseAndCopyright file for your information
+6. Optionally install Sepa's Mothership Mod: See the "ADD-ON MODS FOR SWLU/mothership-swlu-edition" channel in the SWLU discord: https://discord.gg/S587CRb
+7. Copy this mods 'x3 terran conflict' folder into your game's 'x3 terran conflict' folder. When asked, overwrite everything
+8. If you want to use the optional font, then go to your game's 'x3 terran conflict' folder. Rename the folder 'RenameMeTof' to 'f'. Notice the LicenseAndCopyright file for your information
 
 ## Graphics Improvement Mod
 You can take before/after screenshots that save to your root install folder with the PrintScrn button on your keyboard. To access the options in game, press [SHIFT]+[~] (or [SHIFT]+[`])
