@@ -14,6 +14,9 @@ To download, go to the latest release and click 'Source code (zip)': https://git
     * Phanon+ no longer conflicts with SWLU/GiC game initialization texts
 * Debug scripts. See Development Features below
 * LU Stock Exchange pageid fix (theoretically)
+* Phanon:
+    * Now build their HQs closer to sector center
+    * Fixed a bug in create station when passed a null StationType
 * An optional production speed increase to Sepa's SWLU Mothership Mod
 * An optional Graphics Improvement mod utilizing ReShade is included
 * An optional font change is included, disabled by default. It is Fantasque Sans Mono, you can find the original here:
