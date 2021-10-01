@@ -6,12 +6,14 @@ To download, go to the latest release and click 'Source code (zip)': https://git
 * Improved escort behavior
 * Added a Map Gates command that tells a ship to map the gates in its current sector
 * Cheat: Saving with the hotkey no longer requires Salvage Insurance, removes the confirmation prompt to save, and removes the awful sound when saving to Slot 10
+* Cheat: Enables Phanon Spy in the Player Console
 * Cheat: A script called 'temetvince.Cheat.AddSats' that adds sats to all connected sectors which don't already have satellites
 * Satellite Monitoring: Joubarbe's Satellite Monitoring script now considers player owned ships as satellites
 * Phanon+ fixes for Star Wars LU and Galaxy in Chaos.
     * Phanon+ Salvagers no longer claim ships with full hull
     * Phanon+ no longer conflicts with SWLU/GiC game initialization texts
 * Debug scripts. See Development Features below
+* LU Stock Exchange pageid fix (theoretically)
 * An optional production speed increase to Sepa's SWLU Mothership Mod
 * An optional Graphics Improvement mod utilizing ReShade is included
 * An optional font change is included, disabled by default. It is Fantasque Sans Mono, you can find the original here:
