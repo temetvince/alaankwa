@@ -6,9 +6,9 @@ To download, go to the latest release and click 'Source code (zip)': https://git
 * Improved escort behavior
 * Added a Map Gates command that tells a ship to map the gates in its current sector
 * Cheat: A script called 'temetvince.Cheat.AddSats' that adds sats to all connected sectors which don't already have satellites.
-* Phanon+ fixes for SWLU
+* Phanon+ fixes for Star Wars LU and Galaxy in Chaos.
     * Phanon+ Salvagers no longer claim ships with full hull
-    * Phanon+ no longer conflicts with SWLU game initialization text
+    * Phanon+ no longer conflicts with SWLU/GiC game initialization texts
 * Debug scripts. See Development Features below
 * An optional Graphics Improvement mod utilizing ReShade is included
 * An optional font change is included, disabled by default. It is Fantasque Sans Mono, you can find the original here: https://github.com/belluzj/fantasque-sans 
