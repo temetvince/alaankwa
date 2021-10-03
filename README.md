@@ -1,6 +1,13 @@
 # temetvince's Litcube's Universe mods
 To download, go to the latest release and click 'Source code (zip)': https://github.com/temetvince/lu-mods/releases/
 
+## Links
+* Egosoft Forum: https://forum.egosoft.com/viewtopic.php?f=94&t=441825
+* Discord: https://discord.gg/S587CRb
+
+## Important
+* If you notice slowdowns, disable Improved Escort Behavior in 'x3 terran conflict/addon/t/9979-L044.xml'
+
 ## Features:
 * All ships orient themselves upright with respect to "up"
 * Improved escort behavior
