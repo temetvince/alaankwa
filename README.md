@@ -17,6 +17,11 @@ To download, go to the latest release and click 'Source code (zip)': https://git
 * Cheat: A script called 'temetvince.Cheat.AddSats' that adds sats to all connected sectors which don't already have satellites
 * Satellite Monitoring: Joubarbe's Satellite Monitoring script now considers player owned ships as satellites
 * Phanon investors step in to keep Phanon corps afloat if their balance goes negative
+* Sepa's Mothership Mod:
+    * Applies to all carriers now, not just M7+
+    * Population multiplier (ship building speed) increased by 4
+    * Population multiplier can be set in 'x3 terran conflict/addon/t/9979-L044.xml'
+    * Carriers can build any type of ship they can dock now, not just fighters
 * Debug scripts. See Development Features below
 * LU Stock Exchange pageid fix (theoretically)
 * An optional production speed increase to Sepa's SWLU Mothership Mod
