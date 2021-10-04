@@ -1,4 +1,4 @@
-# temetvince's Litcube's Universe mods
+# temetvince's Star Wars Litcube's Universe mods
 To download, go to the latest release and click 'Source code (zip)': https://github.com/temetvince/lu-mods/releases/
 
 ## Links
