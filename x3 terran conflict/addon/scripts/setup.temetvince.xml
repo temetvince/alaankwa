@@ -167,14 +167,49 @@
 			<text> </text>
 			<text>name</text>
 			<text>=</text>
-			<text>'temetvince.alaankwa'</text>
+			<text>'temetvince.alaankwa.isEnabled'</text>
 			<text> </text>
 			<text>value</text>
 			<text>=</text>
 			<var>[FALSE]</var>
 		</line>
-		<line linenr="017" indent="" />
-		<line linenr="018" indent="" interruptable="@">
+		<line linenr="017" indent="" interruptable="@">
+			<var>$temetvince.alaankwa.isEnabled</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[NULL]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Joubarbe.Lib.LoadTextInteger</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>page</text>
+			<text>=</text>
+			<var>9979</var>
+			<text> </text>
+			<text>id</text>
+			<text>=</text>
+			<var>5</var>
+			<text> </text>
+			<text>variable</text>
+			<text>=</text>
+			<text>'temetvince.alaankwa.isEnabled'</text>
+		</line>
+		<line linenr="018" indent="" />
+		<line linenr="019" indent="">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$temetvince.alaankwa.isEnabled</var>
+		</line>
+		<line linenr="020" indent="&#160;" interruptable="@">
 			<text>START</text>
 			<text> </text>
 			<var>[NULL]</var>
@@ -188,8 +223,8 @@
 			<text> </text>
 			<text>:</text>
 		</line>
-		<line linenr="019" indent="" />
-		<line linenr="020" indent="">
+		<line linenr="021" indent="" />
+		<line linenr="022" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
@@ -202,8 +237,10 @@
 			<sval type="string" val="" />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
-			<sval type="int" val="0" />
-			<sval type="array" size="8">
+			<sval type="array" size="1">
+				<sval type="string" val="temetvince.alaankwa.isEnabled" />
+			</sval>
+			<sval type="array" size="10">
 				<sval type="array" size="3">
 					<sval type="int" val="151" />
 					<sval type="int" val="4" />
@@ -256,9 +293,32 @@
 				<sval type="array" size="5">
 					<sval type="int" val="157" />
 					<sval type="int" val="5" />
-					<sval type="string" val="temetvince.alaankwa" />
+					<sval type="string" val="temetvince.alaankwa.isEnabled" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="9" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="Joubarbe.Lib.LoadTextInteger" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="12" />
+					<sval type="int" val="3" />
+					<sval type="int" val="4" />
+					<sval type="int" val="9979" />
+					<sval type="int" val="4" />
+					<sval type="int" val="5" />
+					<sval type="int" val="5" />
+					<sval type="string" val="temetvince.alaankwa.isEnabled" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610610424" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
 				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="102" />
@@ -323,11 +383,11 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="6" />
+					<sval type="int" val="7" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="7" />
+					<sval type="int" val="9" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>
