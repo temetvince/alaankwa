@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gamestarts>
+   <!-- Bitmask
+     1 =
+     2 = Terran plot completed
+     4 = Fight Rank 3,333 reached
+     8 = Trade Rank 3,333 reached
+    16 = Fight Rank 100,000 reached
+    32 = Trade Rank 100,000 reached
+    64 = Goner Plot Complete
+   128 = Tormented Teladi Completed
+   256 = HUB plot completed
+   512 = Argon Rank 10,000
+  1024 = Boron Rank 10,000
+  2048 = Split Rank 10,000
+  4096 = Paranid Rank 10,000
+  8192 = Teladi Rank 10,000
+ 16384 = Argon Rank 333
+ 32768 =
+ 65536 =-->
+   <!-- Ship Gallery -->
+   <gamestart id="101" name="Ship Gallery" description="A single sector where you can try out all ships in SWLU with infinite credits. Because this is also used for testing, you won't be able to access the universe." difficulty="Debug X-Wing" image="start88" plot="0">
+      <player name="Ship Viewer" species="Testing Mode" gender="Argon" age="N/A" />
+      <!-- Debug and Testing -->
+      <sector x="0" y="14" />
+      <ship typename="SS_SH_K_M3_DEBUG_XWING" comment="Debug X-Wing" />
+   </gamestart>
+   <!-- Rebel Smuggler -->
+   <gamestart id="102" name="Rebel Smuggler" description="You start carrying valuable (and illegal) blasters aboard your trusty YT-2400 Light Freighter. These will be worth a great deal of credits to the right buyers." difficulty="TS" image="startRebel" plot="0">
+      <player name="Rebel Smuggler" species="Rebel" gender="Argon" age="Normal" />
+      <!-- Aquaris -->
+      <sector x="17" y="4" />
+      <ship typename="SS_SH_A_TS_YT2400_REB" comment="YT2400 Light Freighter" />
+   </gamestart>
+   <!-- Rebel Recruit -->
+   <gamestart id="103" name="Rebel Recruit" description="Having just joined the Rebel Alliance, you have been issued an X-Wing fighter with an experimental booster system for testing." difficulty="M4" image="startRebel" plot="0">
+      <player name="Rebel Recruit" species="Rebel" gender="Argon" age="Normal" />
+      <!-- Kashyyk -->
+      <sector x="20" y="6" />
+      <ship typename="SS_SH_K_M3_XWING_P" comment="X-Wing Prototype" />
+   </gamestart>
+   <!-- Jedi Survivor -->
+   <gamestart id="105" name="Jedi Survivor" description="Due to being undercover in Separatist space, you have survived Order 66. With nothing left and lots of enemies, you must find new allies if you are to survive." difficulty="M5" image="startJedi" plot="0">
+      <player name="Jedi Survivor" species="Jedi" gender="Goner" age="Very Hard" />
+      <!-- Teth -->
+      <sector x="23" y="08" />
+      <ship typename="SS_SH_G_M5_DELTA7_RED" comment="Delta-7 Jedi Starfighter" />
+   </gamestart>
+   <!-- Damyath Import -->
+   <gamestart id="106" name="Damyath Import" description="Import a previously exported Litcube's Universe game." difficulty="None" image="start88" plot="0">
+      <player name="Litcube's Universe" species="LU Import Galaxy" gender="N/A" age="N/A" />
+      <!-- Argon Prime -->
+      <sector x="1" y="3" />
+      <ship typename="SS_SH_A_M5" />
+   </gamestart>
+   <!-- Sepratist Holdout -->
+   <gamestart id="107" name="Techno Union Holdout" description="Having been almost entirely wiped out by the empire, you regained your footing and continue to fight off the empire, for the Confederacy!" difficulty="M7 + 2 x M6 + 4 x M4" image="startSeparatist" plot="0">
+      <player name="Techno Union Holdout" species="Separatist" gender="Paranid" age="Medium" />
+      <!-- Agamar -->
+      <sector x="16" y="03" />
+      <ship typename="SS_SH_P_M7_MUNIFICENT" comment="Munificent Frigate" />
+   </gamestart>
+   <!-- Re-Activated Droid -->
+   <gamestart id="108" name="Banking Clan Remnants" description="After escaping to the unknown regions due to the persuing empire, the remnants of the Banking clan continue to stave off xenon attacks." difficulty="M7 + Reinforcements" image="startSeparatist" plot="0">
+      <player name="Banking Clan Remnant" species="Separatist" gender="Paranid" age="Sandbox" />
+      <!-- Unknown Sepratist Holdout -->
+      <sector x="4" y="9" />
+      <ship typename="SS_SH_P_M5_TRI" comment="Droid Tri-Fighter" />
+   </gamestart>
+   <!-- Rebel Squadron -->
+   <gamestart id="109" name="Rebel Squadron" description="Lead a squadron of rebel fighters to aid the rebel fleet at Endor." difficulty="7 x M4" image="startRebel" plot="0">
+      <player name="Rebel Squadron" species="Rebel Alliance" gender="Argon" age="Normal" />
+      <!-- Bakura -->
+      <sector x="12" y="14" />
+      <ship typename="SS_SH_B_M4_XWING_ADV" comment="X-Wing T65-B" />
+   </gamestart>
+   <!-- Old Republic Enthusiast -->
+   <gamestart id="110" name="Old Republic Enthusiast" description="You find great joy in collecting and restoring ancient ship designs. You have heard rumors of a legendary ship spotted drifting in the far-reaches of the universe, and simply must have it for your collection." difficulty="M6 + 2 x TS" image="startOldRepublic" plot="0">
+      <player name="Old Republic Enthusiast" species="Old Republic" gender="Yaki" age="Easy" />
+      <!-- Iridonia -->
+      <sector x="13" y="03" />
+      <ship typename="SS_SH_Y_M6_BT7" comment="NEEDS FIXINGISAOHFAOIGF" />
+   </gamestart>
+   <!-- Reborn Sith -->
+   <gamestart id="111" name="Reborn Sith" description="You have been hidden away for thousands of years in your temple before being revived by the dark-side of the force. With your still-functioning ship, you set out to dominate the universe." difficulty="M6" image="startOldRepublic" plot="0">
+      <player name="Reborn Sith" species="Old Republic" gender="Yaki" age="Normal" />
+      <!-- Unknown Old Republic Holdout -->
+      <sector x="09" y="12" />
+      <ship typename="SS_SH_Y_M6_X70B" comment="X-70B Phantom" />
+   </gamestart>
+   <!-- Black Sun Outlaw -->
+   <gamestart id="112" name="Black Sun Outlaw" description="[UNSTABLE] After being nearly destroyed by the efforts of all major galactic governments, your recent theft of a high-value medical transport has given the Black Sun organization hope to rebuild and recover." difficulty="M6 + TL" image="startPirate" plot="0">
+      <player name="Black Sun Outlaw" species="Black Sun Pirate" gender="Pirate" age="Very Hard" />
+      <!-- Adumar -->
+      <sector x="11" y="03" />
+      <ship typename="SS_SH_PI_M6_YKL" comment="Pirate YKL" />
+   </gamestart>
+   <!-- Galaxy's Most Wanted -->
+   <gamestart id="113" name="Galaxy's Most Wanted" description="With the collapse of the Zann Consortium after being defeated at the hands of both the Rebels and the Empire, the entire galaxy is out to finish you off. You must find a way to rebuild or make peace with the galaxy." difficulty="3 x M3 + TL" image="startZann" plot="0">
+      <player name="Galaxy's Most Wanted" species="Zann Consortium" gender="Pirate" age="Extreme" />
+      <!-- Unknown Sector Zeta -->
+      <sector x="09" y="06" />
+      <ship typename="SS_SH_S_M3_SKIPRAY" comment="Skipray Blastboat" />
+   </gamestart>
+   <!-- Corporate Sector Prospector -->
+   <gamestart id="114" name="CSA Prospector" description="With the Galactic Civil War still  engulfing the galaxy, you escape to the Corporate sector to find a safe place for business." difficulty="3 x TS" image="startCSA" plot="0">
+      <player name="CSA Prospector" species="Corporate Sector" gender="Teladi" age="Easy" />
+      <!-- Saffalore -->
+      <sector x="22" y="00" />
+      <ship typename="SS_SH_A_TS_GR75" comment="Gallofree Transport" />
+   </gamestart>
+   <!-- Deluded Scoundrel -->
+   <gamestart id="115" name="Deluded Scoundrel" description="You gambled everything away and stole a ship to finally get your hands on a legendary treasure map you have been seeking your whole life. " difficulty="TM" image="startRebel" plot="0">
+      <player name="Deluded Scoundrel" species="Rebel" gender="Argon" age="Hard" />
+      <!-- Akuria II -->
+      <sector x="16" y="02" />
+      <ship typename="SS_SH_OTAS_TM_QUADJUMPER" comment="Quadjumper" />
+   </gamestart>
+   <!-- Imperial Convoy -->
+   <gamestart id="118" name="Imperial Convoy" description="Your light convoy is tasked with delivering vital kyber crystals for the Empire's 'Project Stardust'. See to it that your cargo reaches an Imperial mining outpost." difficulty="TM + 4 x M5" image="startEmpire" plot="0">
+      <player name="Imperial Convoy" species="Galactic Empire" gender="Terran" age="Extreme" />
+      <!-- Illum -->
+      <sector x="8" y="3" />
+      <ship typename="SS_SH_TR_TM_GOZANTIV" comment="Gozanti Vanguard" />
+   </gamestart>
+   <!-- Empire's Finest -->
+   <gamestart id="119" name="Empire's Finest" description="As an Imperial ace pilot, you have been chosen to test the new TIE Defender, the result of Grand Admiral Thrawn's New Fighter Initiative. This ship, combined with your skills, will be a force to be reckoned with." difficulty="M3" image="startEmpire" plot="0">
+      <player name="Empire's Finest" species="Galactic Empire" gender="Terran" age="Normal" />
+      <!-- Anaxes -->
+      <sector x="14" y="6" />
+      <ship typename="SS_SH_TR_M3_TIE_D" comment="TIE Defender" />
+   </gamestart>
+   <!-- Corporate Sector Administrator -->
+   <gamestart id="121" name="CSA Administrator" description="Your vast fortune from your political career will let you enter any area of investment without obstacle. Establish monopolies, build a fleet, and dominate the economy." difficulty="TP, 1.5 Billion Credits" image="startCSA" plot="0">
+      <player name="Corporate Sector Administrator" species="Coporate Sector Authority" gender="Teladi" age="Trivial" />
+      <!-- Etti 4 -->
+      <sector x="22" y="01" />
+      <ship typename="SS_SH_T_TP_ROYAL" comment="Royal Starship" />
+   </gamestart>
+   <!-- Rattatak Scrapper -->
+   <gamestart id="123" name="Rattatak Scrapper" description="After years of yearning to travel the stars, you have finally peiced-together a wrecked ship from your outer-rim planet and taken to space." difficulty="M5" image="startRepublic" plot="0">
+      <player name="Rattatak Scrapper" species="Rattatak" gender="N/A" age="Hard" />
+      <!-- Rattatak -->
+      <sector x="12" y="13" />
+      <ship typename="SS_SH_OTAS_M5_T16" comment="T-16 Skyhopper" />
+   </gamestart>
+   <!-- Mandalorian Outcast -->
+   <gamestart id="124" name="Mandalorian Outcast" description="Cast out as a member of House Vizsla, you must prove your worth in battle to be welcomed back. Take your scrappy ship and reclaim the title of Mandalorian Warrior through combat and glory." difficulty="M8" image="startMandalorian" plot="0">
+      <player name="Mandalorian Outcast" species="Mandalorian" gender="Split" age="Hard" />
+      <!-- Anteevy -->
+      <sector x="20" y="03" />
+      <ship typename="SS_SH_S_M8_SLAVE1" comment="Slave 1" />
+   </gamestart>
+   <!-- Mandalorian Arms Dealer -->
+   <gamestart id="125" name="Mandalorian Arms Dealer" description="You own and operate factories producing Mandalorian weapons, the finest in the galaxy. With the ongoing wars, there is ample opportunity to expand your business." difficulty="2 x ST + 3 x TS" image="startMandalorian" plot="0">
+      <player name="Mandalorian Arms Dealer" species="Mandalorian" gender="Split" age="Easy" />
+      <!-- Concord Dawn -->
+      <sector x="20" y="04" />
+      <ship typename="SS_SH_S_TS_YV666_MAND" comment="YV-666 (Hound's Tooth)" />
+   </gamestart>
+   <!-- Bothan Spy -->
+   <gamestart id="126" name="Bothan Spy" description="Having served in the empire as a pilot, you work hard to maintain good relations despite your ultimate loyalty to the Rebel Alliance. When the day comes, they will never know what hit them." difficulty="M5 + M4" image="startRebel" plot="0">
+      <player name="Bothan Spy" species="Rebel Alliance" gender="Argon" age="Normal" />
+      <!-- Bothawui -->
+      <sector x="21" y="11" />
+      <ship typename="SS_SH_G_M5_AWING2_BLUE" comment="A-Wing RZ-2" />
+   </gamestart>
+   <!-- WIP Test -->
+   <gamestart id="127" name="Work in Progress" description="Not yet implemented. No peeking!" difficulty="M3" image="startNewRepublic" plot="0">
+      <player name="WIP Gamemode" species="New Republic" gender="Boron" age="Normal" />
+      <!-- Uncharted Space -->
+      <sector x="00" y="15" />
+      <ship typename="SS_SH_K_M3_BWING_NOSETA" comment="B-Wing Advanced - Special version with no ware lists" />
+   </gamestart>
+   <!-- Bravo Flight -->
+   <gamestart id="128" name="Bravo Flight" description="You are the leader of Bravo flight, a squadron of naboo starfighters. You must chose which side to ally with for the current conflict to decide the fate of Naboo." difficulty="14 x M5 + Station" image="startBravo" plot="0">
+      <player name="Bravo Flight" species="Naboo Defense Force" gender="N/A" age="Normal" />
+      <!-- Naboo -->
+      <sector x="17" y="14" />
+      <ship typename="SS_SH_T_M5_N1" comment="N-1 Starfighter" />
+   </gamestart>
+   <!-- ExGal Outpost manager -->
+   <gamestart id="129" name="ExGal Outpost Manager" description="You have set up and work to maintain an ExGal-4 outpost at the edge of the galaxy to research extragalctic species." difficulty="3 x TS + 1 Station" image="startRepublic" plot="0">
+      <player name="ExGal Outpost Manager" species="Not Affiliated" gender="N/A" age="Hard" />
+      <!-- Belkadan -->
+      <sector x="15" y="0" />
+      <ship typename="SS_SH_A_TS_YV929" comment="YV929 Super Freighter" />
+   </gamestart>
+   <!-- Traitorous Delinquent -->
+   <gamestart id="130" name="Traitorous Delinquent" description="Lucky for you, your parents were politicians living in the Core. Using their money you bought a ship. While they get evicted, you set off with your ship to join galactic affairs. " difficulty="TS" image="startEmpire" plot="0">
+      <player name="Traitorous Delinquent" species="Galactic Empire" gender="Terran" age="Normal" />
+      <!-- Caridia -->
+      <sector x="17" y="5" />
+      <ship typename="SS_SH_TR_TS_YT1300_IMP" comment="YT1300 Light Freighter" />
+   </gamestart>
+   <!-- Imperial Border Control -->
+   <gamestart id="132" name="Imperial Border Control" description="After rising rapidly through imperial ranks, you are given a modestly large ship and some escorts to assist Imperial forces in defending the border to the core worlds." difficulty="1 x M6 + 2 x M4" image="startEmpire" plot="0">
+      <player name="Imperial Border Control" species="Galactic Empire" gender="Terran" age="Easy" />
+      <!-- Onderon -->
+      <sector x="19" y="6" />
+      <ship typename="SS_SH_TR_M6_RAIDER" comment="Raider Class Corvette" />
+   </gamestart>
+   <!-- Reborn Rakkatan -->
+   <gamestart id="133" name="Reborn Rakkatan" description="With your entire species gone extinct due to being cut off from the force, you are your species sole survivor, and it is your responsibility to avenge your fallen kin." difficulty="1 x M3" image="startInfinite" plot="0">
+      <player name="Reborn Rakkatan" species="Infinite Empire" gender="N/A" age="Extreme" />
+      <!-- Rakkata Prime -->
+      <sector x="7" y="6" />
+      <ship typename="SS_SH_X_M3" comment="Junk Ship" />
+   </gamestart>
+   <!-- Stranded -->
+   <gamestart id="134" name="Stranded" description="You were a scientist for USC, specialized in jump drive testing. After an accident with a gateless jumpdrive, you end up in the middle of nowhere, in a galaxy far far away..." difficulty="1 x M6" image="startTerran" plot="0">
+      <player name="Stranded" species="N/A" gender="Terran" age="Extreme" />
+      <!-- Intergalactic Void -->
+      <sector x="3" y="11" />
+      <ship typename="SS_SH_TR_M6" comment="L" />
+   </gamestart>
+   <!-- Rebel Cell Leader -->
+   <gamestart id="135" name="Rebel Cell Leader" description="Take command of Rebel operations within an established sector. Expand and grow your cause until you are ready to take the fight to the Empire." difficulty="Base + Small Fleet" image="startRebelScripted" plot="0">
+      <player name="Rebel Cell Leader" species="Rebel Alliance" gender="Argon" age="Normal" />
+      <!-- Rishi Moon -->
+      <sector x="21" y="12" />
+      <ship typename="SS_SH_SAT" comment="Navigation Relay Satellite" />
+   </gamestart>
+   <!-- Scarrif Battle -->
+   <gamestart id="136" name="Battle Over Scarrif" description="Take command of the Profundity and the Rebel fleet in order retrieve the death star plans." difficulty="Big Fleet" image="startRebelScripted" plot="0">
+      <player name="Rebel Admiral" species="Rebel Alliance" gender="Argon" age="Instant Action" />
+      <!-- Scarrif -->
+      <sector x="23" y="11" />
+      <ship typename="SS_SH_SAT" comment="Navigation Relay Satellite" />
+   </gamestart>
+   <!-- Spice Runner -->
+   <gamestart id="137" name="Spice Runner" description="With nothing but a freighter, you must deliver your valuable cargo to your associates in the Corporate Sector." difficulty="TS" image="startCSA" plot="0">
+      <player name="Spice Runner" species="Corporate Sector" gender="Teladi" age="Hard" />
+      <!-- Kessel -->
+      <sector x="23" y="7" />
+      <ship typename="SS_SH_P_TS_YV865" comment="YV-865 Aurore" />
+   </gamestart>
+   <!-- Umbaran Refugee -->
+   <gamestart id="138" name="Umbaran Refugee" description="Having escaped the clutches of the Republic, you return in hopes of liberating your home from the Empire." difficulty="M3" image="startSeparatist" plot="0">
+      <player name="Umbaran Refugee" species="Sepratist" gender="Paranid" age="Normal" />
+      <!-- Attahox -->
+      <sector x="20" y="9" />
+      <ship typename="SS_SH_P_M3_UMBARAN_FIGHTER" comment="Umbaran Fighter" />
+   </gamestart>
+   <!-- Mandalorian Attache -->
+   <gamestart id="139" name="Mandalorian Attache" description="You are an official Attache operating under the Mandalorian military sent to defend the interests of the Mandalorian Government." difficulty="M3" image="startMandalorian" plot="0">
+      <player name="Mandalorian Attache" species="Mandalorian" gender="Split" age="Normal" />
+      <!-- Korriban -->
+      <sector x="21" y="2" />
+      <ship typename="SS_SH_S_M3_KOM'RK" comment="Mandalorian Attache Kom'rk" />
+   </gamestart>
+   <!-- Exile -->
+   <gamestart id="140" name="Exile" description="Having been exiled after Order 66, you deem it time to return to the galaxy." difficulty="M5" image="startJedi" plot="0">
+      <player name="Exile" species="Jedi" gender="Goner" age="Hard" />
+      <!-- Dagobah -->
+      <sector x="16" y="18" />
+      <ship typename="SS_SH_G_M5_ETA2" comment="ETA-2 Jedi Starfighter" />
+   </gamestart>
+   <!-- Iridonia Startup -->
+   <gamestart id="141" name="Iridonia Startup" description="With Czerka Interstellar having failed as an enterprise, you seek to claim some of Czerka's lost glory." difficulty="M4" image="startOldRepublic" plot="0">
+      <player name="Iridonia Startup" species="Old Republic" gender="Yaki" age="Hard" />
+      <!-- Iridonia -->
+      <sector x="13" y="3" />
+      <ship typename="SS_SH_Y_M4_SITH_INT_S" comment="Sith Interceptor Sentinel" />
+   </gamestart>
+   <gamestart id="142" name="Alaankwa" description="You begin entrusted with a Mothership, complete with a complimentary starter economy fleet." difficulty="TL" image="startEmpire" plot="0">
+      <player name="alaankwa" species="Galactic Empire" gender="Terran" age="Normal" />
+      <sector x="17" y="14" />
+      <ship typename="SS_SH_TR_TL_ACCLAMATORH_IMP" comment="Imperial Acclamator Hauler" />
+   </gamestart>
+</gamestarts>
