@@ -33,7 +33,8 @@ You:
         * Found under the Special Commands menu
         * Works on any Carrier with the Carrier Command Software
     * Set the Data Scanner hotkey so you can scan ships with low shields to unlock their blueprints
-    * Use Piracy as an alternative to getting ships
+    * Can still claim bailed ships
+    * Use Piracy as an alternative to claiming ships
 * Added a Map Gates command that tells a ship to map the gates in its current sector
 * Joubarbe's Satellite Monitoring (v1.8 Included): Now considers player owned ships as satellites
     * https://forum.egosoft.com/viewtopic.php?t=380611
