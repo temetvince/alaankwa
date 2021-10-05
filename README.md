@@ -42,7 +42,7 @@ To download, go to the latest release and click 'Source code (zip)': https://git
 1. When asked for the game, browse and select X3AP.exe in your x3 install folder
 1. The game uses Direct3D 9
 1. When asked, install all the shaders. Everything. All of them
-1. Download and install LU Base + Patch + Import/Export + Soundtrack:
+1. Download and install LU Base + Patch + Import/Export + Soundtrack + GUI:
     * http://litcube.xtimelines.net/wiki/index.php/Main_Page
 1. Download the latest x3ap-lu release at:
     * https://github.com/temetvince/x3ap-lu/releases/
