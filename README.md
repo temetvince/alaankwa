@@ -62,7 +62,10 @@ You can take before/after screenshots that save to your root install folder with
 * Joubarbe's Satellite Monitoring (v1.8 Included): Now considers player owned ships as satellites
     * https://forum.egosoft.com/viewtopic.php?t=380611
 * LU Stock Exchange pageid fix (theoretically)
-* Phanon investors step in to keep Phanon corps afloat if their balance goes negative
+* Phanon:
+    * Investors step in to keep Phanon corps afloat if their balance goes negative
+    * Phanon gets cheaper ships and more money
+    * Phanon starting cash, bonus salary, and ship cost divisor modifiable in 'addon/8384-L044.xml'
 * Cheat: Enables Phanon Spy in the Player Console
 * Cheat: Saving with the hotkey no longer requires Salvage Insurance, removes the confirmation prompt to save, and removes the awful sound when saving to Slot 10
 * Cheat: A script called 'temetvince.Cheat.AddSats' that adds sats to all connected sectors which don't already have satellites
@@ -72,7 +75,7 @@ You can take before/after screenshots that save to your root install folder with
     * https://github.com/belluzj/fantasque-sans
 
 ### SWLU/GiC specific (Requires temetvince's SWLU or GiC modpacks)
-* Phanon is more powerful due to increased wealth
+* Phanon is even more powerful due to decreased ship costs
 * A new UNFINISHED (Will break!) start!
     * 'Alaankwa' which means 'star' in the Miami-Peoria language (Myaamia)
     * You:
