@@ -48,12 +48,12 @@ You can take before/after screenshots that save to your root install folder with
     * An optional setting in 'addon/9979-L044.xml' allows you to turn on the orientation feature for your player ship (off by default)
 * Improved escort behavior
 * Added a Map Gates command that tells a ship to map the gates in its current sector
-* Phanon investors step in to keep Phanon corps afloat if their balance goes negative
 * Joubarbe's Satellite Monitoring (v1.8 Included): Now considers player owned ships as satellites
     * https://forum.egosoft.com/viewtopic.php?t=380611
 * LU Stock Exchange pageid fix (theoretically)
-* Cheat: Saving with the hotkey no longer requires Salvage Insurance, removes the confirmation prompt to save, and removes the awful sound when saving to Slot 10
+* Phanon investors step in to keep Phanon corps afloat if their balance goes negative
 * Cheat: Enables Phanon Spy in the Player Console
+* Cheat: Saving with the hotkey no longer requires Salvage Insurance, removes the confirmation prompt to save, and removes the awful sound when saving to Slot 10
 * Cheat: A script called 'temetvince.Cheat.AddSats' that adds sats to all connected sectors which don't already have satellites
 * Debug scripts. See Development Features below
 * An optional Graphics Improvement mod utilizing ReShade is included
