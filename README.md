@@ -7,7 +7,7 @@ To download, go to the latest release and click 'Source code (zip)': https://git
 * X3LU Egosoft Forum: https://forum.egosoft.com/viewtopic.php?f=94&t=441825
 
 ## Important
-* You MUST read the Installation section or your install probably won't work. I've kept it brief, you can ignore literally every thing else in this document if you desire.
+* You MUST read the Installation section or your install probably won't work
 * If you notice slowdowns, disable Improved Escort Behavior in 'x3 terran conflict/addon/t/9979-L044.xml'
 * Some other settings can be changed in 'x3 terran conflict/addon/t/9979-L044.xml'
 
@@ -17,16 +17,16 @@ To download, go to the latest release and click 'Source code (zip)': https://git
 * Also thanks to Sepa for graciously allowing me to redistribute his SWLU Mothership Mod
 
 ## !!! Installation !!!
-1. Install 'X3: Albion Prelude' in Steam.
+1. Install 'X3: Albion Prelude' in Steam
 1. Ensure the Bonus Pack is not installed in Steam by right clicking on 'X3: Albion Prelude -> Properties -> DLC'
-1. Ensure Farnham's Legacy is not installed in Steam.
+1. Ensure Farnham's Legacy is not installed in Steam
 1. Copy 'x3 terran conflict' out of your steam folder to somewhere else on your drive.
     * The steam folder is probably found at 'C:\Program Files (x86)\Steam\steamapps\common\x3 terran conflict'
-    * The new, copied folder is now your 'game's x3 terran conflict' folder.
+    * The new, copied folder is now your 'game's x3 terran conflict' folder
 1. Download the no-steam exe from Egosoft:
     * https://www.egosoft.com/download/x3ap/bonus_en.php
-1. Copy the no-steame exe into your game's 'x3 terran conflict' folder.
-1. If you don't want to use Reshade and want to skip the Graphics Improvement mod functionality, skip to step 12.
+1. Copy the no-steam exe into your game's 'x3 terran conflict' folder
+1. If you don't want to use Reshade and want to skip the Graphics Improvement mod functionality, skip to step 12
 1. Download and install ReShade
     * https://reshade.me/
 1. When asked for the game, browse and select X3AP.exe in your x3 install folder
