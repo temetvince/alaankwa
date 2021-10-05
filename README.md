@@ -43,11 +43,11 @@ To download, go to the latest release and click 'Source code (zip)': https://git
 You can take before/after screenshots that save to your root install folder with the PrintScrn button on your keyboard. To access the options in game, press [SHIFT]+[~] (or [SHIFT]+[`])
 
 ## Features
-### LU
 * All ships orient themselves upright with respect to "up"
     * An optional setting in 'addon/9979-L044.xml' allows you to turn on the orientation feature for your player ship (off by default)
 * Improved escort behavior
 * Added a Map Gates command that tells a ship to map the gates in its current sector
+* Joubarbe's Ship Destruct now included, found in any ship's Additional Commands Menu
 * Joubarbe's Satellite Monitoring (v1.8 Included): Now considers player owned ships as satellites
     * https://forum.egosoft.com/viewtopic.php?t=380611
 * LU Stock Exchange pageid fix (theoretically)
