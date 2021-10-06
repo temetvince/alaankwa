@@ -2,20 +2,6 @@
 
 To download, go to the latest release and click 'Source code (zip)': https://github.com/temetvince/x3ap-lu/releases/
 
-## Links
-* Discord: https://discord.gg/S587CRb
-* temetvince Egosoft Forums:
-    * Litcube's Universe: https://forum.egosoft.com/viewtopic.php?f=94&t=441825
-    * Mayhem 3: https://forum.egosoft.com/viewtopic.php?f=94&t=441824
-* temetvince X3 Mod Github Repositories:
-    * Litcube's Universe: https://github.com/temetvince/x3ap-lu
-    * Star Wars LU: https://github.com/temetvince/x3ap-swlu
-    * SWLU Galaxy in Chaos: https://github.com/temetvince/x3ap-gic
-    * Mayhem 3: https://github.com/temetvince/x3ap-m3
-    * Star Wars Mayhem 2: https://github.com/temetvince/x3ap-swm2
-    * Star Wars Mayhem 3: https://github.com/temetvince/x3ap-swm3
-* Star Wars Mayhem 2 ModDB: https://www.moddb.com/mods/star-wars-mayhem-2
-
 ## Important
 * You SHOULD read the Installation section or your install probably won't work
 * If you notice slowdowns, disable Improved Escort Behavior in 'x3 terran conflict/addon/t/9979-L044.xml'
@@ -27,6 +13,7 @@ To download, go to the latest release and click 'Source code (zip)': https://git
 * Also thanks to Sepa for graciously allowing me to redistribute his SWLU Mothership Mod
 
 ## !!! Installation !!!
+* Install Video Playlist: https://www.youtube.com/playlist?list=PLl4mHpHKbi1nu40jru_6Hf8jumxxtS-VO
 1. Install 'X3: Albion Prelude' in Steam
 1. Ensure the Bonus Pack is not installed in Steam by right clicking on 'X3: Albion Prelude -> Properties -> DLC'
 1. Ensure Farnham's Legacy is not installed in Steam
@@ -108,3 +95,18 @@ You can take before/after screenshots that save to your root install folder with
 * You can call this script like this: $debug.return = [NULL] -> call script 'temetvince.Debug': debug=$Unknown trackingAim=$ShipOrStation
 * $debug is the message or object to debug. Can be simple like a ship name or complex like an array of tables
 * $trackingAim is optional. If provided, then the debug script will only run if that entity is the player's tracking aim in game
+
+## Links
+* Discord: https://discord.gg/S587CRb
+* temetvince Egosoft Forums:
+    * Litcube's Universe: https://forum.egosoft.com/viewtopic.php?f=94&t=441825
+    * Mayhem 3: https://forum.egosoft.com/viewtopic.php?f=94&t=441824
+* temetvince X3 Mod Github Repositories:
+    * Litcube's Universe: https://github.com/temetvince/x3ap-lu
+    * Star Wars LU: https://github.com/temetvince/x3ap-swlu
+    * SWLU Galaxy in Chaos: https://github.com/temetvince/x3ap-gic
+    * Mayhem 3: https://github.com/temetvince/x3ap-m3
+    * Star Wars Mayhem 2: https://github.com/temetvince/x3ap-swm2
+    * Star Wars Mayhem 3: https://github.com/temetvince/x3ap-swm3
+* Star Wars Mayhem 2 ModDB: https://www.moddb.com/mods/star-wars-mayhem-2
+* Star Wars Mayhem 3 ModDB: https://www.moddb.com/games/star-wars-mayhem-3
