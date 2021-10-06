@@ -2,6 +2,9 @@
 
 To download, go to the latest release and click 'Source code (zip)': https://github.com/temetvince/x3ap-lu/releases/
 
+## Discord
+* https://discord.gg/S587CRb
+
 ## Credits
 * Special thanks to Joubarbe for making Mayhem. You can show your support by buying Joubarbe a coffee:
     * https://www.buymeacoffee.com/Joubarbe
@@ -71,7 +74,6 @@ You can take before/after screenshots that save to your root install folder with
 * $trackingAim is optional. If provided, then the debug script will only run if that entity is the player's tracking aim in game
 
 ## Links
-* Discord: https://discord.gg/S587CRb
 * temetvince Egosoft Forums:
     * Litcube's Universe: https://forum.egosoft.com/viewtopic.php?f=94&t=441825
     * Mayhem 3: https://forum.egosoft.com/viewtopic.php?f=94&t=441824
