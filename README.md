@@ -74,9 +74,8 @@ You can take before/after screenshots that save to your root install folder with
 * $trackingAim is optional. If provided, then the debug script will only run if that entity is the player's tracking aim in game
 
 ## Links
-* temetvince Egosoft Forums:
-    * Litcube's Universe: https://forum.egosoft.com/viewtopic.php?f=94&t=441825
-    * Mayhem 3: https://forum.egosoft.com/viewtopic.php?f=94&t=441824
+* temetvince Youtube Playlists (X3 Mod Install Videos):
+	* https://www.youtube.com/channel/UCw7tARIJee8gd1OpeSjAEMw/playlists
 * temetvince X3 Mod Github Repositories:
     * Litcube's Universe: https://github.com/temetvince/x3ap-lu
     * Star Wars LU: https://github.com/temetvince/x3ap-swlu
@@ -84,5 +83,10 @@ You can take before/after screenshots that save to your root install folder with
     * Mayhem 3: https://github.com/temetvince/x3ap-m3
     * Star Wars Mayhem 2: https://github.com/temetvince/x3ap-swm2
     * Star Wars Mayhem 3: https://github.com/temetvince/x3ap-swm3
-* Star Wars Mayhem 2 ModDB: https://www.moddb.com/mods/star-wars-mayhem-2
-* Star Wars Mayhem 3 ModDB: https://www.moddb.com/games/star-wars-mayhem-3
+* temetvince Egosoft Forums:
+    * Litcube's Universe: https://forum.egosoft.com/viewtopic.php?f=94&t=441825
+    * Mayhem 3: https://forum.egosoft.com/viewtopic.php?f=94&t=441824
+* Star Wars Mayhem 2 ModDB:
+    * https://www.moddb.com/mods/star-wars-mayhem-2
+* Star Wars Mayhem 3 ModDB:
+    * https://www.moddb.com/games/star-wars-mayhem-3
