@@ -11,7 +11,13 @@ To download, go to the latest release and click 'Source code (zip)': https://git
 * Also thanks to Sepa for graciously allowing me to redistribute his SWLU Mothership Mod
 
 ## Installation
+### Instructions
 * https://www.youtube.com/playlist?list=PLl4mHpHKbi1nu40jru_6Hf8jumxxtS-VO
+### Downloads
+* No-Steam Exe: https://www.egosoft.com/download/x3ap/bonus_en.php
+* ReShade: https://reshade.me/
+* Litcube's Universe: http://litcube.xtimelines.net/wiki/index.php/Main_Page
+* temetvince's LU mods: https://github.com/temetvince/x3ap-lu/releases/
 
 ## Graphics Improvement Mod
 You can take before/after screenshots that save to your root install folder with the PrintScrn button on your keyboard. To access the options in game, press [SHIFT]+[~] (or [SHIFT]+[`])
