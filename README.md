@@ -56,6 +56,7 @@ You can take before/after screenshots that save to your root install folder with
             * Found under the Special Commands menu
             * Works on any Carrier with the Carrier Command Software
         * Set the Data Scanner hotkey so you can scan ships with low shields to unlock their blueprints
+            * Each successful scan reduces the cost of producing the ship up to a certain max 
         * Can still claim bailed ships
         * Use Piracy as an alternative to claiming ships
 * Sepa's Mothership Mod:
