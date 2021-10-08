@@ -1,13 +1,170 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <language id="44">
     <page id="9979" title="temetvince" descr="Options to configure temetvince's mods" voice="no">
-      <t id="0">1</t> <!-- Should autorotate apply to ships. Must enter/re-enter a sector to take effect. 0 for false or 1 for true. Default: 1 -->
-      <t id="1">0</t> <!-- Should autorotate apply to playership. Must enter/re-enter a sector to take effect. 0 for false or 1 for true. Default: 0 -->
-      <t id="2">1</t> <!-- Should escort behavior be improved at the expense of follower escort speed. Must enter/re-enter a sector to take effect. 0 for false or 1 for true. Default: 1 -->
-      <t id="3">0</t> <!-- Should Sepa's Mothership Mod be enabled. WARNING: THIS ONLY WORKS FOR SWLU AND GiC. It does not work for LU. 0 for false or 1 for true. Default: 0 -->
-      <t id="4">4</t> <!-- Sepa's Mothership Mod - Muliplier for population: Ship Building Speed = f(population) where population = max marines the ship can hold * multiplier. Default: 4 -->
-      <t id="5">4</t> <!-- Sepa's Mothership Mod - Number of data scans required to get the cheapest blueprint for production. Default: 4 -->
-      <t id="6">0</t> <!-- Should Alaankwa gamestart be enabled. WARNING: THIS ONLY WORKS FOR SWLU AND GiC. It does not work for LU. 0 for false or 1 for true. Default: 0 -->
+
+<!--  ############################################################################################################################################# -->
+<!--  IMPROVED PILOTING -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  Ships automatically orient "upright" in the game like they do in the movies. -->
+<!--  Should Improved Piloting be enabled? 0 for off or 1 for on. Must enter/re-enter a sector to take effect. Default: 1 -->
+      <t id="10">1</t>
+<!--  _____________________________________________________________________________________________ -->
+
+<!--  _____________________________________________________________________________________________ -->
+<!--  Overachiever -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  Improved Piloting applies to the playership -->
+<!--  Should Overachiever be enabled? 0 for off or 1 for on. Must enter/re-enter a sector to take effect. Default: 0 -->
+      <t id="11">0</t>
+<!--  _____________________________________________________________________________________________ -->
+<!--  ############################################################################################################################################# -->
+
+
+
+
+<!--  ############################################################################################################################################# -->
+<!--  STANDARDIZED FLEET OPERATIONS -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  Escorts will attempt to follow at reasonable speeds instead of flying all over the place. -->
+<!--  Should Standardized Fleet Operations be enabled? 0 for off or 1 for on. Must enter/re-enter a sector to take effect. Default: 1 -->
+      <t id="20">1</t>
+<!--  _____________________________________________________________________________________________ -->
+<!--  ############################################################################################################################################# -->
+
+
+
+
+<!--  ############################################################################################################################################# -->
+<!--  SEPA'S MOTHERSHIP -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  ONLY FOR SWLU & GiC. NOT FOR LU. -->
+<!--  Thanks to Sepa for allowing me to use their mod -->
+<!--  Carriers are mobile factories which can produce lasers, missiles, shields, and ships (must be able to dock on the Carrier). -->
+<!--  Should Sepa's Mothership be enabled? 0 for off or 1 for on. Default: 1 -->
+      <t id="30">0</t>
+
+<!--  _____________________________________________________________________________________________ -->
+<!--  Assembly Lines -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  The Ship Building Speed is a function of the population where the population is the max marines a ship can hold multiplied by the Assembly Lines. -->
+<!--  Set the Assembly Lines. Default: 4 -->
+      <t id="31">4</t>
+<!--  _____________________________________________________________________________________________ -->
+
+<!--  _____________________________________________________________________________________________ -->
+<!--  Grind Tolerance -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  The number of data scans per type required to get the cheapest blueprint for production. -->
+<!--  Set the Grind Tolerance. Default: 4 -->
+      <t id="32">4</t>
+<!--  _____________________________________________________________________________________________ -->
+
+<!--  _____________________________________________________________________________________________ -->
+<!--  Alaankwa Corsairs -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  A unique gamestart which focuses on unlocking blueprints by scanning ships in order to build them instead of buying/selling them. -->
+<!--  Should Alaankwa Corsairs be enabled? 0 for off or 1 for on. Default: 1 -->
+      <t id="33">0</t>
+<!--  _____________________________________________________________________________________________ -->
+<!--  ############################################################################################################################################# -->
+
+
+
+
+<!--  ############################################################################################################################################# -->
+<!--  FRIEND SHIPS IN HIGH PLACES -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  Friends will sometimes participate in battle alongside you. -->
+<!--  Should Friend Ships in High Places be enabled? 0 for off or 1 for on. Default: 1 -->
+      <t id="30">1</t>
+<!--  _____________________________________________________________________________________________ -->
+
+<!--  _____________________________________________________________________________________________ -->
+<!--  With Friends Like These -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  A list of your friends for Friends in High Places. -->
+<!--  Friends in High Places participants are chosen randomly from this pool. Separate friends with | -->      
+      <t id="41">temetvince|hector|joubarbe|litcube|xenonarchitect7|purls|rice vessel</t>
+<!--  _____________________________________________________________________________________________ -->
+
+<!--  _____________________________________________________________________________________________ -->
+<!--  Pacifistic Tendencies -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  Friend Ships in High Places will activate once in X fights, give or take up to a certain Variance. -->
+<!--  X fights until activation. Default: 15 -->
+      <t id="42">15</t>
+<!--  Variance in fights around activation. Default: 4 -->
+      <t id="43">4</t>
+<!--  The number of seconds that must pass after beginning a fight for it to be considered over. Default: 300 -->
+      <t id="44">300</t>
+<!--  _____________________________________________________________________________________________ -->
+
+<!--  _____________________________________________________________________________________________ -->
+<!--  Friend Ships Know No Borders -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  Ships of friends can come from factions with whom you are enemies. -->
+<!--  Should Friend Ships Know No Borders be enabled? 0 for off or 1 for on. Default: 0 -->
+      <t id="44">0</t>
+<!--  (Fun Fact: If your Friend Ships Don't Know No Borders and you aren't friendly with anyone, then you will have no friends.)-->
+<!--  _____________________________________________________________________________________________ -->
+
+<!--  _____________________________________________________________________________________________ -->
+<!--  Friend Ship Composition 101 -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  Templates for the composition of friend fleets given a playership class. -->
+<!--  PLAYERSHIP CLASS|# FRIENDS|SHIP CLASS|# FRIENDS|SHIP CLASS| ... |# FRIENDS|SHIP CLASS -->
+<!--  PLAYERSHIP CLASS|# FRIENDS|SHIP CLASS|# FRIENDS|SHIP CLASS| ... |# FRIENDS|SHIP CLASS -->
+<!--  ... -->
+<!--  PLAYERSHIP CLASS|# FRIENDS|SHIP CLASS|# FRIENDS|SHIP CLASS| ... |# FRIENDS|SHIP CLASS -->
+<!--  WHERE # FRIENDS = EITHER a specific number of friends (#) OR an inclusive range of friends (#.#) -->
+      <t id="1001">M1|1|M7</t>
+      <t id="1002">M1|2.4|M6</t>
+      <t id="1003">M1|3.7|M3</t>
+
+      <t id="1004">M2|1|M7</t>
+      <t id="1005">M2|2.4|M6</t>
+      <t id="1006">M2|3.7|M3</t>
+
+      <t id="1007">M7|1|M6</t>
+      <t id="1008">M7|1.2|M3|1.2|M4|1.2|M5</t>
+      <t id="1009">M7|1.2|M4|3.5|M5</t>
+      <t id="1010">M7|4.7|M5</t>
+
+      <t id="1011">TL|1|M6</t>
+      <t id="1012">TL|1.2|M3|1.2|M4|1.2|M5</t>
+      <t id="1013">TL|1.2|M4|3.5|M5</t>
+      <t id="1014">TL|4.7|M5</t>
+
+      <t id="1015">M6|1.2|M3</t>
+      <t id="1016">M6|1.2|M4|2.3|M5</t>
+      <t id="1017">M6|0.1|M4|3.5|M5</t>
+
+      <t id="1018">M8|1|M3</t>
+      <t id="1019">M8|2.3|M4</t>
+
+      <t id="1020">TM|1.2|M4</t>
+      <t id="1013">TM|2.4|M5</t>
+
+      <t id="1010">M3|1.2|M4</t>
+      <t id="1010">M3|2.4|M5</t>
+
+      <t id="1011">M4|1.2|M5</t>
+
+      <t id="1012">M5|1|M5</t>
+
+      <t id="1014">TS|1.2|M5</t>
+
+      <t id="1015">TP|1.2|M5</t>
+<!--  _____________________________________________________________________________________________ -->
+<!--  ############################################################################################################################################# -->
+
+
+
+
+<!--  ############################################################################################################################################# -->
+<!--  DO NOT CHANGE ANYTHING BELOW HERE -->
+<!--  ############################################################################################################################################# -->
+    
     </page>
 
     <page id="99790" title="temetvince" descr="Alaankwa Gamestart Text" voice="no">
