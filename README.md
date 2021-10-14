@@ -22,7 +22,7 @@
 ## Features
 ### General
 * SHIP COMPUTER UPGRADES
-    * New commands for the Ship Commmand Menu.
+    * New commands for the Ship Command Menu.
         * Manage Mothership
             * This command allows you to manage a Mothership. (Feature: Sepa's Mothership)
         * Map Gates
