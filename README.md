@@ -1,6 +1,6 @@
-# temetvince's mods for X3AP - Litcube's Universe
-
-To download, go to the latest release and click 'Source code (zip)': https://github.com/temetvince/x3ap-lu/releases/
+# Alaankwa
+* To download, go to the latest release and click 'Source code (zip)': https://github.com/temetvince/x3ap-lu/releases/
+* 'Alaankwa' means 'star' in the Miami-Peoria language (Myaamia)
 
 ## Discord
 * https://discord.gg/S587CRb
@@ -17,68 +17,82 @@ To download, go to the latest release and click 'Source code (zip)': https://git
 * No-Steam Exe: https://www.egosoft.com/download/x3ap/bonus_en.php
 * ReShade: https://reshade.me/
 * Litcube's Universe: http://litcube.xtimelines.net/wiki/index.php/Main_Page
-* temetvince's LU mods: https://github.com/temetvince/x3ap-lu/releases/
-
-## Graphics Improvement Mod
-You can take before/after screenshots that save to your root install folder with the PrintScrn button on your keyboard. To access the options in game, press [SHIFT]+[~] (or [SHIFT]+[`])
+* Alaankwa: https://github.com/temetvince/x3ap-lu/releases/
 
 ## Features
-### General LU
-* All ships orient themselves upright with respect to "up"
-    * An optional setting in 'addon/9979-L044.xml' allows you to turn on the orientation feature for your player ship (off by default)
-* Improved escort behavior
-* Added a Map Gates command that tells a ship to map the gates in its current sector
-* Joubarbe's Ship Destruct is included, found in any ship's Additional Commands Menu
-* Joubarbe's Satellite Monitoring (v1.8 Included): Now considers player owned ships as satellites
-    * https://forum.egosoft.com/viewtopic.php?t=380611
-* LU Stock Exchange pageid fix (theoretically)
-* Phanon:
-    * Investors step in to keep Phanon corps afloat if their balance goes negative
-    * Phanon gets cheaper ships and more money
-    * Phanon starting cash, bonus salary, and ship cost divisor modifiable in 'addon/8384-L044.xml'
-* Cheat: Enables Phanon Spy in the Player Console
-* Cheat: Saving with the hotkey no longer requires Salvage Insurance, removes the confirmation prompt to save, and removes the awful sound when saving to Slot 10
-* Cheat: A script called 'temetvince.Cheat.AddSats' that adds sats to all connected sectors which don't already have satellites
-* Debug scripts. See Development Features below
-* An optional Graphics Improvement mod utilizing ReShade is included
-* An optional font change is included, disabled by default. It is Fantasque Sans Mono, you can find the original here:
-    * https://github.com/belluzj/fantasque-sans
+### General
+* SHIP COMPUTER UPGRADES
+    * New commands for the Ship Commmand Menu.
+        * Manage Mothership
+            * This command allows you to manage a Mothership. (Feature: Sepa's Mothership)
+        * Map Gates
+            * This command maps the gates in its current sector.
+        * Self Destruct
+            * This command tells the ship to self destruct.
+* FRESH HOTKEYS, GET YOUR HOTKEYS
+    * Decide which hotkeys are configurable in the Hotkeys Menu.
+        * Blueprint Data Scanner 
+            * This hotkey activates the Blueprint Data Scanner.
+        * Joubarbe's Satellite Monitoring
+            * This hotkey activates the Satellite Monitoring Menu respecting all player property, not just satellites.
+        * All of Time
+            * CHEAT: This hotkey saves your point in time to the next slot even if you don't have Salvage Insurance.
+        * All of Space
+            * CHEAT: This hotkey adds satellites to all sectors with jumpgates which don't already have one.
+* IMPROVED PILOTING
+    * Ships automatically orient "upright" in the game like they do in the movies.
+        * Overachiever
+            * Improved Piloting applies to the playership
+* STANDARDIZED FLEET OPERATIONS
+    * Escorts will attempt to follow at reasonable speeds instead of flying all over the place.
+* SEPA'S MOTHERSHIP
+    * Motherships are mobile factories which can produce lasers, missiles, shields, and ships (must be able to dock on the Mothership).
+        * Alaankwa Corsairs
+            * A unique gamestart which focuses on unlocking blueprints by scanning ships in order to build them instead of buying/selling them.
+        * Assembly Lines
+            * The Ship Building Speed is a function of the population where the population is the max marines a ship can hold multiplied by the Assembly Lines.
+        * Research and Development Budget
+            * The number of data scans per type required to get the cheapest blueprint for production.
+        * Shield Expertise
+            * The maximum shield percentage of the target while using the data scanner.
+* SATELLITE MONITORING PLUS
+    * Satellite Monitoring respects all player property, not just satellites.
+* UNDER NEW MANAGEMENT (PHANON)
+    * Enables various changes which should help Phanon corporations be more competitive.
+        * Corporate Bailouts
+            * Corporate Bailouts keep Phanon corps afloat if their balance sheet goes negative.
+        * Backroom Deals
+            * Management cuts backroom deals to lower ship manufacturing costs.
+        * Seedy Investors
+            * Management isn't afraid to finance cash from less... reputable sources.
+        * Well Connected Leadership
+            * Well Connected Leadership commands a premium in salaries.
+        * Industrial Espionage
+            * Shows detailed Phanon corp information in the Phanon Debug Menu found in the Player Console.
+* AND MORE
+    * Debugging scripts for development.
+        * Can take in any text decodable object, say an array of tables, and output it in game to the user
+        * Call the script like this: $debug.return = [NULL] -> call script 'tv.debug': param.debug=$Unknown param.trackingaim=$ShipOrStation
+            * $param.debug is the message or object to debug. Can be simple like a ship name or complex like an array of tables
+            * $param.trackingaim is optional. If provided, then the debug script will only run if that entity is the player's tracking aim in game
+    * An optional Graphics Improvement mod utilizing ReShade is included
+        * You can take before/after screenshots that save to your root install folder with the PrintScrn button on your keyboard. To access the options in game, press [SHIFT]+[~] (or [SHIFT]+[`])
+* An optional font change is included, disabled by default.
+    * It is Fantasque Sans Mono, you can find the original here:
+        * https://github.com/belluzj/fantasque-sans
 
-### SWLU/GiC specific (Requires temetvince's SWLU or GiC modpacks)
-* Phanon is even more powerful due to decreased ship costs
-* A new UNFINISHED (Will break!) start!
-    * 'Alaankwa' which means 'star' in the Miami-Peoria language (Myaamia)
-    * You:
-        * Cannot buy new ships (used ships are still available)
-        * Cannot sell ships
-        * Start in a TL with a miner, trade ships, and explorer ships and blueprints
-        * Produce ships by using Sepa's Mothership Mod (included)
-            * Found under the Special Commands menu
-            * Works on any Carrier with the Carrier Command Software
-        * Set the Data Scanner hotkey so you can scan ships with low shields to unlock their blueprints
-            * Each successful scan reduces the cost of producing the ship up to a certain max 
-        * Can still claim bailed ships
-        * Use Piracy as an alternative to claiming ships
-* Sepa's Mothership Mod:
-    * It allows you to have the following on any Carrier class ship that has Carrier Command Software:
-	    * Hangar with upgrade and repair functionality
-	    * Recycle functionality
-	    * Production functionality (missiles, shields, lasers, fighter ships)
-    * You can only produce ships that you have previously recycled or data scanned
-    * You can access the Mothership menu in ship console, under 'Special commands'
-    * Applies to all carriers now, not just M7+
-    * Population multiplier (ship building speed) increased by 4 from version 2
-    * Population multiplier can be set in 'x3 terran conflict/addon/t/9979-L044.xml'
-    * Carriers can build any type of ship they can dock now, not just fighters
-    * Ships can be built at any Mothership given they can dock in the carrier, and they have been either:
-        * Scanned with the Data Scanner
-        * Recycled in any Mothership
+### M3/SWM3 specific
+* NAVIGATION COMPUTER MK II (Disabled by Default)
+    * Allows Workers to use jump beacons during their job search
+    * Significant performance impact to Worker job calculcation speed
+        * Don't use with more than 10-20 jump beacons
+* Outposts show themselves as a candidate for export or import jobs
+    * This is helpful for making generic templates that include the sanctuary where you are creating the template
+* Fixed the Outpost Client Threshold not being saved when making a Jobs Preset
+* Fixed the homebase being cleared in your ship when using the Personal Teleportation Device
+* An optional settings t-file for new players is included, disabled by default
+    * These settings are the ones recommended by Darth Fiscus here: https://www.youtube.com/watch?v=kV-aS0swpfY&t=13s
 
-## Development Features
-* Debug scripts for development. It can take in any text decodable object, say an array of tables, and output it in game to the user
-* You can call this script like this: $debug.return = [NULL] -> call script 'temetvince.Debug': debug=$Unknown trackingAim=$ShipOrStation
-* $debug is the message or object to debug. Can be simple like a ship name or complex like an array of tables
-* $trackingAim is optional. If provided, then the debug script will only run if that entity is the player's tracking aim in game
 
 ## Links
 * temetvince Youtube Playlists (X3 Mod Install Videos):

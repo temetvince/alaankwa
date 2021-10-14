@@ -1,0 +1,200 @@
+gosub GetVariables:
+
+* * TEMPLATE OUTFIT AND UPGRADE **
+add custom menu heading to array $menu: title='Customize'
+$args = create new array, arguments=[THIS], null, null, null, null
+$ret = create menu return value: open menu, menu script='tv.sepa.menu.mothershipmanagement.upgradeships', script args=$args
+add custom menu item to array $menu: text='Upgrade ship' returnvalue=$ret
+
+$args = create new array, arguments=[THIS], null, null, null, null
+$ret = create menu return value: open menu, menu script='tv.sepa.menu.painter', script args=$args
+add custom menu item to array $menu: text='Paint ship' returnvalue=$ret
+
+* * REPAIR **
+add custom menu heading to array $menu: title='Repair'
+$t = array alloc: size=0
+
+$name.ore = sprintf: pageid=17 textid=2023, 'Template outfit', null, null, null, null
+$name.quantumtubes = sprintf: pageid=17 textid=2063, 'Template outfit', null, null, null, null
+$name.microchips = sprintf: pageid=17 textid=2073, 'Template outfit', null, null, null, null
+$name.computercomponents = sprintf: pageid=17 textid=2083, 'Template outfit', null, null, null, null
+$name.siliconwafers = sprintf: pageid=17 textid=2023, 'Template outfit', null, null, null, null
+
+$t = columnize menu text: array= $t, text= 'Damaged Ship', alignment= -1, colour= 4, column width= 300
+$t = columnize menu text: array= $t, text= $name.computercomponents, alignment= -1, colour= 4, column width= 100
+$t = columnize menu text: array= $t, text= $name.microchips, alignment= -1, colour= 4, column width= 100
+$t = columnize menu text: array= $t, text= 'Ore', alignment= -1, colour= 4, column width= 100
+$t = columnize menu text: array= $t, text= $name.quantumtubes, alignment= -1, colour= 4, column width= 100
+$t = columnize menu text: array= $t, text= 'Silicon Wafers', alignment= -1, colour= 4, column width= 100
+
+add non selectable menu item: $menu, text=$t
+add section to custom menu: $menu
+$allShips = [THIS]-> get ship array from sector/ship/station
+for each $ship in array $allShips
+ $allDockedShips = $ship-> get ship array from sector/ship/station
+ for each $dockedShip in array $allDockedShips
+  append $dockedShip to array $allShips
+ end
+end
+$atLeastOne = [FALSE]
+for each $ship in array $allShips
+ $owner = $ship-> get owner race
+ do if $owner != [Player]
+  continue
+ $hull = $ship-> get hull percent
+ $damagedHull = 100 - $hull
+ if $damagedHull > 0
+  $atLeastOne = [TRUE]
+  gosub GetRepairInfoRes:
+  $t = array alloc: size=0
+  $dockedat = $ship-> get environment
+  if $dockedat-> is of class [Moveable Ship]
+   $name = $name + ' (' + $dockedat + ') (' + $hull + '%)'
+  else
+   $name = $name + ' (' + $hull + '%)'
+  end
+  
+  $t = columnize menu text: array= $t, text= $name, alignment= -1, colour= 0, column width= 300
+  if $has.computerComponents >= $costF.computerComponents
+   $t = columnize menu text: array= $t, text= $costF.computerComponents, alignment= -1, colour= 0, column width= 100
+  else
+   $t = columnize menu text: array= $t, text= $costF.computerComponents, alignment= -1, colour= 1, column width= 100
+  end
+  if $has.microchips >= $costF.microchips
+   $t = columnize menu text: array= $t, text= $costF.microchips, alignment= -1, colour= 0, column width= 100
+  else
+   $t = columnize menu text: array= $t, text= $costF.microchips, alignment= -1, colour= 1, column width= 100
+  end
+  if $has.ore >= $costF.ore
+   $t = columnize menu text: array= $t, text= $costF.ore, alignment= -1, colour= 0, column width= 100
+  else
+   $t = columnize menu text: array= $t, text= $costF.ore, alignment= -1, colour= 1, column width= 100
+  end
+  if $has.quantumTubes >= $costF.quantumTubes
+   $t = columnize menu text: array= $t, text= $costF.quantumTubes, alignment= -1, colour= 0, column width= 100
+  else
+   $t = columnize menu text: array= $t, text= $costF.quantumTubes, alignment= -1, colour= 1, column width= 100
+  end
+  if $has.siliconWafers >= $costF.siliconWafers
+   $t = columnize menu text: array= $t, text= $costF.siliconWafers, alignment= -1, colour= 0, column width= 100
+  else
+   $t = columnize menu text: array= $t, text= $costF.siliconWafers, alignment= -1, colour= 1, column width= 100
+  end
+  
+  add custom dynamic menu item to array $menu: text=$t return value=$ship
+ end
+end
+skip if $atLeastOne
+ add non selectable menu item: $menu, text='No damaged ships'
+
+add custom menu heading to array $menu: title='Template'
+$args = create new array, arguments=[THIS], null, null, null, null
+$templates = get global variable: name='LitQB.ShipTemplates.Templates'
+$count = size of array $templates
+if $count
+ $ret = create menu return value: open menu, menu script='tv.sepa.menu.mothershipmanagement.templateoutfit', script args=$args
+ add custom menu item to array $menu: text='Template outfit' returnvalue=$ret
+else
+ $t = sprintf: pageid=9253 textid=1004, 'Template outfit', null, null, null, null
+ add non selectable menu item: $menu, text=$t
+end
+
+$waitingTemplateShips = array alloc: size=0
+$allShips = [THIS]-> get ship array from sector/ship/station
+for each $ship in array $allShips
+ $template = $ship-> get local variable: name='tv.mayhem_waitingTemplate'
+ skip if $template
+  continue
+ append $ship to array $waitingTemplateShips
+end
+$waitingTemplateShips.size = size of array $waitingTemplateShips
+if $waitingTemplateShips.size
+ add section to custom menu: $menu
+ for each $ship in array $waitingTemplateShips
+  $template = $ship-> get local variable: name='tv.mayhem_waitingTemplate'
+  $template.name = $template[0]
+  $ship.id = $ship-> get ID code
+  $t = $ship + ' (' + $ship.id + ') is waiting to be automatically outfitted with template ' + $template.name + ' - Click to cancel'
+  add custom dynamic menu item to array $menu: text=$t return value=$ship
+ end
+end
+
+return null
+
+
+* *****************************************************************************
+
+
+GetVariables:
+ $repairFactor = get global variable: name='tv.mayhem_repairFactor'
+ $allProjects = get global variable: name='tv.mayhem_projects'
+ $projectCosts = get global variable: name='tv.mayhem_projectCosts'
+ $craftCosts = get global variable: name='tv.mayhem_craftCosts'
+ $buildDividerShip = get global variable: name='tv.mayhem_buildDividerShip'
+ $buildDividerMissile = get global variable: name='tv.mayhem_buildDividerMissile'
+ $buildDividerShield = get global variable: name='tv.mayhem_buildDividerShield'
+ $buildDividerWeapon = get global variable: name='tv.mayhem_buildDividerWeapon'
+ $timeDivider.Ship = get global variable: name='tv.mayhem_timeDividerShip'
+ $timeDivider.Missile = get global variable: name='tv.mayhem_timeDividerMissile'
+ $timeDivider.Shield = get global variable: name='tv.mayhem_timeDividerShield'
+ $timeDivider.Weapon = get global variable: name='tv.mayhem_timeDividerWeapon'
+ $cost.clothRimes = table get $craftCosts ( {Cloth Rimes} )
+ $cost.energyCells = table get $craftCosts ( {Energy Cells} )
+ $cost.ore = table get $craftCosts ( {Ore} )
+ $cost.rastarOil = table get $craftCosts ( {Rastar Oil} )
+ $cost.teladianium = table get $craftCosts ( {Teladianium} )
+ $cost.computerComponents = table get $craftCosts ( {Computer Components} )
+ $cost.crystals = table get $craftCosts ( {Crystals} )
+ $cost.microchips = table get $craftCosts ( {Microchips} )
+ $cost.quantumTubes = table get $craftCosts ( {Quantum Tubes} )
+ $cost.siliconWafers = table get $craftCosts ( {Silicon Wafers} )
+ $cost.meatsteak = table get $craftCosts ( {Meatsteak Cahoonas} )
+ $cost.bofu = table get $craftCosts ( {BoFu} )
+ $cost.sojaHusk = table get $craftCosts ( {Soja Husk} )
+ $cost.scruffinFruits = table get $craftCosts ( {Scruffin Fruits} )
+ $cost.warheads = table get $craftCosts ( {Warheads} )
+ $has.clothRimes = [THIS]-> get amount of ware {Cloth Rimes} in cargo bay
+ $has.energyCells = [THIS]-> get amount of ware {Energy Cells} in cargo bay
+ $has.ore = [THIS]-> get amount of ware {Ore} in cargo bay
+ $has.rastarOil = [THIS]-> get amount of ware {Rastar Oil} in cargo bay
+ $has.teladianium = [THIS]-> get amount of ware {Teladianium} in cargo bay
+ $has.computerComponents = [THIS]-> get amount of ware {Computer Components} in cargo bay
+ $has.crystals = [THIS]-> get amount of ware {Crystals} in cargo bay
+ $has.microchips = [THIS]-> get amount of ware {Microchips} in cargo bay
+ $has.quantumTubes = [THIS]-> get amount of ware {Quantum Tubes} in cargo bay
+ $has.siliconWafers = [THIS]-> get amount of ware {Silicon Wafers} in cargo bay
+ $has.meatsteak = [THIS]-> get amount of ware {Meatsteak Cahoonas} in cargo bay
+ $has.bofu = [THIS]-> get amount of ware {BoFu} in cargo bay
+ $has.sojaHusk = [THIS]-> get amount of ware {Soja Husk} in cargo bay
+ $has.scruffinFruits = [THIS]-> get amount of ware {Scruffin Fruits} in cargo bay
+ $has.warheads = [THIS]-> get amount of ware {Warheads} in cargo bay
+endsub
+
+
+GetRepairInfoRes:
+ $hull = $ship-> get hull percent
+ $damagedHull = 100 - $hull
+ $name = $ship-> get name
+ $hull.s = convert number $hull to string
+ $hull.s = $hull.s + '%'
+ if $ship-> exists
+  $shipType = $ship-> get ware type code of object
+ else
+  $shipType = $ship
+ end
+ $cost.project = get average price of ware $shipType
+ $costF.computerComponents = ($cost.project / $cost.computerComponents) / $buildDividerShip / $repairFactor
+ $costF.microchips = ($cost.project / $cost.microchips) / $buildDividerShip / $repairFactor
+ $costF.ore = ($cost.project / $cost.ore) / $buildDividerShip / $repairFactor
+ $costF.quantumTubes = ($cost.project / $cost.quantumTubes) / $buildDividerShip / $repairFactor
+ $costF.siliconWafers = ($cost.project / $cost.siliconWafers) / $buildDividerShip / $repairFactor
+ $costF.computerComponents = $costF.computerComponents * $damagedHull / 100
+ $costF.microchips = $costF.microchips * $damagedHull / 100
+ $costF.ore = $costF.ore * $damagedHull / 100
+ $costF.quantumTubes = $costF.quantumTubes * $damagedHull / 100
+ $costF.siliconWafers = $costF.siliconWafers * $damagedHull / 100
+ 
+ dim $allWares = {Computer Components}, {Microchips}, {Ore}, {Quantum Tubes}, {Silicon Wafers}
+ dim $priceChecks = $costF.computerComponents, $costF.microchips, $costF.ore, $costF.quantumTubes, $costF.siliconWafers
+endsub
+

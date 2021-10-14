@@ -8,270 +8,64 @@
 	<description></description>
 	<arguments />
 	<sourcetext>
-		<line linenr="001" indent="">
-			<comment>* ************************************************</comment>
-		</line>
-		<line linenr="002" indent="">
-			<comment>* SCRIPT NAME: setup.temetvince.xml</comment>
-		</line>
-		<line linenr="003" indent="">
-			<comment>* DESCRIPTION: Setup commands to run on game start</comment>
-		</line>
-		<line linenr="004" indent="">
-			<comment>* </comment>
-		</line>
-		<line linenr="005" indent="">
-			<comment>* AUTHOR: temetvince          DATE: 16 June 2021</comment>
-		</line>
-		<line linenr="006" indent="">
-			<comment>* ************************************************</comment>
-		</line>
-		<line linenr="007" indent="" />
-		<line linenr="008" indent="">
-			<text>load</text>
-			<text> </text>
-			<text>text</text>
-			<text>:</text>
-			<text> </text>
-			<text>id</text>
-			<text>=</text>
-			<var>9979</var>
-		</line>
-		<line linenr="009" indent="" />
-		<line linenr="010" indent="">
-			<text>set</text>
-			<text> </text>
-			<text>script</text>
-			<text> </text>
-			<text>command</text>
-			<text> </text>
-			<text>upgrade</text>
-			<text>:</text>
-			<text> </text>
-			<text>command</text>
-			<text>=</text>
-			<var>[COMMAND_MAP_GATES]</var>
-			<text>  </text>
-			<text>upgrade</text>
-			<text>=</text>
-			<var>[TRUE]</var>
-		</line>
-		<line linenr="011" indent="">
-			<text>global</text>
-			<text> </text>
-			<text>script</text>
-			<text> </text>
-			<text>map</text>
-			<text>:</text>
-			<text> </text>
-			<text>set</text>
-			<text>:</text>
-			<text> </text>
-			<text>key</text>
-			<text>=</text>
-			<var>[COMMAND_MAP_GATES]</var>
-			<text>,</text>
-			<text> </text>
-			<text>class</text>
-			<text>=</text>
-			<var>[Ship]</var>
-			<text>,</text>
-			<text> </text>
-			<text>race</text>
-			<text>=</text>
-			<var>[Player]</var>
-			<text>,</text>
-			<text> </text>
-			<text>script</text>
-			<text>=</text>
-			<call>temetvince.Ship.MapGates</call>
-			<text>,</text>
-			<text> </text>
-			<text>prio</text>
-			<text>=</text>
-			<var>1</var>
-		</line>
-		<line linenr="012" indent="" />
-		<line linenr="013" indent="">
-			<text>global</text>
-			<text> </text>
-			<text>script</text>
-			<text> </text>
-			<text>map</text>
-			<text>:</text>
-			<text> </text>
-			<text>set</text>
-			<text>:</text>
-			<text> </text>
-			<text>key</text>
-			<text>=</text>
-			<var>[COMMAND_SELF_DESTRUCT]</var>
-			<text>,</text>
-			<text> </text>
-			<text>class</text>
-			<text>=</text>
-			<var>[Ship]</var>
-			<text>,</text>
-			<text> </text>
-			<text>race</text>
-			<text>=</text>
-			<var>[Player]</var>
-			<text>,</text>
-			<text> </text>
-			<text>script</text>
-			<text>=</text>
-			<call>Mayhem.Cmd.SelfDestruct</call>
-			<text>,</text>
-			<text> </text>
-			<text>prio</text>
-			<text>=</text>
-			<var>0</var>
-		</line>
-		<line linenr="014" indent="">
-			<text>set</text>
-			<text> </text>
-			<text>script</text>
-			<text> </text>
-			<text>command</text>
-			<text> </text>
-			<text>upgrade</text>
-			<text>:</text>
-			<text> </text>
-			<text>command</text>
-			<text>=</text>
-			<var>[COMMAND_SELF_DESTRUCT]</var>
-			<text>  </text>
-			<text>upgrade</text>
-			<text>=</text>
-			<var>[TRUE]</var>
-		</line>
-		<line linenr="015" indent="" />
-		<line linenr="016" indent="">
-			<text>global</text>
-			<text> </text>
-			<text>secondary</text>
-			<text> </text>
-			<text>signal</text>
-			<text> </text>
-			<text>map</text>
-			<text>:</text>
-			<text> </text>
-			<text>remove</text>
-			<text> </text>
-			<text>signal</text>
-			<text>=</text>
-			<var>[SIGNAL_CHANGESECTOR]</var>
-			<text> </text>
-			<text>race</text>
-			<text>=</text>
-			<var>[Player]</var>
-			<text> </text>
-			<text>class</text>
-			<text>=</text>
-			<var>[Moveable Ship]</var>
-			<text> </text>
-			<text>name</text>
-			<text>=</text>
-			<text>'temetvince_SignalChangedSector'</text>
-		</line>
-		<line linenr="017" indent="">
-			<text>global</text>
-			<text> </text>
-			<text>secondary</text>
-			<text> </text>
-			<text>signal</text>
-			<text> </text>
-			<text>map</text>
-			<text>:</text>
-			<text> </text>
-			<text>add</text>
-			<text> </text>
-			<text>signal</text>
-			<text>=</text>
-			<var>[SIGNAL_CHANGESECTOR]</var>
-			<text> </text>
-			<text>race</text>
-			<text>=</text>
-			<var>[Player]</var>
-			<text> </text>
-			<text>class</text>
-			<text>=</text>
-			<var>[Moveable Ship]</var>
-			<text> </text>
-			<text>script</text>
-			<text>=</text>
-			<call>temetvince.Signal.ChangedSector</call>
-			<text> </text>
-			<text>prio</text>
-			<text>=</text>
-			<var>150</var>
-			<text> </text>
-			<text>name</text>
-			<text>=</text>
-			<text>'temetvince_SignalChangedSector'</text>
-		</line>
-		<line linenr="018" indent="" />
-		<line linenr="019" indent="" interruptable="@">
-			<var>$temetvince.alaankwa.isEnabled</var>
-			<text> </text>
+		<line linenr="001" indent="" interruptable="@">
 			<text>=</text>
 			<text> </text>
-			<var>[NULL]</var>
+			<var>[THIS]</var>
 			<text>-&gt;</text>
 			<text> </text>
 			<text>call</text>
 			<text> </text>
 			<text>script</text>
 			<text> </text>
-			<call>Joubarbe.Lib.LoadTextInteger</call>
+			<call>tv.set.global.temetvince</call>
 			<text> </text>
 			<text>:</text>
-			<text> </text>
-			<text>page</text>
-			<text>=</text>
-			<var>9979</var>
-			<text> </text>
-			<text>id</text>
-			<text>=</text>
-			<var>33</var>
-			<text> </text>
-			<text>variable</text>
-			<text>=</text>
-			<text>'temetvince.alaankwa.isEnabled'</text>
 		</line>
-		<line linenr="020" indent="">
-			<text>do</text>
+		<line linenr="002" indent="" interruptable="@">
+			<text>=</text>
 			<text> </text>
-			<text>if</text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
 			<text> </text>
-			<text>!</text>
-			<var>$temetvince.alaankwa.isEnabled</var>
-		</line>
-		<line linenr="021" indent="&#160;">
-			<text>set</text>
+			<text>call</text>
 			<text> </text>
-			<text>global</text>
+			<text>script</text>
 			<text> </text>
-			<text>variable</text>
+			<call>tv.set.commands.temetvince</call>
+			<text> </text>
 			<text>:</text>
-			<text> </text>
-			<text>name</text>
-			<text>=</text>
-			<text>'temetvince.alaankwa.isEnabled'</text>
-			<text> </text>
-			<text>value</text>
-			<text>=</text>
-			<var>[FALSE]</var>
 		</line>
-		<line linenr="022" indent="" />
-		<line linenr="023" indent="">
-			<text>do</text>
+		<line linenr="003" indent="" interruptable="@">
+			<text>=</text>
 			<text> </text>
-			<text>if</text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
 			<text> </text>
-			<var>$temetvince.alaankwa.isEnabled</var>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>tv.set.hotkey.everything</call>
+			<text> </text>
+			<text>:</text>
 		</line>
-		<line linenr="024" indent="&#160;" interruptable="@">
+		<line linenr="004" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>tv.sepa.mothership.setup</call>
+			<text> </text>
+			<text>:</text>
+		</line>
+		<line linenr="005" indent="" />
+		<line linenr="006" indent="" interruptable="@">
 			<text>START</text>
 			<text> </text>
 			<var>[NULL]</var>
@@ -281,12 +75,12 @@
 			<text> </text>
 			<text>script</text>
 			<text> </text>
-			<call>temetvince.alaankwa</call>
+			<call>tv.monitor.gamestart.alaankwa</call>
 			<text> </text>
 			<text>:</text>
 		</line>
-		<line linenr="025" indent="" />
-		<line linenr="026" indent="">
+		<line linenr="007" indent="" />
+		<line linenr="008" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
@@ -299,123 +93,43 @@
 			<sval type="string" val="" />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
-			<sval type="array" size="1">
-				<sval type="string" val="temetvince.alaankwa.isEnabled" />
-			</sval>
-			<sval type="array" size="13">
-				<sval type="array" size="3">
-					<sval type="int" val="151" />
-					<sval type="int" val="4" />
-					<sval type="int" val="9979" />
-				</sval>
-				<sval type="array" size="5">
-					<sval type="int" val="144" />
-					<sval type="int" val="18" />
-					<sval type="int" val="238" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="10" />
-				</sval>
-				<sval type="array" size="10">
-					<sval type="int" val="118" />
-					<sval type="int" val="18" />
-					<sval type="int" val="238" />
-					<sval type="string" val="temetvince.Ship.MapGates" />
-					<sval type="int" val="4" />
-					<sval type="int" val="1" />
-					<sval type="int" val="12" />
-					<sval type="int" val="2004" />
-					<sval type="int" val="10" />
-					<sval type="int" val="10" />
-				</sval>
-				<sval type="array" size="10">
-					<sval type="int" val="118" />
-					<sval type="int" val="18" />
-					<sval type="int" val="1260" />
-					<sval type="string" val="Mayhem.Cmd.SelfDestruct" />
-					<sval type="int" val="4" />
-					<sval type="int" val="0" />
-					<sval type="int" val="12" />
-					<sval type="int" val="2004" />
-					<sval type="int" val="10" />
-					<sval type="int" val="10" />
-				</sval>
-				<sval type="array" size="5">
-					<sval type="int" val="144" />
-					<sval type="int" val="18" />
-					<sval type="int" val="1260" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="10" />
-				</sval>
-				<sval type="array" size="9">
-					<sval type="int" val="1408" />
-					<sval type="int" val="18" />
-					<sval type="int" val="1018" />
-					<sval type="int" val="10" />
-					<sval type="int" val="10" />
-					<sval type="int" val="12" />
-					<sval type="int" val="2134" />
-					<sval type="int" val="5" />
-					<sval type="string" val="temetvince_SignalChangedSector" />
-				</sval>
-				<sval type="array" size="12">
-					<sval type="int" val="1407" />
-					<sval type="int" val="18" />
-					<sval type="int" val="1018" />
-					<sval type="int" val="10" />
-					<sval type="int" val="10" />
-					<sval type="int" val="12" />
-					<sval type="int" val="2134" />
-					<sval type="string" val="temetvince.Signal.ChangedSector" />
-					<sval type="int" val="4" />
-					<sval type="int" val="150" />
-					<sval type="int" val="5" />
-					<sval type="string" val="temetvince_SignalChangedSector" />
-				</sval>
-				<sval type="array" size="12">
+			<sval type="int" val="0" />
+			<sval type="array" size="6">
+				<sval type="array" size="6">
 					<sval type="int" val="102" />
-					<sval type="string" val="Joubarbe.Lib.LoadTextInteger" />
-					<sval type="int" val="0" />
+					<sval type="string" val="tv.set.global.temetvince" />
+					<sval type="int" val="-2147483647" />
 					<sval type="int" val="131075" />
-					<sval type="int" val="12" />
-					<sval type="int" val="3" />
-					<sval type="int" val="4" />
-					<sval type="int" val="9979" />
-					<sval type="int" val="4" />
-					<sval type="int" val="33" />
-					<sval type="int" val="5" />
-					<sval type="string" val="temetvince.alaankwa.isEnabled" />
-				</sval>
-				<sval type="array" size="10">
-					<sval type="int" val="104" />
-					<sval type="int" val="-1610610168" />
-					<sval type="int" val="2" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="0" />
-					<sval type="int" val="15" />
-					<sval type="int" val="65556" />
-					<sval type="int" val="2" />
-					<sval type="int" val="65556" />
-					<sval type="int" val="-1" />
-				</sval>
-				<sval type="array" size="5">
-					<sval type="int" val="157" />
-					<sval type="int" val="5" />
-					<sval type="string" val="temetvince.alaankwa.isEnabled" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="9" />
-				</sval>
-				<sval type="array" size="7">
-					<sval type="int" val="104" />
-					<sval type="int" val="-1610609656" />
 					<sval type="int" val="1" />
-					<sval type="int" val="131074" />
 					<sval type="int" val="0" />
-					<sval type="int" val="1" />
-					<sval type="int" val="-1" />
 				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="102" />
-					<sval type="string" val="temetvince.alaankwa" />
+					<sval type="string" val="tv.set.commands.temetvince" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="102" />
+					<sval type="string" val="tv.set.hotkey.everything" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="102" />
+					<sval type="string" val="tv.sepa.mothership.setup" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="102" />
+					<sval type="string" val="tv.monitor.gamestart.alaankwa" />
 					<sval type="int" val="-2147483646" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="12" />
@@ -428,63 +142,13 @@
 				</sval>
 			</sval>
 			<sval type="int" val="0" />
-			<sval type="array" size="13">
-				<sval type="array" size="3">
-					<sval type="int" val="0" />
-					<sval type="int" val="1" />
-					<sval type="string" val="************************************************" />
-				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="0" />
-					<sval type="int" val="1" />
-					<sval type="string" val="SCRIPT NAME: setup.temetvince.xml" />
-				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="0" />
-					<sval type="int" val="1" />
-					<sval type="string" val="DESCRIPTION: Setup commands to run on game start" />
-				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="0" />
-					<sval type="int" val="1" />
-					<sval type="string" val="" />
-				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="0" />
-					<sval type="int" val="1" />
-					<sval type="string" val="AUTHOR: temetvince          DATE: 16 June 2021" />
-				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="0" />
-					<sval type="int" val="1" />
-					<sval type="string" val="************************************************" />
-				</sval>
+			<sval type="array" size="2">
 				<sval type="array" size="2">
-					<sval type="int" val="0" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="1" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="3" />
+					<sval type="int" val="4" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="5" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="7" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="10" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="12" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>

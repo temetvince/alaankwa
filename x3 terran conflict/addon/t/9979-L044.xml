@@ -1,13 +1,89 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <language id="44">
-    <page id="9979" title="temetvince" descr="Options to configure temetvince's mods" voice="no">
+    <page id="9979" title="User Settings" descr="Changable settings for temetvince mods" voice="no">
+
+<!--  ############################################################################################################################################# -->
+<!--  SHIP COMPUTER UPGRADES -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  New commands for the Ship Commmand Menu. -->
+<!--  _____________________________________________________________________________________________ -->
+
+<!--  _____________________________________________________________________________________________ -->
+<!--  Manage Mothership -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  This command allows you to manage a Mothership. (Feature: Sepa's Mothership) -->
+<!--  Should Manage Mothership be enabled? 0 for off or 1 for on. Default: 1 -->
+      <t id="0">1</t>
+<!--  _____________________________________________________________________________________________ -->
+
+<!--  _____________________________________________________________________________________________ -->
+<!--  Map Gates -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  This command maps the gates in its current sector. -->
+<!--  Should Map Gates be enabled? 0 for off or 1 for on. Default: 1 -->
+      <t id="1">1</t>
+<!--  _____________________________________________________________________________________________ -->
+
+<!--  _____________________________________________________________________________________________ -->
+<!--  Self Destruct -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  This command tells the ship to self destruct. -->
+<!--  Should Self Destruct be enabled? 0 for off or 1 for on. Default: 1 -->
+      <t id="2">1</t>
+<!--  _____________________________________________________________________________________________ -->
+<!--  ############################################################################################################################################# -->
+
+
+
+
+<!--  ############################################################################################################################################# -->
+<!--  FRESH HOTKEYS, GET YOUR HOTKEYS -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  Decide which hotkeys are configurable in the Hotkeys Menu. -->
+<!--  _____________________________________________________________________________________________ -->
+
+<!--  _____________________________________________________________________________________________ -->
+<!--  Blueprint Data Scanner -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  This hotkey activates the Blueprint Data Scanner. -->
+<!--  Should Blueprint Data Scanner be enabled? 0 for off or 1 for on. Default: 1 -->
+      <t id="50">1</t>
+<!--  _____________________________________________________________________________________________ -->
+
+<!--  _____________________________________________________________________________________________ -->
+<!--  Joubarbe's Satellite Monitoring -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  This hotkey activates the Satellite Monitoring Menu respecting all player property, not just satellites. -->
+<!--  Should Satellite Monitoring Plus be enabled? 0 for off or 1 for on. Default: 1 -->
+      <t id="51">1</t>
+<!--  _____________________________________________________________________________________________ -->
+
+<!--  _____________________________________________________________________________________________ -->
+<!--  All of Time -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  CHEAT: This hotkey saves your point in time to the next slot even if you don't have Salvage Insurance. -->
+<!--  Should All of Time be enabled? 0 for off or 1 for on. Default: 1 -->
+      <t id="52">1</t>
+<!--  _____________________________________________________________________________________________ -->
+
+<!--  _____________________________________________________________________________________________ -->
+<!--  All of Space -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  CHEAT: This hotkey adds satellites to all sectors with jumpgates which don't already have one. -->
+<!--  Should All of Space be enabled? 0 for off or 1 for on. Default: 1 -->
+      <t id="53">1</t>
+<!--  _____________________________________________________________________________________________ -->
+<!--  ############################################################################################################################################# -->
+
+
+
 
 <!--  ############################################################################################################################################# -->
 <!--  IMPROVED PILOTING -->
 <!--  _____________________________________________________________________________________________ -->
 <!--  Ships automatically orient "upright" in the game like they do in the movies. -->
 <!--  Should Improved Piloting be enabled? 0 for off or 1 for on. Must enter/re-enter a sector to take effect. Default: 1 -->
-      <t id="10">1</t>
+      <t id="100">1</t>
 <!--  _____________________________________________________________________________________________ -->
 
 <!--  _____________________________________________________________________________________________ -->
@@ -15,7 +91,7 @@
 <!--  _____________________________________________________________________________________________ -->
 <!--  Improved Piloting applies to the playership -->
 <!--  Should Overachiever be enabled? 0 for off or 1 for on. Must enter/re-enter a sector to take effect. Default: 0 -->
-      <t id="11">0</t>
+      <t id="101">0</t>
 <!--  _____________________________________________________________________________________________ -->
 <!--  ############################################################################################################################################# -->
 
@@ -27,7 +103,7 @@
 <!--  _____________________________________________________________________________________________ -->
 <!--  Escorts will attempt to follow at reasonable speeds instead of flying all over the place. -->
 <!--  Should Standardized Fleet Operations be enabled? 0 for off or 1 for on. Must enter/re-enter a sector to take effect. Default: 1 -->
-      <t id="20">1</t>
+      <t id="120">1</t>
 <!--  _____________________________________________________________________________________________ -->
 <!--  ############################################################################################################################################# -->
 
@@ -37,34 +113,115 @@
 <!--  ############################################################################################################################################# -->
 <!--  SEPA'S MOTHERSHIP -->
 <!--  _____________________________________________________________________________________________ -->
-<!--  ONLY FOR SWLU & GiC. NOT FOR LU. -->
 <!--  Thanks to Sepa for allowing me to use their mod -->
-<!--  Carriers are mobile factories which can produce lasers, missiles, shields, and ships (must be able to dock on the Carrier). -->
+<!--  Motherships are mobile factories which can produce lasers, missiles, shields, and ships (must be able to dock on the Mothership). -->
 <!--  Should Sepa's Mothership be enabled? 0 for off or 1 for on. Default: 1 -->
-      <t id="30">0</t>
-
-<!--  _____________________________________________________________________________________________ -->
-<!--  Assembly Lines -->
-<!--  _____________________________________________________________________________________________ -->
-<!--  The Ship Building Speed is a function of the population where the population is the max marines a ship can hold multiplied by the Assembly Lines. -->
-<!--  Set the Assembly Lines. Default: 4 -->
-      <t id="31">4</t>
-<!--  _____________________________________________________________________________________________ -->
-
-<!--  _____________________________________________________________________________________________ -->
-<!--  Grind Tolerance -->
-<!--  _____________________________________________________________________________________________ -->
-<!--  The number of data scans per type required to get the cheapest blueprint for production. -->
-<!--  Set the Grind Tolerance. Default: 4 -->
-      <t id="32">4</t>
-<!--  _____________________________________________________________________________________________ -->
+      <t id="130">0</t>
 
 <!--  _____________________________________________________________________________________________ -->
 <!--  Alaankwa Corsairs -->
 <!--  _____________________________________________________________________________________________ -->
 <!--  A unique gamestart which focuses on unlocking blueprints by scanning ships in order to build them instead of buying/selling them. -->
 <!--  Should Alaankwa Corsairs be enabled? 0 for off or 1 for on. Default: 1 -->
-      <t id="33">0</t>
+      <t id="131">0</t>
+<!--  _____________________________________________________________________________________________ -->      
+
+<!--  _____________________________________________________________________________________________ -->
+<!--  Assembly Lines -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  The Ship Building Speed is a function of the population where the population is the max marines a ship can hold multiplied by the Assembly Lines. -->
+<!--  Set the Assembly Lines. Default: 4 -->
+      <t id="132">4</t>
+<!--  _____________________________________________________________________________________________ -->
+
+<!--  _____________________________________________________________________________________________ -->
+<!--  Research and Development Budget -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  The number of data scans per type required to get the cheapest blueprint for production. -->
+<!--  Set the R&D Budget. Default: 4 -->
+      <t id="133">4</t>
+<!--  _____________________________________________________________________________________________ -->
+
+<!--  _____________________________________________________________________________________________ -->
+<!--  Shield Expertise -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  The maximum shield percentage of the target while using the Blueprint Data Scanner. -->
+<!--  Set the Shield Expertise. Default: 7 -->
+      <t id="134">7</t>
+<!--  _____________________________________________________________________________________________ -->
+<!--  ############################################################################################################################################# -->
+
+
+
+
+<!--  ############################################################################################################################################# -->
+<!--  SATELLITE MONITORING PLUS -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  Satellite Monitoring respects all player property, not just satellites. -->
+<!--  Should Satellite Monitoring Plus be enabled? 0 for off or 1 for on. Default: 1 -->
+      <t id="140">1</t>
+<!--  _____________________________________________________________________________________________ -->
+<!--  ############################################################################################################################################# -->
+
+
+
+
+<!--  ############################################################################################################################################# -->
+<!--  UNDER NEW MANAGEMENT (PHANON) -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  Enables various changes which should help Phanon corporations be more competitive. -->
+<!--  _____________________________________________________________________________________________ -->
+
+<!--  _____________________________________________________________________________________________ -->
+<!--  Corporate Bailouts -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  Corporate Bailouts keep Phanon corps afloat if their balance sheet goes negative. -->
+<!--  Should Phanon Investors be enabled? 0 for off or 1 for on. Default: 1 -->
+      <t id="151">1</t>
+<!--  _____________________________________________________________________________________________ -->
+
+<!--  _____________________________________________________________________________________________ -->
+<!--  Backroom Deals -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  Management cuts backroom deals to lower ship manufacturing costs. -->
+<!--  Backroom Deals ship cost divisor. Default: 2 -->
+      <t id="152">2</t>
+<!--  _____________________________________________________________________________________________ -->
+
+<!--  _____________________________________________________________________________________________ -->
+<!--  Seedy Investors -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  Management isn't afraid to finance cash from less... reputable sources. -->
+<!--  Phanon additional starting cash in millions.  Default: 500 -->
+      <t id="153">500</t>
+<!--  _____________________________________________________________________________________________ -->
+
+<!--  _____________________________________________________________________________________________ -->
+<!--  Well Connected Leadership -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  Well Connected Leadership commands a premium in salaries. -->
+<!--  Phanon Base Salary Multiplier. Default: 5000 -->
+      <t id="154">5000</t>
+<!--  _____________________________________________________________________________________________ -->
+
+<!--  _____________________________________________________________________________________________ -->
+<!--  Industrial Espionage -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  Shows detailed Phanon corp information in the Phanon Debug Menu found in the Player Console. -->
+<!--  Enable Industrial Espionage? 0 for off or 1 for on. Default: 1 -->
+      <t id="155">1</t>
+<!--  _____________________________________________________________________________________________ -->
+<!--  ############################################################################################################################################# -->
+
+
+
+
+<!--  ############################################################################################################################################# -->
+<!--  NAVIGATION COMPUTER MK II (EXPERIMENTAL, WILL SLOW WORKERS DOWN) -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  Allows Workers to use jump beacons during their job search. Only affects Mayhem 3 or Star Wars Mayhem 3. -->
+<!--  Should Navigation Computer Mk II be enabled? 0 for off or 1 for on. Default: 0 -->
+      <t id="160">0</t>
 <!--  _____________________________________________________________________________________________ -->
 <!--  ############################################################################################################################################# -->
 
@@ -75,16 +232,15 @@
 <!--  FRIEND SHIPS IN HIGH PLACES -->
 <!--  _____________________________________________________________________________________________ -->
 <!--  Friends will sometimes participate in battle alongside you. -->
-<!--  Should Friend Ships in High Places be enabled? 0 for off or 1 for on. Default: 1 -->
-      <t id="30">1</t>
+<!--  Should Friend Ships in High Places be enabled? 0 for off or 1 for on. Default: 0 (Not yet released) -->
+      <t id="500">0</t>
 <!--  _____________________________________________________________________________________________ -->
 
 <!--  _____________________________________________________________________________________________ -->
 <!--  With Friends Like These -->
 <!--  _____________________________________________________________________________________________ -->
 <!--  A list of your friends for Friends in High Places. -->
-<!--  Friends in High Places participants are chosen randomly from this pool. Separate friends with | -->      
-      <t id="41">temetvince|hector|joubarbe|litcube|xenonarchitect7|purls|rice vessel</t>
+<!--  TO CONFIGURE, FOLLOW DIRECTIONS IN FILE 'x3 terran conflict/addon/t/9980-LO44.TEMPLATE.xml' -->
 <!--  _____________________________________________________________________________________________ -->
 
 <!--  _____________________________________________________________________________________________ -->
@@ -92,11 +248,11 @@
 <!--  _____________________________________________________________________________________________ -->
 <!--  Friend Ships in High Places will activate once in X fights, give or take up to a certain Variance. -->
 <!--  X fights until activation. Default: 15 -->
-      <t id="42">15</t>
+      <t id="501">15</t>
 <!--  Variance in fights around activation. Default: 4 -->
-      <t id="43">4</t>
+      <t id="502">4</t>
 <!--  The number of seconds that must pass after beginning a fight for it to be considered over. Default: 300 -->
-      <t id="44">300</t>
+      <t id="503">300</t>
 <!--  _____________________________________________________________________________________________ -->
 
 <!--  _____________________________________________________________________________________________ -->
@@ -104,7 +260,7 @@
 <!--  _____________________________________________________________________________________________ -->
 <!--  Ships of friends can come from factions with whom you are enemies. -->
 <!--  Should Friend Ships Know No Borders be enabled? 0 for off or 1 for on. Default: 0 -->
-      <t id="44">0</t>
+      <t id="504">0</t>
 <!--  (Fun Fact: If your Friend Ships Don't Know No Borders and you aren't friendly with anyone, then you will have no friends.)-->
 <!--  _____________________________________________________________________________________________ -->
 
@@ -117,73 +273,265 @@
 <!--  ... -->
 <!--  PLAYERSHIP CLASS|# FRIENDS|SHIP CLASS|# FRIENDS|SHIP CLASS| ... |# FRIENDS|SHIP CLASS -->
 <!--  WHERE # FRIENDS = EITHER a specific number of friends (#) OR an inclusive range of friends (#.#) -->
-      <t id="1001">M1|1|M7</t>
-      <t id="1002">M1|2.4|M6</t>
-      <t id="1003">M1|3.7|M3</t>
+      <t id="1000">M1|1|M7</t>
+      <t id="1001">M1|2.4|M6</t>
+      <t id="1002">M1|3.7|M3</t>
 
-      <t id="1004">M2|1|M7</t>
-      <t id="1005">M2|2.4|M6</t>
-      <t id="1006">M2|3.7|M3</t>
+      <t id="1003">M2|1|M7</t>
+      <t id="1004">M2|2.4|M6</t>
+      <t id="1005">M2|3.7|M3</t>
 
-      <t id="1007">M7|1|M6</t>
-      <t id="1008">M7|1.2|M3|1.2|M4|1.2|M5</t>
-      <t id="1009">M7|1.2|M4|3.5|M5</t>
-      <t id="1010">M7|4.7|M5</t>
+      <t id="1006">M7|1|M6</t>
+      <t id="1007">M7|1.2|M3|1.2|M4|1.2|M5</t>
+      <t id="1008">M7|1.2|M4|3.5|M5</t>
+      <t id="1009">M7|4.7|M5</t>
 
-      <t id="1011">TL|1|M6</t>
-      <t id="1012">TL|1.2|M3|1.2|M4|1.2|M5</t>
-      <t id="1013">TL|1.2|M4|3.5|M5</t>
-      <t id="1014">TL|4.7|M5</t>
+      <t id="1010">TL|1|M6</t>
+      <t id="1011">TL|1.2|M3|1.2|M4|1.2|M5</t>
+      <t id="1012">TL|1.2|M4|3.5|M5</t>
+      <t id="1013">TL|4.7|M5</t>
 
-      <t id="1015">M6|1.2|M3</t>
-      <t id="1016">M6|1.2|M4|2.3|M5</t>
-      <t id="1017">M6|0.1|M4|3.5|M5</t>
+      <t id="1014">M6|1.2|M3</t>
+      <t id="1015">M6|1.2|M4|2.3|M5</t>
+      <t id="1016">M6|0.1|M4|3.5|M5</t>
 
-      <t id="1018">M8|1|M3</t>
-      <t id="1019">M8|2.3|M4</t>
+      <t id="1017">M8|1|M3</t>
+      <t id="1018">M8|2.3|M4</t>
 
-      <t id="1020">TM|1.2|M4</t>
-      <t id="1013">TM|2.4|M5</t>
+      <t id="1019">TM|1.2|M4</t>
+      <t id="1020">TM|2.4|M5</t>
 
-      <t id="1010">M3|1.2|M4</t>
-      <t id="1010">M3|2.4|M5</t>
+      <t id="1021">M3|1.2|M4</t>
+      <t id="1022">M3|2.4|M5</t>
 
-      <t id="1011">M4|1.2|M5</t>
+      <t id="1023">M4|1.2|M5</t>
 
-      <t id="1012">M5|1|M5</t>
+      <t id="1024">M5|1|M5</t>
 
-      <t id="1014">TS|1.2|M5</t>
+      <t id="1025">TS|1.2|M5</t>
 
-      <t id="1015">TP|1.2|M5</t>
+      <t id="1026">TP|1.2|M5</t>
 <!--  _____________________________________________________________________________________________ -->
 <!--  ############################################################################################################################################# -->
 
+  </page>
+
 
 
 
 <!--  ############################################################################################################################################# -->
-<!--  DO NOT CHANGE ANYTHING BELOW HERE -->
+<!--  For internationalization (i18n), translate everything in this section -->
 <!--  ############################################################################################################################################# -->
-    
+
+    <page id="997900" title="Internationalization Strings" descr="For i18n, translate this ids in this page!" voice="no">
+      <!-- tv.i18n.message.alaankwa.start -->
+      <t id="0">[author]\033Otemetvince\033X[/author]\033MHello\033G, and welcome to the \033YAlaankwa\033G game start! This is quite a unique start. You cannot buy new ships, and you cannot sell any ships. There are no secret abandoned ships for you to claim at the game start. You get new ships in \033B4\033G ways:\n\033B1.\033C Buying used ships through missions\n\033B2.\033C Claiming bailed ships\n\033B3.\033C Piracy\n\033B4.\033C Building them yourself\033G\nYou can build ships using either the \033MPlayer Headquarters\033G or a \033Mcarrier\033G. To order new production in a \033Mcarrier\033G, see the \033RManage Mothership\033G command in the \033RSpecial\033G commands menu of the \033Mcarrier's\033R Command Console\033G.\n\nTo build a ship, you need a ship \033Oblueprint\033G, and not all \033Oblueprints\033G are created equal. \033OBlueprints\033G differ not only by ship \033Wtype\033G but also by \033Cefficiency\033G. A more \033Cefficient \033Oblueprint\033G will cost fewer resources to produce the same ship \033Wtype\033G. There are \033B%s\033G \033Cefficiency\033G levels of \033Oblueprints\033G per ship \033Wtype\033G. If you own a ship, you automatically get the most \033Cefficient\033G \033Oblueprint\033G for that ship \033Wtype\033G, even if you just finished producing the ship using the least \033Cefficient \033Oblueprint\033G!\n\nYou can use the \033YBlueprint Data Scanner\033G found on all shipboard computers to \033Yscan\033G ships with less than \033B%s\%\033G shields. Of course, most factions consider instrusive \033Yscanning\033G like this a hostile act! If you don't yet have the best \033Oblueprint\033G for a given ship \033Wtype\033G, then each \033Yscan\033G of that \033Wtype\033G yields a better understanding of how to build the ship, hence giving you a more \033Cefficient \033Oblueprint\033G. Note that you can only \033Yscan\033G each individual ship once. \033RThe \033YBlueprint Data Scanner\033R is a hotkey, don't forget to set it!\033X</t>
+
+      <!-- tv.i18n.command.destruct.title -->
+      <t id="1000">\033GThis ship will be \033Rdestroyed\033G, are you \033Csure\033G?</t>
+      
+      <!-- tv.i18n.command.mapping.order -->
+      <t id="2000">\033YMapping\033G \033C%s</t>
+      <!-- tv.i18n.command.mapping.error -->
+      <t id="2001">\033GAll gates already known</t>
+      
+      <!-- tv.i18n.deploy.temp.order.waiting -->
+      <t id="3000">\033YWaiting\033G to collect \033C%s</t>
+      <!-- tv.i18n.deploy.temp.order.collecting -->
+      <t id="3001">\033YMoving\033G to collect \033C%s</t>
+      <!-- tv.i18n.hotkey.datascanner.name -->
+      
+      <!-- tv.i18n.hotkey.datascanner.name -->
+      <t id="4000">\033CBlueprint Data Scanner</t>
+      <!-- tv.i18n.hotkey.satellitemonitoring.name -->
+      <t id="4001">\033CSatellite Monitoring</t>
+      <!-- tv.i18n.hotkey.cheat.save.name -->
+      <t id="4002">\033RCheat: All of Time</t>
+      <!-- tv.i18n.hotkey.cheat.addsats.name -->
+      <t id="4003">\033RCheat: All of Space</t>
+      
+      <!-- Blueprint Data Scanner -->
+      <t id="5000">\033YBLUEPRINT DATA SCANNER\033X\nLOOKING UP TARGET...</t>
+	<t id="5001">\033YBLUEPRINT DATA SCANNER\033O\nINVALID TARGET</t>
+	<t id="5002">\033YBLUEPRINT DATA SCANNER\033X\nLOADING PARAMETERS: RANGE -> %s METERS...</t>
+	<t id="5003">\033YBLUEPRINT DATA SCANNER\033X\nMAX DISTANCE %s M</t>
+	<t id="5004">\033YBLUEPRINT DATA SCANNER\033X\nPROBING...</t>
+	<t id="5005">\033YBLUEPRINT DATA SCANNER\033W\nBYPASSING FIREWALLS...</t>
+	<t id="5006">\033YBLUEPRINT DATA SCANNER\033W\nSCANNING '%s'... %s%%</t>
+	<t id="5007">\033YBLUEPRINT DATA SCANNER\033G\nSHIP DATA ADDED TO DATABASE</t>
+	<t id="5008">\033YBLUEPRINT DATA SCANNER\033R\nCONNECTION LOST</t>
+	<t id="5009">\033YBLUEPRINT DATA SCANNER\033R\nSECURITY ERROR</t>
+	<t id="5010">\033YBLUEPRINT DATA SCANNER\033X\nNO TARGET</t>
+	<t id="5011">\033YBLUEPRINT DATA SCANNER\033R\nTARGET OUT OF RANGE</t>
+	<t id="5012">\033YBLUEPRINT DATA SCANNER\033R\nDUPLICATE ERROR IN DATABASE</t>
+	<t id="5013">\033YBLUEPRINT DATA SCANNER\033R\nMALFUNCTION</t>
+	<t id="5014">\033YBLUEPRINT DATA SCANNER\033R\nSHIELD ENERGY DERIVATION ERROR</t>
+	<t id="5015">\033YBLUEPRINT DATA SCANNER\033R\nDATA INTEGRITY ERROR - UNKNOWN ENCRYPTION</t>
+	<t id="5016">Blueprint Data scanner not installed</t>
     </page>
 
-    <page id="99790" title="temetvince" descr="Alaankwa Gamestart Text" voice="no">
-      <t id="1">[author]\033Otemetvince\033X[/author]\033MHello\033G, and welcome to the \033YAlaankwa\033G game start! This is quite a unique start. You cannot buy new ships, and you cannot sell any ships. There are no secret abandoned ships for you to claim at the game start. You get new ships in \033B4\033G ways:\n\033B1.\033C Buying used ships through missions\n\033B2.\033C Claiming bailed ships\n\033B3.\033C Piracy\n\033B4.\033C Building them yourself\033G\nYou can build ships using either the \033MPlayer Headquarters\033G or a \033Mcarrier\033G. To order new production in a \033Mcarrier\033G, see the \033RManage Mothership\033G command in the \033RSpecial\033G commands menu of the \033Mcarrier's\033R Command Console\033G.\n\nTo build a ship, you need a ship \033Oblueprint\033G, and not all \033Oblueprints\033G are created equal. \033OBlueprints\033G differ not only by ship \033Wtype\033G but also by \033Cefficiency\033G. A more \033Cefficient \033Oblueprint\033G will cost fewer resources to produce the same ship \033Wtype\033G. There are \033B%s\033G \033Cefficiency\033G levels of \033Oblueprints\033G per ship \033Wtype\033G. If you own a ship, you automatically get the most \033Cefficient\033G \033Oblueprint\033G for that ship \033Wtype\033G, even if you just finished producing the ship using the least \033Cefficient \033Oblueprint\033G!\n\nYou can use the \033YData Scanner\033G found on all shipboard computers to \033Yscan\033G ships with less than \033B%s\%\033G shields. Of course, most factions consider instrusive \033Yscanning\033G like this a hostile act! If you don't yet have the best \033Oblueprint\033G for a given ship \033Wtype\033G, then each \033Yscan\033G of that \033Wtype\033G yields a better understanding of how to build the ship, hence giving you a more \033Cefficient \033Oblueprint\033G. Note that you can only \033Yscan\033G each individual ship once. \033RThe \033YData Scanner\033R is a hotkey, don't forget to set it!\033X</t>
+    <page id="380017" title="Boardcomp. objects" descr="For i18n, translate this ids in this page!" voice="yes">
+      <!-- This section is for Sepa's Mothership Mod -->
+		  
+      <t id="50301">Hangar bay</t>
+      <t id="50302">Hangar bay allows a carrier to repair and upgrade docked ships</t>
+      <t id="50303">Recycle bay</t>
+      <t id="50304">Recycle bay allows a carrier to recycle docked ships and equipment</t>
+      <t id="50305">Laser production bay</t>
+      <t id="50306">Laser production bay allows a carrier to build lasers</t>
+      <t id="50307">Missile production bay</t>
+      <t id="50308">Missile production bay allows a carrier to build missiles</t>
+      <t id="50309">Shield production bay</t>
+      <t id="50310">Shield production bay allows a carrier to build shields</t>
     </page>
 
-    <page id="2008" title="Script Cmd Names" descr="">
-      <t id="238">COMMAND_MAP_GATES</t>
+    <page id="382010" title="Script Cmd Names" descr="For i18n, translate this ids in this page!">
+	<t id="520">Manage Mothership</t>
+    </page>
+	
+    <page id="382011" title="Script Cmd Shorts" descr="For i18n, translate this ids in this page!">
+	<t id="520">MshipMgmt</t>
+    </page>
+	
+    <page id="382022" title="Script user help" descr="For i18n, translate this ids in this page!">
+	<t id="520">This command allows you to manage a Mothership.</t>
     </page>
 
-    <page id="2010" title="Script Cmd Names" descr="">
+    <page id="2010" title="Script Cmd Names" descr="For i18n, translate this ids in this page!">
       <t id="238">Map Gates</t>
     </page>
 
-    <page id="2011" title="Script Cmd Shorts" descr="">
+    <page id="2011" title="Script Cmd Shorts" descr="For i18n, translate this ids in this page!">
       <t id="238">MapGates</t>
     </page>
    
-    <page id="2022" title="Script Cmd Info" descr="">
+    <page id="2022" title="Script Cmd Info" descr="For i18n, translate this ids in this page!">
       <t id="238">This command maps the gates in its current sector.</t>
     </page>
+
+    <page id="2010" title="Script Cmd Names" descr="For i18n, translate this ids in this page!">
+      <t id="1260">Self Destruct</t>
+    </page>
+
+    <page id="2011" title="Script Cmd Shorts" descr="For i18n, translate this ids in this page!">
+      <t id="1260">SelfDestruct</t>
+    </page>
+   
+    <page id="2022" title="Script Cmd Info" descr="For i18n, translate this ids in this page!">
+      <t id="1260">This command tells this ship to self destruct.</t>
+    </page>
+
+<!--  ############################################################################################################################################# -->
+
+
+
+
+<!--  ############################################################################################################################################# -->
+<!--  DO NOT EVER CHANGE ANYTHING IN THIS SECTION! -->
+<!--  ############################################################################################################################################# -->
+
+    <page id="99790" title="config" descr="Don't Touch These!" voice="no">
+      <t id="1000">12000</t> <!-- Lowest task number for Sector Monitor -->
+      <t id="1001">12100</t> <!-- Lowest task number for Improved Piloting -->
+      <t id="1002">12200</t> <!-- Lowest task number for Standardized Fleet Operations -->
+      <t id="1003">12300</t> <!-- Lowest task number for tv.mayhem.task.claimable-->
+
+	<t id="13">100</t> <!-- Mayhem 2: Milliseconds between each scan step (default: 100) -->
+	<t id="10">10000</t> <!-- Mayhem 2: Ship research cost divider (default: 10000) -->
+      <t id="4">12</t> <!-- Mayhem 2: Ship resources cost divider (default: 6) -->
+      <t id="56">6</t> <!-- Mayhem 2: Missile resources cost divider (default: 6) -->
+	<t id="57">6</t> <!-- Mayhem 2: Shield resources cost divider (default: 6) -->
+      <t id="58">6</t> <!-- Mayhem 2: Weapon resources cost divider (default: 6) -->
+      <t id="2">5</t> <!-- Mayhem 2: Sanctuary & NPC Shipyards building update cycle, in seconds (default: 5) -->
+      <t id="6">150</t> <!-- Mayhem 2: Ship time cost divider, for the player (default: 150) -->
+      <t id="59">150</t> <!-- Mayhem 2: Missile time cost divider (default: 150) -->
+	<t id="60">150</t> <!-- Mayhem 2: Shield time cost divider (default: 150) -->
+	<t id="61">150</t> <!-- Mayhem 2: Weapon time cost divider (default: 150) -->
+      <t id="39">2</t> <!-- Mayhem 2: Recycle factor ; bound to ship/laser/missile/shield resources cost divider (default: 2) -->
+      <t id="120">100</t> <!-- Mayhem 2: Marine improvements costs multiplier. (default: 100) -->
+      <t id="102">0</t> <!-- Mayhem 2: No jumpdrive allowed for player. (default: 0) -->
+
+      <!-- String Formatting Colors -->
+      <t id="2000">\033X%s\033X</t>
+      <t id="2001">\033R%s\033X</t>
+	<t id="2002">\033G%s\033X</t>
+	<t id="2003">\033B%s\033X</t>
+	<t id="2004">\033C%s\033X</t>
+	<t id="2005">\033M%s\033X</t>
+	<t id="2006">\033Y%s\033X</t>
+	<t id="2007">\033W%s\033X</t>
+	<t id="2008">\033O%s\033X</t>
+	<t id="2009">\033A%s\033X</t>
+    </page>
+
+    <page id="7326" title="Satellites Monitoring">
+	<t id='1000'>\033R%s\033X</t>
+	<t id='1001'>\033G%s\033X</t>
+	<t id='1002'>\033M%s\033X</t>
+    </page>    
+
+    <page id="382008" title="Script Cmd Names" descr="Not user facing: Do not change this if you're translating this file for i18n!">
+		  <t id="520">COMMAND_MOTHERSHIP_MANAGEMENT</t>
+    </page>
+
+    <page id="2008" title="Script Cmd Names" descr="Not user facing: Do not change this if you're translating this file for i18n!">
+      <t id="238">COMMAND_MAP_GATES</t>
+    </page>
+
+    <page id="2008" title="Script Cmd Names" descr="Not user facing: Do not change this if you're translating this file for i18n!">
+      <t id="1260">COMMAND_SELF_DESTRUCT</t>
+    </page>
+<!--  ############################################################################################################################################# -->
+
+
+
+
+<!--  ############################################################################################################################################# -->
+<!--  SEPA'S MOTHERSHIP -->
+<!--  ############################################################################################################################################# -->
+    <page id="9250" title="Telegraf" descr="Output Mayhem Sanctuary details so that Telegraf can pick them up">
+        <t id="100">%s;%s;%s;%s;%s\n</t>
+        <t id="101">%s;%s;%s;%s;%s\n</t>
+    </page>
+
+	<page id="9251" title="TFile Out" descr="For writing TFiles with attribute names">
+		<t id="1">@?xml version="1.0" encoding="utf-8"?^</t>
+		<t id="2">@x3Data^</t>
+		<t id="3">@;x3Data^</t>
+	</page>
+
+	<page id="9252" title="Sanctuary section" descr="Export - Sanctuary section">
+		<t id="1">@sanctuaries^</t>
+		<t id="2">@;sanctuaries^</t>
+
+		<t id="3">@sanctuary %s^</t>
+		<t id="4">@;sanctuary^</t>
+		
+		<t id="10">@specializations^</t>
+		<t id="11">@specialization key="%s" value="%s";^</t>
+		<t id="12">@;specializations^</t>
+
+		<t id="20">@perks^</t>
+		<t id="21">@perk key="%s" value="%s";^</t>
+		<t id="22">@;perks^</t>
+
+		<t id="30">@foods^</t>
+		<t id="31">@food key="%s" value="%s";^</t>
+		<t id="32">@;foods^</t>
+
+		<t id="40">@jobs^</t>
+		<t id="41">@job %s ;^</t>
+		<t id="42">@;jobs^</t>
+
+		<t id="50">@thresholds^</t>
+		<t id="51">@threshold ware="%s" import="%s" export="%s" ;^</t>
+		<t id="52">@;thresholds^</t>
+	</page>
+	
+	<page id="9253" title="Mayhem 1">
+		<t id='1004'>\033A%s\033X</t>
+	</page>
+    
+<!--  ############################################################################################################################################# -->
+
 </language>

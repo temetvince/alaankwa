@@ -1,0 +1,94 @@
+$ismayhem = [THIS]-> call script 'tv.get.game.group.mayhem' :
+
+if $ware == {Advanced Firewall Software}
+ dim $cost = 0, 0, 0, 2, 0
+else if $ware == {Best Buys Locator}
+ dim $cost = 1, 0, 0, 0, 0
+else if $ware == {Best Selling Price Locator}
+ dim $cost = 1, 0, 0, 0, 0
+ * else if $ware == {{}Unused{} (WARE_SW_X3TC_6)}
+ * dim $cost = 0, 0, 0, 0, 1
+else if $ware == {Bioscanner}
+ dim $cost = 1, 0, 0, 0, 0
+else if $ware == {Boost Extension}
+ dim $cost = 0, 0, 0, 0, 1
+else if $ware == {Cargo Lifesupport System}
+ dim $cost = 3, 0, 0, 0, 0
+else if $ware == {Carrier Command Software}
+ dim $cost = 1, 0, 0, 0, 0
+else if $ware == {CCDS MK1}
+ dim $cost = 3, 3, 0, 0, 0
+else if $ware == {CCDS MK2}
+ dim $cost = 15, 9, 2, 0, 0
+else if $ware == {CCDS MK3}
+ dim $cost = 20, 16, 6, 2, 0
+else if $ware == {Combat Command Software MK1}
+ dim $cost = 1, 0, 0, 0, 0
+else if $ware == {Combat Command Software MK2}
+ dim $cost = 0, 1, 0, 0, 0
+ * else if $ware == {{}Unused{} (WARE_SW_X3TC_5)}
+ * dim $cost = 0, 0, 4, 3, 2
+else if $ware == {Docking Computer}
+ dim $cost = 0, 2, 0, 0, 0
+else if $ware == {Docking Transporter Extension}
+ dim $cost = 0, 1, 3, 0, 0
+else if $ware == {Duplex Scanner}
+ dim $cost = 0, 1, 0, 0, 0
+else if $ware == {Emergency Retreat Drive}
+ dim $cost = 0, 3, 2, 0, 0
+else if $ware == {Explorer Command Software}
+ dim $cost = 0, 0, 1, 0, 0
+else if $ware == {Freight Scanner}
+ dim $cost = 5, 0, 0, 0, 0
+else if $ware == {Hull Polarising Device}
+ dim $cost = 0, 0, 0, 5, 0
+else if $ware == {Internal Sentry Lasers}
+ dim $cost = 0, 0, 0, 3, 0
+else if $ware == {Jump Beacon}
+ dim $cost = 0, 0, 0, 0, 1
+else if $ware == {Jumpdrive}
+ dim $cost = 2, 1, 0, 0, 0
+else if $ware == {Navigation Command Software MK1}
+ dim $cost = 1, 0, 0, 0, 0
+else if $ware == {Mineral Scanner}
+ dim $cost = 2, 1, 0, 0, 0
+else if $ware == {Ore Collector}
+ dim $cost = 0, 2, 0, 0, 0
+else if $ware == {Patrol Command Software}
+ dim $cost = 2, 0, 0, 0, 0
+else if $ware == {Plutarch Tractor System} AND !$ismayhem
+ dim $cost = 8, 4, 5, 5, 2
+else if $ware == {Quantum Jumpgate Extension}
+ dim $cost = 0, 0, 2, 0, 0
+else if $ware == {Remote System Control Software}
+ dim $cost = 0, 0, 2, 0, 0
+else if $ware == {Singularity Engine Time Accelerator}
+ dim $cost = 1, 0, 0, 0, 0
+else if $ware == {Software Signature Disruptor}
+ dim $cost = 2, 0, 0, 1, 0
+else if $ware == {Special Command Software MK1}
+ dim $cost = 1, 0, 0, 0, 0
+else if $ware == {Supply Command Software}
+ dim $cost = 0, 2, 0, 0, 0
+else if $ware == {Station Agent Software}
+ dim $cost = 0, 1, 0, 0, 0
+else if $ware == {Trade Command Software MK1}
+ dim $cost = 1, 0, 0, 0, 0
+else if $ware == {Trade Command Software MK2}
+ dim $cost = 2, 0, 0, 0, 0
+else if $ware == {Trade Command Software MK3}
+ dim $cost = 0, 1, 0, 0, 0
+else if $ware == {Trade Run Extension}
+ dim $cost = 0, 1, 0, 0, 0
+else if $ware == {Trading System Extension}
+ dim $cost = 1, 0, 0, 0, 0
+else if $ware == {Transporter Device}
+ dim $cost = 0, 0, 2, 0, 0
+else if $ware == {Triplex Scanner}
+ dim $cost = 0, 2, 0, 0, 0
+else if $ware == {Video Enhancement Goggles}
+ dim $cost = 2, 0, 0, 0, 0
+end
+
+return $cost
+
