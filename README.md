@@ -39,6 +39,8 @@
             * CHEAT: This hotkey saves your point in time to the next slot even if you don't have Salvage Insurance.
         * All of Space
             * CHEAT: This hotkey adds satellites to all sectors with jumpgates which don't already have one.
+        * Phanon Industrial Espionage
+            * This hotkey activates the Phanon Debug Menu, which shows detailed Phanon corp information.
 * IMPROVED PILOTING
     * Ships automatically orient "upright" in the game like they do in the movies.
         * Overachiever
@@ -67,8 +69,6 @@
             * Management isn't afraid to finance cash from less... reputable sources.
         * Well Connected Leadership
             * Well Connected Leadership commands a premium in salaries.
-        * Industrial Espionage
-            * Shows detailed Phanon corp information in the Phanon Debug Menu found in the Player Console.
 * AND MORE
     * Debugging scripts for development.
         * Can take in any text decodable object, say an array of tables, and output it in game to the user

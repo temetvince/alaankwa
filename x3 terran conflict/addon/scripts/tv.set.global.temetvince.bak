@@ -1,0 +1,138 @@
+load text: id=9979
+load text: id=9980
+load text: id=9981
+
+gosub textid.9979:
+gosub textid.9980:
+gosub textid.9981:
+
+return null
+
+textid.9979:
+ gosub load.settings.user:
+ gosub load.settings.config:
+ gosub load.settings.i18n:
+endsub
+
+textid.9980:
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=9980 param.id=0 param.datatype=null param.name='tv.feature.friendsassist.friends'
+endsub
+
+textid.9981:
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=9981 param.id=0 param.datatype=null param.name='tv.game'
+endsub
+
+load.settings.user:
+ $page = 9979
+ 
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=0 param.datatype=[DATATYPE_INT] param.name='tv.feature.command.managemothership'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=1 param.datatype=[DATATYPE_INT] param.name='tv.feature.command.mapgates'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=2 param.datatype=[DATATYPE_INT] param.name='tv.feature.command.selfdestruct'
+ 
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=50 param.datatype=[DATATYPE_INT] param.name='tv.hotkey.datascanner'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=51 param.datatype=[DATATYPE_INT] param.name='tv.hotkey.satellitemonitoring'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=52 param.datatype=[DATATYPE_INT] param.name='tv.hotkey.cheat.save'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=53 param.datatype=[DATATYPE_INT] param.name='tv.hotkey.cheat.addsats'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=53 param.datatype=[DATATYPE_INT] param.name='tv.hotkey.phanon.debug'
+ 
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=100 param.datatype=[DATATYPE_INT] param.name='tv.feature.autorotate'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=101 param.datatype=[DATATYPE_INT] param.name='tv.feature.autorotate.playership'
+ 
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=120 param.datatype=[DATATYPE_INT] param.name='tv.feature.escort'
+ 
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=130 param.datatype=[DATATYPE_INT] param.name='tv.feature.mothership'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=131 param.datatype=[DATATYPE_INT] param.name='tv.feature.mothership.alaankwacorsairs'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=132 param.datatype=[DATATYPE_INT] param.name='tv.feature.mothership.populationmultiplier'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=133 param.datatype=[DATATYPE_INT] param.name='tv.feature.mothership.scans.max'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=134 param.datatype=[DATATYPE_INT] param.name='tv.feature.mothership.scans.shield.max'
+ 
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=140 param.datatype=[DATATYPE_INT] param.name='tv.feature.satellitemonitoring.plus'
+ 
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=151 param.datatype=[DATATYPE_INT] param.name='tv.feature.phanon.investors'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=152 param.datatype=[DATATYPE_INT] param.name='tv.feature.phanon.cheaperships'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=153 param.datatype=[DATATYPE_INT] param.name='tv.feature.phanon.startingbonus'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=154 param.datatype=[DATATYPE_INT] param.name='tv.feature.phanon.basesalarybonus'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=155 param.datatype=[DATATYPE_INT] param.name='tv.feature.phanon.menu'
+ 
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=160 param.datatype=[DATATYPE_INT] param.name='tv.feature.workers.jumpbeacons.use'
+ 
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=500 param.datatype=[DATATYPE_INT] param.name='tv.feature.friendsassist'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=501 param.datatype=[DATATYPE_INT] param.name='tv.feature.friendsassist.activation.average'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=502 param.datatype=[DATATYPE_INT] param.name='tv.feature.friendsassist.activation.variance'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=503 param.datatype=[DATATYPE_INT] param.name='tv.feature.friendsassist.activation.fightlength'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=504 param.datatype=[DATATYPE_INT] param.name='tv.feature.friendsassist.enemyshiptypes'
+endsub
+
+load.settings.config:
+ $page = 99790
+ 
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=1000 param.datatype=[DATATYPE_INT] param.name='tv.task.monitor.sector'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=1001 param.datatype=[DATATYPE_INT] param.name='tv.task.autorotate'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=1002 param.datatype=[DATATYPE_INT] param.name='tv.task.escort'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=1003 param.datatype=[DATATYPE_INT] param.name='tv.task.joubarbe.mayhem.task.claimable'
+ 
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=13 param.datatype=[DATATYPE_INT] param.name='tv.mayhem_scanStepMS'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=10 param.datatype=[DATATYPE_INT] param.name='tv.mayhem_costDividerShip'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=4 param.datatype=[DATATYPE_INT] param.name='tv.mayhem_buildDividerShip'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=56 param.datatype=[DATATYPE_INT] param.name='tv.mayhem_buildDividerMissile'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=57 param.datatype=[DATATYPE_INT] param.name='tv.mayhem_buildDividerShield'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=58 param.datatype=[DATATYPE_INT] param.name='tv.mayhem_buildDividerWeapon'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=2 param.datatype=[DATATYPE_INT] param.name='tv.mayhem_cycleBuilding'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=6 param.datatype=[DATATYPE_INT] param.name='tv.mayhem_timeDividerShip'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=59 param.datatype=[DATATYPE_INT] param.name='tv.mayhem_timeDividerMissile'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=60 param.datatype=[DATATYPE_INT] param.name='tv.mayhem_timeDividerShield'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=61 param.datatype=[DATATYPE_INT] param.name='tv.mayhem_timeDividerWeapon'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=39 param.datatype=[DATATYPE_INT] param.name='tv.mayhem_recycleFactor'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=120 param.datatype=[DATATYPE_INT] param.name='tv.mayhem_workshopMultiplier'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=102 param.datatype=[DATATYPE_INT] param.name='tv.mayhem_noJumpdrive'
+ 
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=2000 param.datatype=null param.name='tv.format.none'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=2001 param.datatype=null param.name='tv.format.red'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=2002 param.datatype=null param.name='tv.format.green'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=2003 param.datatype=null param.name='tv.format.blue'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=2004 param.datatype=null param.name='tv.format.cyan'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=2005 param.datatype=null param.name='tv.format.magenta'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=2006 param.datatype=null param.name='tv.format.yellow'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=2007 param.datatype=null param.name='tv.format.white'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=2008 param.datatype=null param.name='tv.format.orange'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=2009 param.datatype=null param.name='tv.format.silver'
+endsub
+
+load.settings.i18n:
+ $page = 997900
+ 
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=0 param.datatype=null param.name='tv.i18n.message.alaankwa.start'
+ 
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=1000 param.datatype=null param.name='tv.i18n.command.destruct.title'
+ 
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=2000 param.datatype=null param.name='tv.i18n.command.mapping.order'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=2001 param.datatype=null param.name='tv.i18n.command.mapping.error'
+ 
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=3000 param.datatype=null param.name='tv.i18n.deploy.temp.order.waiting'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=3001 param.datatype=null param.name='tv.i18n.deploy.temp.order.collecting'
+ 
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=4000 param.datatype=null param.name='tv.i18n.hotkey.datascanner.name'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=4001 param.datatype=null param.name='tv.i18n.hotkey.satellitemonitoring.name'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=4002 param.datatype=null param.name='tv.i18n.hotkey.cheat.save.name'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=4003 param.datatype=null param.name='tv.i18n.hotkey.cheat.addsats.name'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=4004 param.datatype=null param.name='tv.i18n.hotkey.phanon.debug.name'
+ 
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=5000 param.datatype=null param.name='tv.i18n.datascanner.lookingup'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=5001 param.datatype=null param.name='tv.i18n.datascanner.invalid'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=5002 param.datatype=null param.name='tv.i18n.datascanner.distance'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=5003 param.datatype=null param.name='tv.i18n.datascanner.distance.max'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=5004 param.datatype=null param.name='tv.i18n.datascanner.probing'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=5005 param.datatype=null param.name='tv.i18n.datascanner.bypassing'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=5006 param.datatype=null param.name='tv.i18n.datascanner.scanning'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=5007 param.datatype=null param.name='tv.i18n.datascanner.added'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=5008 param.datatype=null param.name='tv.i18n.datascanner.lost'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=5009 param.datatype=null param.name='tv.i18n.datascanner.error'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=5010 param.datatype=null param.name='tv.i18n.datascanner.notarget'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=5011 param.datatype=null param.name='tv.i18n.datascanner.outofrange'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=5012 param.datatype=null param.name='tv.i18n.datascanner.duplicate'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=5013 param.datatype=null param.name='tv.i18n.datascanner.malfunction'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=5014 param.datatype=null param.name='tv.i18n.datascanner.shieldderivation'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=5015 param.datatype=null param.name='tv.i18n.datascanner.dataintegrity'
+ = [THIS]-> call script 'tv.set.global.loadtext' : param.page=$page param.id=5016 param.datatype=null param.name='tv.i18n.datascanner.notinstalled'
+ 
+endsub
