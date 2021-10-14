@@ -70,16 +70,15 @@
         * Well Connected Leadership
             * Well Connected Leadership commands a premium in salaries.
 * AND MORE
-    * Debugging scripts for development.
+    * An optional Graphics Improvement mod utilizing ReShade is included
+        * You can take before/after screenshots that save to your root install folder with the PrintScrn button on your keyboard. To access the options in game, press [SHIFT]+[~] (or [SHIFT]+[`])
+    * A new game font, Fantasque Sans Mono. (Disabled by default).
+        * https://github.com/belluzj/fantasque-sans
+    * Debugging scripts for development
         * Can take in any text decodable object, say an array of tables, and output it in game to the user
         * Call the script like this: $debug.return = [NULL] -> call script 'tv.debug': param.debug=$Unknown param.trackingaim=$ShipOrStation
             * $param.debug is the message or object to debug. Can be simple like a ship name or complex like an array of tables
             * $param.trackingaim is optional. If provided, then the debug script will only run if that entity is the player's tracking aim in game
-    * An optional Graphics Improvement mod utilizing ReShade is included
-        * You can take before/after screenshots that save to your root install folder with the PrintScrn button on your keyboard. To access the options in game, press [SHIFT]+[~] (or [SHIFT]+[`])
-* An optional font change is included, disabled by default.
-    * It is Fantasque Sans Mono, you can find the original here:
-        * https://github.com/belluzj/fantasque-sans
 
 ### M3/SWM3 specific
 * NAVIGATION COMPUTER MK II (Disabled by Default)
