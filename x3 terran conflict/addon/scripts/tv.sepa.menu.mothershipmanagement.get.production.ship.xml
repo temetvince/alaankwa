@@ -956,15 +956,15 @@
 			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>argument1</text>
+			<text>menu</text>
 			<text>=</text>
 			<var>$menu</var>
 			<text> </text>
-			<text>argument2</text>
+			<text>name</text>
 			<text>=</text>
 			<var>$parallelTasksName</var>
 			<text> </text>
-			<text>argument3</text>
+			<text>return</text>
 			<text>=</text>
 			<var>$parallelTasksReturnID</var>
 		</line>
@@ -2140,7 +2140,7 @@
 			<text>continue</text>
 		</line>
 		<line linenr="170" indent="&#160;&#160;">
-			<comment>* Only allow construction of ships that can dock</comment>
+			<comment>* Only allow construction of ships that can dock </comment>
 		</line>
 		<line linenr="171" indent="&#160;&#160;">
 			<var>$tv.canDock</var>
@@ -2271,11 +2271,11 @@
 			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>argument1</text>
+			<text>ship</text>
 			<text>=</text>
 			<var>null</var>
 			<text> </text>
-			<text>argument2</text>
+			<text>wareType</text>
 			<text>=</text>
 			<var>$project</var>
 		</line>
@@ -2986,7 +2986,7 @@
 		<line linenr="221" indent="&#160;">
 			<text>else</text>
 		</line>
-		<line linenr="222" indent="&#160;&#160;">
+		<line linenr="222" indent="&#160;">
 			<var>$t</var>
 			<text> </text>
 			<text>=</text>
@@ -3029,7 +3029,7 @@
 			<text> </text>
 			<var>$col6</var>
 		</line>
-		<line linenr="223" indent="">
+		<line linenr="223" indent="&#160;&#160;">
 			<text>end</text>
 		</line>
 		<line linenr="224" indent="" />
@@ -3067,7 +3067,8 @@
 		<line linenr="227" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="228" indent="">
+		<line linenr="228" indent="" />
+		<line linenr="229" indent="">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -3078,7 +3079,7 @@
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="229" indent="">
+		<line linenr="230" indent="">
 			<text>add</text>
 			<text> </text>
 			<text>non</text>
@@ -3097,27 +3098,27 @@
 			<text>=</text>
 			<text>'No blueprint found'</text>
 		</line>
-		<line linenr="230" indent="">
+		<line linenr="231" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="231" indent="" />
-		<line linenr="232" indent="&#160;">
+		<line linenr="232" indent="" />
+		<line linenr="233" indent="&#160;">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="233" indent="&#160;" />
 		<line linenr="234" indent="&#160;" />
-		<line linenr="235" indent="&#160;">
+		<line linenr="235" indent="&#160;" />
+		<line linenr="236" indent="&#160;">
 			<comment>* ***************************************************************************</comment>
 		</line>
-		<line linenr="236" indent="&#160;" />
 		<line linenr="237" indent="&#160;" />
-		<line linenr="238" indent="&#160;">
+		<line linenr="238" indent="&#160;" />
+		<line linenr="239" indent="&#160;">
 			<var>GetVariables</var>
 			<text>:</text>
 		</line>
-		<line linenr="239" indent="&#160;">
+		<line linenr="240" indent="&#160;">
 			<var>$allProjects</var>
 			<text> </text>
 			<text>=</text>
@@ -3133,7 +3134,7 @@
 			<text>=</text>
 			<text>'tv.mayhem_projects'</text>
 		</line>
-		<line linenr="240" indent="&#160;">
+		<line linenr="241" indent="&#160;">
 			<var>$projectCosts</var>
 			<text> </text>
 			<text>=</text>
@@ -3149,7 +3150,7 @@
 			<text>=</text>
 			<text>'tv.mayhem_projectCosts'</text>
 		</line>
-		<line linenr="241" indent="&#160;">
+		<line linenr="242" indent="&#160;">
 			<var>$craftCosts</var>
 			<text> </text>
 			<text>=</text>
@@ -3165,7 +3166,7 @@
 			<text>=</text>
 			<text>'tv.mayhem_craftCosts'</text>
 		</line>
-		<line linenr="242" indent="&#160;">
+		<line linenr="243" indent="&#160;">
 			<var>$buildDividerShip</var>
 			<text> </text>
 			<text>=</text>
@@ -3181,7 +3182,7 @@
 			<text>=</text>
 			<text>'tv.mayhem_buildDividerShip'</text>
 		</line>
-		<line linenr="243" indent="&#160;">
+		<line linenr="244" indent="&#160;">
 			<var>$buildDividerMissile</var>
 			<text> </text>
 			<text>=</text>
@@ -3197,7 +3198,7 @@
 			<text>=</text>
 			<text>'tv.mayhem_buildDividerMissile'</text>
 		</line>
-		<line linenr="244" indent="&#160;">
+		<line linenr="245" indent="&#160;">
 			<var>$buildDividerShield</var>
 			<text> </text>
 			<text>=</text>
@@ -3213,7 +3214,7 @@
 			<text>=</text>
 			<text>'tv.mayhem_buildDividerShield'</text>
 		</line>
-		<line linenr="245" indent="&#160;">
+		<line linenr="246" indent="&#160;">
 			<var>$buildDividerWeapon</var>
 			<text> </text>
 			<text>=</text>
@@ -3229,7 +3230,7 @@
 			<text>=</text>
 			<text>'tv.mayhem_buildDividerWeapon'</text>
 		</line>
-		<line linenr="246" indent="&#160;">
+		<line linenr="247" indent="&#160;">
 			<var>$timeDivider.Ship</var>
 			<text> </text>
 			<text>=</text>
@@ -3245,7 +3246,7 @@
 			<text>=</text>
 			<text>'tv.mayhem_timeDividerShip'</text>
 		</line>
-		<line linenr="247" indent="&#160;">
+		<line linenr="248" indent="&#160;">
 			<var>$timeDivider.Missile</var>
 			<text> </text>
 			<text>=</text>
@@ -3261,7 +3262,7 @@
 			<text>=</text>
 			<text>'tv.mayhem_timeDividerMissile'</text>
 		</line>
-		<line linenr="248" indent="&#160;">
+		<line linenr="249" indent="&#160;">
 			<var>$timeDivider.Shield</var>
 			<text> </text>
 			<text>=</text>
@@ -3277,7 +3278,7 @@
 			<text>=</text>
 			<text>'tv.mayhem_timeDividerShield'</text>
 		</line>
-		<line linenr="249" indent="&#160;">
+		<line linenr="250" indent="&#160;">
 			<var>$timeDivider.Weapon</var>
 			<text> </text>
 			<text>=</text>
@@ -3293,7 +3294,7 @@
 			<text>=</text>
 			<text>'tv.mayhem_timeDividerWeapon'</text>
 		</line>
-		<line linenr="250" indent="&#160;">
+		<line linenr="251" indent="&#160;">
 			<var>$cost.clothRimes</var>
 			<text> </text>
 			<text>=</text>
@@ -3310,7 +3311,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="251" indent="&#160;">
+		<line linenr="252" indent="&#160;">
 			<var>$cost.energyCells</var>
 			<text> </text>
 			<text>=</text>
@@ -3327,7 +3328,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="252" indent="&#160;">
+		<line linenr="253" indent="&#160;">
 			<var>$cost.ore</var>
 			<text> </text>
 			<text>=</text>
@@ -3344,7 +3345,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="253" indent="&#160;">
+		<line linenr="254" indent="&#160;">
 			<var>$cost.rastarOil</var>
 			<text> </text>
 			<text>=</text>
@@ -3361,7 +3362,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="254" indent="&#160;">
+		<line linenr="255" indent="&#160;">
 			<var>$cost.teladianium</var>
 			<text> </text>
 			<text>=</text>
@@ -3378,7 +3379,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="255" indent="&#160;">
+		<line linenr="256" indent="&#160;">
 			<var>$cost.computerComponents</var>
 			<text> </text>
 			<text>=</text>
@@ -3395,7 +3396,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="256" indent="&#160;">
+		<line linenr="257" indent="&#160;">
 			<var>$cost.crystals</var>
 			<text> </text>
 			<text>=</text>
@@ -3412,7 +3413,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="257" indent="&#160;">
+		<line linenr="258" indent="&#160;">
 			<var>$cost.microchips</var>
 			<text> </text>
 			<text>=</text>
@@ -3429,7 +3430,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="258" indent="&#160;">
+		<line linenr="259" indent="&#160;">
 			<var>$cost.quantumTubes</var>
 			<text> </text>
 			<text>=</text>
@@ -3446,7 +3447,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="259" indent="&#160;">
+		<line linenr="260" indent="&#160;">
 			<var>$cost.siliconWafers</var>
 			<text> </text>
 			<text>=</text>
@@ -3463,7 +3464,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="260" indent="&#160;">
+		<line linenr="261" indent="&#160;">
 			<var>$cost.meatsteak</var>
 			<text> </text>
 			<text>=</text>
@@ -3480,7 +3481,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="261" indent="&#160;">
+		<line linenr="262" indent="&#160;">
 			<var>$cost.bofu</var>
 			<text> </text>
 			<text>=</text>
@@ -3497,7 +3498,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="262" indent="&#160;">
+		<line linenr="263" indent="&#160;">
 			<var>$cost.sojaHusk</var>
 			<text> </text>
 			<text>=</text>
@@ -3514,7 +3515,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="263" indent="&#160;">
+		<line linenr="264" indent="&#160;">
 			<var>$cost.scruffinFruits</var>
 			<text> </text>
 			<text>=</text>
@@ -3531,7 +3532,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="264" indent="&#160;">
+		<line linenr="265" indent="&#160;">
 			<var>$cost.warheads</var>
 			<text> </text>
 			<text>=</text>
@@ -3548,7 +3549,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="265" indent="&#160;">
+		<line linenr="266" indent="&#160;">
 			<var>$has.clothRimes</var>
 			<text> </text>
 			<text>=</text>
@@ -3572,7 +3573,7 @@
 			<text> </text>
 			<text>bay</text>
 		</line>
-		<line linenr="266" indent="&#160;">
+		<line linenr="267" indent="&#160;">
 			<var>$has.energyCells</var>
 			<text> </text>
 			<text>=</text>
@@ -3596,7 +3597,7 @@
 			<text> </text>
 			<text>bay</text>
 		</line>
-		<line linenr="267" indent="&#160;">
+		<line linenr="268" indent="&#160;">
 			<var>$has.ore</var>
 			<text> </text>
 			<text>=</text>
@@ -3620,7 +3621,7 @@
 			<text> </text>
 			<text>bay</text>
 		</line>
-		<line linenr="268" indent="&#160;">
+		<line linenr="269" indent="&#160;">
 			<var>$has.rastarOil</var>
 			<text> </text>
 			<text>=</text>
@@ -3644,7 +3645,7 @@
 			<text> </text>
 			<text>bay</text>
 		</line>
-		<line linenr="269" indent="&#160;">
+		<line linenr="270" indent="&#160;">
 			<var>$has.teladianium</var>
 			<text> </text>
 			<text>=</text>
@@ -3668,7 +3669,7 @@
 			<text> </text>
 			<text>bay</text>
 		</line>
-		<line linenr="270" indent="&#160;">
+		<line linenr="271" indent="&#160;">
 			<var>$has.computerComponents</var>
 			<text> </text>
 			<text>=</text>
@@ -3692,7 +3693,7 @@
 			<text> </text>
 			<text>bay</text>
 		</line>
-		<line linenr="271" indent="&#160;">
+		<line linenr="272" indent="&#160;">
 			<var>$has.crystals</var>
 			<text> </text>
 			<text>=</text>
@@ -3716,7 +3717,7 @@
 			<text> </text>
 			<text>bay</text>
 		</line>
-		<line linenr="272" indent="&#160;">
+		<line linenr="273" indent="&#160;">
 			<var>$has.microchips</var>
 			<text> </text>
 			<text>=</text>
@@ -3740,7 +3741,7 @@
 			<text> </text>
 			<text>bay</text>
 		</line>
-		<line linenr="273" indent="">
+		<line linenr="274" indent="">
 			<var>$has.quantumTubes</var>
 			<text> </text>
 			<text>=</text>
@@ -3764,7 +3765,7 @@
 			<text> </text>
 			<text>bay</text>
 		</line>
-		<line linenr="274" indent="">
+		<line linenr="275" indent="">
 			<var>$has.siliconWafers</var>
 			<text> </text>
 			<text>=</text>
@@ -3788,7 +3789,7 @@
 			<text> </text>
 			<text>bay</text>
 		</line>
-		<line linenr="275" indent="">
+		<line linenr="276" indent="">
 			<var>$has.meatsteak</var>
 			<text> </text>
 			<text>=</text>
@@ -3812,7 +3813,7 @@
 			<text> </text>
 			<text>bay</text>
 		</line>
-		<line linenr="276" indent="&#160;">
+		<line linenr="277" indent="&#160;">
 			<var>$has.bofu</var>
 			<text> </text>
 			<text>=</text>
@@ -3836,7 +3837,7 @@
 			<text> </text>
 			<text>bay</text>
 		</line>
-		<line linenr="277" indent="&#160;">
+		<line linenr="278" indent="&#160;">
 			<var>$has.sojaHusk</var>
 			<text> </text>
 			<text>=</text>
@@ -3860,7 +3861,7 @@
 			<text> </text>
 			<text>bay</text>
 		</line>
-		<line linenr="278" indent="&#160;">
+		<line linenr="279" indent="&#160;">
 			<var>$has.scruffinFruits</var>
 			<text> </text>
 			<text>=</text>
@@ -3884,7 +3885,7 @@
 			<text> </text>
 			<text>bay</text>
 		</line>
-		<line linenr="279" indent="&#160;">
+		<line linenr="280" indent="&#160;">
 			<var>$has.warheads</var>
 			<text> </text>
 			<text>=</text>
@@ -3908,18 +3909,18 @@
 			<text> </text>
 			<text>bay</text>
 		</line>
-		<line linenr="280" indent="&#160;&#160;">
+		<line linenr="281" indent="&#160;&#160;">
 			<text>endsub</text>
 		</line>
-		<line linenr="281" indent="&#160;" />
-		<line linenr="282" indent="&#160;">
+		<line linenr="282" indent="&#160;" />
+		<line linenr="283" indent="&#160;">
 			<var>GetParallelCost</var>
 			<text>:</text>
 		</line>
-		<line linenr="283" indent="&#160;">
+		<line linenr="284" indent="&#160;">
 			<comment>* ''' $parallelTasksName '''</comment>
 		</line>
-		<line linenr="284" indent="&#160;">
+		<line linenr="285" indent="&#160;">
 			<var>$parallelTasks</var>
 			<text> </text>
 			<text>=</text>
@@ -3938,8 +3939,8 @@
 			<text>=</text>
 			<var>$parallelTasksName</var>
 		</line>
-		<line linenr="285" indent="&#160;" />
-		<line linenr="286" indent="&#160;">
+		<line linenr="286" indent="&#160;" />
+		<line linenr="287" indent="&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -3950,91 +3951,91 @@
 			<text> </text>
 			<var>101</var>
 		</line>
-		<line linenr="287" indent="&#160;">
+		<line linenr="288" indent="&#160;">
 			<var>$parallelTasks</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>1</var>
 		</line>
-		<line linenr="288" indent="&#160;">
-			<var>$costF.computerComponents</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<var>$costF.computerComponents</var>
-			<text> </text>
-			<text>*</text>
-			<text> </text>
-			<var>$parallelTasks</var>
-		</line>
 		<line linenr="289" indent="&#160;">
-			<var>$costF.microchips</var>
+			<var>$costF.computerComponents</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>$costF.microchips</var>
+			<var>$costF.computerComponents</var>
 			<text> </text>
 			<text>*</text>
 			<text> </text>
 			<var>$parallelTasks</var>
 		</line>
 		<line linenr="290" indent="&#160;">
-			<var>$costF.ore</var>
+			<var>$costF.microchips</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>$costF.ore</var>
+			<var>$costF.microchips</var>
 			<text> </text>
 			<text>*</text>
 			<text> </text>
 			<var>$parallelTasks</var>
 		</line>
 		<line linenr="291" indent="&#160;">
-			<var>$costF.quantumTubes</var>
+			<var>$costF.ore</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>$costF.quantumTubes</var>
+			<var>$costF.ore</var>
 			<text> </text>
 			<text>*</text>
 			<text> </text>
 			<var>$parallelTasks</var>
 		</line>
 		<line linenr="292" indent="&#160;">
-			<var>$costF.siliconWafers</var>
+			<var>$costF.quantumTubes</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>$costF.siliconWafers</var>
+			<var>$costF.quantumTubes</var>
 			<text> </text>
 			<text>*</text>
 			<text> </text>
 			<var>$parallelTasks</var>
 		</line>
-		<line linenr="293" indent="">
-			<var>$costF.energyCells</var>
+		<line linenr="293" indent="&#160;">
+			<var>$costF.siliconWafers</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>$costF.energyCells</var>
+			<var>$costF.siliconWafers</var>
 			<text> </text>
 			<text>*</text>
 			<text> </text>
 			<var>$parallelTasks</var>
 		</line>
 		<line linenr="294" indent="">
-			<var>$costF.teladianium</var>
+			<var>$costF.energyCells</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>$costF.teladianium</var>
+			<var>$costF.energyCells</var>
 			<text> </text>
 			<text>*</text>
 			<text> </text>
 			<var>$parallelTasks</var>
 		</line>
 		<line linenr="295" indent="">
+			<var>$costF.teladianium</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$costF.teladianium</var>
+			<text> </text>
+			<text>*</text>
+			<text> </text>
+			<var>$parallelTasks</var>
+		</line>
+		<line linenr="296" indent="">
 			<var>$costF.meatsteak</var>
 			<text> </text>
 			<text>=</text>
@@ -4045,7 +4046,7 @@
 			<text> </text>
 			<var>$parallelTasks</var>
 		</line>
-		<line linenr="296" indent="&#160;">
+		<line linenr="297" indent="">
 			<var>$costF.scruffinFruits</var>
 			<text> </text>
 			<text>=</text>
@@ -4056,7 +4057,7 @@
 			<text> </text>
 			<var>$parallelTasks</var>
 		</line>
-		<line linenr="297" indent="&#160;&#160;">
+		<line linenr="298" indent="">
 			<var>$costF.bofu</var>
 			<text> </text>
 			<text>=</text>
@@ -4067,7 +4068,7 @@
 			<text> </text>
 			<var>$parallelTasks</var>
 		</line>
-		<line linenr="298" indent="&#160;&#160;">
+		<line linenr="299" indent="">
 			<var>$costF.sojaHusk</var>
 			<text> </text>
 			<text>=</text>
@@ -4078,7 +4079,7 @@
 			<text> </text>
 			<var>$parallelTasks</var>
 		</line>
-		<line linenr="299" indent="&#160;&#160;">
+		<line linenr="300" indent="">
 			<var>$costF.crystals</var>
 			<text> </text>
 			<text>=</text>
@@ -4089,85 +4090,10 @@
 			<text> </text>
 			<var>$parallelTasks</var>
 		</line>
-		<line linenr="300" indent="&#160;">
+		<line linenr="301" indent="">
 			<text>endsub</text>
 		</line>
-		<line linenr="301" indent="" />
-		<line linenr="302" indent="">
-			<var>GetWareCost</var>
-			<text>:</text>
-		</line>
-		<line linenr="303" indent="">
-			<text>while</text>
-			<text> </text>
-			<var>$tv.subType</var>
-			<text> </text>
-			<text>&gt;</text>
-			<text> </text>
-			<var>0</var>
-		</line>
-		<line linenr="304" indent="">
-			<text>dec</text>
-			<text> </text>
-			<var>$tv.subType</var>
-		</line>
-		<line linenr="305" indent="">
-			<var>$tv.WareCurrent</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<text>get</text>
-			<text> </text>
-			<text>ware</text>
-			<text> </text>
-			<text>from</text>
-			<text> </text>
-			<text>maintype</text>
-			<text> </text>
-			<var>$tv.mainType</var>
-			<text> </text>
-			<text>and</text>
-			<text> </text>
-			<text>subtype</text>
-			<text> </text>
-			<var>$tv.subType</var>
-		</line>
-		<line linenr="306" indent="">
-			<var>$tv.Amount</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<var>[THIS]</var>
-			<text>-&gt;</text>
-			<text> </text>
-			<text>has</text>
-			<text> </text>
-			<text>a</text>
-			<text> </text>
-			<text>free</text>
-			<text> </text>
-			<text>ship</text>
-			<text> </text>
-			<text>dock</text>
-			<text> </text>
-			<text>port</text>
-			<text>:</text>
-			<text> </text>
-			<text>ship</text>
-			<text> </text>
-			<text>subtype</text>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<var>$tv.subType</var>
-		</line>
-		<line linenr="307" indent="">
-			<text>end</text>
-		</line>
-		<line linenr="308" indent="">
-			<text>endsub</text>
-		</line>
-		<line linenr="309" indent="" />
+		<line linenr="302" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
@@ -4176,7 +4102,7 @@
 			<sval type="string" val="" />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
-			<sval type="array" size="114">
+			<sval type="array" size="110">
 				<sval type="string" val="menu" />
 				<sval type="string" val="buildingShip" />
 				<sval type="string" val="parallelTasks" />
@@ -4287,12 +4213,8 @@
 				<sval type="string" val="costF.scruffinFruits" />
 				<sval type="string" val="costF.bofu" />
 				<sval type="string" val="costF.sojaHusk" />
-				<sval type="string" val="tv.subType" />
-				<sval type="string" val="tv.WareCurrent" />
-				<sval type="string" val="tv.mainType" />
-				<sval type="string" val="tv.Amount" />
 			</sval>
-			<sval type="array" size="253">
+			<sval type="array" size="246">
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
 					<sval type="int" val="186" />
@@ -6996,52 +6918,6 @@
 				<sval type="array" size="1">
 					<sval type="int" val="1168" />
 				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="101" />
-					<sval type="string" val="GetWareCost" />
-				</sval>
-				<sval type="array" size="13">
-					<sval type="int" val="104" />
-					<sval type="int" val="-1610548215" />
-					<sval type="int" val="3" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="110" />
-					<sval type="int" val="4" />
-					<sval type="int" val="0" />
-					<sval type="int" val="15" />
-					<sval type="int" val="2" />
-					<sval type="int" val="3" />
-					<sval type="int" val="-1" />
-					<sval type="int" val="2" />
-					<sval type="int" val="-2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="143" />
-					<sval type="int" val="110" />
-				</sval>
-				<sval type="array" size="6">
-					<sval type="int" val="657" />
-					<sval type="int" val="111" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="112" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="110" />
-				</sval>
-				<sval type="array" size="6">
-					<sval type="int" val="1019" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="1" />
-					<sval type="int" val="113" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="110" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="112" />
-					<sval type="int" val="247" />
-				</sval>
-				<sval type="array" size="1">
-					<sval type="int" val="1168" />
-				</sval>
 			</sval>
 			<sval type="array" size="1">
 				<sval type="array" size="2">
@@ -7049,7 +6925,7 @@
 					<sval type="string" val="" />
 				</sval>
 			</sval>
-			<sval type="array" size="76">
+			<sval type="array" size="75">
 				<sval type="array" size="2">
 					<sval type="int" val="0" />
 					<sval type="int" val="2" />
@@ -7231,7 +7107,7 @@
 				<sval type="array" size="3">
 					<sval type="int" val="138" />
 					<sval type="int" val="1" />
-					<sval type="string" val="Only allow construction of ships that can dock" />
+					<sval type="string" val="Only allow construction of ships that can dock " />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="141" />
@@ -7310,6 +7186,10 @@
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
+					<sval type="int" val="183" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
 					<sval type="int" val="185" />
 					<sval type="int" val="4" />
 				</sval>
@@ -7353,14 +7233,6 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="246" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="252" />
-					<sval type="int" val="4" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="253" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>
