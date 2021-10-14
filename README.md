@@ -22,7 +22,7 @@
 ## Features
 ### General
 * SHIP COMPUTER UPGRADES
-    * New commands for the Ship Commmand Menu.
+    * New commands for the Ship Command Menu.
         * Manage Mothership
             * This command allows you to manage a Mothership. (Feature: Sepa's Mothership)
         * Map Gates
@@ -84,7 +84,7 @@
 ### M3/SWM3 specific
 * NAVIGATION COMPUTER MK II (Disabled by Default)
     * Allows Workers to use jump beacons during their job search
-    * Significant performance impact to Worker job calculcation speed
+    * Significant performance impact to Worker job calculation speed
         * Don't use with more than 10-20 jump beacons
 * Outposts show themselves as a candidate for export or import jobs
     * This is helpful for making generic templates that include the sanctuary where you are creating the template
