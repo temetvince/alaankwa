@@ -329,7 +329,9 @@
 
       <!-- tv.i18n.command.destruct.title -->
       <t id="1000">\033GThis ship will be \033Rdestroyed\033G, are you \033Csure\033G?</t>
-      
+      <!-- tv.i18n.command.destruct.player -->
+      <t id="1001">\033GYou cannot \033Rdestroy\033G your own ship!</t>
+
       <!-- tv.i18n.command.mapping.order -->
       <t id="2000">\033YMapping\033G \033C%s</t>
       <!-- tv.i18n.command.mapping.error -->
@@ -344,7 +346,7 @@
       <!-- tv.i18n.hotkey.datascanner.name -->
       <t id="4000">\033CBlueprint Data Scanner</t>
       <!-- tv.i18n.hotkey.satellitemonitoring.name -->
-      <t id="4001">\033CSatellite Monitoring</t>
+      <t id="4001">\033CSatellite Monitoring Plus</t>
       <!-- tv.i18n.hotkey.cheat.save.name -->
       <t id="4002">\033RCheat: All of Time</t>
       <!-- tv.i18n.hotkey.cheat.addsats.name -->
@@ -387,40 +389,22 @@
       <t id="50310">Shield production bay allows a carrier to build shields</t>
     </page>
 
-    <page id="382010" title="Script Cmd Names" descr="For i18n, translate this ids in this page!">
-	<t id="520">Manage Mothership</t>
+    <page id="2010" title="Script Cmd Names" descr="For i18n, translate this ids in this page!">
+	<t id="562">Manage Mothership</t>
+      <t id="263">Map Gates</t>
+      <t id="563">Self Destruct</t>
     </page>
 	
-    <page id="382011" title="Script Cmd Shorts" descr="For i18n, translate this ids in this page!">
-	<t id="520">MshipMgmt</t>
+    <page id="2011" title="Script Cmd Shorts" descr="For i18n, translate this ids in this page!">
+	<t id="562">MshipMgmt</t>
+      <t id="263">MapGates</t>
+      <t id="563">SelfDestruct</t>
     </page>
 	
-    <page id="382022" title="Script user help" descr="For i18n, translate this ids in this page!">
-	<t id="520">This command allows you to manage a Mothership.</t>
-    </page>
-
-    <page id="2010" title="Script Cmd Names" descr="For i18n, translate this ids in this page!">
-      <t id="238">Map Gates</t>
-    </page>
-
-    <page id="2011" title="Script Cmd Shorts" descr="For i18n, translate this ids in this page!">
-      <t id="238">MapGates</t>
-    </page>
-   
-    <page id="2022" title="Script Cmd Info" descr="For i18n, translate this ids in this page!">
-      <t id="238">This command maps the gates in its current sector.</t>
-    </page>
-
-    <page id="2010" title="Script Cmd Names" descr="For i18n, translate this ids in this page!">
-      <t id="1260">Self Destruct</t>
-    </page>
-
-    <page id="2011" title="Script Cmd Shorts" descr="For i18n, translate this ids in this page!">
-      <t id="1260">SelfDestruct</t>
-    </page>
-   
-    <page id="2022" title="Script Cmd Info" descr="For i18n, translate this ids in this page!">
-      <t id="1260">This command tells this ship to self destruct.</t>
+    <page id="2022" title="Script user help" descr="For i18n, translate this ids in this page!">
+	<t id="562">This command allows you to manage a Mothership.</t>
+      <t id="263">This command maps the gates in its current sector.</t>
+      <t id="563s">This command tells this ship to self destruct.</t>
     </page>
 
 <!--  ############################################################################################################################################# -->
@@ -472,16 +456,10 @@
 	<t id='1002'>\033M%s\033X</t>
     </page>    
 
-    <page id="382008" title="Script Cmd Names" descr="Not user facing: Do not change this if you're translating this file for i18n!">
-		  <t id="520">COMMAND_MOTHERSHIP_MANAGEMENT</t>
-    </page>
-
     <page id="2008" title="Script Cmd Names" descr="Not user facing: Do not change this if you're translating this file for i18n!">
-      <t id="238">COMMAND_MAP_GATES</t>
-    </page>
-
-    <page id="2008" title="Script Cmd Names" descr="Not user facing: Do not change this if you're translating this file for i18n!">
-      <t id="1260">COMMAND_SELF_DESTRUCT</t>
+	<t id="562">COMMAND_MOTHERSHIP_MANAGEMENT</t>
+      <t id="263">COMMAND_MAP_GATES</t>
+      <t id="563">COMMAND_SELF_DESTRUCT</t>
     </page>
 <!--  ############################################################################################################################################# -->
 
