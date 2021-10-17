@@ -17,6 +17,14 @@
 <!--  _____________________________________________________________________________________________ -->
 
 <!--  _____________________________________________________________________________________________ -->
+<!--  Manage Wares -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  This command allows you to manage the wares of a Mothership. -->
+<!--  Should Manage Wares be enabled? 0 for off or 1 for on. Default: 1 -->
+      <t id="3">1</t>
+<!--  _____________________________________________________________________________________________ -->
+
+<!--  _____________________________________________________________________________________________ -->
 <!--  Map Gates -->
 <!--  _____________________________________________________________________________________________ -->
 <!--  This command maps the gates in its current sector. -->
@@ -341,6 +349,7 @@
       <t id="3000">\033YWaiting\033G to collect \033C%s</t>
       <!-- tv.i18n.deploy.temp.order.collecting -->
       <t id="3001">\033YMoving\033G to collect \033C%s</t>
+      <!-- tv.i18n.hotkey.datascanner.name -->
       
       <!-- tv.i18n.hotkey.datascanner.name -->
       <t id="4000">\033CBlueprint Data Scanner</t>
@@ -392,18 +401,21 @@
 	<t id="562">Manage Mothership</t>
       <t id="263">Map Gates</t>
       <t id="563">Self Destruct</t>
+      <t id="561">Manage Wares</t>
     </page>
 	
     <page id="2011" title="Script Cmd Shorts" descr="For i18n, translate this ids in this page!">
 	<t id="562">MshipMgmt</t>
       <t id="263">MapGates</t>
       <t id="563">SelfDestruct</t>
+      <t id="561">WareMgmt</t>
     </page>
 	
     <page id="2022" title="Script user help" descr="For i18n, translate this ids in this page!">
 	<t id="562">This command allows you to manage a Mothership.</t>
       <t id="263">This command maps the gates in its current sector.</t>
-      <t id="563s">This command tells this ship to self destruct.</t>
+      <t id="563">This command tells this ship to self destruct.</t>
+      <t id="561">This command allows you to manage the wares of a Mothership.</t>
     </page>
 
 <!--  ############################################################################################################################################# -->
@@ -420,6 +432,7 @@
       <t id="1001">12100</t> <!-- Lowest task number for Improved Piloting -->
       <t id="1002">12200</t> <!-- Lowest task number for Standardized Fleet Operations -->
       <t id="1003">12300</t> <!-- Lowest task number for tv.mayhem.task.claimable-->
+      <t id="1004">12400</t> <!-- Lowest task number for Monitor Mothership-->
 
 	<t id="13">100</t> <!-- Mayhem 2: Milliseconds between each scan step (default: 100) -->
 	<t id="10">10000</t> <!-- Mayhem 2: Ship research cost divider (default: 10000) -->
@@ -459,6 +472,7 @@
 	<t id="562">COMMAND_MOTHERSHIP_MANAGEMENT</t>
       <t id="263">COMMAND_MAP_GATES</t>
       <t id="563">COMMAND_SELF_DESTRUCT</t>
+      <t id="561">COMMAND_DOCKWARE_MANAGEMENT</t>
     </page>
 <!--  ############################################################################################################################################# -->
 

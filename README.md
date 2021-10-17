@@ -25,6 +25,8 @@
     * New commands for the Ship Command Menu.
         * Manage Mothership
             * This command allows you to manage a Mothership. (Feature: Sepa's Mothership)
+        * Manage Wares
+            * This command allows you to manage the wares of a Mothership.
         * Map Gates
             * This command maps the gates in its current sector.
         * Self Destruct
