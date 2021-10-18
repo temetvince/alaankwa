@@ -11,13 +11,29 @@
 * Also thanks to Sepa for graciously allowing me to redistribute his SWLU Mothership Mod
 
 ## Installation
-### Instructions
-* https://www.youtube.com/playlist?list=PLl4mHpHKbi1nu40jru_6Hf8jumxxtS-VO
 ### Downloads
 * No-Steam Exe: https://www.egosoft.com/download/x3ap/bonus_en.php
 * ReShade: https://reshade.me/
-* Litcube's Universe: http://litcube.xtimelines.net/wiki/index.php/Main_Page
-* Alaankwa: https://github.com/temetvince/x3ap-lu/releases/
+* Alaankwa: https://github.com/temetvince/x3ap-lu/releases
+* LU: http://litcube.xtimelines.net/wiki/index.php/Download
+* SWLU: https://www.moddb.com/mods/star-wars-lu-swlu/downloads
+* GiC: https://www.moddb.com/mods/star-wars-lu-swlu/addons
+* M3: https://www.moddb.com/mods/mayhem/downloads
+* SWM3: https://www.moddb.com/games/star-wars-mayhem-3/downloads
+
+### Instructions
+1. Install Litcube's Universe
+2. Optionally Install SWLU or M3
+    * (SWLU) Star Wars Litcube's Universe
+    * (M3) Mayhem 3
+3. Optionally install GiC or SWM3
+    * (GiC) Galaxy in Chaos - Requires SWLU
+    * (SWM3) Star Wars Mayhem 3 - Requires M3
+4. Install all other desired mods besides Alaankwa
+5. Optionally install ReShade
+6. Install Alaankwa
+7. Install Alaankwa Patch if playing SWLU, GIC, M3, or SWM3
+8. If you don't like the new font, delete the 'f' folder in your 'x3 terran conflict' root install directory
 
 ## Features
 ### General
@@ -74,7 +90,7 @@
 * AND MORE
     * An optional Graphics Improvement mod utilizing ReShade is included
         * You can take before/after screenshots that save to your root install folder with the PrintScrn button on your keyboard. To access the options in game, press [SHIFT]+[~] (or [SHIFT]+[`])
-    * A new game font, Fantasque Sans Mono. (Disabled by default).
+    * A new game font, Fantasque Sans Mono
         * https://github.com/belluzj/fantasque-sans
     * Debugging scripts for development
         * Can take in any text decodable object, say an array of tables, and output it in game to the user
@@ -94,21 +110,17 @@
 * An optional settings t-file for new players is included, disabled by default
     * These settings are the ones recommended by Darth Fiscus here: https://www.youtube.com/watch?v=kV-aS0swpfY&t=13s
 
-
 ## Links
 * temetvince Youtube Playlists (X3 Mod Install Videos):
 	* https://www.youtube.com/channel/UCw7tARIJee8gd1OpeSjAEMw/playlists
-* temetvince X3 Mod Github Repositories:
-    * Litcube's Universe: https://github.com/temetvince/x3ap-lu
-    * Star Wars LU: https://github.com/temetvince/x3ap-swlu
-    * SWLU Galaxy in Chaos: https://github.com/temetvince/x3ap-gic
-    * Mayhem 3: https://github.com/temetvince/x3ap-m3
-    * Star Wars Mayhem 2: https://github.com/temetvince/x3ap-swm2
-    * Star Wars Mayhem 3: https://github.com/temetvince/x3ap-swm3
 * temetvince Egosoft Forums:
-    * Litcube's Universe: https://forum.egosoft.com/viewtopic.php?f=94&t=441825
-    * Mayhem 3: https://forum.egosoft.com/viewtopic.php?f=94&t=441824
+    * Alaankwa: https://forum.egosoft.com/viewtopic.php?f=94&t=441825
 * Star Wars Mayhem 2 ModDB:
     * https://www.moddb.com/mods/star-wars-mayhem-2
 * Star Wars Mayhem 3 ModDB:
     * https://www.moddb.com/games/star-wars-mayhem-3
+* X3 Mod Github Repositories:
+    * Alaankwa: https://github.com/temetvince/x3ap-lu
+    * Star Wars Mayhem 2: https://github.com/temetvince/x3ap-swm2
+    * Star Wars Mayhem 3: https://github.com/temetvince/x3ap-swm3
+
