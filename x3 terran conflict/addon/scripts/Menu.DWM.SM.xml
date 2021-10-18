@@ -2,15 +2,18 @@
 <?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
 <!-- Generated using X-Studio -->
 <script>
-	<name>Lib.Gen.DoesShipHaveMoneyToBuy</name>
-	<version>1</version>
+	<name>Menu.DWM.SM</name>
+	<version>61</version>
 	<engineversion>50</engineversion>
-	<description>Lib Gen: True if ship has enough money to purchase wares. Homebase account apply</description>
+	<description>Cmd: Dock Ware Manager</description>
 	<arguments>
-		<argument index="1" name="Station" type="Var/Station" desc="Station" />
-		<argument index="2" name="Ware" type="Var/Ware" desc="Ware" />
-		<argument index="3" name="Amount" type="Var/Number" desc="Amount" />
-		<argument index="4" name="Ship" type="Var/Ship" desc="Ship" />
+		<argument index="1" name="menu" type="Value" desc="" />
+		<argument index="2" name="control" type="Value" desc="" />
+		<argument index="3" name="changeline" type="Var/Boolean" desc="" />
+		<argument index="4" name="callbackReturn" type="Value" desc="" />
+		<argument index="5" name="this" type="Value" desc="" />
+		<argument index="6" name="keyMenu" type="Var/String" desc="" />
+		<argument index="7" name="keySettings" type="Var/String" desc="" />
 	</arguments>
 	<sourcetext>
 		<line linenr="001" indent="" interruptable="@">
@@ -38,25 +41,37 @@
 			<text> </text>
 			<text>script</text>
 			<text> </text>
-			<call>tv.m3.lib.gen.doesshiphavemoneytobuy</call>
+			<call>tv.m3.menu.dwm.sm</call>
 			<text>:</text>
 			<text> </text>
-			<text>Station</text>
+			<text>menu</text>
 			<text>=</text>
-			<var>$Station</var>
+			<var>$menu</var>
 			<text> </text>
-			<text>Ware</text>
+			<text>control</text>
 			<text>=</text>
-			<var>$Ware</var>
+			<var>$control</var>
 			<text> </text>
-			<text>Amount</text>
+			<text>changeline</text>
 			<text>=</text>
-			<var>$Amount</var>
+			<var>$changeline</var>
 			<text> </text>
-			<text>Ship</text>
+			<text>callbackReturn</text>
 			<text>=</text>
-			<var>$Ship</var>
-			<text>  </text>
+			<var>$callbackReturn</var>
+			<text> </text>
+			<text>this</text>
+			<text>=</text>
+			<var>$this</var>
+			<text> </text>
+			<text>keyMenu</text>
+			<text>=</text>
+			<var>$keyMenu</var>
+			<text> </text>
+			<text>keySettings</text>
+			<text>=</text>
+			<var>$keySettings</var>
+			<text> </text>
 		</line>
 		<line linenr="003" indent="">
 			<text>else</text>
@@ -73,25 +88,36 @@
 			<text> </text>
 			<text>script</text>
 			<text> </text>
-			<call>tv.lu.lib.gen.doesshiphavemoneytobuy</call>
+			<call>tv.lu.menu.dwm.sm</call>
 			<text>:</text>
 			<text> </text>
-			<text>Station</text>
+			<text>Menu</text>
 			<text>=</text>
-			<var>$Station</var>
+			<var>$menu</var>
 			<text> </text>
-			<text>Ware</text>
+			<text>Control</text>
 			<text>=</text>
-			<var>$Ware</var>
+			<var>$control</var>
 			<text> </text>
-			<text>Amount</text>
+			<text>Changeline</text>
 			<text>=</text>
-			<var>$Amount</var>
+			<var>$changeline</var>
 			<text> </text>
-			<text>Ship</text>
+			<text>CallbackReturn</text>
 			<text>=</text>
-			<var>$Ship</var>
-			<text>  </text>
+			<var>$callbackReturn</var>
+			<text> </text>
+			<text>This</text>
+			<text>=</text>
+			<var>$this</var>
+			<text> </text>
+			<text>Key.Menu</text>
+			<text>=</text>
+			<var>$keyMenu</var>
+			<text> </text>
+			<text>Key.Settings</text>
+			<text>=</text>
+			<var>$keySettings</var>
 		</line>
 		<line linenr="005" indent="">
 			<text>end</text>
@@ -106,16 +132,19 @@
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
-			<sval type="string" val="Lib.Gen.DoesShipHaveMoneyToBuy" />
+			<sval type="string" val="Menu.DWM.SM" />
 			<sval type="int" val="50" />
-			<sval type="string" val="Lib Gen: True if ship has enough money to purchase wares. Homebase account apply" />
-			<sval type="int" val="1" />
-			<sval type="int" val="0" />
-			<sval type="array" size="5">
-				<sval type="string" val="Station" />
-				<sval type="string" val="Ware" />
-				<sval type="string" val="Amount" />
-				<sval type="string" val="Ship" />
+			<sval type="string" val="Cmd: Dock Ware Manager" />
+			<sval type="int" val="61" />
+			<sval type="int" val="2" />
+			<sval type="array" size="8">
+				<sval type="string" val="menu" />
+				<sval type="string" val="control" />
+				<sval type="string" val="changeline" />
+				<sval type="string" val="callbackReturn" />
+				<sval type="string" val="this" />
+				<sval type="string" val="keyMenu" />
+				<sval type="string" val="keySettings" />
 				<sval type="string" val="return" />
 			</sval>
 			<sval type="array" size="5">
@@ -127,13 +156,13 @@
 					<sval type="int" val="1" />
 					<sval type="int" val="0" />
 				</sval>
-				<sval type="array" size="14">
+				<sval type="array" size="20">
 					<sval type="int" val="102" />
-					<sval type="string" val="tv.m3.lib.gen.doesshiphavemoneytobuy" />
-					<sval type="int" val="4" />
+					<sval type="string" val="tv.m3.menu.dwm.sm" />
+					<sval type="int" val="7" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
-					<sval type="int" val="4" />
+					<sval type="int" val="7" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="0" />
 					<sval type="int" val="131074" />
@@ -142,18 +171,24 @@
 					<sval type="int" val="2" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
 					<sval type="int" val="4" />
 				</sval>
-				<sval type="array" size="14">
+				<sval type="array" size="20">
 					<sval type="int" val="102" />
-					<sval type="string" val="tv.lu.lib.gen.doesshiphavemoneytobuy" />
-					<sval type="int" val="4" />
+					<sval type="string" val="tv.lu.menu.dwm.sm" />
+					<sval type="int" val="7" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
-					<sval type="int" val="4" />
+					<sval type="int" val="7" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="0" />
 					<sval type="int" val="131074" />
@@ -162,29 +197,47 @@
 					<sval type="int" val="2" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="103" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="4" />
+					<sval type="int" val="7" />
 				</sval>
 			</sval>
-			<sval type="array" size="4">
+			<sval type="array" size="7">
 				<sval type="array" size="2">
-					<sval type="int" val="12" />
-					<sval type="string" val="Station" />
+					<sval type="int" val="9" />
+					<sval type="string" val="" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="13" />
-					<sval type="string" val="Ware" />
+					<sval type="int" val="9" />
+					<sval type="string" val="" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="10" />
-					<sval type="string" val="Amount" />
+					<sval type="int" val="63" />
+					<sval type="string" val="" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="21" />
-					<sval type="string" val="Ship" />
+					<sval type="int" val="9" />
+					<sval type="string" val="" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="9" />
+					<sval type="string" val="" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="11" />
+					<sval type="string" val="" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="11" />
+					<sval type="string" val="" />
 				</sval>
 			</sval>
 			<sval type="array" size="4">

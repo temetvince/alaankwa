@@ -2,7 +2,7 @@
 <?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
 <!-- Generated using X-Studio -->
 <script>
-	<name>Lib.Gen.DoesShipHaveMoneyToBuy</name>
+	<name>tv.lu.lib.gen.doesshiphavemoneytobuy</name>
 	<version>1</version>
 	<engineversion>50</engineversion>
 	<description>Lib Gen: True if ship has enough money to purchase wares. Homebase account apply</description>
@@ -13,160 +13,149 @@
 		<argument index="4" name="Ship" type="Var/Ship" desc="Ship" />
 	</arguments>
 	<sourcetext>
-		<line linenr="001" indent="" interruptable="@">
-			<text>if</text>
-			<text> </text>
-			<var>[THIS]</var>
-			<text>-&gt;</text>
-			<text> </text>
-			<text>call</text>
-			<text> </text>
-			<text>script</text>
-			<text> </text>
-			<call>tv.get.game.group.mayhem</call>
-			<text>:</text>
-		</line>
-		<line linenr="002" indent="&#160;" interruptable="@">
-			<var>$return</var>
+		<line linenr="001" indent="">
+			<var>$Price</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>[THIS]</var>
-			<text>-&gt;</text>
-			<text> </text>
-			<text>call</text>
-			<text> </text>
-			<text>script</text>
-			<text> </text>
-			<call>tv.m3.lib.gen.doesshiphavemoneytobuy</call>
-			<text>:</text>
-			<text> </text>
-			<text>Station</text>
-			<text>=</text>
 			<var>$Station</var>
+			<text>-&gt;</text>
 			<text> </text>
-			<text>Ware</text>
-			<text>=</text>
+			<text>get</text>
+			<text> </text>
+			<text>price</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>ware</text>
+			<text> </text>
 			<var>$Ware</var>
+		</line>
+		<line linenr="002" indent="">
+			<var>$TotalCost</var>
 			<text> </text>
-			<text>Amount</text>
 			<text>=</text>
+			<text> </text>
+			<var>$Price</var>
+			<text> </text>
+			<text>*</text>
+			<text> </text>
 			<var>$Amount</var>
+		</line>
+		<line linenr="003" indent="" />
+		<line linenr="004" indent="" interruptable="@">
+			<var>$Money</var>
 			<text> </text>
-			<text>Ship</text>
 			<text>=</text>
+			<text> </text>
 			<var>$Ship</var>
-			<text>  </text>
-		</line>
-		<line linenr="003" indent="">
-			<text>else</text>
-		</line>
-		<line linenr="004" indent="&#160;" interruptable="@">
-			<var>$return</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<var>[THIS]</var>
 			<text>-&gt;</text>
 			<text> </text>
 			<text>call</text>
 			<text> </text>
 			<text>script</text>
 			<text> </text>
-			<call>tv.lu.lib.gen.doesshiphavemoneytobuy</call>
+			<call>tv.get.homebase.money</call>
+			<text> </text>
 			<text>:</text>
-			<text> </text>
-			<text>Station</text>
-			<text>=</text>
-			<var>$Station</var>
-			<text> </text>
-			<text>Ware</text>
-			<text>=</text>
-			<var>$Ware</var>
-			<text> </text>
-			<text>Amount</text>
-			<text>=</text>
-			<var>$Amount</var>
-			<text> </text>
-			<text>Ship</text>
-			<text>=</text>
-			<var>$Ship</var>
-			<text>  </text>
 		</line>
 		<line linenr="005" indent="">
-			<text>end</text>
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$Money</var>
+			<text> </text>
+			<text>&gt;=</text>
+			<text> </text>
+			<var>$TotalCost</var>
 		</line>
-		<line linenr="006" indent="" />
-		<line linenr="007" indent="">
+		<line linenr="006" indent="&#160;">
 			<text>return</text>
 			<text> </text>
-			<var>$return</var>
+			<var>[TRUE]</var>
 		</line>
-		<line linenr="008" indent="" />
+		<line linenr="007" indent="" />
+		<line linenr="008" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>[FALSE]</var>
+		</line>
+		<line linenr="009" indent="" />
+		<line linenr="010" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
-			<sval type="string" val="Lib.Gen.DoesShipHaveMoneyToBuy" />
+			<sval type="string" val="tv.lu.lib.gen.doesshiphavemoneytobuy" />
 			<sval type="int" val="50" />
 			<sval type="string" val="Lib Gen: True if ship has enough money to purchase wares. Homebase account apply" />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
-			<sval type="array" size="5">
+			<sval type="array" size="7">
 				<sval type="string" val="Station" />
 				<sval type="string" val="Ware" />
 				<sval type="string" val="Amount" />
 				<sval type="string" val="Ship" />
-				<sval type="string" val="return" />
+				<sval type="string" val="Price" />
+				<sval type="string" val="TotalCost" />
+				<sval type="string" val="Money" />
 			</sval>
-			<sval type="array" size="5">
+			<sval type="array" size="6">
+				<sval type="array" size="6">
+					<sval type="int" val="627" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="5" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="15" />
+					<sval type="int" val="13" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="13" />
+					<sval type="int" val="-2" />
+				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="102" />
-					<sval type="string" val="tv.get.game.group.mayhem" />
-					<sval type="int" val="-1610611965" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="1" />
-					<sval type="int" val="0" />
-				</sval>
-				<sval type="array" size="14">
-					<sval type="int" val="102" />
-					<sval type="string" val="tv.m3.lib.gen.doesshiphavemoneytobuy" />
-					<sval type="int" val="4" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="1" />
-					<sval type="int" val="4" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="0" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="1" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="2" />
+					<sval type="string" val="tv.get.homebase.money" />
+					<sval type="int" val="6" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="3" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="112" />
-					<sval type="int" val="4" />
-				</sval>
-				<sval type="array" size="14">
-					<sval type="int" val="102" />
-					<sval type="string" val="tv.lu.lib.gen.doesshiphavemoneytobuy" />
-					<sval type="int" val="4" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="1" />
-					<sval type="int" val="4" />
-					<sval type="int" val="131074" />
 					<sval type="int" val="0" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="1" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="2" />
-					<sval type="int" val="131074" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610611448" />
 					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+					<sval type="int" val="15" />
+					<sval type="int" val="4" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="-2" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="103" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="4" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="10" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="9" />
 				</sval>
 			</sval>
 			<sval type="array" size="4">
@@ -189,19 +178,19 @@
 			</sval>
 			<sval type="array" size="4">
 				<sval type="array" size="2">
-					<sval type="int" val="3" />
-					<sval type="int" val="5" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="4" />
-					<sval type="int" val="4" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="4" />
+					<sval type="int" val="2" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="5" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="6" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="6" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>
