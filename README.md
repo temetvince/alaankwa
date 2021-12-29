@@ -99,7 +99,7 @@
             * $param.trackingaim is optional. If provided, then the debug script will only run if that entity is the player's tracking aim in game
 
 ### M3/SWM3 specific
-* NAVIGATION COMPUTER MK II (Disabled by Default)
+* NAVIGATION COMPUTER MK II
     * Allows Workers to use jump beacons during their job search
     * Significant performance impact to Worker job calculation speed
         * Don't use with more than 10-20 jump beacons
