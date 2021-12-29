@@ -105,6 +105,7 @@
         * Don't use with more than 10-20 jump beacons
 * Outposts show themselves as a candidate for export or import jobs
     * This is helpful for making generic templates that include the sanctuary where you are creating the template
+* Fixed multiple Supply Drone bugs
 * Fixed the Outpost Client Threshold not being saved when making a Jobs Preset
 * Fixed the homebase being cleared in your ship when using the Personal Teleportation Device
 * An optional settings t-file for new players is included, disabled by default

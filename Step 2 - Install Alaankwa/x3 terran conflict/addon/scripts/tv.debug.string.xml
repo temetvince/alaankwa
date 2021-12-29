@@ -69,8 +69,6 @@
 		</line>
 		<line linenr="007" indent="" />
 		<line linenr="008" indent="">
-			<text>do</text>
-			<text> </text>
 			<text>if</text>
 			<text> </text>
 			<var>$param.debug</var>
@@ -86,9 +84,8 @@
 			<text> </text>
 			<text>'0'</text>
 		</line>
-		<line linenr="010" indent="" />
-		<line linenr="011" indent="">
-			<text>do</text>
+		<line linenr="010" indent="">
+			<text>else</text>
 			<text> </text>
 			<text>if</text>
 			<text> </text>
@@ -98,16 +95,15 @@
 			<text> </text>
 			<var>1</var>
 		</line>
-		<line linenr="012" indent="&#160;">
+		<line linenr="011" indent="&#160;">
 			<var>$return</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<text>'1'</text>
 		</line>
-		<line linenr="013" indent="" />
-		<line linenr="014" indent="">
-			<text>do</text>
+		<line linenr="012" indent="">
+			<text>else</text>
 			<text> </text>
 			<text>if</text>
 			<text> </text>
@@ -117,16 +113,15 @@
 			<text> </text>
 			<var>[FALSE]</var>
 		</line>
-		<line linenr="015" indent="&#160;">
+		<line linenr="013" indent="&#160;">
 			<var>$return</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<text>'FALSE'</text>
 		</line>
-		<line linenr="016" indent="" />
-		<line linenr="017" indent="">
-			<text>do</text>
+		<line linenr="014" indent="">
+			<text>else</text>
 			<text> </text>
 			<text>if</text>
 			<text> </text>
@@ -136,20 +131,23 @@
 			<text> </text>
 			<var>[TRUE]</var>
 		</line>
-		<line linenr="018" indent="&#160;">
+		<line linenr="015" indent="&#160;">
 			<var>$return</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<text>'TRUE'</text>
 		</line>
-		<line linenr="019" indent="" />
-		<line linenr="020" indent="">
+		<line linenr="016" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="017" indent="" />
+		<line linenr="018" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>$return</var>
 		</line>
-		<line linenr="021" indent="" />
+		<line linenr="019" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
@@ -163,7 +161,7 @@
 				<sval type="string" val="return.default" />
 				<sval type="string" val="return" />
 			</sval>
-			<sval type="array" size="13">
+			<sval type="array" size="16">
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
 					<sval type="int" val="1" />
@@ -243,7 +241,7 @@
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610611192" />
+					<sval type="int" val="-1610610941" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="0" />
@@ -265,9 +263,13 @@
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
 				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="15" />
+				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610610680" />
+					<sval type="int" val="-1610610171" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="0" />
@@ -289,9 +291,13 @@
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
 				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="15" />
+				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610610168" />
+					<sval type="int" val="-1610609403" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="0" />
@@ -313,9 +319,13 @@
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
 				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="15" />
+				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610609656" />
+					<sval type="int" val="-1610608891" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="0" />
@@ -349,7 +359,7 @@
 					<sval type="string" val="The string to transform" />
 				</sval>
 			</sval>
-			<sval type="array" size="8">
+			<sval type="array" size="6">
 				<sval type="array" size="2">
 					<sval type="int" val="1" />
 					<sval type="int" val="2" />
@@ -363,23 +373,15 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="6" />
+					<sval type="int" val="15" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="15" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="8" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="10" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="12" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="13" />
+					<sval type="int" val="16" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>
