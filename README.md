@@ -37,6 +37,13 @@
 
 ## Features
 ### General
+* ROTATIONAL THRUSTERS
+    * All ships now have Angular Acceleration set to 50.
+    * Class rotation variables have been increased by these amounts:
+        * M1/M2/TL = 200%
+        * M7 = 50%
+        * M6 = 25%
+        * TM/TP/TS = 10%
 * SHIP COMPUTER UPGRADES
     * New commands for the Ship Command Menu.
         * Manage Mothership
