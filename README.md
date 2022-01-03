@@ -115,6 +115,7 @@
 * Fixed multiple Supply Drone bugs
 * Fixed the Outpost Client Threshold not being saved when making a Jobs Preset
 * Fixed the homebase being cleared in your ship when using the Personal Teleportation Device
+* Economy flowcharts for Mayhem 3 and Star Wars Mayhem 3
 * An optional settings t-file for new players is included, disabled by default
     * These settings are the ones recommended by Darth Fiscus here: https://www.youtube.com/watch?v=kV-aS0swpfY&t=13s
 
