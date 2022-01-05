@@ -65,6 +65,8 @@
             * CHEAT: This hotkey adds satellites to all sectors with jumpgates which don't already have one.
         * Phanon Industrial Espionage
             * This hotkey activates the Phanon Debug Menu, which shows detailed Phanon corp information.
+        * Joubarbe's Player Journal
+            * This hotkey activates the Player Journal.
 * IMPROVED PILOTING
     * Ships automatically orient "upright" in the game like they do in the movies.
         * Overachiever
