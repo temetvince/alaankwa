@@ -224,9 +224,9 @@
 		</line>
 		<line linenr="013" indent="" />
 		<line linenr="014" indent="" interruptable="@">
-			<var>$mayhem</var>
+			<text>do</text>
 			<text> </text>
-			<text>=</text>
+			<text>if</text>
 			<text> </text>
 			<var>[THIS]</var>
 			<text>-&gt;</text>
@@ -239,21 +239,13 @@
 			<text> </text>
 			<text>:</text>
 		</line>
-		<line linenr="015" indent="" />
-		<line linenr="016" indent="">
-			<text>do</text>
-			<text> </text>
-			<text>if</text>
-			<text> </text>
-			<var>$mayhem</var>
-		</line>
-		<line linenr="017" indent="&#160;">
+		<line linenr="015" indent="&#160;">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="018" indent="" />
-		<line linenr="019" indent="" interruptable="@">
+		<line linenr="016" indent="" />
+		<line linenr="017" indent="" interruptable="@">
 			<text>if</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -271,10 +263,10 @@
 			<text>=</text>
 			<text>'tv.feature.command.managemothership'</text>
 		</line>
-		<line linenr="020" indent="&#160;">
+		<line linenr="018" indent="&#160;">
 			<comment>* this script returns FALSE everytime - no need to change current orders for ship, we just want to manage the Mothership</comment>
 		</line>
-		<line linenr="021" indent="&#160;">
+		<line linenr="019" indent="&#160;">
 			<text>set</text>
 			<text> </text>
 			<text>ship</text>
@@ -294,7 +286,7 @@
 			<text>=</text>
 			<call>tv.sepa.menu.mothershipmanagement</call>
 		</line>
-		<line linenr="022" indent="&#160;">
+		<line linenr="020" indent="&#160;">
 			<text>set</text>
 			<text> </text>
 			<text>script</text>
@@ -316,8 +308,8 @@
 			<text>=</text>
 			<call>tv.sepa.cmdchk.mothershipmanagement</call>
 		</line>
-		<line linenr="023" indent="&#160;" />
-		<line linenr="024" indent="&#160;">
+		<line linenr="021" indent="&#160;" />
+		<line linenr="022" indent="&#160;">
 			<text>global</text>
 			<text> </text>
 			<text>script</text>
@@ -352,9 +344,9 @@
 			<text>=</text>
 			<var>0</var>
 		</line>
-		<line linenr="025" indent="&#160;" />
-		<line linenr="026" indent="&#160;" />
-		<line linenr="027" indent="&#160;">
+		<line linenr="023" indent="&#160;" />
+		<line linenr="024" indent="&#160;" />
+		<line linenr="025" indent="&#160;">
 			<text>global</text>
 			<text> </text>
 			<text>secondary</text>
@@ -382,7 +374,7 @@
 			<text>=</text>
 			<text>'tv.signal.bailed'</text>
 		</line>
-		<line linenr="028" indent="&#160;">
+		<line linenr="026" indent="&#160;">
 			<text>global</text>
 			<text> </text>
 			<text>secondary</text>
@@ -418,11 +410,8 @@
 			<text>=</text>
 			<text>'tv.signal.balied'</text>
 		</line>
-		<line linenr="029" indent="">
-			<text>end</text>
-		</line>
-		<line linenr="030" indent="" />
-		<line linenr="031" indent="" interruptable="@">
+		<line linenr="027" indent="&#160;" />
+		<line linenr="028" indent="&#160;" interruptable="@">
 			<text>if</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -440,7 +429,7 @@
 			<text>=</text>
 			<text>'tv.feature.command.dockwaremanager'</text>
 		</line>
-		<line linenr="032" indent="&#160;">
+		<line linenr="029" indent="&#160;&#160;">
 			<text>set</text>
 			<text> </text>
 			<text>ship</text>
@@ -460,7 +449,7 @@
 			<text>=</text>
 			<call>Menu.DWM</call>
 		</line>
-		<line linenr="033" indent="&#160;">
+		<line linenr="030" indent="&#160;&#160;">
 			<text>set</text>
 			<text> </text>
 			<text>script</text>
@@ -482,8 +471,8 @@
 			<text>=</text>
 			<call>tv.sepa.cmdchk.mothershipmanagement</call>
 		</line>
-		<line linenr="034" indent="&#160;" />
-		<line linenr="035" indent="&#160;">
+		<line linenr="031" indent="&#160;&#160;" />
+		<line linenr="032" indent="&#160;&#160;">
 			<text>global</text>
 			<text> </text>
 			<text>script</text>
@@ -518,11 +507,14 @@
 			<text>=</text>
 			<var>0</var>
 		</line>
-		<line linenr="036" indent="">
+		<line linenr="033" indent="&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="037" indent="" />
-		<line linenr="038" indent="">
+		<line linenr="034" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="035" indent="" />
+		<line linenr="036" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
@@ -535,10 +527,8 @@
 			<sval type="string" val="" />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
-			<sval type="array" size="1">
-				<sval type="string" val="mayhem" />
-			</sval>
-			<sval type="array" size="22">
+			<sval type="int" val="0" />
+			<sval type="array" size="21">
 				<sval type="array" size="9">
 					<sval type="int" val="1408" />
 					<sval type="int" val="18" />
@@ -625,19 +615,10 @@
 				<sval type="array" size="6">
 					<sval type="int" val="102" />
 					<sval type="string" val="tv.get.game.group.mayhem" />
-					<sval type="int" val="0" />
+					<sval type="int" val="-1610610168" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
 					<sval type="int" val="0" />
-				</sval>
-				<sval type="array" size="7">
-					<sval type="int" val="104" />
-					<sval type="int" val="-1610609912" />
-					<sval type="int" val="1" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="0" />
-					<sval type="int" val="1" />
-					<sval type="int" val="-1" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="103" />
@@ -647,7 +628,7 @@
 				<sval type="array" size="8">
 					<sval type="int" val="102" />
 					<sval type="string" val="tv.get.global.boolean" />
-					<sval type="int" val="-1610608381" />
+					<sval type="int" val="-1610607613" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
 					<sval type="int" val="1" />
@@ -708,7 +689,7 @@
 				<sval type="array" size="8">
 					<sval type="int" val="102" />
 					<sval type="string" val="tv.get.global.boolean" />
-					<sval type="int" val="-1610607357" />
+					<sval type="int" val="-1610607613" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
 					<sval type="int" val="1" />
@@ -748,7 +729,7 @@
 				</sval>
 			</sval>
 			<sval type="int" val="0" />
-			<sval type="array" size="16">
+			<sval type="array" size="15">
 				<sval type="array" size="2">
 					<sval type="int" val="2" />
 					<sval type="int" val="2" />
@@ -770,48 +751,44 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="9" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="11" />
+					<sval type="int" val="10" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="3">
-					<sval type="int" val="12" />
+					<sval type="int" val="11" />
 					<sval type="int" val="1" />
 					<sval type="string" val="this script returns FALSE everytime - no need to change current orders for ship, we just want to manage the Mothership" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="13" />
+					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="14" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="15" />
+					<sval type="int" val="14" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="15" />
+					<sval type="int" val="16" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="17" />
-					<sval type="int" val="4" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="17" />
+					<sval type="int" val="19" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="20" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="21" />
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="21" />
+					<sval type="int" val="20" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="20" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>
