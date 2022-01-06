@@ -222,84 +222,23 @@
 			<text>end</text>
 		</line>
 		<line linenr="024" indent="" />
-		<line linenr="025" indent="">
-			<var>$type</var>
+		<line linenr="025" indent="" interruptable="@">
+			<text>do</text>
 			<text> </text>
-			<text>=</text>
+			<text>if</text>
 			<text> </text>
 			<var>[THIS]</var>
 			<text>-&gt;</text>
 			<text> </text>
-			<text>get</text>
+			<text>call</text>
 			<text> </text>
-			<text>ware</text>
+			<text>script</text>
 			<text> </text>
-			<text>type</text>
+			<call>tv.get.is.miner</call>
 			<text> </text>
-			<text>code</text>
-			<text> </text>
-			<text>of</text>
-			<text> </text>
-			<text>object</text>
-		</line>
-		<line linenr="026" indent="">
-			<var>$type</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<text>sprintf</text>
 			<text>:</text>
-			<text> </text>
-			<text>fmt</text>
-			<text>=</text>
-			<text>'%s'</text>
-			<text>,</text>
-			<text> </text>
-			<var>$type</var>
-			<text>,</text>
-			<text> </text>
-			<var>null</var>
-			<text>,</text>
-			<text> </text>
-			<var>null</var>
-			<text>,</text>
-			<text> </text>
-			<var>null</var>
-			<text>,</text>
-			<text> </text>
-			<var>null</var>
 		</line>
-		<line linenr="027" indent="" />
-		<line linenr="028" indent="">
-			<var>$pos</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<text>find</text>
-			<text> </text>
-			<text>position</text>
-			<text> </text>
-			<text>of</text>
-			<text> </text>
-			<text>pattern</text>
-			<text> </text>
-			<text>'Miner'</text>
-			<text> </text>
-			<text>in</text>
-			<text> </text>
-			<var>$type</var>
-		</line>
-		<line linenr="029" indent="" />
-		<line linenr="030" indent="">
-			<text>if</text>
-			<text> </text>
-			<var>$pos</var>
-			<text> </text>
-			<text>!=</text>
-			<text> </text>
-			<var>-1</var>
-		</line>
-		<line linenr="031" indent="&#160;">
+		<line linenr="026" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -315,11 +254,8 @@
 			<text> </text>
 			<var>{Ore Collector}</var>
 		</line>
-		<line linenr="032" indent="">
-			<text>end</text>
-		</line>
-		<line linenr="033" indent="" />
-		<line linenr="034" indent="">
+		<line linenr="027" indent="" />
+		<line linenr="028" indent="">
 			<text>if</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -333,7 +269,7 @@
 			<text> </text>
 			<text>size</text>
 		</line>
-		<line linenr="035" indent="&#160;">
+		<line linenr="029" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -349,7 +285,7 @@
 			<text> </text>
 			<var>{Carrier Command Software}</var>
 		</line>
-		<line linenr="036" indent="&#160;">
+		<line linenr="030" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -365,18 +301,18 @@
 			<text> </text>
 			<var>{Docking Transporter Extension}</var>
 		</line>
-		<line linenr="037" indent="">
+		<line linenr="031" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="038" indent="" />
-		<line linenr="039" indent="">
+		<line linenr="032" indent="" />
+		<line linenr="033" indent="">
 			<text>gosub</text>
 			<text> </text>
 			<var>AddWares</var>
 			<text>:</text>
 		</line>
-		<line linenr="040" indent="" />
-		<line linenr="041" indent="">
+		<line linenr="034" indent="" />
+		<line linenr="035" indent="">
 			<var>[THIS]</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -392,8 +328,8 @@
 			<text> </text>
 			<var>10</var>
 		</line>
-		<line linenr="042" indent="" />
-		<line linenr="043" indent="" interruptable="@">
+		<line linenr="036" indent="" />
+		<line linenr="037" indent="" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -404,11 +340,11 @@
 			<text>script</text>
 			<text> </text>
 			<call>tv.ship.jumpdrive.initialize</call>
-			<text>:</text>
 			<text> </text>
+			<text>:</text>
 		</line>
-		<line linenr="044" indent="" />
-		<line linenr="045" indent="" interruptable="@">
+		<line linenr="038" indent="" />
+		<line linenr="039" indent="" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -419,21 +355,21 @@
 			<text>script</text>
 			<text> </text>
 			<call>tv.ship.turrets.initialize</call>
-			<text>:</text>
 			<text> </text>
+			<text>:</text>
 		</line>
-		<line linenr="046" indent="" />
-		<line linenr="047" indent="">
+		<line linenr="040" indent="" />
+		<line linenr="041" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="048" indent="" />
-		<line linenr="049" indent="">
+		<line linenr="042" indent="" />
+		<line linenr="043" indent="">
 			<var>AddWares</var>
 			<text>:</text>
 		</line>
-		<line linenr="050" indent="&#160;">
+		<line linenr="044" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -449,7 +385,7 @@
 			<text> </text>
 			<var>{Best Buys Locator}</var>
 		</line>
-		<line linenr="051" indent="&#160;">
+		<line linenr="045" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -465,7 +401,7 @@
 			<text> </text>
 			<var>{Best Selling Price Locator}</var>
 		</line>
-		<line linenr="052" indent="&#160;">
+		<line linenr="046" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -481,7 +417,7 @@
 			<text> </text>
 			<var>{Explorer Command Software}</var>
 		</line>
-		<line linenr="053" indent="&#160;">
+		<line linenr="047" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -497,7 +433,7 @@
 			<text> </text>
 			<var>{Docking Computer}</var>
 		</line>
-		<line linenr="054" indent="&#160;">
+		<line linenr="048" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -513,7 +449,7 @@
 			<text> </text>
 			<var>{S.E.T.A.}</var>
 		</line>
-		<line linenr="055" indent="&#160;">
+		<line linenr="049" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -529,7 +465,7 @@
 			<text> </text>
 			<var>{Combat Command Software MK1}</var>
 		</line>
-		<line linenr="056" indent="&#160;">
+		<line linenr="050" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -545,7 +481,7 @@
 			<text> </text>
 			<var>{Combat Command Software MK2}</var>
 		</line>
-		<line linenr="057" indent="&#160;">
+		<line linenr="051" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -561,7 +497,7 @@
 			<text> </text>
 			<var>{Trade Command Software MK1}</var>
 		</line>
-		<line linenr="058" indent="&#160;">
+		<line linenr="052" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -577,7 +513,7 @@
 			<text> </text>
 			<var>{Trade Command Software MK2}</var>
 		</line>
-		<line linenr="059" indent="&#160;">
+		<line linenr="053" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -593,7 +529,7 @@
 			<text> </text>
 			<var>{Duplex Scanner}</var>
 		</line>
-		<line linenr="060" indent="&#160;">
+		<line linenr="054" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -609,7 +545,7 @@
 			<text> </text>
 			<var>{Triplex Scanner}</var>
 		</line>
-		<line linenr="061" indent="&#160;">
+		<line linenr="055" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -625,7 +561,7 @@
 			<text> </text>
 			<var>{Trading System Extension}</var>
 		</line>
-		<line linenr="062" indent="&#160;">
+		<line linenr="056" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -641,7 +577,7 @@
 			<text> </text>
 			<var>{Trade Run Extension}</var>
 		</line>
-		<line linenr="063" indent="&#160;">
+		<line linenr="057" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -657,7 +593,7 @@
 			<text> </text>
 			<var>{Cargo Lifesupport System}</var>
 		</line>
-		<line linenr="064" indent="&#160;">
+		<line linenr="058" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -673,7 +609,7 @@
 			<text> </text>
 			<var>{Navigation Command Software MK1}</var>
 		</line>
-		<line linenr="065" indent="&#160;">
+		<line linenr="059" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -689,7 +625,7 @@
 			<text> </text>
 			<var>{Special Command Software MK1}</var>
 		</line>
-		<line linenr="066" indent="&#160;">
+		<line linenr="060" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -705,7 +641,7 @@
 			<text> </text>
 			<var>{Mineral Scanner}</var>
 		</line>
-		<line linenr="067" indent="&#160;">
+		<line linenr="061" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -721,7 +657,7 @@
 			<text> </text>
 			<var>{Freight Scanner}</var>
 		</line>
-		<line linenr="068" indent="&#160;">
+		<line linenr="062" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -737,7 +673,7 @@
 			<text> </text>
 			<var>{Patrol Command Software}</var>
 		</line>
-		<line linenr="069" indent="&#160;">
+		<line linenr="063" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -753,7 +689,7 @@
 			<text> </text>
 			<var>{Bioscanner}</var>
 		</line>
-		<line linenr="070" indent="&#160;">
+		<line linenr="064" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -769,7 +705,7 @@
 			<text> </text>
 			<var>{Video Enhancement Goggles}</var>
 		</line>
-		<line linenr="071" indent="&#160;">
+		<line linenr="065" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -785,7 +721,7 @@
 			<text> </text>
 			<var>{Transporter Device}</var>
 		</line>
-		<line linenr="072" indent="&#160;">
+		<line linenr="066" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -801,7 +737,7 @@
 			<text> </text>
 			<var>{Trade Command Software MK3}</var>
 		</line>
-		<line linenr="073" indent="&#160;">
+		<line linenr="067" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -817,7 +753,7 @@
 			<text> </text>
 			<var>{Station Agent Software}</var>
 		</line>
-		<line linenr="074" indent="&#160;">
+		<line linenr="068" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -833,7 +769,7 @@
 			<text> </text>
 			<var>{Supply Command Software}</var>
 		</line>
-		<line linenr="075" indent="&#160;">
+		<line linenr="069" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -849,7 +785,7 @@
 			<text> </text>
 			<var>{Remote System Control Software}</var>
 		</line>
-		<line linenr="076" indent="&#160;">
+		<line linenr="070" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -865,10 +801,10 @@
 			<text> </text>
 			<var>{Software Signature Disruptor}</var>
 		</line>
-		<line linenr="077" indent="">
+		<line linenr="071" indent="">
 			<text>endsub</text>
 		</line>
-		<line linenr="078" indent="" />
+		<line linenr="072" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
@@ -877,14 +813,12 @@
 			<sval type="string" val="" />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
-			<sval type="array" size="5">
+			<sval type="array" size="3">
 				<sval type="string" val="param.shields" />
 				<sval type="string" val="param.lasers" />
 				<sval type="string" val="nojumpdrive" />
-				<sval type="string" val="type" />
-				<sval type="string" val="pos" />
 			</sval>
-			<sval type="array" size="58">
+			<sval type="array" size="55">
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
 					<sval type="int" val="-1610612216" />
@@ -1040,50 +974,13 @@
 					<sval type="int" val="9" />
 					<sval type="int" val="1048638" />
 				</sval>
-				<sval type="array" size="4">
-					<sval type="int" val="707" />
+				<sval type="array" size="6">
+					<sval type="int" val="102" />
+					<sval type="string" val="tv.get.is.miner" />
+					<sval type="int" val="-1610608120" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
-					<sval type="int" val="3" />
-				</sval>
-				<sval type="array" size="14">
-					<sval type="int" val="149" />
-					<sval type="int" val="3" />
-					<sval type="int" val="5" />
-					<sval type="string" val="%s" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="3" />
 					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-				</sval>
-				<sval type="array" size="6">
-					<sval type="int" val="1076" />
-					<sval type="int" val="4" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="3" />
-					<sval type="int" val="5" />
-					<sval type="string" val="Miner" />
-				</sval>
-				<sval type="array" size="13">
-					<sval type="int" val="104" />
-					<sval type="int" val="-1610607357" />
-					<sval type="int" val="3" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="4" />
-					<sval type="int" val="4" />
-					<sval type="int" val="-1" />
-					<sval type="int" val="15" />
-					<sval type="int" val="1" />
-					<sval type="int" val="3" />
-					<sval type="int" val="-1" />
-					<sval type="int" val="1" />
-					<sval type="int" val="-2" />
 				</sval>
 				<sval type="array" size="8">
 					<sval type="int" val="647" />
@@ -1099,7 +996,7 @@
 					<sval type="int" val="789" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
-					<sval type="int" val="-1610606589" />
+					<sval type="int" val="-1610607357" />
 				</sval>
 				<sval type="array" size="8">
 					<sval type="int" val="647" />
@@ -1123,7 +1020,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="29" />
+					<sval type="int" val="26" />
 				</sval>
 				<sval type="array" size="5">
 					<sval type="int" val="551" />
@@ -1441,7 +1338,7 @@
 					<sval type="string" val="" />
 				</sval>
 			</sval>
-			<sval type="array" size="20">
+			<sval type="array" size="17">
 				<sval type="array" size="2">
 					<sval type="int" val="2" />
 					<sval type="int" val="2" />
@@ -1479,10 +1376,6 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="19" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
 					<sval type="int" val="21" />
 					<sval type="int" val="4" />
 				</sval>
@@ -1491,8 +1384,12 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="24" />
-					<sval type="int" val="4" />
+					<sval type="int" val="22" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="23" />
+					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="24" />
@@ -1507,19 +1404,7 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="27" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="28" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="29" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="58" />
+					<sval type="int" val="55" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>
