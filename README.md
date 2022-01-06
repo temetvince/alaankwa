@@ -73,6 +73,10 @@
             * Improved Piloting applies to the playership
 * STANDARDIZED FLEET OPERATIONS
     * Escorts will attempt to follow at reasonable speeds instead of flying all over the place.
+* TOP NOTCH RECRUITERS
+    * All recruited Trade Mrk III Pilots are level 8, enough to start Galaxy trading.
+* SATELLITE MONITORING PLUS
+    * Satellite Monitoring respects all player property, not just satellites.
 * SEPA'S MOTHERSHIP
     * Motherships are mobile factories which can produce lasers, missiles, shields, and ships (must be able to dock on the Mothership).
         * Alaankwa Corsairs
@@ -83,8 +87,6 @@
             * The number of data scans per type required to get the cheapest blueprint for production.
         * Shield Expertise
             * The maximum shield percentage of the target while using the data scanner.
-* SATELLITE MONITORING PLUS
-    * Satellite Monitoring respects all player property, not just satellites.
 * UNDER NEW MANAGEMENT (PHANON)
     * Enables various changes which should help Phanon corporations be more competitive.
         * Corporate Bailouts
