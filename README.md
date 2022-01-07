@@ -57,8 +57,10 @@
     * Decide which hotkeys are configurable in the Hotkeys Menu.
         * Blueprint Data Scanner 
             * This hotkey activates the Blueprint Data Scanner.
-        * Joubarbe's Satellite Monitoring
-            * This hotkey activates the Satellite Monitoring Menu respecting all player property, not just satellites.
+        * Satellite Monitoring Plus
+            * This hotkey activates the Satellite Monitoring+ Menu respecting all player property, not just satellites.
+        * Ship Compendium Plus
+            * This hotkey activates the Ship Compendium+ Menu where ships are shown even if not yet discovered.
         * All of Time
             * CHEAT: This hotkey saves your point in time to the next slot even if you don't have Salvage Insurance.
         * All of Space
