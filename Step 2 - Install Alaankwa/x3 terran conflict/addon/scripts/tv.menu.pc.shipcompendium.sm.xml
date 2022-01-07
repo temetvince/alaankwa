@@ -5582,14 +5582,14 @@
 			<text>'OCV'</text>
 		</line>
 		<line linenr="507" indent="&#160;" />
-		<line linenr="508" indent="&#160;&#160;">
+		<line linenr="508" indent="&#160;">
 			<var>$Temp</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>$MakerRace</var>
 		</line>
-		<line linenr="509" indent="&#160;&#160;&#160;">
+		<line linenr="509" indent="&#160;&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -5608,29 +5608,14 @@
 			<var>[Rebel]</var>
 		</line>
 		<line linenr="511" indent="&#160;" />
-		<line linenr="512" indent="&#160;">
+		<line linenr="512" indent="&#160;&#160;">
 			<var>$RaceTextColour</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>7</var>
 		</line>
-		<line linenr="513" indent="">
-			<text>if</text>
-			<text> </text>
-			<text>not</text>
-			<text> </text>
-			<text>get</text>
-			<text> </text>
-			<text>global</text>
-			<text> </text>
-			<text>variable</text>
-			<text>:</text>
-			<text> </text>
-			<text>name</text>
-			<text>=</text>
-			<text>'tv.gamestart.alaankwa'</text>
-		</line>
+		<line linenr="513" indent="&#160;" />
 		<line linenr="514" indent="">
 			<text>skip</text>
 			<text> </text>
@@ -5660,24 +5645,44 @@
 			<text> </text>
 			<var>1</var>
 		</line>
-		<line linenr="516" indent="">
-			<text>end</text>
+		<line linenr="516" indent="" />
+		<line linenr="517" indent="">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'tv.gamestart.alaankwa'</text>
 		</line>
-		<line linenr="517" indent="" />
-		<line linenr="518" indent="&#160;" />
-		<line linenr="519" indent="&#160;">
+		<line linenr="518" indent="">
+			<var>$RaceTextColour</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$Color</var>
+		</line>
+		<line linenr="519" indent="&#160;" />
+		<line linenr="520" indent="&#160;">
 			<text>endsub</text>
 		</line>
-		<line linenr="520" indent="&#160;" />
-		<line linenr="521" indent="&#160;">
+		<line linenr="521" indent="&#160;" />
+		<line linenr="522" indent="&#160;">
 			<comment>* -------------------</comment>
 		</line>
-		<line linenr="522" indent="&#160;" />
-		<line linenr="523" indent="&#160;">
+		<line linenr="523" indent="&#160;" />
+		<line linenr="524" indent="&#160;">
 			<var>SetMenuPassThrough</var>
 			<text>:</text>
 		</line>
-		<line linenr="524" indent="&#160;">
+		<line linenr="525" indent="&#160;">
 			<var>$Settings</var>
 			<text>[</text>
 			<var>1</var>
@@ -5687,7 +5692,7 @@
 			<text> </text>
 			<var>$Selected.Class</var>
 		</line>
-		<line linenr="525" indent="">
+		<line linenr="526" indent="">
 			<var>$Settings</var>
 			<text>[</text>
 			<var>2</var>
@@ -5697,7 +5702,7 @@
 			<text> </text>
 			<var>$Selected.Sort</var>
 		</line>
-		<line linenr="526" indent="">
+		<line linenr="527" indent="">
 			<var>$Settings</var>
 			<text>[</text>
 			<var>3</var>
@@ -5707,7 +5712,7 @@
 			<text> </text>
 			<var>$Selected.Order</var>
 		</line>
-		<line linenr="527" indent="">
+		<line linenr="528" indent="">
 			<var>$Settings</var>
 			<text>[</text>
 			<var>4</var>
@@ -5717,7 +5722,7 @@
 			<text> </text>
 			<var>$Selected.Scope</var>
 		</line>
-		<line linenr="528" indent="">
+		<line linenr="529" indent="">
 			<var>$Settings</var>
 			<text>[</text>
 			<var>5</var>
@@ -5727,8 +5732,8 @@
 			<text> </text>
 			<var>$Selected.Page</var>
 		</line>
-		<line linenr="529" indent="" />
-		<line linenr="530" indent="">
+		<line linenr="530" indent="" />
+		<line linenr="531" indent="">
 			<text>set</text>
 			<text> </text>
 			<text>global</text>
@@ -5744,21 +5749,21 @@
 			<text>=</text>
 			<var>$Settings</var>
 		</line>
-		<line linenr="531" indent="">
+		<line linenr="532" indent="">
 			<text>endsub</text>
 		</line>
-		<line linenr="532" indent="" />
 		<line linenr="533" indent="" />
 		<line linenr="534" indent="" />
-		<line linenr="535" indent="">
+		<line linenr="535" indent="" />
+		<line linenr="536" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="536" indent="" />
 		<line linenr="537" indent="" />
 		<line linenr="538" indent="" />
 		<line linenr="539" indent="" />
+		<line linenr="540" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
@@ -5855,7 +5860,7 @@
 				<sval type="string" val="MaxShieldText" />
 				<sval type="string" val="ClassTextText" />
 			</sval>
-			<sval type="array" size="391">
+			<sval type="array" size="392">
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
 					<sval type="int" val="-1610612216" />
@@ -6302,7 +6307,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="382" />
+					<sval type="int" val="383" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="100" />
@@ -6364,7 +6369,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="382" />
+					<sval type="int" val="383" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="100" />
@@ -6403,7 +6408,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="382" />
+					<sval type="int" val="383" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="100" />
@@ -6442,7 +6447,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="382" />
+					<sval type="int" val="383" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="100" />
@@ -6481,7 +6486,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="382" />
+					<sval type="int" val="383" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="100" />
@@ -6520,7 +6525,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="382" />
+					<sval type="int" val="383" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="100" />
@@ -9908,17 +9913,11 @@
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
 				</sval>
-				<sval type="array" size="4">
-					<sval type="int" val="158" />
-					<sval type="int" val="5" />
-					<sval type="string" val="tv.gamestart.alaankwa" />
-					<sval type="int" val="-536773372" />
-				</sval>
 				<sval type="array" size="8">
 					<sval type="int" val="1455" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="4" />
-					<sval type="int" val="-536773369" />
+					<sval type="int" val="-536773625" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="47" />
 					<sval type="int" val="131074" />
@@ -9930,6 +9929,21 @@
 					<sval type="int" val="1" />
 					<sval type="int" val="4" />
 					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="5" />
+					<sval type="string" val="tv.gamestart.alaankwa" />
+					<sval type="int" val="-1610514936" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="68" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="82" />
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
 				</sval>
@@ -10660,44 +10674,32 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="381" />
-					<sval type="int" val="4" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="381" />
+					<sval type="int" val="378" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="381" />
+					<sval type="int" val="380" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="382" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="383" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="3">
-					<sval type="int" val="382" />
+					<sval type="int" val="383" />
 					<sval type="int" val="1" />
 					<sval type="string" val="-------------------" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="382" />
+					<sval type="int" val="383" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="388" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="390" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="390" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="390" />
+					<sval type="int" val="389" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
@@ -10713,7 +10715,19 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="391" />
+					<sval type="int" val="392" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="392" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="392" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="392" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>
