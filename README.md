@@ -8,7 +8,7 @@
 ## Credits
 * Special thanks to Joubarbe for making Mayhem. You can show your support by buying Joubarbe a coffee:
     * https://www.buymeacoffee.com/Joubarbe
-* Also thanks to Sepa for graciously allowing me to redistribute his SWLU Mothership Mod
+* Also thanks to Sepa for graciously allowing me to redistribute his Mothership mod
 
 ## Installation
 ### Downloads
@@ -42,6 +42,8 @@
         * M1/M2/TL = 200%
         * M7 = 50%
         * M6 = 25%
+        * M3 = 40%
+        * M4 = 25%
         * TM/TP/TS = 10%
 * SHIP COMPUTER UPGRADES
     * New commands for the Ship Command Menu.
