@@ -25,12 +25,13 @@
 			<text> </text>
 			<text>direction</text>
 		</line>
-		<line linenr="002" indent="">
+		<line linenr="002" indent="" />
+		<line linenr="003" indent="">
 			<text>while</text>
 			<text> </text>
 			<var>$x</var>
 		</line>
-		<line linenr="003" indent="&#160;">
+		<line linenr="004" indent="&#160;">
 			<var>$y</var>
 			<text> </text>
 			<text>=</text>
@@ -47,23 +48,24 @@
 			<text> </text>
 			<text>direction</text>
 		</line>
-		<line linenr="004" indent="&#160;">
+		<line linenr="005" indent="&#160;">
 			<text>dec</text>
 			<text> </text>
 			<var>$x</var>
 		</line>
-		<line linenr="005" indent="&#160;">
+		<line linenr="006" indent="&#160;" />
+		<line linenr="007" indent="&#160;">
 			<text>while</text>
 			<text> </text>
 			<var>$y</var>
 		</line>
-		<line linenr="006" indent="&#160;&#160;">
+		<line linenr="008" indent="&#160;&#160;">
 			<text>dec</text>
 			<text> </text>
 			<var>$y</var>
 		</line>
-		<line linenr="007" indent="&#160;&#160;" />
-		<line linenr="008" indent="&#160;&#160;">
+		<line linenr="009" indent="&#160;&#160;" />
+		<line linenr="010" indent="&#160;&#160;">
 			<var>$sector</var>
 			<text> </text>
 			<text>=</text>
@@ -88,7 +90,7 @@
 			<text>=</text>
 			<var>$y</var>
 		</line>
-		<line linenr="009" indent="&#160;&#160;">
+		<line linenr="011" indent="&#160;&#160;">
 			<text>skip</text>
 			<text> </text>
 			<text>if</text>
@@ -98,11 +100,11 @@
 			<text> </text>
 			<text>exists</text>
 		</line>
-		<line linenr="010" indent="&#160;&#160;&#160;">
+		<line linenr="012" indent="&#160;&#160;&#160;">
 			<text>continue</text>
 		</line>
-		<line linenr="011" indent="&#160;&#160;" />
-		<line linenr="012" indent="&#160;&#160;">
+		<line linenr="013" indent="&#160;&#160;" />
+		<line linenr="014" indent="&#160;&#160;">
 			<var>$nGate</var>
 			<text> </text>
 			<text>=</text>
@@ -118,7 +120,7 @@
 			<text> </text>
 			<text>gate</text>
 		</line>
-		<line linenr="013" indent="&#160;&#160;">
+		<line linenr="015" indent="&#160;&#160;">
 			<var>$eGate</var>
 			<text> </text>
 			<text>=</text>
@@ -134,7 +136,7 @@
 			<text> </text>
 			<text>gate</text>
 		</line>
-		<line linenr="014" indent="&#160;&#160;">
+		<line linenr="016" indent="&#160;&#160;">
 			<var>$sGate</var>
 			<text> </text>
 			<text>=</text>
@@ -150,7 +152,7 @@
 			<text> </text>
 			<text>gate</text>
 		</line>
-		<line linenr="015" indent="&#160;&#160;">
+		<line linenr="017" indent="&#160;&#160;">
 			<var>$wGate</var>
 			<text> </text>
 			<text>=</text>
@@ -166,8 +168,8 @@
 			<text> </text>
 			<text>gate</text>
 		</line>
-		<line linenr="016" indent="&#160;&#160;" />
-		<line linenr="017" indent="&#160;&#160;">
+		<line linenr="018" indent="&#160;&#160;" />
+		<line linenr="019" indent="&#160;&#160;">
 			<text>if</text>
 			<text> </text>
 			<text>!</text>
@@ -188,15 +190,15 @@
 			<text>!</text>
 			<var>$wGate</var>
 		</line>
-		<line linenr="018" indent="&#160;&#160;&#160;">
+		<line linenr="020" indent="&#160;&#160;&#160;">
 			<text>continue</text>
 		</line>
-		<line linenr="019" indent="&#160;&#160;">
+		<line linenr="021" indent="&#160;&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="020" indent="&#160;&#160;" />
-		<line linenr="021" indent="&#160;&#160;">
-			<var>$playerHasSat</var>
+		<line linenr="022" indent="&#160;&#160;" />
+		<line linenr="023" indent="&#160;&#160;">
+			<var>$playerHasAdvSat</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
@@ -238,15 +240,15 @@
 			<text>=</text>
 			<var>null</var>
 		</line>
-		<line linenr="022" indent="&#160;&#160;" />
-		<line linenr="023" indent="&#160;&#160;">
+		<line linenr="024" indent="&#160;&#160;" />
+		<line linenr="025" indent="&#160;&#160;">
 			<text>if</text>
 			<text> </text>
 			<text>not</text>
 			<text> </text>
-			<var>$playerHasSat</var>
+			<var>$playerHasAdvSat</var>
 		</line>
-		<line linenr="024" indent="&#160;&#160;&#160;">
+		<line linenr="026" indent="&#160;&#160;&#160;">
 			<var>$sat</var>
 			<text> </text>
 			<text>=</text>
@@ -280,20 +282,22 @@
 			<text>=</text>
 			<var>0</var>
 		</line>
-		<line linenr="025" indent="&#160;&#160;">
+		<line linenr="027" indent="&#160;&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="026" indent="&#160;">
+		<line linenr="028" indent="&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="027" indent="">
+		<line linenr="029" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="028" indent="">
+		<line linenr="030" indent="" />
+		<line linenr="031" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
+		<line linenr="032" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
@@ -310,7 +314,7 @@
 				<sval type="string" val="eGate" />
 				<sval type="string" val="sGate" />
 				<sval type="string" val="wGate" />
-				<sval type="string" val="playerHasSat" />
+				<sval type="string" val="playerHasAdvSat" />
 				<sval type="string" val="sat" />
 			</sval>
 			<sval type="array" size="21">
@@ -491,7 +495,15 @@
 				</sval>
 			</sval>
 			<sval type="int" val="0" />
-			<sval type="array" size="11">
+			<sval type="array" size="15">
+				<sval type="array" size="2">
+					<sval type="int" val="1" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="4" />
+					<sval type="int" val="2" />
+				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="6" />
 					<sval type="int" val="2" />
@@ -535,6 +547,14 @@
 				<sval type="array" size="2">
 					<sval type="int" val="20" />
 					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="20" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="21" />
+					<sval type="int" val="2" />
 				</sval>
 			</sval>
 			<sval type="int" val="0" />

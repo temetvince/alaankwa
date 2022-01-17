@@ -24,8 +24,19 @@
 			<text> </text>
 			<var>$price</var>
 		</line>
-		<line linenr="002" indent="" />
-		<line linenr="003" indent="">
+		<line linenr="002" indent="">
+			<var>$price.total.inverse</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$price.inverse</var>
+			<text> </text>
+			<text>*</text>
+			<text> </text>
+			<var>$quantity</var>
+		</line>
+		<line linenr="003" indent="" />
+		<line linenr="004" indent="">
 			<var>$item.maintype</var>
 			<text> </text>
 			<text>=</text>
@@ -40,17 +51,17 @@
 			<text> </text>
 			<var>$item</var>
 		</line>
-		<line linenr="004" indent="" />
-		<line linenr="005" indent="">
+		<line linenr="005" indent="" />
+		<line linenr="006" indent="">
 			<text>if</text>
 			<text> </text>
 			<var>$item.maintype</var>
 			<text> </text>
 			<text>==</text>
 			<text> </text>
-			<var>7</var>
+			<var>[SSTYPE_SHIP]</var>
 		</line>
-		<line linenr="006" indent="&#160;">
+		<line linenr="007" indent="&#160;">
 			<text>add</text>
 			<text> </text>
 			<text>money</text>
@@ -60,10 +71,10 @@
 			<text>player</text>
 			<text>:</text>
 			<text> </text>
-			<var>$price.inverse</var>
+			<var>$price.total.inverse</var>
 		</line>
-		<line linenr="007" indent="&#160;" />
-		<line linenr="008" indent="&#160;" interruptable="@">
+		<line linenr="008" indent="&#160;" />
+		<line linenr="009" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[NULL]</var>
@@ -74,6 +85,7 @@
 			<text>script</text>
 			<text> </text>
 			<call>tv.set.message</call>
+			<text> </text>
 			<text>:</text>
 			<text> </text>
 			<text>param.name</text>
@@ -96,16 +108,16 @@
 			<text>=</text>
 			<var>$item</var>
 		</line>
-		<line linenr="009" indent="">
+		<line linenr="010" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="010" indent="" />
-		<line linenr="011" indent="">
+		<line linenr="011" indent="" />
+		<line linenr="012" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="012" indent="" />
+		<line linenr="013" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
@@ -114,15 +126,16 @@
 			<sval type="string" val="" />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
-			<sval type="array" size="6">
+			<sval type="array" size="7">
 				<sval type="string" val="buyer" />
 				<sval type="string" val="item" />
 				<sval type="string" val="quantity" />
 				<sval type="string" val="price" />
 				<sval type="string" val="price.inverse" />
+				<sval type="string" val="price.total.inverse" />
 				<sval type="string" val="item.maintype" />
 			</sval>
-			<sval type="array" size="6">
+			<sval type="array" size="7">
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
 					<sval type="int" val="4" />
@@ -138,20 +151,35 @@
 					<sval type="int" val="13" />
 					<sval type="int" val="-2" />
 				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="5" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="15" />
+					<sval type="int" val="13" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="13" />
+					<sval type="int" val="-2" />
+				</sval>
 				<sval type="array" size="4">
 					<sval type="int" val="655" />
-					<sval type="int" val="5" />
+					<sval type="int" val="6" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="1" />
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610611453" />
+					<sval type="int" val="-1610611197" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="5" />
-					<sval type="int" val="4" />
-					<sval type="int" val="7" />
+					<sval type="int" val="6" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="207" />
 					<sval type="int" val="15" />
 					<sval type="int" val="0" />
 					<sval type="int" val="3" />
@@ -162,7 +190,7 @@
 				<sval type="array" size="3">
 					<sval type="int" val="662" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="4" />
+					<sval type="int" val="5" />
 				</sval>
 				<sval type="array" size="16">
 					<sval type="int" val="102" />
@@ -208,20 +236,12 @@
 			</sval>
 			<sval type="array" size="6">
 				<sval type="array" size="2">
-					<sval type="int" val="1" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
 					<sval type="int" val="2" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="4" />
+					<sval type="int" val="3" />
 					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="5" />
-					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="5" />
@@ -229,6 +249,14 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="6" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="6" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="7" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>
