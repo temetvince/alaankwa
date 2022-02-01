@@ -79,8 +79,8 @@
     * Escorts will attempt to follow at reasonable speeds instead of flying all over the place.
 * TOP NOTCH RECRUITERS
     * All recruited Trade Mrk III Pilots are level 8, enough to start Galaxy trading.
-* SATELLITE MONITORING PLUS
-    * Satellite Monitoring respects all player property, not just satellites.
+* TRADE EMBARGO
+    * Removes all NPC ships docked at player stations which are not open to race traders.
 * SEPA'S MOTHERSHIP
     * Motherships are mobile factories which can produce lasers, missiles, shields, and ships (must be able to dock on the Mothership).
         * Alaankwa Corsairs
