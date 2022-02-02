@@ -87,6 +87,8 @@
             * A unique gamestart which focuses on unlocking blueprints by scanning ships in order to build them instead of buying/selling them.
         * Assembly Lines
             * The Ship Building Speed is a function of the population where the population is the max marines a ship can hold multiplied by the Assembly Lines.
+        * Just in Time (JIT) Manufacturing
+            * Allows full production speed even when producing more than one type of ware.
         * Research and Development Budget
             * The number of data scans per type required to get the cheapest blueprint for production.
         * Shield Expertise
