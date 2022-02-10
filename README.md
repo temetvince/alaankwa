@@ -26,13 +26,14 @@
 2. Optionally Install SWLU or M3
     * (SWLU) Star Wars Litcube's Universe
     * (M3) Mayhem 3
-3. Optionally install GiC or SWM3
+3. Optionally install GiC, M3R, or SWM3
     * (GiC) Galaxy in Chaos - Requires SWLU
+    * (M3R) Mayhem 3 Rebalanced - Requires M3
     * (SWM3) Star Wars Mayhem 3 - Requires M3
 4. Install all other desired mods besides Alaankwa
 5. Optionally install ReShade
 6. Install Alaankwa
-7. Install Alaankwa Patch if playing SWLU, GIC, M3, or SWM3
+7. Install Alaankwa Patch if playing SWLU, GIC, M3, M3R, or SWM3
 8. If you don't like the new font, delete the 'f' folder in your 'x3 terran conflict' root install directory
 
 ## Features
@@ -116,18 +117,22 @@
             * $param.debug is the message or object to debug. Can be simple like a ship name or complex like an array of tables
             * $param.trackingaim is optional. If provided, then the debug script will only run if that entity is the player's tracking aim in game
 
-### M3/SWM3 specific
+### M3/M3R/SWM3 specific
 * NAVIGATION COMPUTER MK II
     * Allows Workers to use jump beacons during their job search
     * Significant performance impact to Worker job calculation speed
         * Don't use with more than 10-20 jump beacons
+* SMUGGLING RUNS
+    * Allows workers to use Pirate bases during their job search
+    * Disabled by default
+        * Enable for normal M3 behavior
 * Outposts show themselves as a candidate for export or import jobs
     * This is helpful for making generic templates that include the outpost where you are creating the template
 * Fixed multiple Supply Drone bugs
 * Fixed the Outpost Client Threshold not being saved when making a Jobs Preset
 * Fixed the homebase being cleared in your ship when using the Personal Teleportation Device
-* Economy flowcharts for Mayhem 3 and Star Wars Mayhem 3
-* An optional settings t-file for new players is included, disabled by default
+* Economy flowcharts for Mayhem 3/Mayhem 3 Rebalanced and Star Wars Mayhem 3
+* An optional Mayhem 3 settings t-file for new players is included, disabled by default
     * These settings are the ones recommended by Darth Fiscus here: https://www.youtube.com/watch?v=kV-aS0swpfY&t=13s
 
 ## Links
