@@ -2,7 +2,7 @@
 <?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
 <!-- Generated using X-Studio -->
 <script>
-	<name>temetvince.ResupplyDrone.MoveToObject</name>
+	<name>tv.ship.move.to</name>
 	<version>1</version>
 	<engineversion>50</engineversion>
 	<description></description>
@@ -15,7 +15,7 @@
 			<comment>* ************************************************</comment>
 		</line>
 		<line linenr="002" indent="">
-			<comment>* SCRIPT NAME: temetvince.ResupplyDrone.MoveToObject</comment>
+			<comment>* SCRIPT NAME: tv.ship.move.to.xml</comment>
 		</line>
 		<line linenr="003" indent="">
 			<comment>* DESCRIPTION: Based roughly on !move.movetoobject.samesector</comment>
@@ -33,7 +33,7 @@
 			<comment>*                        </comment>
 		</line>
 		<line linenr="008" indent="">
-			<comment>* AUTHOR: temevince         DATE: 20 June 2021</comment>
+			<comment>* AUTHOR: temetvince         DATE: 20 June 2021</comment>
 		</line>
 		<line linenr="009" indent="">
 			<comment>* ************************************************</comment>
@@ -305,15 +305,11 @@
 			<text> </text>
 			<var>[FLRET_DESTROYED]</var>
 		</line>
-		<line linenr="046" indent="">
-			<text>return</text>
-			<text> </text>
-			<var>null</var>
-		</line>
+		<line linenr="046" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
-			<sval type="string" val="temetvince.ResupplyDrone.MoveToObject" />
+			<sval type="string" val="tv.ship.move.to" />
 			<sval type="int" val="50" />
 			<sval type="string" val="" />
 			<sval type="int" val="1" />
@@ -326,7 +322,7 @@
 				<sval type="string" val="dist" />
 				<sval type="string" val="arrived" />
 			</sval>
-			<sval type="array" size="26">
+			<sval type="array" size="25">
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
 					<sval type="int" val="2" />
@@ -531,11 +527,6 @@
 					<sval type="int" val="19" />
 					<sval type="int" val="1" />
 				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="103" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-				</sval>
 			</sval>
 			<sval type="array" size="2">
 				<sval type="array" size="2">
@@ -547,7 +538,7 @@
 					<sval type="string" val="Range" />
 				</sval>
 			</sval>
-			<sval type="array" size="25">
+			<sval type="array" size="26">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
@@ -556,7 +547,7 @@
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
-					<sval type="string" val="SCRIPT NAME: temetvince.ResupplyDrone.MoveToObject" />
+					<sval type="string" val="SCRIPT NAME: tv.ship.move.to.xml" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
@@ -586,7 +577,7 @@
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
-					<sval type="string" val="AUTHOR: temevince         DATE: 20 June 2021" />
+					<sval type="string" val="AUTHOR: temetvince         DATE: 20 June 2021" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
@@ -657,6 +648,10 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="24" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="25" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>

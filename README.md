@@ -126,6 +126,8 @@
     * Allows workers to use Pirate bases during their job search
     * Disabled by default
         * Enable for normal M3 behavior
+* MINING DRONES
+    * Player owned outposts build mining drones which collect minerals from miners in sector
 * Outposts show themselves as a candidate for export or import jobs
     * This is helpful for making generic templates that include the outpost where you are creating the template
 * Fixed multiple Supply Drone bugs
