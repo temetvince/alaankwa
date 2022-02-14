@@ -100,6 +100,7 @@
 			<text>wait</text>
 			<text> </text>
 			<var>2000</var>
+			<text> </text>
 			<text>ms</text>
 		</line>
 		<line linenr="017" indent="&#160;" />
@@ -139,10 +140,17 @@
 			<text> </text>
 			<text>if</text>
 			<text> </text>
+			<text>size</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
 			<var>$ships.keys</var>
 		</line>
 		<line linenr="024" indent="&#160;&#160;">
 			<text>continue</text>
+			<text> </text>
 		</line>
 		<line linenr="025" indent="&#160;" interruptable="@">
 			<var>$ships.keys</var>
@@ -157,6 +165,7 @@
 			<text>script</text>
 			<text> </text>
 			<call>tv.get.array.randomized</call>
+			<text> </text>
 			<text>:</text>
 			<text> </text>
 			<text>param.randomize</text>
@@ -173,9 +182,7 @@
 			<var>0</var>
 			<text>]</text>
 		</line>
-		<line linenr="027" indent="&#160;">
-			<text> </text>
-		</line>
+		<line linenr="027" indent="&#160;" />
 		<line linenr="028" indent="&#160;">
 			<var>$ship.minerals</var>
 			<text> </text>
@@ -207,12 +214,19 @@
 			<text> </text>
 			<text>table</text>
 			<text>=</text>
+			<text> </text>
 			<var>$ship.minerals</var>
 		</line>
 		<line linenr="030" indent="&#160;">
 			<text>skip</text>
 			<text> </text>
 			<text>if</text>
+			<text> </text>
+			<text>size</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>array</text>
 			<text> </text>
 			<var>$ship.minerals.keys</var>
 		</line>
@@ -221,6 +235,7 @@
 		</line>
 		<line linenr="032" indent="&#160;" interruptable="@">
 			<var>$ship.minerals.keys</var>
+			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>[NULL]</var>
@@ -231,6 +246,7 @@
 			<text>script</text>
 			<text> </text>
 			<call>tv.get.array.randomized</call>
+			<text> </text>
 			<text>:</text>
 			<text> </text>
 			<text>param.randomize</text>
@@ -493,8 +509,8 @@
 			<text>script</text>
 			<text> </text>
 			<call>tv.get.m3.wares.mining</call>
-			<text>:</text>
 			<text> </text>
+			<text>:</text>
 		</line>
 		<line linenr="063" indent="&#160;">
 			<var>$wares.keys</var>
@@ -909,6 +925,7 @@
 			<text>script</text>
 			<text> </text>
 			<call>tv.ship.wares</call>
+			<text> </text>
 			<text>:</text>
 			<text> </text>
 			<text>param.wares</text>
@@ -938,10 +955,15 @@
 			<text> </text>
 			<text>if</text>
 			<text> </text>
+			<text>size</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
 			<var>$ship.minerals.keys</var>
 		</line>
 		<line linenr="107" indent="&#160;">
-			<text> </text>
 			<text>table</text>
 			<text> </text>
 			<text>set</text>
@@ -1258,6 +1280,7 @@
 			<text>script</text>
 			<text> </text>
 			<call>tv.get.min</call>
+			<text> </text>
 			<text>:</text>
 			<text> </text>
 			<text>param.first</text>
@@ -1267,7 +1290,6 @@
 			<text>param.second</text>
 			<text>=</text>
 			<var>$stock</var>
-			<text> </text>
 		</line>
 		<line linenr="141" indent="&#160;&#160;">
 			<var>$loaded.neg</var>
@@ -1300,7 +1322,6 @@
 			<text>=</text>
 			<text> </text>
 			<var>$ship</var>
-			<text> </text>
 			<text>-&gt;</text>
 			<text> </text>
 			<text>add</text>
@@ -1382,6 +1403,7 @@
 			<text>script</text>
 			<text> </text>
 			<call>tv.ship.move.to</call>
+			<text> </text>
 			<text>:</text>
 			<text> </text>
 			<text>target</text>
@@ -1391,7 +1413,6 @@
 			<text>range</text>
 			<text>=</text>
 			<var>$transporterRange</var>
-			<text> </text>
 		</line>
 		<line linenr="151" indent="&#160;&#160;">
 			<var>[THIS]</var>
@@ -1606,14 +1627,11 @@
 					<sval type="int" val="131074" />
 					<sval type="int" val="3" />
 				</sval>
-				<sval type="array" size="7">
-					<sval type="int" val="104" />
+				<sval type="array" size="4">
+					<sval type="int" val="131" />
 					<sval type="int" val="-536866809" />
-					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="2" />
-					<sval type="int" val="1" />
-					<sval type="int" val="-1" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
@@ -1651,14 +1669,11 @@
 					<sval type="int" val="131074" />
 					<sval type="int" val="5" />
 				</sval>
-				<sval type="array" size="7">
-					<sval type="int" val="104" />
+				<sval type="array" size="4">
+					<sval type="int" val="131" />
 					<sval type="int" val="-536865273" />
-					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="6" />
-					<sval type="int" val="1" />
-					<sval type="int" val="-1" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
@@ -2079,14 +2094,11 @@
 					<sval type="int" val="131074" />
 					<sval type="int" val="5" />
 				</sval>
-				<sval type="array" size="7">
-					<sval type="int" val="104" />
+				<sval type="array" size="4">
+					<sval type="int" val="131" />
 					<sval type="int" val="-1610591480" />
-					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="6" />
-					<sval type="int" val="1" />
-					<sval type="int" val="-1" />
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="1708" />
