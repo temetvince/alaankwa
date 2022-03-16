@@ -69,10 +69,19 @@
 			<text> </text>
 			<var>$param.terminate</var>
 		</line>
-		<line linenr="013" indent="&#160;" interruptable="@">
+		<line linenr="013" indent="&#160;">
 			<text>if</text>
 			<text> </text>
-			<text>not</text>
+			<var>[THIS]</var>
+			<text> </text>
+			<text>==</text>
+			<text> </text>
+			<var>[PLAYERSHIP]</var>
+		</line>
+		<line linenr="014" indent="&#160;&#160;" interruptable="@">
+			<text>skip</text>
+			<text> </text>
+			<text>if</text>
 			<text> </text>
 			<var>[THIS]</var>
 			<text>-&gt;</text>
@@ -89,28 +98,16 @@
 			<text>=</text>
 			<text>'tv.feature.autorotate.playership'</text>
 		</line>
-		<line linenr="014" indent="&#160;&#160;">
-			<text>do</text>
-			<text> </text>
-			<text>if</text>
-			<text> </text>
-			<var>[THIS]</var>
-			<text> </text>
-			<text>==</text>
-			<text> </text>
-			<var>[PLAYERSHIP]</var>
-		</line>
 		<line linenr="015" indent="&#160;&#160;&#160;">
 			<text>break</text>
 		</line>
 		<line linenr="016" indent="&#160;">
-			<text>end</text>
+			<text>else</text>
 		</line>
-		<line linenr="017" indent="&#160;" />
-		<line linenr="018" indent="&#160;" interruptable="@">
-			<text>if</text>
+		<line linenr="017" indent="&#160;&#160;" interruptable="@">
+			<text>skip</text>
 			<text> </text>
-			<text>not</text>
+			<text>if</text>
 			<text> </text>
 			<var>[THIS]</var>
 			<text>-&gt;</text>
@@ -127,25 +124,14 @@
 			<text>=</text>
 			<text>'tv.feature.autorotate'</text>
 		</line>
-		<line linenr="019" indent="&#160;&#160;">
-			<text>do</text>
-			<text> </text>
-			<text>if</text>
-			<text> </text>
-			<var>[THIS]</var>
-			<text> </text>
-			<text>!=</text>
-			<text> </text>
-			<var>[PLAYERSHIP]</var>
-		</line>
-		<line linenr="020" indent="&#160;&#160;&#160;">
+		<line linenr="018" indent="&#160;&#160;&#160;">
 			<text>break</text>
 		</line>
-		<line linenr="021" indent="&#160;">
+		<line linenr="019" indent="&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="022" indent="&#160;" />
-		<line linenr="023" indent="&#160;">
+		<line linenr="020" indent="&#160;" />
+		<line linenr="021" indent="&#160;">
 			<var>$playerSector</var>
 			<text> </text>
 			<text>=</text>
@@ -157,7 +143,7 @@
 			<text> </text>
 			<text>sector</text>
 		</line>
-		<line linenr="024" indent="&#160;">
+		<line linenr="022" indent="&#160;">
 			<var>$sector</var>
 			<text> </text>
 			<text>=</text>
@@ -169,7 +155,7 @@
 			<text> </text>
 			<text>sector</text>
 		</line>
-		<line linenr="025" indent="&#160;">
+		<line linenr="023" indent="&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -180,11 +166,11 @@
 			<text> </text>
 			<var>$sector</var>
 		</line>
-		<line linenr="026" indent="&#160;&#160;">
+		<line linenr="024" indent="&#160;&#160;">
 			<text>break</text>
 		</line>
-		<line linenr="027" indent="&#160;" />
-		<line linenr="028" indent="&#160;">
+		<line linenr="025" indent="&#160;" />
+		<line linenr="026" indent="&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -195,18 +181,18 @@
 			<text> </text>
 			<var>$sector.starting</var>
 		</line>
-		<line linenr="029" indent="&#160;&#160;">
+		<line linenr="027" indent="&#160;&#160;">
 			<text>break</text>
 		</line>
-		<line linenr="030" indent="&#160;" />
-		<line linenr="031" indent="&#160;">
+		<line linenr="028" indent="&#160;" />
+		<line linenr="029" indent="&#160;">
 			<var>$gamma.old</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>$gamma</var>
 		</line>
-		<line linenr="032" indent="&#160;">
+		<line linenr="030" indent="&#160;">
 			<var>$gamma</var>
 			<text> </text>
 			<text>=</text>
@@ -220,8 +206,8 @@
 			<text> </text>
 			<text>gamma</text>
 		</line>
-		<line linenr="033" indent="&#160;" />
-		<line linenr="034" indent="&#160;">
+		<line linenr="031" indent="&#160;" />
+		<line linenr="032" indent="&#160;">
 			<text>while</text>
 			<text> </text>
 			<var>$gamma</var>
@@ -230,11 +216,11 @@
 			<text> </text>
 			<var>0</var>
 		</line>
-		<line linenr="035" indent="&#160;&#160;" />
-		<line linenr="036" indent="&#160;&#160;">
+		<line linenr="033" indent="&#160;&#160;" />
+		<line linenr="034" indent="&#160;&#160;">
 			<comment>* Prevent while docking/docked</comment>
 		</line>
-		<line linenr="037" indent="&#160;&#160;">
+		<line linenr="035" indent="&#160;&#160;">
 			<var>$isDocked</var>
 			<text> </text>
 			<text>=</text>
@@ -246,7 +232,7 @@
 			<text> </text>
 			<text>docked</text>
 		</line>
-		<line linenr="038" indent="&#160;&#160;">
+		<line linenr="036" indent="&#160;&#160;">
 			<var>$isLanding</var>
 			<text> </text>
 			<text>=</text>
@@ -258,8 +244,8 @@
 			<text> </text>
 			<text>landing</text>
 		</line>
-		<line linenr="039" indent="&#160;&#160;" />
-		<line linenr="040" indent="&#160;&#160;">
+		<line linenr="037" indent="&#160;&#160;" />
+		<line linenr="038" indent="&#160;&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -270,21 +256,21 @@
 			<text> </text>
 			<var>$isLanding</var>
 		</line>
-		<line linenr="041" indent="&#160;&#160;&#160;">
+		<line linenr="039" indent="&#160;&#160;&#160;">
 			<text>break</text>
 		</line>
-		<line linenr="042" indent="&#160;&#160;" />
-		<line linenr="043" indent="&#160;&#160;">
+		<line linenr="040" indent="&#160;&#160;" />
+		<line linenr="041" indent="&#160;&#160;">
 			<comment>* $gamma.old is used to check if the ship is rotating b/c we don't want to fight it</comment>
 		</line>
-		<line linenr="044" indent="&#160;&#160;">
+		<line linenr="042" indent="&#160;&#160;">
 			<var>$gamma.old</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>$gamma</var>
 		</line>
-		<line linenr="045" indent="&#160;&#160;">
+		<line linenr="043" indent="&#160;&#160;">
 			<var>$gamma</var>
 			<text> </text>
 			<text>=</text>
@@ -298,7 +284,7 @@
 			<text> </text>
 			<text>gamma</text>
 		</line>
-		<line linenr="046" indent="&#160;&#160;">
+		<line linenr="044" indent="&#160;&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -317,11 +303,11 @@
 			<text> </text>
 			<var>0</var>
 		</line>
-		<line linenr="047" indent="&#160;&#160;&#160;">
+		<line linenr="045" indent="&#160;&#160;&#160;">
 			<text>break</text>
 		</line>
-		<line linenr="048" indent="&#160;&#160;" />
-		<line linenr="049" indent="&#160;&#160;">
+		<line linenr="046" indent="&#160;&#160;" />
+		<line linenr="047" indent="&#160;&#160;">
 			<text>if</text>
 			<text> </text>
 			<var>$gamma</var>
@@ -330,7 +316,7 @@
 			<text> </text>
 			<var>$halfway</var>
 		</line>
-		<line linenr="050" indent="&#160;&#160;&#160;">
+		<line linenr="048" indent="&#160;&#160;&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -341,11 +327,11 @@
 			<text> </text>
 			<var>$gamma</var>
 		</line>
-		<line linenr="051" indent="&#160;&#160;&#160;&#160;">
+		<line linenr="049" indent="&#160;&#160;&#160;&#160;">
 			<text>break</text>
 		</line>
-		<line linenr="052" indent="&#160;&#160;&#160;" />
-		<line linenr="053" indent="&#160;&#160;&#160;">
+		<line linenr="050" indent="&#160;&#160;&#160;" />
+		<line linenr="051" indent="&#160;&#160;&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -356,7 +342,7 @@
 			<text> </text>
 			<var>0</var>
 		</line>
-		<line linenr="054" indent="&#160;&#160;&#160;&#160;">
+		<line linenr="052" indent="&#160;&#160;&#160;&#160;">
 			<var>$gamma</var>
 			<text> </text>
 			<text>=</text>
@@ -367,7 +353,7 @@
 			<text> </text>
 			<var>$rotate</var>
 		</line>
-		<line linenr="055" indent="&#160;&#160;&#160;">
+		<line linenr="053" indent="&#160;&#160;&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -378,17 +364,17 @@
 			<text> </text>
 			<var>0</var>
 		</line>
-		<line linenr="056" indent="&#160;&#160;&#160;&#160;">
+		<line linenr="054" indent="&#160;&#160;&#160;&#160;">
 			<var>$gamma</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>0</var>
 		</line>
-		<line linenr="057" indent="&#160;&#160;">
+		<line linenr="055" indent="&#160;&#160;">
 			<text>else</text>
 		</line>
-		<line linenr="058" indent="&#160;&#160;&#160;">
+		<line linenr="056" indent="&#160;&#160;&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -399,11 +385,11 @@
 			<text> </text>
 			<var>$gamma</var>
 		</line>
-		<line linenr="059" indent="&#160;&#160;&#160;&#160;">
+		<line linenr="057" indent="&#160;&#160;&#160;&#160;">
 			<text>break</text>
 		</line>
-		<line linenr="060" indent="&#160;&#160;&#160;" />
-		<line linenr="061" indent="&#160;&#160;&#160;">
+		<line linenr="058" indent="&#160;&#160;&#160;" />
+		<line linenr="059" indent="&#160;&#160;&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -414,7 +400,7 @@
 			<text> </text>
 			<var>$fullway</var>
 		</line>
-		<line linenr="062" indent="&#160;&#160;&#160;&#160;">
+		<line linenr="060" indent="&#160;&#160;&#160;&#160;">
 			<var>$gamma</var>
 			<text> </text>
 			<text>=</text>
@@ -425,7 +411,7 @@
 			<text> </text>
 			<var>$rotate</var>
 		</line>
-		<line linenr="063" indent="&#160;&#160;&#160;">
+		<line linenr="061" indent="&#160;&#160;&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -436,18 +422,18 @@
 			<text> </text>
 			<var>$fullway</var>
 		</line>
-		<line linenr="064" indent="&#160;&#160;&#160;&#160;">
+		<line linenr="062" indent="&#160;&#160;&#160;&#160;">
 			<var>$gamma</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>0</var>
 		</line>
-		<line linenr="065" indent="&#160;&#160;">
+		<line linenr="063" indent="&#160;&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="066" indent="&#160;&#160;" />
-		<line linenr="067" indent="&#160;&#160;">
+		<line linenr="064" indent="&#160;&#160;" />
+		<line linenr="065" indent="&#160;&#160;">
 			<var>$alpha</var>
 			<text> </text>
 			<text>=</text>
@@ -461,7 +447,7 @@
 			<text> </text>
 			<text>alpha</text>
 		</line>
-		<line linenr="068" indent="&#160;&#160;">
+		<line linenr="066" indent="&#160;&#160;">
 			<var>$beta</var>
 			<text> </text>
 			<text>=</text>
@@ -475,7 +461,7 @@
 			<text> </text>
 			<text>beta</text>
 		</line>
-		<line linenr="069" indent="&#160;&#160;">
+		<line linenr="067" indent="&#160;&#160;">
 			<var>[THIS]</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -496,7 +482,7 @@
 			<text>=</text>
 			<var>$gamma</var>
 		</line>
-		<line linenr="070" indent="&#160;&#160;" interruptable="@">
+		<line linenr="068" indent="&#160;&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<text>wait</text>
@@ -505,11 +491,11 @@
 			<text> </text>
 			<text>ms</text>
 		</line>
-		<line linenr="071" indent="&#160;">
+		<line linenr="069" indent="&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="072" indent="&#160;" />
-		<line linenr="073" indent="&#160;" interruptable="@">
+		<line linenr="070" indent="&#160;" />
+		<line linenr="071" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<text>wait</text>
@@ -518,16 +504,16 @@
 			<text> </text>
 			<text>ms</text>
 		</line>
-		<line linenr="074" indent="">
+		<line linenr="072" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="075" indent="" />
-		<line linenr="076" indent="">
+		<line linenr="073" indent="" />
+		<line linenr="074" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="077" indent="" />
+		<line linenr="075" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
@@ -609,59 +595,48 @@
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
 				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610610173" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="3" />
+					<sval type="int" val="15" />
+					<sval type="int" val="0" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="0" />
+					<sval type="int" val="-2" />
+				</sval>
 				<sval type="array" size="8">
 					<sval type="int" val="102" />
 					<sval type="string" val="tv.get.global.boolean" />
-					<sval type="int" val="-536868604" />
+					<sval type="int" val="-536868601" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
 					<sval type="int" val="1" />
 					<sval type="int" val="5" />
 					<sval type="string" val="tv.feature.autorotate.playership" />
 				</sval>
-				<sval type="array" size="13">
-					<sval type="int" val="104" />
-					<sval type="int" val="-1610610424" />
-					<sval type="int" val="3" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="1" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="3" />
-					<sval type="int" val="15" />
-					<sval type="int" val="0" />
-					<sval type="int" val="3" />
-					<sval type="int" val="-1" />
-					<sval type="int" val="0" />
-					<sval type="int" val="-2" />
-				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
 					<sval type="int" val="50" />
 				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="12" />
+				</sval>
 				<sval type="array" size="8">
 					<sval type="int" val="102" />
 					<sval type="string" val="tv.get.global.boolean" />
-					<sval type="int" val="-536867836" />
+					<sval type="int" val="-536867833" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
 					<sval type="int" val="1" />
 					<sval type="int" val="5" />
 					<sval type="string" val="tv.feature.autorotate" />
-				</sval>
-				<sval type="array" size="13">
-					<sval type="int" val="104" />
-					<sval type="int" val="-1610609656" />
-					<sval type="int" val="3" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="1" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="3" />
-					<sval type="int" val="15" />
-					<sval type="int" val="1" />
-					<sval type="int" val="3" />
-					<sval type="int" val="-1" />
-					<sval type="int" val="1" />
-					<sval type="int" val="-2" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
@@ -1044,7 +1019,7 @@
 					<sval type="string" val="Should the script terminate" />
 				</sval>
 			</sval>
-			<sval type="array" size="37">
+			<sval type="array" size="36">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
@@ -1075,12 +1050,8 @@
 					<sval type="int" val="7" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="9" />
-					<sval type="int" val="4" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="9" />
-					<sval type="int" val="2" />
+					<sval type="int" val="10" />
+					<sval type="int" val="5" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="12" />
