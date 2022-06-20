@@ -1,0 +1,539 @@
+???<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="director.xsl" type="text/xsl" ?>
+<director name="L2M150_Quest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="director.xsd">
+  <documentation>
+    <author name="Daniel Winsor" alias="AalaarDB" contact="aalaardb@gmail.com" />
+    <content reference="L2M150" name="Buy Used Ship" description="An offer for the player to buy a second hand ship"/>
+    <version number="0.1" date="17/06/2008" status="development"/>
+  </documentation>
+  <cues>
+    <cue name="L2M150a" library="1" check="cancel">
+      <documentation>
+        <content type="L2"/>
+        <params>
+          <param name="enablePirates" type="boolean" default="1" compulsory="1" description="should pirates try to sell ships in pirate sectors?"/>
+          <param name="enablePirateShips" type="boolean" default="1" compulsory="1" description="should pirates try to sell Pirate ships?"/>
+          <param name="enableTerrans" type="boolean" default="1" compulsory="1" description="should terrans try to sell ships in terran sectors?"/>
+          <param name="enableTerranShips" type="boolean" default="1" compulsory="1" description="should terrans try to sell terran ships?"/>
+        </params>
+        <history>
+          <change author="Owen Lake" date="21/09/2009" description="Removed original L2M150 and replaced with similar L2M150a varient to fix persistant memory leak."/>
+        </history>
+        <todo>
+          <item description="set pirate notoriety for determining which ship to sell"/>
+          <item description="create conversation and text and briefing"/>
+        </todo>
+      </documentation>
+      <condition>
+        <check_all>
+          <check_value value="{player.sector.warobjectid}" exact="0"/>
+          <check_any>
+            <check_all>
+              <check_value value="{player.sector.race.mask.default}" exact="1"/>
+              <check_value value="{player.notoriety.{player.sector.race}}" min="{lookup.type.minnotoriety@SS_SH_A_M5}"/>
+            </check_all>
+
+            <check_all>
+              <check_value value="{param.exists@enablePirates}*{param@enablePirates}" exact="1"/>
+              <check_value value="{player.sector.race}" list="{lookup.race@pirate}"/>
+            </check_all>
+
+            <check_all>
+              <check_value value="{player.sector.race}" list="{lookup.race@terran}"/>
+              <check_value value="{player.notoriety.{player.sector.race}}" min="{lookup.type.minnotoriety@SS_SH_TR_M5}"/>
+            </check_all>
+          </check_any>
+        </check_all>
+      </condition>
+      <action>
+        <do_all>
+          <do_any>
+            <set_value name="this.offerType" exact="{lookup.class@ship}" chance="10" comment="i want to sell the ship i'm currently in, i'll become an astronaut"/>
+            <set_value name="this.offerType" exact="{lookup.class@factory}" chance="30" comment="i want to sell my ship docked at this station"/>
+            <set_value name="this.offerType" exact="{lookup.class@shipyard}" chance="60" comment="i've upgraded my ship and want to sell my old one"/>
+          </do_any>
+
+          <set_value name="this.enableRandomMakerRace" exact="1" comment="if true, small chance a boron will sell teladi ship, for example"/>
+          <set_value name="L2M150a.expireTime" exact="{player.age}"/>
+          <set_value name="L2M150a.expireTime" min="15*60" max="30*60" operation="add"/>
+          <set_value name="this.sellerRace" exact="{player.sector.race}"/>
+          <set_value name="this.noto" exact="{player.notoriety.{value@this.sellerRace}}"/>
+
+          <!-- Choose the station/shipyard, make sure one exists, if one doesn't then this offer becomes a ship offer
+          since shipyards are sort of rare, say 50/50, this should decrease shipyard to 30 and increase ship to 40, so it's about 1/3 chance for each, maybe 50/25/25-->
+          <do_choose>
+            <do_when value="{value@this.offerType}" exact="{lookup.class@factory}">
+              <find_station name="this.Station" race="{value@this.sellerRace}" class="station" dockingallowed="1" friend="1" neutral="1">
+                <sector sector="{player.sector}"/>
+              </find_station>
+              <do_if value="{object.exists@this.Station}" exact="0">
+                <set_value name="this.offerType" exact="{lookup.class@ship}"/>
+              </do_if>
+            </do_when>
+            <do_when value="{value@this.offerType}" exact="{lookup.class@shipyard}">
+              <find_station name="this.Station" race="{value@this.sellerRace}" class="shipyard" dockingallowed="1" friend="1" neutral="1">
+                <sector sector="{player.sector}"/>
+              </find_station>
+              <do_if value="{object.exists@this.Station}" exact="0">
+                <set_value name="this.offerType" exact="{lookup.class@ship}"/>
+              </do_if>
+            </do_when>
+          </do_choose>
+
+          <!-- Choose Ship Class-->
+          <do_any comment="choose logic line, freighter or fighter?">
+            <do_all chance="33"
+                    comment="logic broken into 2 sections, this one is TM -> TS -> TP -> M5,
+                    if a high value class is chosen but is excluded because of ranks,
+                    the logic continues on with the next highest value class">
+              <set_value name="this.shipClass1" exact="{lookup.class@tm}"/>
+              <set_value name="this.shipClass2" exact="{lookup.class@ts}"/>
+              <set_value name="this.shipClass3" exact="{lookup.class@tp}"/>
+              <set_value name="this.shipClass4" exact="{lookup.class@m5}"/>
+              <set_value name="this.notoNeeded1" exact="{lookup.type.minnotoriety@SS_SH_A_TM}"/>
+              <set_value name="this.notoNeeded2" exact="{lookup.type.minnotoriety@SS_SH_A_TS}"/>
+              <set_value name="this.notoNeeded3" exact="{lookup.type.minnotoriety@SS_SH_A_TP}"/>
+              <set_value name="this.notoNeeded4" exact="{lookup.type.minnotoriety@SS_SH_A_M5}" comment="we assume we meet this notoriety"/>
+              <set_value name="this.chance1" exact="10"/>
+              <set_value name="this.chance2" exact="70" comment="60 chance"/>
+              <set_value name="this.chance3" exact="85" comment="15 chance"/>
+              <set_value name="this.chance4" exact="100" comment="15 chance"/>
+            </do_all>
+            <do_all chance="33"
+                    comment="logic broken into 2 sections, this one is M6 -> M3 -> M4 -> M5,
+                    if a high value class is chosen but is excluded because of ranks,
+                    the logic continues on with the next highest value class">
+              <set_value name="this.shipClass1" exact="{lookup.class@m6}"/>
+              <set_value name="this.shipClass2" exact="{lookup.class@m3}"/>
+              <set_value name="this.shipClass3" exact="{lookup.class@m4}"/>
+              <set_value name="this.shipClass4" exact="{lookup.class@m5}"/>
+              <set_value name="this.notoNeeded1" exact="{lookup.type.minnotoriety@SS_SH_A_M6}"/>
+              <set_value name="this.notoNeeded2" exact="{lookup.type.minnotoriety@SS_SH_A_M3}"/>
+              <set_value name="this.notoNeeded3" exact="{lookup.type.minnotoriety@SS_SH_A_M4}"/>
+              <set_value name="this.notoNeeded4" exact="{lookup.type.minnotoriety@SS_SH_A_M5}" comment="we assume we meet this notoriety"/>
+              <set_value name="this.chance1" exact="10"/>
+              <set_value name="this.chance2" exact="45" comment="35 chance"/>
+              <set_value name="this.chance3" exact="75" comment="30 chance"/>
+              <set_value name="this.chance4" exact="100" comment="25 chance"/>
+            </do_all>
+              <do_all chance="34"
+              <set_value name="this.shipClass1" exact="{lookup.class@tl}"/>
+              <set_value name="this.shipClass2" exact="{lookup.class@m6}"/>
+              <set_value name="this.shipClass3" exact="{lookup.class@tm}"/>
+              <set_value name="this.shipClass4" exact="{lookup.class@m5}"/>
+              <set_value name="this.notoNeeded1" exact="{lookup.type.minnotoriety@SS_SH_A_TL}"/>
+              <set_value name="this.notoNeeded2" exact="{lookup.type.minnotoriety@SS_SH_A_M6}"/>
+              <set_value name="this.notoNeeded3" exact="{lookup.type.minnotoriety@SS_SH_A_TM}"/>
+              <set_value name="this.notoNeeded4" exact="{lookup.type.minnotoriety@SS_SH_A_M5}" comment="we assume we meet this notoriety"/>
+              <set_value name="this.chance1" exact="25"/>
+              <set_value name="this.chance2" exact="50" comment="25 chance"/>
+              <set_value name="this.chance3" exact="75" comment="25 chance"/>
+              <set_value name="this.chance4" exact="100" comment="25 chance"/>
+            </do_all>
+          </do_any>
+
+          <!--Set pirate notoriety needed, player obviously doesn't have 1000 noto with pirates to buy an m3
+          BUT, should it be set to 0? -100000? something non-hostile?-->
+          <do_if value="{value@this.sellerRace}" list="{lookup.race@pirate}">
+            <!-- 1 above foe, will this ever happen?-->
+            <set_value name="this.notoNeeded1" exact="{lookup.notoriety@foe}+1"/>
+            <set_value name="this.notoNeeded2" exact="{lookup.notoriety@foe}+1"/>
+            <set_value name="this.notoNeeded3" exact="{lookup.notoriety@foe}+1"/>
+            <set_value name="this.notoNeeded4" exact="{lookup.notoriety@foe}+1"/>
+
+            <!-- no noto needed
+            <set_value name="this.notoNeeded1" exact="{lookup.notoriety@min}"/>
+            <set_value name="this.notoNeeded2" exact="{lookup.notoriety@min}"/>
+            <set_value name="this.notoNeeded3" exact="{lookup.notoriety@min}"/>
+            <set_value name="this.notoNeeded4" exact="{lookup.notoriety@min}"/>
+            -->
+          </do_if>
+
+          <set_value name="L2M150a.ShipClass" exact="{lookup.class@m5}"
+                     comment="default is M5, the player may not have notoriety for others"/>
+          <!-- Now go down the list, did we roll for an M6?  did we meet M6's conditions?
+          if not, go down to M3, did we roll for M6 or M3?  did we meet M3 conditions?
+          do_choose is not appropriate here-->
+          <set_value name="this.randomShipClass" min="1" max="100" comment="determines weighted ship class"/>
+
+          <do_if value="{value@this.randomShipClass}" max="{value@this.chance1}">
+            <do_if value="{value@this.offerType}" exact="{lookup.class@shipyard}"
+                   comment="m6s and TMs can only be sold at shipyards, not at station or in space">
+              <do_if value="{value@this.noto}" min="{value@this.notoNeeded1}">
+                <set_value name="L2M150a.ShipClass" exact="{value@this.shipClass1}"/>
+              </do_if>
+            </do_if>
+          </do_if>
+
+          <do_if value="{value@L2M150a.ShipClass}" exact="{lookup.class@m5}">
+            <do_if value="{value@this.randomShipClass}" max="{value@this.chance2}">
+              <do_if value="{value@this.noto}" min="{value@this.notoNeeded2}">
+                <set_value name="L2M150a.ShipClass" exact="{value@this.shipClass2}"/>
+              </do_if>
+            </do_if>
+          </do_if>
+
+          <do_if value="{value@L2M150a.ShipClass}" exact="{lookup.class@m5}">
+            <do_if value="{value@this.randomShipClass}" max="{value@this.chance3}">
+              <do_if value="{value@this.noto}" min="{value@this.notoNeeded3}">
+                <set_value name="L2M150a.ShipClass" exact="{value@this.shipClass3}"/>
+              </do_if>
+            </do_if>
+          </do_if>
+
+          <!-- Remember that M5 was default, if we didn't meet conditions above that's ok
+          no need to check M5 chance or notoriety-->
+
+          <!-- Choose Ship Race-->
+          <do_choose>
+            <do_when value="{value@this.sellerRace}" exact="{lookup.race@pirate}">
+              <do_choose>
+                <do_when value="{value@L2M150a.ShipClass}" exact="{lookup.class@m6}">
+                  <set_value name="L2M150a.ShipRace" exact="{random.race@default}" comment="should we sell pirate M6s and TMs? nah"/>
+                </do_when>
+
+                <do_otherwise>
+                  <do_choose>
+                    <do_when value="{param.exists@enablePirateShips}*{param@enablePirateShips}" exact="1">
+                      <set_value name="L2M150a.ShipRace" exact="{random.race@default|pirate}"/>
+                    </do_when>
+                    <do_otherwise>
+                      <set_value name="L2M150a.ShipRace" exact="{random.race@default}"/>
+                    </do_otherwise>
+                  </do_choose>
+                </do_otherwise>
+              </do_choose>
+            </do_when>
+
+            <do_otherwise>
+              <do_all>
+                <set_value name="L2M150a.ShipRace" exact="{value@this.sellerRace}"/>
+                <set_value name="L2M150a.ShipRace" exact="{random.race@default}"
+                           chance="25*{value@this.enableRandomMakerRace}"
+                           comment="100 chance sellerRace OR 80 chance sellerRace, 5 chance each other default race"/>
+              </do_all>
+            </do_otherwise>
+          </do_choose>
+        </do_all>
+      </action>
+      <cues>
+        <cue name="L2M150a End Mission V2" delay="5s">
+          <condition>
+            <check_value value="{value@L2M150a.EndMission}" exact="1"/>
+          </condition>
+          <action>
+            <do_all>
+              <do_if value="{actor.exists@L2M150a.MissionSeller}" exact="1">
+                <remove_offer actor="L2M150a.MissionSeller" conversation="L2M150Offer" discipline="TXXX"/>
+                <do_if value="{actor.station.isclass.station@L2M150a.MissionSeller}" exact="1">
+                  <destroy_actor actor="L2M150a.MissionSeller"/>
+                </do_if>
+              </do_if>
+              <do_if value="{group.object.count@L2M150a.DSG}" min="1">
+                <destroy_group group="L2M150a.DSG" warp="1"/>
+              </do_if>
+              <cancel_cue cue="L2M150a"/>
+            </do_all>
+          </action>
+        </cue>
+
+        <cue name="L2M150a Get Shiptype">
+          <cues>
+            <cue ref="SRST">
+              <params>
+                <param name="Race ID" value="{value@L2M150a.ShipRace}"/>
+                <param name="Class ID" value="{value@L2M150a.ShipClass}"/>
+                <param name="Cue" value="L2M150a Get Shiptype"/>
+                <param name="CancelCue" value="L2M150a Get Shiptype"/>
+                <param name="Shiptype Address" value="L2M150a.shipType"/>
+              </params>
+            </cue>
+          </cues>
+        </cue>
+        <cue name="L2M150a Create Ship And Offer" version="3">
+          <condition>
+            <cue_cancelled cue="L2M150a Get Shiptype"/>
+          </condition>
+          <action>
+            <do_all>
+              <do_any>
+                <do_all>
+                  <set_value name="L2M150a.hull" min="50" max="80" profile="flat"/>
+                  <do_choose>
+                    <do_when value="{value@L2M150a.offerType}" exact="{lookup.class@ship}">
+                      <create_ship name="L2M150a.UsedShip" typename="{value@L2M150a.shipType}"
+                                   race="{value@L2M150a.sellerRace}" racelogic="0"  capturable="0">
+                        <position exact="10km"/>
+                        <sector sector="{player.sector}"/>
+                        <equipment loadout="none"/>
+                        <command command="idle"/>
+                        <hull exact="{value@L2M150a.hull}"/>
+                      </create_ship>
+                    </do_when>
+                    <do_otherwise>
+                      <create_ship name="L2M150a.UsedShip" typename="{value@L2M150a.shipType}" dockobject="L2M150a.Station"
+                                   race="{value@L2M150a.sellerRace}" racelogic="0"  capturable="0">
+                        <equipment loadout="none"/>
+                        <command command="stay"/>
+                        <hull exact="{value@L2M150a.hull}"/>
+                      </create_ship>
+                    </do_otherwise>
+                  </do_choose>
+                </do_all>
+                <do_all>
+                  <set_value name="L2M150a.hull" min="60" max="99" profile="increasing"/>
+                  <do_choose>
+                    <do_when value="{value@L2M150a.offerType}" exact="{lookup.class@ship}">
+                      <create_ship name="L2M150a.UsedShip" typename="{value@L2M150a.shipType}"
+                                   race="{value@L2M150a.sellerRace}" racelogic="0"  capturable="0">
+                        <position exact="10km"/>
+                        <sector sector="{player.sector}"/>
+                        <equipment loadout="minimum"/>
+                        <command command="idle"/>
+                        <hull exact="{value@L2M150a.hull}"/>
+                      </create_ship>
+                    </do_when>
+                    <do_otherwise>
+                      <create_ship name="L2M150a.UsedShip" typename="{value@L2M150a.shipType}" dockobject="L2M150a.Station"
+                                   race="{value@L2M150a.sellerRace}" racelogic="0"  capturable="0">
+                        <equipment loadout="minimum"/>
+                        <command command="stay"/>
+                        <hull exact="{value@L2M150a.hull}"/>
+                      </create_ship>
+                    </do_otherwise>
+                  </do_choose>
+                </do_all>
+                <do_all>
+                  <set_value name="L2M150a.hull" exact="100"/>
+                  <do_choose>
+                    <do_when value="{value@L2M150a.offerType}" exact="{lookup.class@ship}">
+                      <create_ship name="L2M150a.UsedShip" typename="{value@L2M150a.shipType}"
+                                   race="{value@L2M150a.sellerRace}" racelogic="0"  capturable="0">
+                        <position exact="10km"/>
+                        <sector sector="{player.sector}"/>
+                        <equipment loadout="default"/>
+                        <command command="idle"/>
+                        <hull exact="{value@L2M150a.hull}"/>
+                      </create_ship>
+                    </do_when>
+                    <do_otherwise>
+                      <create_ship name="L2M150a.UsedShip" typename="{value@L2M150a.shipType}" dockobject="L2M150a.Station"
+                                   race="{value@L2M150a.sellerRace}" racelogic="0"  capturable="0">
+                        <equipment loadout="default"/>
+                        <command command="stay"/>
+                        <hull exact="{value@L2M150a.hull}"/>
+                      </create_ship>
+                    </do_otherwise>
+                  </do_choose>
+                </do_all>
+              </do_any>
+
+              <do_choose>
+                <do_when value="{value@L2M150a.offerType}" exact="{lookup.class@ship}">
+                  <create_actor name="L2M150a.MissionSeller" race="{value@L2M150a.sellerRace}"
+                                location="pilot" object="L2M150a.UsedShip" voiceflags="32"/>
+                </do_when>
+                <do_otherwise>
+                  <create_actor name="L2M150a.MissionSeller" race="{value@L2M150a.sellerRace}"
+                                location="crew" object="L2M150a.Station" voiceflags="32"/>
+                </do_otherwise>
+              </do_choose>
+
+              <!-- Choose Ship Price Modifier, which is a percentage times {object.price}
+              {object.price} is already set to 30 percent, so if the the modifier is 200
+              then the modified ship price is 60 percent of the price to buy at a shipyard-->
+              <do_choose>
+                <do_when value="{value@L2M150a.sellerRace}" exact="{lookup.race@pirate}">
+                  <set_value name="L2M150a.iPriceMod" min="45" max="105" profile="inversebell"
+                           comment="extreme values are more likely because this is either a ripoff
+                           or the pirate is trying to get rid of a stolen ship fast, etc (average 190)
+                           real price range is 39% - 75%, average 57%"/>
+                </do_when>
+                <do_otherwise>
+                  <set_value name="L2M150a.iPriceMod" min="68" max="90" profile="bell"
+                             comment="average is 170, extreme values are not too common
+                             real price range is 45% - 57%, average 51%"/>
+                </do_otherwise>
+              </do_choose>
+              <!--<set_value name="L2M150a.iShipPrice" exact="({object.price@L2M150a.UsedShip} * {value@L2M150a.iPriceMod} + 50) / 85"/>
+              <set_value name="L2M150a.iShipPrice" exact="(({value@L2M150a.iShipPrice} + 50) / 100) * 100"
+                         chance="80" comment="round to the nearest 100"/>
+              <set_value name="L2M150a.iShipPrice" exact="{value@L2M150a.iShipPrice} - 1"
+                         chance="50" comment="the price will end in 99 instead of 100 half the time"/>-->
+<!--The vanilla formula was causing integer wrapping errors-->
+              <set_value name="L2M150a.iShipPrice" exact="((({object.price@L2M150a.UsedShip}/1000)*3333)/100)   * {value@L2M150a.iPriceMod}"/>
+              
+              
+              <set_value name="this.offerText" min="110" max="112"/>
+              <set_value name="L2M150a.randomBuyText" min="1" max="3"/>
+              <set_value name="L2M150a.shipNameText" min="10" max="11"/>
+              <set_value name="L2M150a.hullText" min="20" max="21"/>
+              <set_value name="L2M150a.B TitleID" min="101" max="103"/>
+              <set_value name="L2M150a.B TextID" min="110" max="112"/>
+              <create_offer actor="L2M150a.MissionSeller" conversation="L2M150Offer" cue="L2M150a Create Ship And Offer" discipline="TXXX">
+                <params>
+                  <param name="offerText" value="{3350,{value@this.offerText}}"/>
+                </params>
+              </create_offer>
+            </do_all>
+          </action>
+          <cues>
+            <cue name="L2M150a Preview Ship">
+              <condition>
+                <conversation_completed answer="briefing" actor="L2M150a.MissionSeller" conversation="L2M150Offer"/>
+              </condition>
+              <action>
+                <do_all>
+                  <set_value name="L2M150a.Speed" exact="{object.maxspeed@L2M150a.UsedShip}/500"/>
+                  <create_briefing cue="L2M150a Create Ship And Offer" title="{3350,{value@L2M150a.B TitleID}}" text="{3350,{value@L2M150a.B TextID}}" background="station_argon_space_fuel_distillery.tga">
+                    <timer end="{value@L2M150a.expireTime}"/>
+                    <objectives>
+                      <objective step="1">
+                        <custom action="{35,2068}" text="{object.type.name@L2M150a.UsedShip}"/>
+                      </objective>
+                      <objective step="2">
+                        <custom action="{35,765}" text="{object.hull@L2M150a.UsedShip}%"/>
+                      </objective>
+                      <objective step="3">
+                        <custom action="{35,2070}" text="{value@L2M150a.Speed} {35,967}/{35,998}"/>
+                      </objective>
+                      <objective step="4">
+                        <custom action="{35,2069}" text="{value.formatted@L2M150a.iShipPrice}{35,707}"/>
+                      </objective>
+                    </objectives>
+                  </create_briefing>
+                </do_all>
+              </action>
+            </cue>
+            <cue name="L2M150a Object Attacked" version="3">
+              <condition>
+                <check_any>
+                  <object_attacked object="L2M150a.UsedShip"/>
+                  <object_attacked_by_player object="L2M150a.UsedShip"/>
+                </check_any>
+              </condition>
+              <action>
+                <do_all>
+                  <add_object_to_group group="L2M150a.DSG" object="L2M150a.UsedShip"/>
+                  <set_value name="L2M150a.EndMission" exact="1"/>
+                </do_all>
+              </action>
+            </cue>
+
+            <cue name="L2M150a Timed Out" delay="1s" version="3">
+              <condition>
+                <check_age min="{value@L2M150a.expireTime}"/>
+              </condition>
+              <action>
+                <do_all>
+                  <do_choose>
+                    <do_when value="{player.menu.dialog}" exact="1">
+                      <set_value name="L2M150a.expireTime" exact="60" operation="add"/>
+                      <reset_cue cue="L2M150a Timed Out"/>
+                    </do_when>
+                    <do_otherwise>
+                      <add_object_to_group group="L2M150a.DSG" object="L2M150a.UsedShip"/>
+                      <set_value name="L2M150a.EndMission" exact="1"/>
+                    </do_otherwise>
+                  </do_choose>
+                </do_all>
+              </action>
+            </cue>
+
+            <cue name="L2M150a Offer Considered" instantiate="static">
+              <condition>
+                <conversation_completed answer="add" actor="L2M150a.MissionSeller" conversation="L2M150Offer"/>
+              </condition>
+              <action>
+                <set_value name="L2M150a.expireTime" exact="3*60" operation="add"/>
+              </action>
+            </cue>
+
+            <cue name="L2M150a Offer Accepted" instantiate="static" version="2">
+              <condition>
+                <conversation_completed answer="accept" actor="L2M150a.MissionSeller" conversation="L2M150Offer"/>
+              </condition>
+              <action>
+                <do_all>
+                  <set_value name="L2M150a.expireTime" exact="5*60" operation="add"/>
+                  <set_value name="L2M150a.missionCompleted" exact="1"/>
+                  <do_if value="{player.money}" min="{value@L2M150a.iShipPrice}" negate="1">
+                    <!--The following plays computer text. Play_text fails due to task errors with canceled cues-->
+                    <set_value name="L2M150a.PlayText" exact="1"/>
+                    <set_value name="L2M150a.PlayText PageID" exact="13"/>
+                    <set_value name="L2M150a.PlayText TextID" exact="1254"/>
+                    <set_value name="L2M150a.missionCompleted" exact="0"/>
+                    <cancel_cue cue="L2M150a Offer Accepted"/>
+                  </do_if>
+
+                  <do_if value="{value@L2M150a.sellerRace}" exact="{lookup.race@pirate}" negate="1">
+                    <do_if value="{player.notoriety.{value@L2M150a.sellerRace}}" min="{lookup.type.minnotoriety@{value@L2M150a.shipType}}" negate="1">
+                      <!--The following plays computer text. Play_text fails due to task errors with canceled cues-->
+                      <set_value name="L2M150a.PlayText" exact="1"/>
+                      <set_value name="L2M150a.PlayText PageID" exact="13"/>
+                      <set_value name="L2M150a.PlayText TextID" exact="57"/>
+                      <set_value name="L2M150a.missionCompleted" exact="0"/>
+                      <cancel_cue cue="L2M150a Offer Accepted"/>
+                    </do_if>
+                  </do_if>
+
+                  <do_if value="{value@L2M150a.missionCompleted}" exact="1">
+                    <remove_offer actor="L2M150a.MissionSeller" conversation="L2M150Offer" discipline="TXXX"/>
+                    <do_if value="{value@L2M150a.offerType}" exact="{lookup.class@ship}">
+                      <!-- hey this guy was in a ship, and then the ship belonged to me, he can't be in the ship
+                      so he must be in space in a spacesuit trying to go home!-->
+                      <abandon_ship object="L2M150a.UsedShip" name="L2M150a.Astro"/>
+                      <set_command object="L2M150a.Astro" command="idle"/>
+                      <remove_object object="L2M150a.Astro"/>
+                      <remove_actor actor="L2M150a.MissionSeller"/>
+                    </do_if>
+                    <reward_player>
+                      <money exact="-{value@L2M150a.iShipPrice}"/>
+                      <property object="L2M150a.UsedShip"/>
+                    </reward_player>
+
+                    <run_script script="Lib.MD.BuyUsedShip">
+                      <scriptargs>
+                        <scriptvalue datatype="integer" datavalue="{value@L2M150a.iShipPrice}"/>
+                        <scriptvalue datatype="object" datavalue="L2M150a.UsedShip"/>
+                      </scriptargs>
+                    </run_script>
+
+
+                    <increment_statistic statistic="5050" exact="1" comment="ships bought"/>
+                    <play_text pageid="13" textid="5004"/>
+                    <cancel_cue cue="L2M150a Object Attacked"/>
+                    <set_value name="L2M150a Offer Accepted Wait" exact="{player.age}+({text.duration@13,5004}/1000)"/>
+                  </do_if>
+                </do_all>
+              </action>
+              <cues>
+                <cue name="L2M150a Offer Accepted Wait" delay="2s" version="2">
+                  <condition>
+                    <check_age min="{value@L2M150a Offer Accepted Wait}"/>
+                  </condition>
+                  <action>
+                    <set_value name="L2M150a.EndMission" exact="1"/>
+                  </action>
+                </cue>
+              </cues>
+            </cue>
+          </cues>
+        </cue>
+        <cue name="L2M150a Play Text" delay="1s">
+          <condition>
+            <check_value value="{value@L2M150a.PlayText}" exact="1"/>
+          </condition>
+          <action>
+            <do_all>
+              <set_value name="L2M150a.PlayText" exact="0"/>
+              <play_text pageid="{value@L2M150a.PlayText PageID}" textid="{value@L2M150a.PlayText TextID}"/>
+              <reset_cue cue="L2M150a Play Text"/>
+            </do_all>
+          </action>
+        </cue>
+      </cues>
+    </cue>
+  </cues>
+  <signature>7U0hB5GZ7Vqzk+ZeqgLqTUVWze4rkxTAH5m49SJSuOd3gFmSDus4HQEQyTGOTD1xAjAOusj83QJpxb23elwsxQoWVGyiVU9BLpHAaNoEOL4tUODz9ReLGueRZWiu725l4qH+WnKsTmR46zz3quCS7jdwX3vc84m2+Xy1TSz3taRT4PFsIviQqWj8c6vZhaWpuCVGDhKJD1ZKDAvvi+SGai01xktJnXBUO1y/hI/s1A+UR/bz7ixZuOpbcbou4emD12FpFQK/lG/Gqrb1r/zZ7x15B4d3VVXEt008/qat4sKMQ8CCP2Rj5lPNaAwjjI3NniNlOUunOrP5k4iEKZXrTg==</signature>
+</director>
