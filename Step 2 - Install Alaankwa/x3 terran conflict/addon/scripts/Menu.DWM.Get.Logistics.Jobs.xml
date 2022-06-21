@@ -5136,12 +5136,12 @@
 			<text> </text>
 			<var>$XS.Iterator3</var>
 		</line>
-		<line linenr="376" indent="&#160;&#160;&#160;">
+		<line linenr="376" indent="&#160;&#160;">
 			<text>dec</text>
 			<text> </text>
 			<var>$XS.Iterator3</var>
 		</line>
-		<line linenr="377" indent="&#160;&#160;">
+		<line linenr="377" indent="&#160;&#160;&#160;">
 			<var>$sector</var>
 			<text> </text>
 			<text>=</text>
@@ -5151,7 +5151,7 @@
 			<var>$XS.Iterator3</var>
 			<text>]</text>
 		</line>
-		<line linenr="378" indent="&#160;&#160;&#160;">
+		<line linenr="378" indent="&#160;&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -5210,7 +5210,7 @@
 			<text> </text>
 			<var>$current</var>
 		</line>
-		<line linenr="384" indent="&#160;&#160;&#160;&#160;" interruptable="@">
+		<line linenr="384" indent="&#160;&#160;&#160;" interruptable="@">
 			<var>$sector</var>
 			<text> </text>
 			<text>=</text>
@@ -5230,7 +5230,7 @@
 			<text>=</text>
 			<var>$sector</var>
 		</line>
-		<line linenr="385" indent="&#160;&#160;&#160;">
+		<line linenr="385" indent="&#160;&#160;&#160;&#160;">
 			<text>add</text>
 			<text> </text>
 			<text>custom</text>
@@ -5258,7 +5258,7 @@
 			<text>=</text>
 			<var>$ret</var>
 		</line>
-		<line linenr="386" indent="&#160;&#160;">
+		<line linenr="386" indent="&#160;&#160;&#160;">
 			<text>end</text>
 		</line>
 		<line linenr="387" indent="&#160;&#160;">
@@ -5325,7 +5325,7 @@
 			<text> </text>
 			<var>1</var>
 		</line>
-		<line linenr="391" indent="&#160;&#160;&#160;">
+		<line linenr="391" indent="&#160;&#160;">
 			<comment>* Outposts.</comment>
 		</line>
 		<line linenr="392" indent="&#160;&#160;&#160;">
@@ -5350,7 +5350,7 @@
 			<text>/</text>
 			<text>type</text>
 			<text>=</text>
-			<var>{*** UNDEFINED *** (SS_DOCK_SANCTUARY)}</var>
+			<var>{Player Outpost}</var>
 		</line>
 		<line linenr="393" indent="&#160;&#160;&#160;">
 			<var>$allStarliners</var>
@@ -5374,9 +5374,9 @@
 			<text>/</text>
 			<text>type</text>
 			<text>=</text>
-			<var>{Rebel OTAS Starliner Equipment Dock}</var>
+			<var>{Argon OTAS Starliner Equipment Dock}</var>
 		</line>
-		<line linenr="394" indent="&#160;&#160;&#160;&#160;">
+		<line linenr="394" indent="&#160;&#160;&#160;">
 			<var>$allMcCallums</var>
 			<text> </text>
 			<text>=</text>
@@ -5398,9 +5398,9 @@
 			<text>/</text>
 			<text>type</text>
 			<text>=</text>
-			<var>{Rebel OTAS McCallum Equipment Dock}</var>
+			<var>{Argon OTAS McCallum Equipment Dock}</var>
 		</line>
-		<line linenr="395" indent="&#160;&#160;">
+		<line linenr="395" indent="&#160;&#160;&#160;&#160;">
 			<var>$allSanctuaries</var>
 			<text> </text>
 			<text>=</text>
@@ -5419,7 +5419,7 @@
 			<text>=</text>
 			<var>$allStarliners</var>
 		</line>
-		<line linenr="396" indent="&#160;&#160;&#160;">
+		<line linenr="396" indent="&#160;&#160;">
 			<var>$allSanctuaries</var>
 			<text> </text>
 			<text>=</text>
@@ -5439,18 +5439,21 @@
 			<var>$allMcCallums</var>
 		</line>
 		<line linenr="397" indent="&#160;&#160;&#160;">
-			<comment>* for each $sanctuary in array $allSanctuaries using counter $index</comment>
+			<comment>* temetvince</comment>
 		</line>
 		<line linenr="398" indent="&#160;&#160;&#160;">
+			<comment>* for each $sanctuary in array $allSanctuaries using counter $index</comment>
+		</line>
+		<line linenr="399" indent="&#160;&#160;&#160;">
 			<comment>* do if $sanctuary == [THIS]</comment>
 		</line>
-		<line linenr="399" indent="&#160;&#160;&#160;&#160;">
+		<line linenr="400" indent="&#160;&#160;&#160;&#160;">
 			<comment>* remove element from array $allSanctuaries at index $index</comment>
 		</line>
-		<line linenr="400" indent="&#160;&#160;">
+		<line linenr="401" indent="&#160;&#160;">
 			<comment>* end</comment>
 		</line>
-		<line linenr="401" indent="&#160;&#160;">
+		<line linenr="402" indent="&#160;&#160;">
 			<var>$allSanctuaries</var>
 			<text> </text>
 			<text>=</text>
@@ -5461,7 +5464,7 @@
 			<text> </text>
 			<var>$allSanctuaries</var>
 		</line>
-		<line linenr="402" indent="&#160;&#160;&#160;">
+		<line linenr="403" indent="&#160;&#160;&#160;">
 			<var>$allSanctuaries</var>
 			<text> </text>
 			<text>=</text>
@@ -5472,7 +5475,7 @@
 			<text> </text>
 			<var>$allSanctuaries</var>
 		</line>
-		<line linenr="403" indent="&#160;&#160;">
+		<line linenr="404" indent="&#160;&#160;">
 			<var>$allSanctuaries.length</var>
 			<text> </text>
 			<text>=</text>
@@ -5485,7 +5488,7 @@
 			<text> </text>
 			<var>$allSanctuaries</var>
 		</line>
-		<line linenr="404" indent="&#160;&#160;">
+		<line linenr="405" indent="&#160;&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -5496,7 +5499,7 @@
 			<text> </text>
 			<var>0</var>
 		</line>
-		<line linenr="405" indent="&#160;&#160;">
+		<line linenr="406" indent="&#160;&#160;">
 			<text>add</text>
 			<text> </text>
 			<text>non</text>
@@ -5515,7 +5518,7 @@
 			<text>=</text>
 			<text>'No other Outpost found'</text>
 		</line>
-		<line linenr="406" indent="&#160;&#160;">
+		<line linenr="407" indent="&#160;&#160;">
 			<var>$XS.Iterator4</var>
 			<text> </text>
 			<text>=</text>
@@ -5528,17 +5531,17 @@
 			<text> </text>
 			<var>$allSanctuaries</var>
 		</line>
-		<line linenr="407" indent="&#160;">
+		<line linenr="408" indent="&#160;">
 			<text>while</text>
 			<text> </text>
 			<var>$XS.Iterator4</var>
 		</line>
-		<line linenr="408" indent="&#160;">
+		<line linenr="409" indent="&#160;">
 			<text>dec</text>
 			<text> </text>
 			<var>$XS.Iterator4</var>
 		</line>
-		<line linenr="409" indent="&#160;">
+		<line linenr="410" indent="&#160;">
 			<var>$sanctuary</var>
 			<text> </text>
 			<text>=</text>
@@ -5548,7 +5551,7 @@
 			<var>$XS.Iterator4</var>
 			<text>]</text>
 		</line>
-		<line linenr="410" indent="&#160;">
+		<line linenr="411" indent="&#160;">
 			<var>$ret</var>
 			<text> </text>
 			<text>=</text>
@@ -5562,7 +5565,7 @@
 			<text>=</text>
 			<var>2</var>
 		</line>
-		<line linenr="411" indent="&#160;">
+		<line linenr="412" indent="&#160;">
 			<var>$ret</var>
 			<text>[</text>
 			<var>0</var>
@@ -5572,7 +5575,7 @@
 			<text> </text>
 			<text>'target'</text>
 		</line>
-		<line linenr="412" indent="&#160;">
+		<line linenr="413" indent="&#160;">
 			<var>$ret</var>
 			<text>[</text>
 			<var>1</var>
@@ -5582,7 +5585,7 @@
 			<text> </text>
 			<var>$sanctuary</var>
 		</line>
-		<line linenr="413" indent="&#160;">
+		<line linenr="414" indent="&#160;">
 			<var>$sanctuarySector</var>
 			<text> </text>
 			<text>=</text>
@@ -5594,7 +5597,7 @@
 			<text> </text>
 			<text>sector</text>
 		</line>
-		<line linenr="414" indent="&#160;">
+		<line linenr="415" indent="&#160;">
 			<var>$sanctuary.f</var>
 			<text> </text>
 			<text>=</text>
@@ -5606,7 +5609,7 @@
 			<text> </text>
 			<text>name</text>
 		</line>
-		<line linenr="415" indent="&#160;">
+		<line linenr="416" indent="&#160;">
 			<var>$sanctuary.f</var>
 			<text> </text>
 			<text>=</text>
@@ -5625,7 +5628,7 @@
 			<text> </text>
 			<text>')'</text>
 		</line>
-		<line linenr="416" indent="&#160;">
+		<line linenr="417" indent="&#160;">
 			<var>$sanctuary.f</var>
 			<text> </text>
 			<text>=</text>
@@ -5641,7 +5644,7 @@
 			<text> </text>
 			<var>$sanctuary.f</var>
 		</line>
-		<line linenr="417" indent="&#160;&#160;">
+		<line linenr="418" indent="&#160;&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -5652,7 +5655,7 @@
 			<text> </text>
 			<var>$current</var>
 		</line>
-		<line linenr="418" indent="&#160;" interruptable="@">
+		<line linenr="419" indent="&#160;" interruptable="@">
 			<var>$sanctuary.f</var>
 			<text> </text>
 			<text>=</text>
@@ -5672,7 +5675,7 @@
 			<text>=</text>
 			<var>$sanctuary.f</var>
 		</line>
-		<line linenr="419" indent="&#160;">
+		<line linenr="420" indent="&#160;">
 			<text>add</text>
 			<text> </text>
 			<text>custom</text>
@@ -5700,10 +5703,10 @@
 			<text>=</text>
 			<var>$ret</var>
 		</line>
-		<line linenr="420" indent="&#160;">
+		<line linenr="421" indent="&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="421" indent="&#160;&#160;">
+		<line linenr="422" indent="&#160;&#160;">
 			<text>add</text>
 			<text> </text>
 			<text>section</text>
@@ -5717,7 +5720,7 @@
 			<text> </text>
 			<var>$menu</var>
 		</line>
-		<line linenr="422" indent="&#160;&#160;">
+		<line linenr="423" indent="&#160;&#160;">
 			<var>$qty</var>
 			<text> </text>
 			<text>=</text>
@@ -5736,7 +5739,7 @@
 			<text>=</text>
 			<text>'mayhem_job.clientThreshold'</text>
 		</line>
-		<line linenr="423" indent="&#160;">
+		<line linenr="424" indent="&#160;">
 			<var>$max</var>
 			<text> </text>
 			<text>=</text>
@@ -5758,7 +5761,7 @@
 			<text> </text>
 			<var>$ware</var>
 		</line>
-		<line linenr="424" indent="&#160;">
+		<line linenr="425" indent="&#160;">
 			<text>if</text>
 			<text> </text>
 			<var>$operation.s</var>
@@ -5767,14 +5770,14 @@
 			<text> </text>
 			<text>'Import'</text>
 		</line>
-		<line linenr="425" indent="&#160;">
+		<line linenr="426" indent="&#160;">
 			<var>$t</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<text>'Outpost's minimum stock'</text>
 		</line>
-		<line linenr="426" indent="&#160;" interruptable="@">
+		<line linenr="427" indent="&#160;" interruptable="@">
 			<var>$infoText</var>
 			<text> </text>
 			<text>=</text>
@@ -5794,7 +5797,7 @@
 			<text>=</text>
 			<text>'The Agents will import only if the stock of the targeted Outpost is greater than this value.'</text>
 		</line>
-		<line linenr="427" indent="&#160;">
+		<line linenr="428" indent="&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -5805,14 +5808,14 @@
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="428" indent="&#160;">
+		<line linenr="429" indent="&#160;">
 			<var>$qty</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>0</var>
 		</line>
-		<line linenr="429" indent="&#160;">
+		<line linenr="430" indent="&#160;">
 			<text>else</text>
 			<text> </text>
 			<text>if</text>
@@ -5823,14 +5826,14 @@
 			<text> </text>
 			<text>'Export'</text>
 		</line>
-		<line linenr="430" indent="&#160;">
+		<line linenr="431" indent="&#160;">
 			<var>$t</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<text>'Outpost's maximum stock'</text>
 		</line>
-		<line linenr="431" indent="&#160;" interruptable="@">
+		<line linenr="432" indent="&#160;" interruptable="@">
 			<var>$infoText</var>
 			<text> </text>
 			<text>=</text>
@@ -5850,7 +5853,7 @@
 			<text>=</text>
 			<text>'The Agents will export only if the stock of the targeted Outpost is less than this value.'</text>
 		</line>
-		<line linenr="432" indent="&#160;&#160;">
+		<line linenr="433" indent="&#160;&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -5861,31 +5864,31 @@
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="433" indent="&#160;">
+		<line linenr="434" indent="&#160;">
 			<var>$qty</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>$max</var>
 		</line>
-		<line linenr="434" indent="&#160;">
+		<line linenr="435" indent="&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="435" indent="&#160;">
+		<line linenr="436" indent="&#160;">
 			<text>skip</text>
 			<text> </text>
 			<text>if</text>
 			<text> </text>
 			<var>$ware</var>
 		</line>
-		<line linenr="436" indent="&#160;&#160;">
+		<line linenr="437" indent="&#160;&#160;">
 			<var>$qty</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>0</var>
 		</line>
-		<line linenr="437" indent="&#160;&#160;">
+		<line linenr="438" indent="&#160;&#160;">
 			<var>$qty.f</var>
 			<text> </text>
 			<text>=</text>
@@ -5900,7 +5903,7 @@
 			<text> </text>
 			<text>string</text>
 		</line>
-		<line linenr="438" indent="&#160;">
+		<line linenr="439" indent="&#160;">
 			<var>$t</var>
 			<text> </text>
 			<text>=</text>
@@ -5925,7 +5928,7 @@
 			<text>=</text>
 			<var>$qty.f</var>
 		</line>
-		<line linenr="439" indent="&#160;">
+		<line linenr="440" indent="&#160;">
 			<text>add</text>
 			<text> </text>
 			<text>dynamic</text>
@@ -5989,7 +5992,7 @@
 			<text>=</text>
 			<var>[FALSE]</var>
 		</line>
-		<line linenr="440" indent="&#160;">
+		<line linenr="441" indent="&#160;">
 			<text>add</text>
 			<text> </text>
 			<text>non</text>
@@ -6008,14 +6011,14 @@
 			<text>=</text>
 			<var>$infoText</var>
 		</line>
-		<line linenr="441" indent="&#160;">
+		<line linenr="442" indent="&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="442" indent="&#160;" />
-		<line linenr="443" indent="&#160;">
+		<line linenr="443" indent="&#160;" />
+		<line linenr="444" indent="&#160;">
 			<comment>* ---</comment>
 		</line>
-		<line linenr="444" indent="&#160;">
+		<line linenr="445" indent="&#160;">
 			<text>add</text>
 			<text> </text>
 			<text>custom</text>
@@ -6035,15 +6038,15 @@
 			<text>=</text>
 			<text>'Other options'</text>
 		</line>
-		<line linenr="445" indent="&#160;">
+		<line linenr="446" indent="&#160;">
 			<comment>* ---</comment>
 		</line>
-		<line linenr="446" indent="&#160;" />
-		<line linenr="447" indent="&#160;">
+		<line linenr="447" indent="&#160;" />
+		<line linenr="448" indent="&#160;">
 			<comment>* add custom menu heading to array $menu: title='Maximum Ships'</comment>
 		</line>
-		<line linenr="448" indent="&#160;&#160;" />
-		<line linenr="449" indent="&#160;">
+		<line linenr="449" indent="&#160;&#160;" />
+		<line linenr="450" indent="&#160;">
 			<var>$values</var>
 			<text> </text>
 			<text>=</text>
@@ -6057,7 +6060,7 @@
 			<text>=</text>
 			<var>0</var>
 		</line>
-		<line linenr="450" indent="&#160;">
+		<line linenr="451" indent="&#160;">
 			<var>$i</var>
 			<text> </text>
 			<text>=</text>
@@ -6068,7 +6071,7 @@
 			<text> </text>
 			<var>1</var>
 		</line>
-		<line linenr="451" indent="&#160;">
+		<line linenr="452" indent="&#160;">
 			<text>while</text>
 			<text> </text>
 			<var>$i</var>
@@ -6077,7 +6080,7 @@
 			<text> </text>
 			<var>10</var>
 		</line>
-		<line linenr="452" indent="&#160;">
+		<line linenr="453" indent="&#160;">
 			<var>$i</var>
 			<text> </text>
 			<text>=</text>
@@ -6088,7 +6091,7 @@
 			<text> </text>
 			<var>1</var>
 		</line>
-		<line linenr="453" indent="&#160;">
+		<line linenr="454" indent="&#160;">
 			<text>append</text>
 			<text> </text>
 			<var>$i</var>
@@ -6099,10 +6102,10 @@
 			<text> </text>
 			<var>$values</var>
 		</line>
-		<line linenr="454" indent="&#160;">
+		<line linenr="455" indent="&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="455" indent="&#160;">
+		<line linenr="456" indent="&#160;">
 			<var>$default</var>
 			<text> </text>
 			<text>=</text>
@@ -6121,21 +6124,21 @@
 			<text>=</text>
 			<text>'mayhem_DWMIndexes.logistics.jobs.new.maxShips'</text>
 		</line>
-		<line linenr="456" indent="&#160;">
+		<line linenr="457" indent="&#160;">
 			<text>if</text>
 			<text> </text>
 			<text>not</text>
 			<text> </text>
 			<var>$default</var>
 		</line>
-		<line linenr="457" indent="&#160;">
+		<line linenr="458" indent="&#160;">
 			<var>$default</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>0</var>
 		</line>
-		<line linenr="458" indent="&#160;">
+		<line linenr="459" indent="&#160;">
 			<var>[THIS]</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -6154,10 +6157,10 @@
 			<text>=</text>
 			<var>1</var>
 		</line>
-		<line linenr="459" indent="&#160;">
+		<line linenr="460" indent="&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="460" indent="&#160;">
+		<line linenr="461" indent="&#160;">
 			<text>add</text>
 			<text> </text>
 			<text>value</text>
@@ -6195,16 +6198,16 @@
 			<text>=</text>
 			<text>'sections.logistics.jobs.new.maxShips'</text>
 		</line>
-		<line linenr="461" indent="&#160;" />
-		<line linenr="462" indent="&#160;">
+		<line linenr="462" indent="&#160;" />
+		<line linenr="463" indent="&#160;">
 			<comment>* ---</comment>
 		</line>
-		<line linenr="463" indent="&#160;" />
-		<line linenr="464" indent="&#160;">
+		<line linenr="464" indent="&#160;" />
+		<line linenr="465" indent="&#160;">
 			<comment>* add custom menu heading to array $menu: title='Priority'</comment>
 		</line>
-		<line linenr="465" indent="&#160;" />
-		<line linenr="466" indent="&#160;">
+		<line linenr="466" indent="&#160;" />
+		<line linenr="467" indent="&#160;">
 			<var>$values</var>
 			<text> </text>
 			<text>=</text>
@@ -6218,7 +6221,7 @@
 			<text>=</text>
 			<var>0</var>
 		</line>
-		<line linenr="467" indent="&#160;">
+		<line linenr="468" indent="&#160;">
 			<var>$i</var>
 			<text> </text>
 			<text>=</text>
@@ -6229,7 +6232,7 @@
 			<text> </text>
 			<var>1</var>
 		</line>
-		<line linenr="468" indent="&#160;&#160;">
+		<line linenr="469" indent="&#160;&#160;">
 			<text>while</text>
 			<text> </text>
 			<var>$i</var>
@@ -6238,7 +6241,7 @@
 			<text> </text>
 			<var>100</var>
 		</line>
-		<line linenr="469" indent="&#160;&#160;">
+		<line linenr="470" indent="&#160;&#160;">
 			<var>$i</var>
 			<text> </text>
 			<text>=</text>
@@ -6249,7 +6252,7 @@
 			<text> </text>
 			<var>1</var>
 		</line>
-		<line linenr="470" indent="&#160;&#160;">
+		<line linenr="471" indent="&#160;&#160;">
 			<text>append</text>
 			<text> </text>
 			<var>$i</var>
@@ -6260,10 +6263,10 @@
 			<text> </text>
 			<var>$values</var>
 		</line>
-		<line linenr="471" indent="&#160;&#160;">
+		<line linenr="472" indent="&#160;&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="472" indent="&#160;">
+		<line linenr="473" indent="&#160;">
 			<var>$default</var>
 			<text> </text>
 			<text>=</text>
@@ -6282,7 +6285,7 @@
 			<text>=</text>
 			<text>'mayhem_DWMIndexes.logistics.jobs.new.priority'</text>
 		</line>
-		<line linenr="473" indent="&#160;&#160;">
+		<line linenr="474" indent="&#160;&#160;">
 			<text>if</text>
 			<text> </text>
 			<var>$default</var>
@@ -6291,14 +6294,14 @@
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="474" indent="&#160;&#160;">
+		<line linenr="475" indent="&#160;&#160;">
 			<var>$default</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>0</var>
 		</line>
-		<line linenr="475" indent="&#160;&#160;">
+		<line linenr="476" indent="&#160;&#160;">
 			<var>[THIS]</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -6317,10 +6320,10 @@
 			<text>=</text>
 			<var>1</var>
 		</line>
-		<line linenr="476" indent="&#160;">
+		<line linenr="477" indent="&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="477" indent="&#160;">
+		<line linenr="478" indent="&#160;">
 			<text>add</text>
 			<text> </text>
 			<text>value</text>
@@ -6358,16 +6361,16 @@
 			<text>=</text>
 			<text>'sections.logistics.jobs.new.priority'</text>
 		</line>
-		<line linenr="478" indent="" />
-		<line linenr="479" indent="">
+		<line linenr="479" indent="" />
+		<line linenr="480" indent="">
 			<comment>* ---</comment>
 		</line>
-		<line linenr="480" indent="" />
-		<line linenr="481" indent="">
+		<line linenr="481" indent="" />
+		<line linenr="482" indent="">
 			<comment>* add custom menu heading to array $menu: title='Pause'</comment>
 		</line>
-		<line linenr="482" indent="" />
-		<line linenr="483" indent="">
+		<line linenr="483" indent="" />
+		<line linenr="484" indent="">
 			<var>$values</var>
 			<text> </text>
 			<text>=</text>
@@ -6381,7 +6384,7 @@
 			<text>=</text>
 			<var>2</var>
 		</line>
-		<line linenr="484" indent="">
+		<line linenr="485" indent="">
 			<var>$values</var>
 			<text>[</text>
 			<var>0</var>
@@ -6391,7 +6394,7 @@
 			<text> </text>
 			<text>'No'</text>
 		</line>
-		<line linenr="485" indent="">
+		<line linenr="486" indent="">
 			<var>$values</var>
 			<text>[</text>
 			<var>1</var>
@@ -6401,7 +6404,7 @@
 			<text> </text>
 			<text>'Yes'</text>
 		</line>
-		<line linenr="486" indent="">
+		<line linenr="487" indent="">
 			<var>$default</var>
 			<text> </text>
 			<text>=</text>
@@ -6420,21 +6423,21 @@
 			<text>=</text>
 			<text>'mayhem_DWMIndexes.logistics.jobs.new.pause'</text>
 		</line>
-		<line linenr="487" indent="">
+		<line linenr="488" indent="">
 			<text>skip</text>
 			<text> </text>
 			<text>if</text>
 			<text> </text>
 			<var>$default</var>
 		</line>
-		<line linenr="488" indent="">
+		<line linenr="489" indent="">
 			<var>$default</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>0</var>
 		</line>
-		<line linenr="489" indent="">
+		<line linenr="490" indent="">
 			<text>add</text>
 			<text> </text>
 			<text>value</text>
@@ -6472,53 +6475,53 @@
 			<text>=</text>
 			<text>'sections.logistics.jobs.new.pause'</text>
 		</line>
-		<line linenr="490" indent="" />
-		<line linenr="491" indent="">
+		<line linenr="491" indent="" />
+		<line linenr="492" indent="">
 			<comment>* ---</comment>
 		</line>
-		<line linenr="492" indent="" />
-		<line linenr="493" indent="">
+		<line linenr="493" indent="" />
+		<line linenr="494" indent="">
 			<comment>* add custom menu heading to array $menu: title='Opportune Deliveries'</comment>
 		</line>
-		<line linenr="494" indent="" />
-		<line linenr="495" indent="">
+		<line linenr="495" indent="" />
+		<line linenr="496" indent="">
 			<comment>* if $operation.s == 'Import' AND $target == 0</comment>
 		</line>
-		<line linenr="496" indent="">
+		<line linenr="497" indent="">
 			<comment>* dim $values = 'No', 'Yes'</comment>
 		</line>
-		<line linenr="497" indent="">
+		<line linenr="498" indent="">
 			<comment>* $default = [THIS]-&gt; get local variable: name='mayhem_DWMIndexes.logistics.jobs.new.opportuneDeliveries'</comment>
 		</line>
-		<line linenr="498" indent="">
+		<line linenr="499" indent="">
 			<comment>* if $default == null</comment>
 		</line>
-		<line linenr="499" indent="">
+		<line linenr="500" indent="">
 			<comment>* $default = 1</comment>
 		</line>
-		<line linenr="500" indent="">
+		<line linenr="501" indent="">
 			<comment>* [THIS]-&gt; set local variable: name='mayhem_job.opportuneDeliveries' value=$default</comment>
 		</line>
-		<line linenr="501" indent="">
-			<comment>* end</comment>
-		</line>
 		<line linenr="502" indent="">
-			<comment>* add value selection to menu: $menu, text='Opportune deliveries', value array=$values, default=$default, return id='sections.logistics.jobs.new.opportuneDeliveries'</comment>
+			<comment>* end</comment>
 		</line>
 		<line linenr="503" indent="">
+			<comment>* add value selection to menu: $menu, text='Opportune deliveries', value array=$values, default=$default, return id='sections.logistics.jobs.new.opportuneDeliveries'</comment>
+		</line>
+		<line linenr="504" indent="">
 			<comment>* end</comment>
 		</line>
-		<line linenr="504" indent="" />
-		<line linenr="505" indent="">
+		<line linenr="505" indent="" />
+		<line linenr="506" indent="">
 			<comment>* ---</comment>
 		</line>
-		<line linenr="506" indent="" />
-		<line linenr="507" indent="">
+		<line linenr="507" indent="" />
+		<line linenr="508" indent="">
 			<text>if</text>
 			<text> </text>
 			<var>$jobEdit</var>
 		</line>
-		<line linenr="508" indent="">
+		<line linenr="509" indent="">
 			<text>add</text>
 			<text> </text>
 			<text>custom</text>
@@ -6538,7 +6541,7 @@
 			<text>=</text>
 			<text>'Edit'</text>
 		</line>
-		<line linenr="509" indent="">
+		<line linenr="510" indent="">
 			<text>add</text>
 			<text> </text>
 			<text>custom</text>
@@ -6566,7 +6569,7 @@
 			<text>=</text>
 			<text>'update'</text>
 		</line>
-		<line linenr="510" indent="">
+		<line linenr="511" indent="">
 			<text>add</text>
 			<text> </text>
 			<text>custom</text>
@@ -6594,7 +6597,7 @@
 			<text>=</text>
 			<text>'delete'</text>
 		</line>
-		<line linenr="511" indent="">
+		<line linenr="512" indent="">
 			<text>add</text>
 			<text> </text>
 			<text>custom</text>
@@ -6622,10 +6625,10 @@
 			<text>=</text>
 			<text>'back'</text>
 		</line>
-		<line linenr="512" indent="">
+		<line linenr="513" indent="">
 			<text>else</text>
 		</line>
-		<line linenr="513" indent="">
+		<line linenr="514" indent="">
 			<text>add</text>
 			<text> </text>
 			<text>custom</text>
@@ -6645,7 +6648,7 @@
 			<text>=</text>
 			<text>'Create'</text>
 		</line>
-		<line linenr="514" indent="">
+		<line linenr="515" indent="">
 			<text>add</text>
 			<text> </text>
 			<text>custom</text>
@@ -6673,7 +6676,7 @@
 			<text>=</text>
 			<text>'create'</text>
 		</line>
-		<line linenr="515" indent="">
+		<line linenr="516" indent="">
 			<text>add</text>
 			<text> </text>
 			<text>custom</text>
@@ -6701,15 +6704,15 @@
 			<text>=</text>
 			<text>'back'</text>
 		</line>
-		<line linenr="516" indent="">
+		<line linenr="517" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="517" indent="" />
-		<line linenr="518" indent="">
+		<line linenr="518" indent="" />
+		<line linenr="519" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="519" indent="" />
-		<line linenr="520" indent="">
+		<line linenr="520" indent="" />
+		<line linenr="521" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
@@ -10670,7 +10673,7 @@
 					<sval type="string" val="" />
 				</sval>
 			</sval>
-			<sval type="array" size="153">
+			<sval type="array" size="154">
 				<sval type="array" size="2">
 					<sval type="int" val="0" />
 					<sval type="int" val="2" />
@@ -11114,6 +11117,11 @@
 					<sval type="int" val="316" />
 					<sval type="int" val="1" />
 					<sval type="string" val="Outposts." />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="321" />
+					<sval type="int" val="1" />
+					<sval type="string" val="temetvince" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="321" />

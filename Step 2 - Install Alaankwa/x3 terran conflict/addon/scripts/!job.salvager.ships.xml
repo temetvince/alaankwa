@@ -931,10 +931,11 @@
 		<line linenr="079" indent="&#160;&#160;">
 			<text>continue</text>
 		</line>
-		<line linenr="080" indent="&#160;">
-			<comment>* Added by SWLU to prevent ships with full health from being salvaged</comment>
+		<line linenr="080" indent="&#160;" />
+		<line linenr="081" indent="&#160;">
+			<comment>* temetvince</comment>
 		</line>
-		<line linenr="081" indent="&#160;" interruptable="@">
+		<line linenr="082" indent="&#160;" interruptable="@">
 			<text>skip</text>
 			<text> </text>
 			<text>if</text>
@@ -947,14 +948,14 @@
 			<text>script</text>
 			<text> </text>
 			<call>tv.ship.is.damaged.hull</call>
-			<text>:</text>
 			<text> </text>
+			<text>:</text>
 		</line>
-		<line linenr="082" indent="&#160;&#160;">
+		<line linenr="083" indent="&#160;&#160;">
 			<text>continue</text>
 		</line>
-		<line linenr="083" indent="&#160;" />
-		<line linenr="084" indent="&#160;">
+		<line linenr="084" indent="&#160;" />
+		<line linenr="085" indent="&#160;">
 			<var>$x</var>
 			<text> </text>
 			<text>=</text>
@@ -968,7 +969,7 @@
 			<text> </text>
 			<text>position</text>
 		</line>
-		<line linenr="085" indent="&#160;">
+		<line linenr="086" indent="&#160;">
 			<var>$y</var>
 			<text> </text>
 			<text>=</text>
@@ -982,7 +983,7 @@
 			<text> </text>
 			<text>position</text>
 		</line>
-		<line linenr="086" indent="&#160;">
+		<line linenr="087" indent="&#160;">
 			<var>$z</var>
 			<text> </text>
 			<text>=</text>
@@ -996,8 +997,8 @@
 			<text> </text>
 			<text>position</text>
 		</line>
-		<line linenr="087" indent="&#160;" />
-		<line linenr="088" indent="&#160;">
+		<line linenr="088" indent="&#160;" />
+		<line linenr="089" indent="&#160;">
 			<var>[THIS]</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -1009,7 +1010,7 @@
 			<text> </text>
 			<var>$TargetShip</var>
 		</line>
-		<line linenr="089" indent="&#160;" interruptable="@">
+		<line linenr="090" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1044,7 +1045,7 @@
 			<text> </text>
 			<text>m</text>
 		</line>
-		<line linenr="090" indent="&#160;">
+		<line linenr="091" indent="&#160;">
 			<var>[THIS]</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -1056,8 +1057,8 @@
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="091" indent="&#160;" />
-		<line linenr="092" indent="&#160;">
+		<line linenr="092" indent="&#160;" />
+		<line linenr="093" indent="&#160;">
 			<var>$TargetShip</var>
 			<text> </text>
 			<text>=</text>
@@ -1103,8 +1104,8 @@
 			<text>=</text>
 			<var>null</var>
 		</line>
-		<line linenr="093" indent="&#160;" />
-		<line linenr="094" indent="&#160;">
+		<line linenr="094" indent="&#160;" />
+		<line linenr="095" indent="&#160;">
 			<text>skip</text>
 			<text> </text>
 			<text>if</text>
@@ -1114,11 +1115,11 @@
 			<text> </text>
 			<text>exists</text>
 		</line>
-		<line linenr="095" indent="&#160;&#160;">
+		<line linenr="096" indent="&#160;&#160;">
 			<text>continue</text>
 		</line>
-		<line linenr="096" indent="&#160;" />
-		<line linenr="097" indent="&#160;">
+		<line linenr="097" indent="&#160;" />
+		<line linenr="098" indent="&#160;">
 			<var>$TargetOwner</var>
 			<text> </text>
 			<text>=</text>
@@ -1132,7 +1133,7 @@
 			<text> </text>
 			<text>race</text>
 		</line>
-		<line linenr="098" indent="&#160;">
+		<line linenr="099" indent="&#160;">
 			<text>skip</text>
 			<text> </text>
 			<text>if</text>
@@ -1143,11 +1144,11 @@
 			<text> </text>
 			<var>[Neutral Race]</var>
 		</line>
-		<line linenr="099" indent="&#160;&#160;">
+		<line linenr="100" indent="&#160;&#160;">
 			<text>continue</text>
 		</line>
-		<line linenr="100" indent="&#160;" />
-		<line linenr="101" indent="&#160;">
+		<line linenr="101" indent="&#160;" />
+		<line linenr="102" indent="&#160;">
 			<var>$Distance</var>
 			<text> </text>
 			<text>=</text>
@@ -1164,8 +1165,8 @@
 			<text> </text>
 			<var>$TargetShip</var>
 		</line>
-		<line linenr="102" indent="&#160;" />
-		<line linenr="103" indent="&#160;">
+		<line linenr="103" indent="&#160;" />
+		<line linenr="104" indent="&#160;">
 			<text>if</text>
 			<text> </text>
 			<var>$Distance</var>
@@ -1174,7 +1175,7 @@
 			<text> </text>
 			<var>4000</var>
 		</line>
-		<line linenr="104" indent="&#160;&#160;">
+		<line linenr="105" indent="&#160;&#160;">
 			<var>$TargetShip</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -1191,7 +1192,7 @@
 			<text> </text>
 			<var>$Owner</var>
 		</line>
-		<line linenr="105" indent="&#160;&#160;">
+		<line linenr="106" indent="&#160;&#160;">
 			<var>$TargetShip</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -1209,8 +1210,8 @@
 			<text> </text>
 			<var>[FALSE]</var>
 		</line>
-		<line linenr="106" indent="&#160;&#160;" />
-		<line linenr="107" indent="&#160;&#160;" interruptable="@">
+		<line linenr="107" indent="&#160;&#160;" />
+		<line linenr="108" indent="&#160;&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1224,15 +1225,15 @@
 			<text> </text>
 			<text>ms</text>
 		</line>
-		<line linenr="108" indent="&#160;&#160;">
+		<line linenr="109" indent="&#160;&#160;">
 			<var>$SectorMoves</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>0</var>
 		</line>
-		<line linenr="109" indent="&#160;&#160;" />
-		<line linenr="110" indent="&#160;&#160;">
+		<line linenr="110" indent="&#160;&#160;" />
+		<line linenr="111" indent="&#160;&#160;">
 			<var>$TargetShip</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -1251,7 +1252,7 @@
 			<text>=</text>
 			<var>[TRUE]</var>
 		</line>
-		<line linenr="111" indent="&#160;&#160;" interruptable="@">
+		<line linenr="112" indent="&#160;&#160;" interruptable="@">
 			<text>START</text>
 			<text> </text>
 			<var>$TargetShip</var>
@@ -1265,12 +1266,12 @@
 			<text> </text>
 			<text>:</text>
 		</line>
-		<line linenr="112" indent="&#160;&#160;" />
-		<line linenr="113" indent="&#160;">
+		<line linenr="113" indent="&#160;&#160;" />
+		<line linenr="114" indent="&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="114" indent="&#160;" />
-		<line linenr="115" indent="&#160;" interruptable="@">
+		<line linenr="115" indent="&#160;" />
+		<line linenr="116" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1284,16 +1285,16 @@
 			<text> </text>
 			<text>ms</text>
 		</line>
-		<line linenr="116" indent="&#160;" />
-		<line linenr="117" indent="">
+		<line linenr="117" indent="&#160;" />
+		<line linenr="118" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="118" indent="">
+		<line linenr="119" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="119" indent="" />
+		<line linenr="120" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
@@ -2037,7 +2038,7 @@
 				</sval>
 			</sval>
 			<sval type="int" val="0" />
-			<sval type="array" size="48">
+			<sval type="array" size="49">
 				<sval type="array" size="2">
 					<sval type="int" val="1" />
 					<sval type="int" val="2" />
@@ -2154,10 +2155,14 @@
 					<sval type="int" val="54" />
 					<sval type="int" val="6" />
 				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="54" />
+					<sval type="int" val="2" />
+				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="54" />
 					<sval type="int" val="1" />
-					<sval type="string" val="Added by SWLU to prevent ships with full health from being salvaged" />
+					<sval type="string" val="temetvince" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="56" />

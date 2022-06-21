@@ -1,5 +1,6 @@
 # Alaankwa
 * To download, go to the latest release and click 'Source code (zip)': https://github.com/temetvince/x3ap-lu/releases/
+* The last version compatible with Mayhem 3 Rebalanced and Star Wars Mayhem 3 is v7.9.4: https://github.com/temetvince/x3ap-lu/releases/tag/v7.9.4
 * 'Alaankwa' means 'star' in the Miami-Peoria language (Myaamia)
 
 ## Discord
@@ -132,11 +133,7 @@
 * Outposts show themselves as a candidate for export or import jobs
     * This is helpful for making generic templates that include the outpost where you are creating the template
 * Fixed multiple Supply Drone bugs
-* Fixed the Outpost Client Threshold not being saved when making a Jobs Preset
-* Fixed the homebase being cleared in your ship when using the Personal Teleportation Device
 * Economy flowcharts for Mayhem 3/Mayhem 3 Rebalanced and Star Wars Mayhem 3
-* An optional Mayhem 3 settings t-file for new players is included, disabled by default
-    * These settings are the ones recommended by Darth Fiscus here: https://www.youtube.com/watch?v=kV-aS0swpfY&t=13s
 
 ## Links
 * temetvince Youtube Playlists (X3 Mod Install Videos):
