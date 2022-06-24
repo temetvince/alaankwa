@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <language id="44">
     <page id="9979" title="User Settings" descr="Changable settings for temetvince mods" voice="no">
+<!--  ############################################################################################################################################# -->
+<!--  Mayhem 3 / Mayhem 3 Rebalanced / Star Wars Mayhem 3 -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  Enables various changes in Mayhem 3 games. -->
+<!--  _____________________________________________________________________________________________ -->
+
+<!--  _____________________________________________________________________________________________ -->
+<!--  Navigation Computer Mark II (EXPERIMENTAL, WILL SLOW WORKERS DOWN) -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  Allows Workers to use jump beacons during their job search. -->
+<!--  Should Navigation Computer Mark II be enabled? 0 for off or 1 for on. Default: 1 -->
+<t id="160">1</t>
+<!--  _____________________________________________________________________________________________ -->
+
+<!--  _____________________________________________________________________________________________ -->
+<!--  Smuggling Runs -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  Allows Workers to use Pirate bases during their job search. Only affects Mayhem 3, Mayhem 3 Rebalanced, and Star Wars Mayhem 3. -->
+<!--  Should Smuggling Runs be enabled? 0 for off or 1 for on. Default: 0 -->
+      <t id="161">0</t>
+<!--  _____________________________________________________________________________________________ -->
+
+<!--  _____________________________________________________________________________________________ -->
+<!--  Mining Drones -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  Player owned outposts build mining drones which collect minerals from miners in sector. -->
+<!--  Should Mining Drones be enabled? 0 for off or 1 for on. Default: 1 -->
+      <t id="162">1</t>
+<!--  _____________________________________________________________________________________________ -->
+<!--  ############################################################################################################################################# -->
+
+
+
 
 <!--  ############################################################################################################################################# -->
 <!--  SHIP COMPUTER UPGRADES -->
@@ -283,33 +316,11 @@
 
 
 <!--  ############################################################################################################################################# -->
-<!--  Mayhem 3 / Mayhem 3 Rebalanced / Star Wars Mayhem 3 -->
+<!--  CAPTAINS -->
 <!--  _____________________________________________________________________________________________ -->
-<!--  Enables various changes in Mayhem 3 games. -->
-<!--  _____________________________________________________________________________________________ -->
-
-<!--  _____________________________________________________________________________________________ -->
-<!--  Navigation Computer Mark II (EXPERIMENTAL, WILL SLOW WORKERS DOWN) -->
-<!--  _____________________________________________________________________________________________ -->
-<!--  Allows Workers to use jump beacons during their job search. -->
-<!--  Should Navigation Computer Mark II be enabled? 0 for off or 1 for on. Default: 1 -->
-      <t id="160">1</t>
-<!--  _____________________________________________________________________________________________ -->
-
-<!--  _____________________________________________________________________________________________ -->
-<!--  Smuggling Runs -->
-<!--  _____________________________________________________________________________________________ -->
-<!--  Allows Workers to use Pirate bases during their job search. Only affects Mayhem 3, Mayhem 3 Rebalanced, and Star Wars Mayhem 3. -->
-<!--  Should Smuggling Runs be enabled? 0 for off or 1 for on. Default: 0 -->
-      <t id="161">0</t>
-<!--  _____________________________________________________________________________________________ -->
-
-<!--  _____________________________________________________________________________________________ -->
-<!--  Mining Drones -->
-<!--  _____________________________________________________________________________________________ -->
-<!--  Player owned outposts build mining drones which collect minerals from miners in sector. -->
-<!--  Should Mining Drones be enabled? 0 for off or 1 for on. Default: 1 -->
-      <t id="162">1</t>
+<!--  Captains spawn throughout the universe and attempt to make a living. -->
+<!--  Should Captains be enabled? 0 for off or 1 for on. Default: 1 -->
+      <t id="190">0</t>
 <!--  _____________________________________________________________________________________________ -->
 <!--  ############################################################################################################################################# -->
 
@@ -516,15 +527,16 @@
 
 
 <!--  ############################################################################################################################################# -->
-<!--  DO NOT EVER CHANGE ANYTHING IN THIS SECTION! -->
+<!--  DO NOT CHANGE ANYTHING IN THIS SECTION! -->
 <!--  ############################################################################################################################################# -->
 
     <page id="99790" title="config" descr="Don't Touch These!" voice="no">
       <t id="1000">12000</t> <!-- Lowest task number for Sector Monitor -->
       <t id="1001">12100</t> <!-- Lowest task number for Improved Piloting -->
       <t id="1002">12200</t> <!-- Lowest task number for Standardized Fleet Operations -->
-      <t id="1003">12300</t> <!-- Lowest task number for tv.mayhem.task.claimable-->
-      <t id="1004">12400</t> <!-- Lowest task number for Monitor Mothership-->
+      <t id="1003">12300</t> <!-- Lowest task number for tv.mayhem.task.claimable -->
+      <t id="1004">12400</t> <!-- Lowest task number for Monitor Mothership -->
+      <t id="1005">12500</t> <!-- Lowest task number for Captains -->
 
 	<t id="13">100</t> <!-- Mayhem 2: Milliseconds between each scan step (default: 100) -->
 	<t id="10">10000</t> <!-- Mayhem 2: Ship research cost divider (default: 10000) -->

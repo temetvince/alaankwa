@@ -39,6 +39,7 @@
 			<text>script</text>
 			<text> </text>
 			<call>tv.set.message</call>
+			<text> </text>
 			<text>:</text>
 			<text> </text>
 			<text>param.name</text>
@@ -60,7 +61,6 @@
 			<text>param.format.2</text>
 			<text>=</text>
 			<var>null</var>
-			<text> </text>
 		</line>
 		<line linenr="005" indent="&#160;">
 			<text>return</text>
@@ -113,7 +113,7 @@
 			<text> </text>
 			<text>script</text>
 			<text> </text>
-			<call>tv.get.task.available</call>
+			<call>tv.get.task</call>
 			<text> </text>
 			<text>:</text>
 			<text> </text>
@@ -168,11 +168,13 @@
 		<line linenr="014" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="015" indent="">
+		<line linenr="015" indent="" />
+		<line linenr="016" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
+		<line linenr="017" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
@@ -252,7 +254,7 @@
 				</sval>
 				<sval type="array" size="8">
 					<sval type="int" val="102" />
-					<sval type="string" val="tv.get.task.available" />
+					<sval type="string" val="tv.get.task" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
@@ -287,7 +289,7 @@
 				</sval>
 			</sval>
 			<sval type="int" val="0" />
-			<sval type="array" size="6">
+			<sval type="array" size="8">
 				<sval type="array" size="2">
 					<sval type="int" val="1" />
 					<sval type="int" val="2" />
@@ -311,6 +313,14 @@
 				<sval type="array" size="2">
 					<sval type="int" val="8" />
 					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="8" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="9" />
+					<sval type="int" val="2" />
 				</sval>
 			</sval>
 			<sval type="int" val="0" />
