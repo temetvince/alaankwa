@@ -1,6 +1,5 @@
 # Alaankwa
 * To download, go to the latest release and click 'Source code (zip)': https://github.com/temetvince/x3ap-lu/releases/
-* The last version compatible with Mayhem 3 Rebalanced and Star Wars Mayhem 3 is v7.9.4: https://github.com/temetvince/x3ap-lu/releases/tag/v7.9.4
 * 'Alaankwa' means 'star' in the Miami-Peoria language (Myaamia)
 
 ## Discord
@@ -20,21 +19,18 @@
 * SWLU: https://www.moddb.com/mods/star-wars-lu-swlu/downloads
 * GiC: https://www.moddb.com/mods/star-wars-lu-swlu/addons
 * M3: https://www.moddb.com/mods/mayhem/downloads
-* SWM3: https://www.moddb.com/games/star-wars-mayhem-3/downloads
 
 ### Instructions
 1. Install Litcube's Universe
 2. Optionally Install SWLU or M3
     * (SWLU) Star Wars Litcube's Universe
     * (M3) Mayhem 3
-3. Optionally install GiC, M3R, or SWM3
+3. Optionally install GiC
     * (GiC) Galaxy in Chaos - Requires SWLU
-    * (M3R) Mayhem 3 Rebalanced - Requires M3
-    * (SWM3) Star Wars Mayhem 3 - Requires M3
 4. Install all other desired mods besides Alaankwa
 5. Optionally install ReShade
 6. Install Alaankwa
-7. Install Alaankwa Patch if playing SWLU, GIC, M3, M3R, or SWM3
+7. Install Alaankwa Patch if playing SWLU, GIC, or M3
 8. If you don't like the new font, delete the 'f' folder in your 'x3 terran conflict' root install directory
 
 ## Features
@@ -118,7 +114,7 @@
             * $param.debug is the message or object to debug. Can be simple like a ship name or complex like an array of tables
             * $param.trackingaim is optional. If provided, then the debug script will only run if that entity is the player's tracking aim in game
 
-### M3/M3R/SWM3 specific
+### M3 specific
 * NAVIGATION COMPUTER MK II
     * Allows Workers to use jump beacons during their job search
     * Significant performance impact to Worker job calculation speed
@@ -132,7 +128,7 @@
 * Outposts show themselves as a candidate for export or import jobs
     * This is helpful for making generic templates that include the outpost where you are creating the template
 * Fixed multiple Supply Drone bugs
-* Economy flowcharts for Mayhem 3/Mayhem 3 Rebalanced and Star Wars Mayhem 3
+* Economy flowcharts for Mayhem 3
 
 ## Links
 * temetvince Youtube Playlists (X3 Mod Install Videos):
@@ -141,10 +137,7 @@
     * Alaankwa: https://forum.egosoft.com/viewtopic.php?f=94&t=441824
 * Star Wars Mayhem 2 ModDB:
     * https://www.moddb.com/mods/star-wars-mayhem-2
-* Star Wars Mayhem 3 ModDB:
-    * https://www.moddb.com/games/star-wars-mayhem-3
 * X3 Mod Github Repositories:
     * Alaankwa: https://github.com/temetvince/x3ap-lu
     * Star Wars Mayhem 2: https://github.com/temetvince/x3ap-swm2
-    * Star Wars Mayhem 3: https://github.com/temetvince/x3ap-swm3
 
