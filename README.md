@@ -112,7 +112,6 @@
     * A new game font, Fantasque Sans Mono
         * https://github.com/belluzj/fantasque-sans
     * Quickshuttles notify the player when they have completed their task and have returned home.
-    * Suns visual lighting output increased to 200% (The game shouldn't be as dark anymore).
     * Debugging scripts for development
         * Can take in any text decodable object, say an array of tables, and output it in game to the user
         * Call the script like this: $debug.return = [NULL] -> call script 'tv.debug': param.debug=$Unknown param.trackingaim=$ShipOrStation
