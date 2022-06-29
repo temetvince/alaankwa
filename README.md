@@ -76,7 +76,7 @@
 * STANDARDIZED FLEET OPERATIONS
     * Escorts will attempt to follow at reasonable speeds instead of flying all over the place.
 * TOP NOTCH RECRUITERS
-    * All recruited Trade Mrk III Pilots are level 8, enough to start Galaxy trading.
+    * All recruited Trade Mrk III Pilots are level 8 (enough to start Galaxy trading).
 * TRADE EMBARGO
     * Removes all NPC ships docked at player stations which are not open to race traders.
 * SEPA'S MOTHERSHIP
@@ -108,6 +108,7 @@
     * A new game font, Fantasque Sans Mono
         * https://github.com/belluzj/fantasque-sans
     * Quickshuttles notify the player when they have completed their task and have returned home.
+    * Universe Traders proactively sell off unneeded wares in their cargo bay.
     * Debugging scripts for development
         * Can take in any text decodable object, say an array of tables, and output it in game to the user
         * Call the script like this: $debug.return = [NULL] -> call script 'tv.debug': param.debug=$Unknown param.trackingaim=$ShipOrStation
