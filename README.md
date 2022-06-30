@@ -110,6 +110,7 @@
     * Quickshuttles notify the player when they have completed their task and have returned home.
     * Universe Traders proactively sell off unneeded wares in their cargo bay.
     * Player Space Suit has SETA, trading capabilies, video enchancement goggles, and a bioware scanner. (LU only)
+    * The Player Headquarters, Equipment Docks, and Trading Stations are now available as Sources in the Dockware Manager.
     * Debugging scripts for development
         * Can take in any text decodable object, say an array of tables, and output it in game to the user
         * Call the script like this: $debug.return = [NULL] -> call script 'tv.debug': param.debug=$Unknown param.trackingaim=$ShipOrStation
