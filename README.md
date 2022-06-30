@@ -109,11 +109,13 @@
         * https://github.com/belluzj/fantasque-sans
     * Quickshuttles notify the player when they have completed their task and have returned home.
     * Universe Traders proactively sell off unneeded wares in their cargo bay.
+    * Player Space Suit has SETA, trading capabilies, video enchancement goggles, and a bioware scanner. (LU only)
     * Debugging scripts for development
         * Can take in any text decodable object, say an array of tables, and output it in game to the user
         * Call the script like this: $debug.return = [NULL] -> call script 'tv.debug': param.debug=$Unknown param.trackingaim=$ShipOrStation
             * $param.debug is the message or object to debug. Can be simple like a ship name or complex like an array of tables
             * $param.trackingaim is optional. If provided, then the debug script will only run if that entity is the player's tracking aim in game
+
 
 ### M3 specific
 * NAVIGATION COMPUTER MK II
