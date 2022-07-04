@@ -25,12 +25,13 @@
 2. Optionally Install SWLU or M3
     * (SWLU) Star Wars Litcube's Universe
     * (M3) Mayhem 3
-3. Optionally install GiC
+3. Optionally install GiC or M3ZH
     * (GiC) Galaxy in Chaos - Requires SWLU
+    * (M3ZH) M3 Zero Hour - Requires M3
 4. Install all other desired mods besides Alaankwa
 5. Optionally install ReShade
 6. Install Alaankwa
-7. Install Alaankwa Patch if playing SWLU, GIC, or M3
+7. Install Alaankwa Patch if playing SWLU, GIC, M3, or M3ZH
 8. If you don't like the new font, delete the 'f' folder in your 'x3 terran conflict' root install directory
 
 ## Features
