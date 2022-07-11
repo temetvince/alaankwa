@@ -27,9 +27,24 @@
 			<text>script</text>
 			<text> </text>
 			<call>tv.get.game.group.mayhem</call>
+			<text> </text>
 			<text>:</text>
 		</line>
 		<line linenr="002" indent="&#160;" interruptable="@">
+			<text>if</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>tv.get.game.m3zh</call>
+			<text> </text>
+			<text>:</text>
+		</line>
+		<line linenr="003" indent="&#160;&#160;" interruptable="@">
 			<var>$return</var>
 			<text> </text>
 			<text>=</text>
@@ -41,7 +56,7 @@
 			<text> </text>
 			<text>script</text>
 			<text> </text>
-			<call>tv.m3.menu.dwm.sm</call>
+			<call>tv.m3zh.menu.dwm.sm</call>
 			<text>:</text>
 			<text> </text>
 			<text>menu</text>
@@ -71,12 +86,61 @@
 			<text>keySettings</text>
 			<text>=</text>
 			<var>$keySettings</var>
-			<text> </text>
 		</line>
-		<line linenr="003" indent="">
+		<line linenr="004" indent="&#160;">
 			<text>else</text>
 		</line>
-		<line linenr="004" indent="&#160;" interruptable="@">
+		<line linenr="005" indent="&#160;&#160;" interruptable="@">
+			<var>$return</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>tv.m3.menu.dwm.sm</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>menu</text>
+			<text>=</text>
+			<var>$menu</var>
+			<text> </text>
+			<text>control</text>
+			<text>=</text>
+			<var>$control</var>
+			<text> </text>
+			<text>changeline</text>
+			<text>=</text>
+			<var>$changeline</var>
+			<text> </text>
+			<text>callbackReturn</text>
+			<text>=</text>
+			<var>$callbackReturn</var>
+			<text> </text>
+			<text>this</text>
+			<text>=</text>
+			<var>$this</var>
+			<text> </text>
+			<text>keyMenu</text>
+			<text>=</text>
+			<var>$keyMenu</var>
+			<text> </text>
+			<text>keySettings</text>
+			<text>=</text>
+			<var>$keySettings</var>
+		</line>
+		<line linenr="006" indent="&#160;">
+			<text>end</text>
+		</line>
+		<line linenr="007" indent="">
+			<text>else</text>
+		</line>
+		<line linenr="008" indent="&#160;" interruptable="@">
 			<var>$return</var>
 			<text> </text>
 			<text>=</text>
@@ -89,6 +153,7 @@
 			<text>script</text>
 			<text> </text>
 			<call>tv.lu.menu.dwm.sm</call>
+			<text> </text>
 			<text>:</text>
 			<text> </text>
 			<text>Menu</text>
@@ -119,16 +184,16 @@
 			<text>=</text>
 			<var>$keySettings</var>
 		</line>
-		<line linenr="005" indent="">
+		<line linenr="009" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="006" indent="" />
-		<line linenr="007" indent="">
+		<line linenr="010" indent="" />
+		<line linenr="011" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>$return</var>
 		</line>
-		<line linenr="008" indent="" />
+		<line linenr="012" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
@@ -147,14 +212,48 @@
 				<sval type="string" val="keySettings" />
 				<sval type="string" val="return" />
 			</sval>
-			<sval type="array" size="5">
+			<sval type="array" size="8">
 				<sval type="array" size="6">
 					<sval type="int" val="102" />
 					<sval type="string" val="tv.get.game.group.mayhem" />
-					<sval type="int" val="-1610611965" />
+					<sval type="int" val="-1610611197" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
 					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="102" />
+					<sval type="string" val="tv.get.game.m3zh" />
+					<sval type="int" val="-1610611709" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="20">
+					<sval type="int" val="102" />
+					<sval type="string" val="tv.m3zh.menu.dwm.sm" />
+					<sval type="int" val="7" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="7" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="5" />
 				</sval>
 				<sval type="array" size="20">
 					<sval type="int" val="102" />
@@ -180,7 +279,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="4" />
+					<sval type="int" val="7" />
 				</sval>
 				<sval type="array" size="20">
 					<sval type="int" val="102" />
@@ -240,21 +339,29 @@
 					<sval type="string" val="" />
 				</sval>
 			</sval>
-			<sval type="array" size="4">
+			<sval type="array" size="6">
 				<sval type="array" size="2">
-					<sval type="int" val="3" />
+					<sval type="int" val="4" />
 					<sval type="int" val="5" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="4" />
+					<sval type="int" val="5" />
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
+					<sval type="int" val="6" />
+					<sval type="int" val="5" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="7" />
 					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="7" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="5" />
+					<sval type="int" val="8" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>
