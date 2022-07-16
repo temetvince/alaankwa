@@ -45,6 +45,8 @@
         * Enable for normal M3 behavior
 * MINING DRONES
     * Player owned outposts build mining drones which collect minerals from miners in sector
+* ESCORT FORMATIONS
+    * All ships following other ships assume random escort formations.
 * Outposts show themselves as a candidate for export or import jobs
     * This is helpful for making generic templates that include the outpost where you are creating the template
 * Fixed multiple Supply Drone bugs
