@@ -38,7 +38,7 @@
 ### M3 specific
 * TERRAN MEMORY CARTOGRAPHERS
     * Allows Workers to use jump beacons during their job search
-    * Disables jump beacons not in Terran Memories!
+    * Disables jump beacons not located in sectors with Terran Memories!
 * SMUGGLING RUNS
     * Allows workers to use Pirate bases during their job search
     * Disabled by default
