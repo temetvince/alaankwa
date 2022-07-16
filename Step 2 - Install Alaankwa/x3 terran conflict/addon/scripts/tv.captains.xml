@@ -9,10 +9,25 @@
 	<arguments />
 	<sourcetext>
 		<line linenr="001" indent="">
-			<comment>* { captains: { uuid: { ship, uuid }, uuid: { ship, uuid } } }</comment>
+			<comment>* captains: { </comment>
 		</line>
-		<line linenr="002" indent="" />
-		<line linenr="003" indent="" interruptable="@">
+		<line linenr="002" indent="">
+			<comment>*   uuid: {</comment>
+		</line>
+		<line linenr="003" indent="">
+			<comment>*     ship,</comment>
+		</line>
+		<line linenr="004" indent="">
+			<comment>*     uuid</comment>
+		</line>
+		<line linenr="005" indent="">
+			<comment>*   },</comment>
+		</line>
+		<line linenr="006" indent="">
+			<comment>* }</comment>
+		</line>
+		<line linenr="007" indent="" />
+		<line linenr="008" indent="" interruptable="@">
 			<text>skip</text>
 			<text> </text>
 			<text>if</text>
@@ -24,17 +39,17 @@
 			<text> </text>
 			<text>script</text>
 			<text> </text>
-			<call>tv.get.game.lu</call>
-			<text> </text>
+			<call>tv.get.game.group.mayhem</call>
 			<text>:</text>
+			<text> </text>
 		</line>
-		<line linenr="004" indent="&#160;">
+		<line linenr="009" indent="&#160;">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="005" indent="" />
-		<line linenr="006" indent="" interruptable="@">
+		<line linenr="010" indent="" />
+		<line linenr="011" indent="" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -48,8 +63,8 @@
 			<text> </text>
 			<text>:</text>
 		</line>
-		<line linenr="007" indent="" />
-		<line linenr="008" indent="" interruptable="@">
+		<line linenr="012" indent="" />
+		<line linenr="013" indent="" interruptable="@">
 			<text>if</text>
 			<text> </text>
 			<text>not</text>
@@ -69,7 +84,7 @@
 			<text>=</text>
 			<text>'tv.feature.captains'</text>
 		</line>
-		<line linenr="009" indent="&#160;" interruptable="@">
+		<line linenr="014" indent="&#160;" interruptable="@">
 			<var>$captains</var>
 			<text> </text>
 			<text>=</text>
@@ -85,8 +100,8 @@
 			<text> </text>
 			<text>:</text>
 		</line>
-		<line linenr="010" indent="&#160;" />
-		<line linenr="011" indent="&#160;" interruptable="@">
+		<line linenr="015" indent="&#160;" />
+		<line linenr="016" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -108,24 +123,24 @@
 			<text>=</text>
 			<text>'OFF'</text>
 		</line>
-		<line linenr="012" indent="&#160;" />
-		<line linenr="013" indent="&#160;">
+		<line linenr="017" indent="&#160;" />
+		<line linenr="018" indent="&#160;">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="014" indent="">
+		<line linenr="019" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="015" indent="" />
-		<line linenr="016" indent="">
+		<line linenr="020" indent="" />
+		<line linenr="021" indent="">
 			<text>gosub</text>
 			<text> </text>
 			<var>Alloc</var>
 			<text>:</text>
 		</line>
-		<line linenr="017" indent="" />
-		<line linenr="018" indent="" interruptable="@">
+		<line linenr="022" indent="" />
+		<line linenr="023" indent="" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -139,18 +154,18 @@
 			<text> </text>
 			<text>:</text>
 		</line>
-		<line linenr="019" indent="" />
-		<line linenr="020" indent="">
+		<line linenr="024" indent="" />
+		<line linenr="025" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="021" indent="" />
-		<line linenr="022" indent="">
+		<line linenr="026" indent="" />
+		<line linenr="027" indent="">
 			<var>Alloc</var>
 			<text>:</text>
 		</line>
-		<line linenr="023" indent="&#160;">
+		<line linenr="028" indent="&#160;">
 			<var>$captains</var>
 			<text> </text>
 			<text>=</text>
@@ -166,15 +181,15 @@
 			<text>=</text>
 			<text>'tv.captains'</text>
 		</line>
-		<line linenr="024" indent="&#160;" />
-		<line linenr="025" indent="&#160;">
+		<line linenr="029" indent="&#160;" />
+		<line linenr="030" indent="&#160;">
 			<text>if</text>
 			<text> </text>
 			<text>not</text>
 			<text> </text>
 			<var>$captains</var>
 		</line>
-		<line linenr="026" indent="&#160;&#160;">
+		<line linenr="031" indent="&#160;&#160;">
 			<var>$captains</var>
 			<text> </text>
 			<text>=</text>
@@ -183,8 +198,8 @@
 			<text> </text>
 			<text>alloc</text>
 		</line>
-		<line linenr="027" indent="&#160;&#160;" />
-		<line linenr="028" indent="&#160;&#160;">
+		<line linenr="032" indent="&#160;&#160;" />
+		<line linenr="033" indent="&#160;&#160;">
 			<text>set</text>
 			<text> </text>
 			<text>global</text>
@@ -200,13 +215,13 @@
 			<text>=</text>
 			<var>$captains</var>
 		</line>
-		<line linenr="029" indent="&#160;">
+		<line linenr="034" indent="&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="030" indent="">
+		<line linenr="035" indent="">
 			<text>endsub</text>
 		</line>
-		<line linenr="031" indent="" />
+		<line linenr="036" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
@@ -221,7 +236,7 @@
 			<sval type="array" size="16">
 				<sval type="array" size="6">
 					<sval type="int" val="102" />
-					<sval type="string" val="tv.get.game.lu" />
+					<sval type="string" val="tv.get.game.group.mayhem" />
 					<sval type="int" val="-536870393" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
@@ -327,11 +342,36 @@
 				</sval>
 			</sval>
 			<sval type="int" val="0" />
-			<sval type="array" size="15">
+			<sval type="array" size="20">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
-					<sval type="string" val="{ captains: { uuid: { ship, uuid }, uuid: { ship, uuid } } }" />
+					<sval type="string" val="captains: { " />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="  uuid: {" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="    ship," />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="    uuid" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="  }," />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="}" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="0" />
