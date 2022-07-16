@@ -35,6 +35,21 @@
 8. If you don't like the new font, delete the 'f' folder in your 'x3 terran conflict' root install directory
 
 ## Features
+### M3 specific
+* TERRAN MEMORY CARTOGRAPHERS
+    * Allows Workers to use jump beacons during their job search
+    * Disables jump beacons not in Terran Memories!
+* SMUGGLING RUNS
+    * Allows workers to use Pirate bases during their job search
+    * Disabled by default
+        * Enable for normal M3 behavior
+* MINING DRONES
+    * Player owned outposts build mining drones which collect minerals from miners in sector
+* Outposts show themselves as a candidate for export or import jobs
+    * This is helpful for making generic templates that include the outpost where you are creating the template
+* Fixed multiple Supply Drone bugs
+* Economy flowcharts for Mayhem 3
+
 ### General
 * ROTATIONAL THRUSTERS
     * Class rotation variables have been increased by these amounts:
@@ -117,23 +132,6 @@
         * Call the script like this: $debug.return = [NULL] -> call script 'tv.debug': param.debug=$Unknown param.trackingaim=$ShipOrStation
             * $param.debug is the message or object to debug. Can be simple like a ship name or complex like an array of tables
             * $param.trackingaim is optional. If provided, then the debug script will only run if that entity is the player's tracking aim in game
-
-
-### M3 specific
-* NAVIGATION COMPUTER MK II
-    * Allows Workers to use jump beacons during their job search
-    * Significant performance impact to Worker job calculation speed
-        * Don't use with more than 10-20 jump beacons
-* SMUGGLING RUNS
-    * Allows workers to use Pirate bases during their job search
-    * Disabled by default
-        * Enable for normal M3 behavior
-* MINING DRONES
-    * Player owned outposts build mining drones which collect minerals from miners in sector
-* Outposts show themselves as a candidate for export or import jobs
-    * This is helpful for making generic templates that include the outpost where you are creating the template
-* Fixed multiple Supply Drone bugs
-* Economy flowcharts for Mayhem 3
 
 ## Links
 * temetvince Youtube Playlists (X3 Mod Install Videos):
