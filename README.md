@@ -125,6 +125,7 @@
         * https://github.com/belluzj/fantasque-sans
     * Quickshuttles notify the player when they have completed their task and have returned home.
     * Universe Traders proactively sell off unneeded wares in their cargo bay.
+    * Universe Traders move to a random core sector within their jump range if no trades are found.
     * Player Space Suit has SETA, trading capabilies, video enchancement goggles, and a bioware scanner. (LU only)
     * The Player Headquarters, Equipment Docks, and Trading Stations are now available as Sources in the Dockware Manager.
     * Debugging scripts for development
