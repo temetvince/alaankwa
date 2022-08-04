@@ -1,5 +1,5 @@
 # Alaankwa
-* To download, go to the latest release and click 'Source code (zip)': https://github.com/temetvince/x3ap-lu/releases/
+* To download, go to the latest release and click 'Source code (zip)': https://github.com/temetvince/alaankwa/releases/
 * 'Alaankwa' means 'star' in the Miami-Peoria language (Myaamia)
 
 ## Discord
@@ -15,7 +15,7 @@
 ### Downloads
 * No-Steam Exe: https://www.egosoft.com/download/x3ap/bonus_en.php
 * ReShade: https://reshade.me/
-* Alaankwa: https://github.com/temetvince/x3ap-lu/releases
+* Alaankwa: https://github.com/temetvince/alaankwa/releases
 * LU: http://litcube.xtimelines.net/wiki/index.php/Download
 * STLU: https://www.moddb.com/mods/star-trek-litcubes-universe/downloads
 * SWLU: https://www.moddb.com/mods/star-wars-lu-swlu/downloads
