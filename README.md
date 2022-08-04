@@ -150,7 +150,8 @@
 * temetvince Youtube Playlists (X3 Mod Install Videos):
 	* https://www.youtube.com/channel/UCw7tARIJee8gd1OpeSjAEMw/playlists
 * temetvince Egosoft Forums:
-    * Alaankwa: https://forum.egosoft.com/viewtopic.php?f=94&t=441824
+    * X3FL: https://forum.egosoft.com/viewtopic.php?f=201&t=448941
+    * X3AP: https://forum.egosoft.com/viewtopic.php?f=94&t=441824
 * Star Wars Mayhem 2 ModDB:
     * https://www.moddb.com/mods/star-wars-mayhem-2
 * X3 Mod Github Repositories:
