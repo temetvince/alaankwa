@@ -24,7 +24,7 @@
 * M3ZH: https://github.com/Hector839/Mayhem-3-Zero-Hour/releases
 
 ### Instructions
-1. Optionally Install Litcube's Universe (Not compatible with X3: Farnham's Legacy!)
+1. Optionally Install Litcube's Universe
     * Optionally Install STLU, SWLU, or M3 (Not M2/SWM2!)
         * (STLU) Star Trek Litcube's Universe - Requires LU
         * (SWLU) Star Wars Litcube's Universe - Requires LU
@@ -36,7 +36,7 @@
 4. Install all other desired mods besides Alaankwa
 5. Optionally install ReShade
 6. Install Alaankwa
-7. Install Alaankwa Patch if playing LU, SWLU, GIC, M3, or M3ZH
+7. Install Alaankwa Patch if playing LU, STLU, SWLU, GIC, M3, or M3ZH
 8. If you don't like the new font, delete the 'f' folder in your 'x3 terran conflict' root install directory
 
 ## Features
