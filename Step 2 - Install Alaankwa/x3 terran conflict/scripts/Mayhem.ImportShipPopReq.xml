@@ -1,0 +1,370 @@
+<?xml version="1.0" standalone="yes"?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
+<!-- Generated using X-Studio -->
+<script>
+	<name>Mayhem.ImportShipPopReq</name>
+	<version>1</version>
+	<engineversion>50</engineversion>
+	<description></description>
+	<arguments />
+	<sourcetext>
+		<line linenr="001" indent="" />
+		<line linenr="002" indent="">
+			<text>load</text>
+			<text> </text>
+			<text>text</text>
+			<text>:</text>
+			<text> </text>
+			<text>id</text>
+			<text>=</text>
+			<var>9982</var>
+		</line>
+		<line linenr="003" indent="" />
+		<line linenr="004" indent="">
+			<var>$id</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>0</var>
+		</line>
+		<line linenr="005" indent="">
+			<var>$shipPopReq</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>alloc</text>
+		</line>
+		<line linenr="006" indent="" />
+		<line linenr="007" indent="">
+			<text>while</text>
+			<text> </text>
+			<var>$id</var>
+			<text> </text>
+			<text>&lt;</text>
+			<text> </text>
+			<var>500</var>
+		</line>
+		<line linenr="008" indent="&#160;">
+			<text>inc</text>
+			<text> </text>
+			<var>$id</var>
+		</line>
+		<line linenr="009" indent="&#160;" />
+		<line linenr="010" indent="&#160;">
+			<var>$shipPop</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>read</text>
+			<text> </text>
+			<text>text</text>
+			<text>:</text>
+			<text> </text>
+			<text>page</text>
+			<text>=</text>
+			<var>9979</var>
+			<text> </text>
+			<text>id</text>
+			<text>=</text>
+			<var>$id</var>
+		</line>
+		<line linenr="011" indent="&#160;">
+			<var>$pos</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>find</text>
+			<text> </text>
+			<text>position</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>pattern</text>
+			<text> </text>
+			<text>'ReadText'</text>
+			<text> </text>
+			<text>in</text>
+			<text> </text>
+			<var>$shipPop</var>
+		</line>
+		<line linenr="012" indent="&#160;">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$pos</var>
+			<text> </text>
+			<text>!=</text>
+			<text> </text>
+			<var>-1</var>
+		</line>
+		<line linenr="013" indent="&#160;&#160;">
+			<text>continue</text>
+		</line>
+		<line linenr="014" indent="&#160;" />
+		<line linenr="015" indent="&#160;">
+			<var>$shipPop</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>string</text>
+			<text> </text>
+			<var>$shipPop</var>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>integer</text>
+		</line>
+		<line linenr="016" indent="&#160;">
+			<var>$ship</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>ware</text>
+			<text> </text>
+			<text>from</text>
+			<text> </text>
+			<text>maintype</text>
+			<text> </text>
+			<var>[SSTYPE_SHIP]</var>
+			<text> </text>
+			<text>and</text>
+			<text> </text>
+			<text>subtype</text>
+			<text> </text>
+			<var>$id</var>
+		</line>
+		<line linenr="017" indent="&#160;">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$ship</var>
+		</line>
+		<line linenr="018" indent="&#160;&#160;">
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$shipPopReq</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<var>$ship</var>
+			<text> </text>
+			<text>)</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$shipPop</var>
+		</line>
+		<line linenr="019" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="020" indent="" />
+		<line linenr="021" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'mayhem_shipPopReq'</text>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$shipPopReq</var>
+		</line>
+		<line linenr="022" indent="" />
+		<line linenr="023" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>$shipPopReq</var>
+		</line>
+	</sourcetext>
+	<codearray>
+		<sval type="array" size="10">
+			<sval type="string" val="Mayhem.ImportShipPopReq" />
+			<sval type="int" val="50" />
+			<sval type="string" val="" />
+			<sval type="int" val="1" />
+			<sval type="int" val="0" />
+			<sval type="array" size="5">
+				<sval type="string" val="id" />
+				<sval type="string" val="shipPopReq" />
+				<sval type="string" val="shipPop" />
+				<sval type="string" val="pos" />
+				<sval type="string" val="ship" />
+			</sval>
+			<sval type="array" size="16">
+				<sval type="array" size="3">
+					<sval type="int" val="151" />
+					<sval type="int" val="4" />
+					<sval type="int" val="9982" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="1706" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610609143" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="4" />
+					<sval type="int" val="500" />
+					<sval type="int" val="15" />
+					<sval type="int" val="3" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="142" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="126" />
+					<sval type="int" val="2" />
+					<sval type="int" val="4" />
+					<sval type="int" val="9979" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="1076" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="5" />
+					<sval type="string" val="ReadText" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610610424" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+					<sval type="int" val="4" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="15" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="3" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="1078" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="657" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="207" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610609400" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1708" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="3" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="5" />
+					<sval type="string" val="mayhem_shipPopReq" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+			<sval type="array" size="9">
+				<sval type="array" size="2">
+					<sval type="int" val="0" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="1" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="3" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="5" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="9" />
+					<sval type="int" val="6" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="9" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="14" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="14" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="15" />
+					<sval type="int" val="2" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+		</sval>
+	</codearray>
+</script>

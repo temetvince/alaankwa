@@ -1,0 +1,914 @@
+<?xml version="1.0" standalone="yes"?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
+<!-- Generated using X-Studio -->
+<script>
+	<name>tv.get.ship.templates</name>
+	<version>1</version>
+	<engineversion>50</engineversion>
+	<description></description>
+	<arguments>
+		<argument index="1" name="param.page" type="Var/Number" desc="xml page" />
+		<argument index="2" name="param.id" type="Var/Number" desc="xml starting id" />
+	</arguments>
+	<sourcetext>
+		<line linenr="001" indent="">
+			<comment>* structure</comment>
+		</line>
+		<line linenr="002" indent="">
+			<comment>* templates: table (difficulty)</comment>
+		</line>
+		<line linenr="003" indent="">
+			<comment>*     subArray: array of templates</comment>
+		</line>
+		<line linenr="004" indent="">
+			<comment>*        subTable: table of classes</comment>
+		</line>
+		<line linenr="005" indent="" />
+		<line linenr="006" indent="">
+			<var>$seperator.element</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'|'</text>
+		</line>
+		<line linenr="007" indent="">
+			<var>$seperator.number</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'.'</text>
+		</line>
+		<line linenr="008" indent="" />
+		<line linenr="009" indent="">
+			<var>$id</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$param.id</var>
+		</line>
+		<line linenr="010" indent="" />
+		<line linenr="011" indent="">
+			<var>$templates</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>alloc</text>
+		</line>
+		<line linenr="012" indent="" />
+		<line linenr="013" indent="">
+			<text>while</text>
+			<text> </text>
+			<var>[TRUE]</var>
+		</line>
+		<line linenr="014" indent="&#160;">
+			<var>$text</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>read</text>
+			<text> </text>
+			<text>text</text>
+			<text>:</text>
+			<text> </text>
+			<text>page</text>
+			<text>=</text>
+			<var>$param.page</var>
+			<text> </text>
+			<text>id</text>
+			<text>=</text>
+			<var>$id</var>
+		</line>
+		<line linenr="015" indent="&#160;" />
+		<line linenr="016" indent="&#160;" interruptable="@">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>tv.get.text.load.error</call>
+			<text>:</text>
+			<text> </text>
+			<text>param.text</text>
+			<text>=</text>
+			<var>$text</var>
+		</line>
+		<line linenr="017" indent="&#160;&#160;">
+			<text>break</text>
+		</line>
+		<line linenr="018" indent="&#160;" />
+		<line linenr="019" indent="&#160;" interruptable="@">
+			<var>$line</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Lib.Gen.String.Seperator</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>String</text>
+			<text>=</text>
+			<var>$text</var>
+			<text> </text>
+			<text>Seperator</text>
+			<text>=</text>
+			<var>$seperator.element</var>
+		</line>
+		<line linenr="020" indent="&#160;" />
+		<line linenr="021" indent="&#160;">
+			<var>$count</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>size</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<var>$line</var>
+		</line>
+		<line linenr="022" indent="&#160;&#160;">
+			<text>while</text>
+			<text> </text>
+			<var>$count</var>
+		</line>
+		<line linenr="023" indent="&#160;&#160;&#160;">
+			<text>dec</text>
+			<text> </text>
+			<var>$count</var>
+		</line>
+		<line linenr="024" indent="&#160;&#160;&#160;">
+			<var>$string</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$line</var>
+			<text>[</text>
+			<var>$count</var>
+			<text>]</text>
+		</line>
+		<line linenr="025" indent="&#160;&#160;&#160;">
+			<text>if</text>
+			<text> </text>
+			<var>$count</var>
+			<text> </text>
+			<text>==</text>
+			<text> </text>
+			<var>0</var>
+		</line>
+		<line linenr="026" indent="&#160;&#160;">
+			<var>$difficulty</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>string</text>
+			<text> </text>
+			<var>$string</var>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>integer</text>
+		</line>
+		<line linenr="027" indent="&#160;&#160;" />
+		<line linenr="028" indent="&#160;&#160;">
+			<text>continue</text>
+		</line>
+		<line linenr="029" indent="&#160;&#160;">
+			<text>end</text>
+		</line>
+		<line linenr="030" indent="&#160;&#160;" />
+		<line linenr="031" indent="&#160;&#160;&#160;" interruptable="@">
+			<var>$class</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>tv.get.class.from.string</call>
+			<text>:</text>
+			<text> </text>
+			<text>param.class.string</text>
+			<text>=</text>
+			<var>$string</var>
+		</line>
+		<line linenr="032" indent="&#160;&#160;&#160;" />
+		<line linenr="033" indent="&#160;&#160;">
+			<text>if</text>
+			<text> </text>
+			<var>$class</var>
+		</line>
+		<line linenr="034" indent="&#160;&#160;&#160;">
+			<var>$subTable</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>alloc</text>
+		</line>
+		<line linenr="035" indent="&#160;&#160;&#160;">
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$subTable</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<var>$class</var>
+			<text> </text>
+			<text>)</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$n</var>
+		</line>
+		<line linenr="036" indent="&#160;&#160;&#160;">
+			<text>else</text>
+		</line>
+		<line linenr="037" indent="&#160;&#160;&#160;&#160;">
+			<var>$pos</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>find</text>
+			<text> </text>
+			<text>position</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>pattern</text>
+			<text> </text>
+			<var>$seperator.number</var>
+			<text> </text>
+			<text>in</text>
+			<text> </text>
+			<var>$string</var>
+		</line>
+		<line linenr="038" indent="&#160;&#160;&#160;&#160;" />
+		<line linenr="039" indent="&#160;&#160;&#160;&#160;">
+			<text>if</text>
+			<text> </text>
+			<var>$pos</var>
+			<text> </text>
+			<text>!=</text>
+			<text> </text>
+			<var>-1</var>
+		</line>
+		<line linenr="040" indent="&#160;&#160;&#160;&#160;" interruptable="@">
+			<var>$m</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Lib.Gen.String.Seperator</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>String</text>
+			<text>=</text>
+			<var>$string</var>
+			<text> </text>
+			<text>Seperator</text>
+			<text>=</text>
+			<var>$seperator.number</var>
+		</line>
+		<line linenr="041" indent="&#160;&#160;&#160;">
+			<var>$min</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$m</var>
+			<text>[</text>
+			<var>0</var>
+			<text>]</text>
+		</line>
+		<line linenr="042" indent="&#160;&#160;&#160;&#160;">
+			<var>$max</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$m</var>
+			<text>[</text>
+			<var>1</var>
+			<text>]</text>
+		</line>
+		<line linenr="043" indent="&#160;&#160;&#160;">
+			<var>$n</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$min</var>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<text>'.'</text>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>$max</var>
+		</line>
+		<line linenr="044" indent="&#160;&#160;">
+			<text>else</text>
+		</line>
+		<line linenr="045" indent="&#160;">
+			<var>$n</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$string</var>
+		</line>
+		<line linenr="046" indent="&#160;">
+			<text>end</text>
+		</line>
+		<line linenr="047" indent="&#160;">
+			<text>end</text>
+		</line>
+		<line linenr="048" indent="&#160;">
+			<text>end</text>
+		</line>
+		<line linenr="049" indent="&#160;" />
+		<line linenr="050" indent="&#160;&#160;">
+			<var>$subArray</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<var>$templates</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<var>$difficulty</var>
+			<text> </text>
+			<text>)</text>
+		</line>
+		<line linenr="051" indent="&#160;" />
+		<line linenr="052" indent="&#160;">
+			<text>skip</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$subArray</var>
+		</line>
+		<line linenr="053" indent="&#160;">
+			<var>$subArray</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>alloc</text>
+			<text>:</text>
+			<text> </text>
+			<text>size</text>
+			<text>=</text>
+			<var>0</var>
+		</line>
+		<line linenr="054" indent="&#160;" />
+		<line linenr="055" indent="&#160;">
+			<text>append</text>
+			<text> </text>
+			<var>$subTable</var>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<var>$subArray</var>
+		</line>
+		<line linenr="056" indent="">
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$templates</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<var>$difficulty</var>
+			<text> </text>
+			<text>)</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$subArray</var>
+		</line>
+		<line linenr="057" indent="" />
+		<line linenr="058" indent="">
+			<text>inc</text>
+			<text> </text>
+			<var>$id</var>
+		</line>
+		<line linenr="059" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="060" indent="" />
+		<line linenr="061" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>$templates</var>
+		</line>
+		<line linenr="062" indent="" />
+	</sourcetext>
+	<codearray>
+		<sval type="array" size="10">
+			<sval type="string" val="tv.get.ship.templates" />
+			<sval type="int" val="50" />
+			<sval type="string" val="" />
+			<sval type="int" val="1" />
+			<sval type="int" val="0" />
+			<sval type="array" size="19">
+				<sval type="string" val="param.page" />
+				<sval type="string" val="param.id" />
+				<sval type="string" val="seperator.element" />
+				<sval type="string" val="seperator.number" />
+				<sval type="string" val="id" />
+				<sval type="string" val="templates" />
+				<sval type="string" val="text" />
+				<sval type="string" val="line" />
+				<sval type="string" val="string" />
+				<sval type="string" val="count" />
+				<sval type="string" val="difficulty" />
+				<sval type="string" val="class" />
+				<sval type="string" val="subTable" />
+				<sval type="string" val="n" />
+				<sval type="string" val="pos" />
+				<sval type="string" val="m" />
+				<sval type="string" val="min" />
+				<sval type="string" val="max" />
+				<sval type="string" val="subArray" />
+			</sval>
+			<sval type="array" size="38">
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="2" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="|" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="3" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="." />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="1706" />
+					<sval type="int" val="5" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610603255" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="10" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="126" />
+					<sval type="int" val="6" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="8">
+					<sval type="int" val="102" />
+					<sval type="string" val="tv.get.text.load.error" />
+					<sval type="int" val="-1610610680" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="37" />
+				</sval>
+				<sval type="array" size="10">
+					<sval type="int" val="102" />
+					<sval type="string" val="Lib.Gen.String.Seperator" />
+					<sval type="int" val="7" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="131" />
+					<sval type="int" val="9" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="7" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610605047" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="9" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="143" />
+					<sval type="int" val="9" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="129" />
+					<sval type="int" val="8" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="7" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="9" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610608637" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="9" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="15" />
+					<sval type="int" val="0" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="0" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="1078" />
+					<sval type="int" val="10" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="8" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="10" />
+				</sval>
+				<sval type="array" size="8">
+					<sval type="int" val="102" />
+					<sval type="string" val="tv.get.class.from.string" />
+					<sval type="int" val="11" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="8" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610607357" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="11" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="1706" />
+					<sval type="int" val="12" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1708" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="12" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="11" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="13" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="29" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="1076" />
+					<sval type="int" val="14" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="8" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610605565" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="14" />
+					<sval type="int" val="4" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="15" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="10">
+					<sval type="int" val="102" />
+					<sval type="string" val="Lib.Gen.String.Seperator" />
+					<sval type="int" val="15" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="8" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="129" />
+					<sval type="int" val="16" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="15" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="129" />
+					<sval type="int" val="17" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="15" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="19">
+					<sval type="int" val="104" />
+					<sval type="int" val="13" />
+					<sval type="int" val="5" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="16" />
+					<sval type="int" val="5" />
+					<sval type="string" val="." />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="17" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="5" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="29" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="13" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="8" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="10" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="1709" />
+					<sval type="int" val="18" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="10" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-536862457" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="18" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="128" />
+					<sval type="int" val="18" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="135" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="18" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="12" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1708" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="10" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="18" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="142" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+				</sval>
+			</sval>
+			<sval type="array" size="2">
+				<sval type="array" size="2">
+					<sval type="int" val="10" />
+					<sval type="string" val="xml page" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="10" />
+					<sval type="string" val="xml starting id" />
+				</sval>
+			</sval>
+			<sval type="array" size="30">
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="structure" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="templates: table (difficulty)" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="    subArray: array of templates" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="       subTable: table of classes" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="0" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="2" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="3" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="4" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="6" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="8" />
+					<sval type="int" val="7" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="8" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="9" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="15" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="16" />
+					<sval type="int" val="6" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="16" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="16" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="17" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="21" />
+					<sval type="int" val="5" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="22" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="28" />
+					<sval type="int" val="5" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="29" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="29" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="30" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="30" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="31" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="33" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="35" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="37" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="37" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="38" />
+					<sval type="int" val="2" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+		</sval>
+	</codearray>
+</script>

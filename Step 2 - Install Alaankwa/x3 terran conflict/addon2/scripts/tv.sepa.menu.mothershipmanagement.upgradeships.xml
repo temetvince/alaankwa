@@ -1,0 +1,691 @@
+<?xml version="1.0" standalone="yes"?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
+<!-- Generated using X-Studio -->
+<script>
+	<name>tv.sepa.menu.mothershipmanagement.upgradeships</name>
+	<version>1</version>
+	<engineversion>50</engineversion>
+	<description></description>
+	<arguments>
+		<argument index="1" name="This" type="Value" desc="This" />
+	</arguments>
+	<sourcetext>
+		<line linenr="001" indent="">
+			<var>$Text</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$This</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>name</text>
+		</line>
+		<line linenr="002" indent="">
+			<var>$Description</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>strip</text>
+			<text> </text>
+			<text>colour</text>
+			<text> </text>
+			<text>from</text>
+			<text> </text>
+			<text>string</text>
+			<text>:</text>
+			<text> </text>
+			<var>$Text</var>
+		</line>
+		<line linenr="003" indent="">
+			<var>$Title</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'Upgrade Ships'</text>
+		</line>
+		<line linenr="004" indent="" />
+		<line linenr="005" indent="">
+			<var>$ScriptDescriptor</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'tv.DWM.UpgradeShips'</text>
+		</line>
+		<line linenr="006" indent="" />
+		<line linenr="007" indent="">
+			<var>$Key.Menu</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'SMPassThrough.Menu.'</text>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>$ScriptDescriptor</var>
+		</line>
+		<line linenr="008" indent="">
+			<var>$Key.Settings</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'SMPassThrough.Settings.'</text>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>$ScriptDescriptor</var>
+		</line>
+		<line linenr="009" indent="">
+			<var>$Menu</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>create</text>
+			<text> </text>
+			<text>custom</text>
+			<text> </text>
+			<text>menu</text>
+			<text> </text>
+			<text>array</text>
+		</line>
+		<line linenr="010" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$Key.Menu</var>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$Menu</var>
+		</line>
+		<line linenr="011" indent="" />
+		<line linenr="012" indent="">
+			<var>$SettingsVersion</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$ScriptDescriptor</var>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<text>'.'</text>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<text>'1.0'</text>
+		</line>
+		<line linenr="013" indent="">
+			<var>$Settings</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$Key.Settings</var>
+		</line>
+		<line linenr="014" indent="" />
+		<line linenr="015" indent="">
+			<text>gosub</text>
+			<text> </text>
+			<var>SetDefault</var>
+			<text>:</text>
+		</line>
+		<line linenr="016" indent="" />
+		<line linenr="017" indent="" />
+		<line linenr="018" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>$This</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>tv.sepa.menu.mothershipmanagement.upgradeships.sm</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>Menu</text>
+			<text>=</text>
+			<var>null</var>
+			<text> </text>
+			<text>Control</text>
+			<text>=</text>
+			<var>null</var>
+			<text> </text>
+			<text>Changeline</text>
+			<text>=</text>
+			<var>null</var>
+			<text> </text>
+			<text>CallbackReturn</text>
+			<text>=</text>
+			<var>null</var>
+			<text> </text>
+			<text>This</text>
+			<text>=</text>
+			<var>$This</var>
+			<text> </text>
+			<text>Key.Menu</text>
+			<text>=</text>
+			<var>$Key.Menu</var>
+			<text> </text>
+			<text>Key.Settings</text>
+			<text>=</text>
+			<var>$Key.Settings</var>
+		</line>
+		<line linenr="019" indent="" />
+		<line linenr="020" indent="">
+			<var>$Args</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>create</text>
+			<text> </text>
+			<text>new</text>
+			<text> </text>
+			<text>array</text>
+			<text>,</text>
+			<text> </text>
+			<text>arguments</text>
+			<text>=</text>
+			<var>$This</var>
+			<text>,</text>
+			<text> </text>
+			<var>$Key.Menu</var>
+			<text>,</text>
+			<text> </text>
+			<var>$Key.Settings</var>
+			<text>,</text>
+			<text> </text>
+			<var>null</var>
+			<text>,</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="021" indent="">
+			<comment>* $Ret = open custom menu: title=$Title description=$Description option array=$Menu callback script='Menu.DWM.UpgradeShips.SM' args=$Args</comment>
+		</line>
+		<line linenr="022" indent="">
+			<var>$Ret</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>open</text>
+			<text> </text>
+			<text>custom</text>
+			<text> </text>
+			<text>info</text>
+			<text> </text>
+			<text>menu</text>
+			<text>:</text>
+			<text> </text>
+			<text>title</text>
+			<text>=</text>
+			<var>$Title</var>
+			<text> </text>
+			<text>description</text>
+			<text>=</text>
+			<var>$Description</var>
+			<text> </text>
+			<text>option</text>
+			<text> </text>
+			<text>array</text>
+			<text>=</text>
+			<var>$Menu</var>
+			<text> </text>
+			<text>callback</text>
+			<text> </text>
+			<text>script</text>
+			<text>=</text>
+			<call>tv.sepa.menu.mothershipmanagement.upgradeships.sm</call>
+			<text> </text>
+			<text>args</text>
+			<text>=</text>
+			<var>$Args</var>
+			<text> </text>
+			<text>max</text>
+			<text> </text>
+			<text>options</text>
+			<text>=</text>
+			<var>333</var>
+		</line>
+		<line linenr="023" indent="" />
+		<line linenr="024" indent="">
+			<var>$Ret</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$Ret</var>
+			<text>[</text>
+			<var>0</var>
+			<text>]</text>
+		</line>
+		<line linenr="025" indent="" />
+		<line linenr="026" indent="">
+			<text>gosub</text>
+			<text> </text>
+			<var>BuildReturnArray</var>
+			<text>:</text>
+		</line>
+		<line linenr="027" indent="" />
+		<line linenr="028" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>$ReturnArray</var>
+		</line>
+		<line linenr="029" indent="" />
+		<line linenr="030" indent="">
+			<var>SetDefault</var>
+			<text>:</text>
+		</line>
+		<line linenr="031" indent="&#160;">
+			<var>$Settings</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>alloc</text>
+			<text>:</text>
+			<text> </text>
+			<text>size</text>
+			<text>=</text>
+			<var>2</var>
+		</line>
+		<line linenr="032" indent="&#160;">
+			<var>$Settings</var>
+			<text>[</text>
+			<var>0</var>
+			<text>]</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$SettingsVersion</var>
+		</line>
+		<line linenr="033" indent="&#160;">
+			<var>$Settings</var>
+			<text>[</text>
+			<var>1</var>
+			<text>]</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="034" indent="" />
+		<line linenr="035" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$Key.Settings</var>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$Settings</var>
+		</line>
+		<line linenr="036" indent="">
+			<text>endsub</text>
+		</line>
+		<line linenr="037" indent="&#160;" />
+		<line linenr="038" indent="">
+			<var>BuildReturnArray</var>
+			<text>:</text>
+		</line>
+		<line linenr="039" indent="" />
+		<line linenr="040" indent="">
+			<text>endsub</text>
+		</line>
+		<line linenr="041" indent="" />
+		<line linenr="042" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="043" indent="" />
+	</sourcetext>
+	<codearray>
+		<sval type="array" size="10">
+			<sval type="string" val="tv.sepa.menu.mothershipmanagement.upgradeships" />
+			<sval type="int" val="50" />
+			<sval type="string" val="" />
+			<sval type="int" val="1" />
+			<sval type="int" val="0" />
+			<sval type="array" size="13">
+				<sval type="string" val="This" />
+				<sval type="string" val="Text" />
+				<sval type="string" val="Description" />
+				<sval type="string" val="Title" />
+				<sval type="string" val="ScriptDescriptor" />
+				<sval type="string" val="Key.Menu" />
+				<sval type="string" val="Key.Settings" />
+				<sval type="string" val="Menu" />
+				<sval type="string" val="SettingsVersion" />
+				<sval type="string" val="Settings" />
+				<sval type="string" val="Args" />
+				<sval type="string" val="Ret" />
+				<sval type="string" val="ReturnArray" />
+			</sval>
+			<sval type="array" size="26">
+				<sval type="array" size="4">
+					<sval type="int" val="1028" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="1902" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="3" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Upgrade Ships" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="tv.DWM.UpgradeShips" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="5" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="SMPassThrough.Menu." />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="6" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="SMPassThrough.Settings." />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="1445" />
+					<sval type="int" val="7" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="7" />
+				</sval>
+				<sval type="array" size="19">
+					<sval type="int" val="104" />
+					<sval type="int" val="8" />
+					<sval type="int" val="5" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="5" />
+					<sval type="string" val="." />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="5" />
+					<sval type="string" val="1.0" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="5" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-4" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+					<sval type="int" val="9" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="1167" />
+					<sval type="int" val="17" />
+				</sval>
+				<sval type="array" size="20">
+					<sval type="int" val="102" />
+					<sval type="string" val="tv.sepa.menu.mothershipmanagement.upgradeships.sm" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="7" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="1415" />
+					<sval type="int" val="10" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="1831" />
+					<sval type="int" val="11" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="7" />
+					<sval type="string" val="tv.sepa.menu.mothershipmanagement.upgradeships.sm" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="10" />
+					<sval type="int" val="4" />
+					<sval type="int" val="333" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="129" />
+					<sval type="int" val="11" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="11" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="1167" />
+					<sval type="int" val="23" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="12" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="101" />
+					<sval type="string" val="SetDefault" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="128" />
+					<sval type="int" val="9" />
+					<sval type="int" val="4" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="130" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="9" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="8" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="130" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="9" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="9" />
+				</sval>
+				<sval type="array" size="1">
+					<sval type="int" val="1168" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="101" />
+					<sval type="string" val="BuildReturnArray" />
+				</sval>
+				<sval type="array" size="1">
+					<sval type="int" val="1168" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+			</sval>
+			<sval type="array" size="1">
+				<sval type="array" size="2">
+					<sval type="int" val="9" />
+					<sval type="string" val="This" />
+				</sval>
+			</sval>
+			<sval type="array" size="17">
+				<sval type="array" size="2">
+					<sval type="int" val="3" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="4" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="8" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="10" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="11" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="11" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="12" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="13" />
+					<sval type="int" val="1" />
+					<sval type="string" val="$Ret = open custom menu: title=$Title description=$Description option array=$Menu callback script='Menu.DWM.UpgradeShips.SM' args=$Args" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="14" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="15" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="16" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="17" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="21" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="23" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="24" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="25" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="26" />
+					<sval type="int" val="2" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+		</sval>
+	</codearray>
+</script>

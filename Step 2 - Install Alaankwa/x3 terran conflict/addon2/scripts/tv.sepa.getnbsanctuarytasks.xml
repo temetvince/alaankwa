@@ -1,0 +1,414 @@
+<?xml version="1.0" standalone="yes"?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
+<!-- Generated using X-Studio -->
+<script>
+	<name>tv.sepa.getnbsanctuarytasks</name>
+	<version>1</version>
+	<engineversion>50</engineversion>
+	<description></description>
+	<arguments />
+	<sourcetext>
+		<line linenr="001" indent="">
+			<var>$buildingShip</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>local</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'tv.mayhem_buildingShip'</text>
+		</line>
+		<line linenr="002" indent="">
+			<var>$buildingStation</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>local</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'tv.mayhem_buildingStation'</text>
+		</line>
+		<line linenr="003" indent="">
+			<var>$buildingMissile</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>local</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'tv.mayhem_buildingMissile'</text>
+		</line>
+		<line linenr="004" indent="">
+			<var>$buildingShield</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>local</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'tv.mayhem_buildingShield'</text>
+		</line>
+		<line linenr="005" indent="">
+			<var>$buildingWeapon</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>local</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'tv.mayhem_buildingWeapon'</text>
+		</line>
+		<line linenr="006" indent="" />
+		<line linenr="007" indent="">
+			<var>$otherTasks</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>0</var>
+		</line>
+		<line linenr="008" indent="">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$buildingShip</var>
+		</line>
+		<line linenr="009" indent="&#160;">
+			<text>inc</text>
+			<text> </text>
+			<var>$otherTasks</var>
+		</line>
+		<line linenr="010" indent="">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$buildingStation</var>
+		</line>
+		<line linenr="011" indent="&#160;">
+			<text>inc</text>
+			<text> </text>
+			<var>$otherTasks</var>
+		</line>
+		<line linenr="012" indent="">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$buildingMissile</var>
+		</line>
+		<line linenr="013" indent="&#160;">
+			<text>inc</text>
+			<text> </text>
+			<var>$otherTasks</var>
+		</line>
+		<line linenr="014" indent="">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$buildingShield</var>
+		</line>
+		<line linenr="015" indent="&#160;">
+			<text>inc</text>
+			<text> </text>
+			<var>$otherTasks</var>
+		</line>
+		<line linenr="016" indent="">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$buildingWeapon</var>
+		</line>
+		<line linenr="017" indent="&#160;">
+			<text>inc</text>
+			<text> </text>
+			<var>$otherTasks</var>
+		</line>
+		<line linenr="018" indent="" />
+		<line linenr="019" indent="">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$otherTasks</var>
+			<text> </text>
+			<text>==</text>
+			<text> </text>
+			<var>0</var>
+		</line>
+		<line linenr="020" indent="&#160;">
+			<text>return</text>
+			<text> </text>
+			<var>0</var>
+		</line>
+		<line linenr="021" indent="" />
+		<line linenr="022" indent="">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'tv.feature.mothership.paralleltasks'</text>
+		</line>
+		<line linenr="023" indent="&#160;">
+			<text>return</text>
+			<text> </text>
+			<var>1</var>
+		</line>
+		<line linenr="024" indent="" />
+		<line linenr="025" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>$otherTasks</var>
+		</line>
+		<line linenr="026" indent="" />
+	</sourcetext>
+	<codearray>
+		<sval type="array" size="10">
+			<sval type="string" val="tv.sepa.getnbsanctuarytasks" />
+			<sval type="int" val="50" />
+			<sval type="string" val="" />
+			<sval type="int" val="1" />
+			<sval type="int" val="0" />
+			<sval type="array" size="6">
+				<sval type="string" val="buildingShip" />
+				<sval type="string" val="buildingStation" />
+				<sval type="string" val="buildingMissile" />
+				<sval type="string" val="buildingShield" />
+				<sval type="string" val="buildingWeapon" />
+				<sval type="string" val="otherTasks" />
+			</sval>
+			<sval type="array" size="21">
+				<sval type="array" size="6">
+					<sval type="int" val="156" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="tv.mayhem_buildingShip" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="156" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="tv.mayhem_buildingStation" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="156" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="tv.mayhem_buildingMissile" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="156" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="tv.mayhem_buildingShield" />
+					<sval type="int" val="3" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="156" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="tv.mayhem_buildingWeapon" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="5" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610610680" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="142" />
+					<sval type="int" val="5" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610610168" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="142" />
+					<sval type="int" val="5" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610609656" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="142" />
+					<sval type="int" val="5" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610609144" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="142" />
+					<sval type="int" val="5" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610608632" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="142" />
+					<sval type="int" val="5" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610608120" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="15" />
+					<sval type="int" val="0" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="0" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="5" />
+					<sval type="string" val="tv.feature.mothership.paralleltasks" />
+					<sval type="int" val="-1610607608" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+			<sval type="array" size="5">
+				<sval type="array" size="2">
+					<sval type="int" val="5" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="16" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="18" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="20" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="21" />
+					<sval type="int" val="2" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+		</sval>
+	</codearray>
+</script>

@@ -55,16 +55,10 @@
             * This command tells the ship to self destruct.
 * FRESH HOTKEYS, GET YOUR HOTKEYS
     * Decide which hotkeys are configurable in the Hotkeys Menu.
-        * Satellite Monitoring Plus
-            * This hotkey activates the Satellite Monitoring+ Menu respecting all player property, not just satellites.
-        * Ship Compendium Plus
-            * This hotkey activates the Ship Compendium+ Menu where ships are shown even if not yet discovered.
-        * All of Time
-            * CHEAT: This hotkey saves your point in time to the next slot even if you don't have Salvage Insurance.
         * All of Space
             * CHEAT: This hotkey adds satellites to all sectors with jumpgates which don't already have one.
-        * Joubarbe's Player Journal
-            * This hotkey activates the Player Journal.
+* LITCUBE'S BOUNCE
+    * Ships avoid collisions.
   
 ### M3 specific
 * TERRAN MEMORY CARTOGRAPHERS
@@ -102,6 +96,14 @@
             * This hotkey activates the Blueprint Data Scanner.
         * Phanon Industrial Espionage
             * This hotkey activates the Phanon Debug Menu, which shows detailed Phanon corp information.
+        * Satellite Monitoring Plus
+            * This hotkey activates the Satellite Monitoring+ Menu respecting all player property, not just satellites.
+        * Ship Compendium Plus
+            * This hotkey activates the Ship Compendium+ Menu where ships are shown even if not yet discovered.
+        * All of Time
+            * CHEAT: This hotkey saves your point in time to the next slot even if you don't have Salvage Insurance.
+        * Joubarbe's Player Journal
+            * This hotkey activates the Player Journal.
 * TOP NOTCH RECRUITERS
     * All recruited Trade Mrk III Pilots are level 8 (enough to start Galaxy trading).
 * TRADE EMBARGO

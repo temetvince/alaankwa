@@ -1,0 +1,154 @@
+<?xml version="1.0" standalone="yes"?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
+<!-- Generated using X-Studio -->
+<script>
+	<name>tv.bounce.lib.cmd.bounce.evade</name>
+	<version>2</version>
+	<engineversion>50</engineversion>
+	<description>Lib Cmd: Bounce - Gets away from enemy ship once collision is detected</description>
+	<arguments>
+		<argument index="1" name="obj" type="Value" desc="obj" />
+	</arguments>
+	<sourcetext>
+		<line linenr="001" indent="">
+			<var>$Max</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>current</text>
+			<text> </text>
+			<text>max</text>
+			<text> </text>
+			<text>speed</text>
+		</line>
+		<line linenr="002" indent="">
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<text>ship</text>
+			<text> </text>
+			<text>speed</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<var>$Max</var>
+		</line>
+		<line linenr="003" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>defensive</text>
+			<text> </text>
+			<text>move</text>
+			<text>:</text>
+			<text> </text>
+			<text>type</text>
+			<text>=</text>
+			<var>null</var>
+			<text>,</text>
+			<text> </text>
+			<text>intensity</text>
+			<text>=</text>
+			<var>100</var>
+			<text>,</text>
+			<text> </text>
+			<text>timeout</text>
+			<text>=</text>
+			<var>2500</var>
+			<text> </text>
+			<text>ms</text>
+			<text>,</text>
+			<text> </text>
+			<text>avoid</text>
+			<text> </text>
+			<text>object</text>
+			<text>=</text>
+			<var>$obj</var>
+		</line>
+		<line linenr="004" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="005" indent="" />
+		<line linenr="006" indent="" />
+		<line linenr="007" indent="" />
+	</sourcetext>
+	<codearray>
+		<sval type="array" size="10">
+			<sval type="string" val="tv.bounce.lib.cmd.bounce.evade" />
+			<sval type="int" val="50" />
+			<sval type="string" val="Lib Cmd: Bounce - Gets away from enemy ship once collision is detected" />
+			<sval type="int" val="2" />
+			<sval type="int" val="0" />
+			<sval type="array" size="2">
+				<sval type="string" val="obj" />
+				<sval type="string" val="Max" />
+			</sval>
+			<sval type="array" size="4">
+				<sval type="array" size="4">
+					<sval type="int" val="1049" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1332" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="565" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="4" />
+					<sval type="int" val="100" />
+					<sval type="int" val="4" />
+					<sval type="int" val="2500" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+			</sval>
+			<sval type="array" size="1">
+				<sval type="array" size="2">
+					<sval type="int" val="9" />
+					<sval type="string" val="obj" />
+				</sval>
+			</sval>
+			<sval type="array" size="3">
+				<sval type="array" size="2">
+					<sval type="int" val="4" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="4" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="4" />
+					<sval type="int" val="2" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+		</sval>
+	</codearray>
+</script>

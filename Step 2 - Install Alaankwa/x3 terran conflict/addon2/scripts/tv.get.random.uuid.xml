@@ -1,0 +1,657 @@
+<?xml version="1.0" standalone="yes"?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
+<!-- Generated using X-Studio -->
+<script>
+	<name>tv.get.random.uuid</name>
+	<version>1</version>
+	<engineversion>50</engineversion>
+	<description></description>
+	<arguments />
+	<sourcetext>
+		<line linenr="001" indent="">
+			<var>$uuid</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>''</text>
+		</line>
+		<line linenr="002" indent="" />
+		<line linenr="003" indent="">
+			<var>$i</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>0</var>
+			<text> </text>
+			<text>-</text>
+			<text> </text>
+			<var>1</var>
+		</line>
+		<line linenr="004" indent="&#160;">
+			<text>while</text>
+			<text> </text>
+			<var>$i</var>
+			<text> </text>
+			<text>&lt;</text>
+			<text> </text>
+			<var>7</var>
+		</line>
+		<line linenr="005" indent="&#160;">
+			<var>$i</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$i</var>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>1</var>
+		</line>
+		<line linenr="006" indent="" interruptable="@">
+			<var>$char</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>tv.get.random.letterordigit</call>
+			<text>:</text>
+			<text> </text>
+		</line>
+		<line linenr="007" indent="">
+			<var>$uuid</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$uuid</var>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>$char</var>
+		</line>
+		<line linenr="008" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="009" indent="" />
+		<line linenr="010" indent="">
+			<text>gosub</text>
+			<text> </text>
+			<var>AddDash</var>
+			<text>:</text>
+		</line>
+		<line linenr="011" indent="&#160;" />
+		<line linenr="012" indent="&#160;&#160;">
+			<var>$i</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>0</var>
+			<text> </text>
+			<text>-</text>
+			<text> </text>
+			<var>1</var>
+		</line>
+		<line linenr="013" indent="&#160;&#160;">
+			<text>while</text>
+			<text> </text>
+			<var>$i</var>
+			<text> </text>
+			<text>&lt;</text>
+			<text> </text>
+			<var>2</var>
+		</line>
+		<line linenr="014" indent="&#160;">
+			<var>$i</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$i</var>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>1</var>
+		</line>
+		<line linenr="015" indent="&#160;">
+			<var>$j</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>0</var>
+			<text> </text>
+			<text>-</text>
+			<text> </text>
+			<var>1</var>
+		</line>
+		<line linenr="016" indent="&#160;">
+			<text>while</text>
+			<text> </text>
+			<var>$j</var>
+			<text> </text>
+			<text>&lt;</text>
+			<text> </text>
+			<var>3</var>
+		</line>
+		<line linenr="017" indent="">
+			<var>$j</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$j</var>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>1</var>
+		</line>
+		<line linenr="018" indent="" interruptable="@">
+			<var>$char</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>tv.get.random.letterordigit</call>
+			<text>:</text>
+			<text> </text>
+		</line>
+		<line linenr="019" indent="">
+			<var>$uuid</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$uuid</var>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>$char</var>
+		</line>
+		<line linenr="020" indent="&#160;">
+			<text>end</text>
+		</line>
+		<line linenr="021" indent="&#160;" />
+		<line linenr="022" indent="">
+			<text>gosub</text>
+			<text> </text>
+			<var>AddDash</var>
+			<text>:</text>
+		</line>
+		<line linenr="023" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="024" indent="" />
+		<line linenr="025" indent="">
+			<var>$i</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>0</var>
+			<text> </text>
+			<text>-</text>
+			<text> </text>
+			<var>1</var>
+		</line>
+		<line linenr="026" indent="">
+			<text>while</text>
+			<text> </text>
+			<var>$i</var>
+			<text> </text>
+			<text>&lt;</text>
+			<text> </text>
+			<var>11</var>
+		</line>
+		<line linenr="027" indent="&#160;">
+			<var>$i</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$i</var>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>1</var>
+		</line>
+		<line linenr="028" indent="" interruptable="@">
+			<var>$char</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>tv.get.random.letterordigit</call>
+			<text>:</text>
+			<text> </text>
+		</line>
+		<line linenr="029" indent="">
+			<var>$uuid</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$uuid</var>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>$char</var>
+		</line>
+		<line linenr="030" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="031" indent="" />
+		<line linenr="032" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>$uuid</var>
+		</line>
+		<line linenr="033" indent="" />
+		<line linenr="034" indent="">
+			<var>AddDash</var>
+			<text>:</text>
+		</line>
+		<line linenr="035" indent="">
+			<var>$uuid</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$uuid</var>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<text>'-'</text>
+		</line>
+		<line linenr="036" indent="">
+			<text>endsub</text>
+		</line>
+		<line linenr="037" indent="" />
+	</sourcetext>
+	<codearray>
+		<sval type="array" size="10">
+			<sval type="string" val="tv.get.random.uuid" />
+			<sval type="int" val="50" />
+			<sval type="string" val="" />
+			<sval type="int" val="1" />
+			<sval type="int" val="0" />
+			<sval type="array" size="4">
+				<sval type="string" val="uuid" />
+				<sval type="string" val="i" />
+				<sval type="string" val="char" />
+				<sval type="string" val="j" />
+			</sval>
+			<sval type="array" size="29">
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="15" />
+					<sval type="int" val="12" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="12" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610610935" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="7" />
+					<sval type="int" val="15" />
+					<sval type="int" val="3" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="102" />
+					<sval type="string" val="tv.get.random.letterordigit" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="1167" />
+					<sval type="int" val="26" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="15" />
+					<sval type="int" val="12" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="12" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610607863" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="2" />
+					<sval type="int" val="15" />
+					<sval type="int" val="3" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="3" />
+					<sval type="int" val="3" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="15" />
+					<sval type="int" val="12" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="12" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610608375" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+					<sval type="int" val="4" />
+					<sval type="int" val="3" />
+					<sval type="int" val="15" />
+					<sval type="int" val="3" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="3" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="102" />
+					<sval type="string" val="tv.get.random.letterordigit" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="12" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="1167" />
+					<sval type="int" val="26" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="9" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="15" />
+					<sval type="int" val="12" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="12" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610606327" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="11" />
+					<sval type="int" val="15" />
+					<sval type="int" val="3" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="102" />
+					<sval type="string" val="tv.get.random.letterordigit" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="20" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="101" />
+					<sval type="string" val="AddDash" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="5" />
+					<sval type="string" val="-" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="1">
+					<sval type="int" val="1168" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+			<sval type="array" size="12">
+				<sval type="array" size="2">
+					<sval type="int" val="1" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="7" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="7" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="8" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="17" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="17" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="19" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="19" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="25" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="25" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="26" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="29" />
+					<sval type="int" val="2" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+		</sval>
+	</codearray>
+</script>

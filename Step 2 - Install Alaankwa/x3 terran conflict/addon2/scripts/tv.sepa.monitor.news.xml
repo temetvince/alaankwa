@@ -1,0 +1,307 @@
+<?xml version="1.0" standalone="yes"?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
+<!-- Generated using X-Studio -->
+<script>
+	<name>tv.sepa.monitor.news</name>
+	<version>4</version>
+	<engineversion>50</engineversion>
+	<description></description>
+	<arguments />
+	<sourcetext>
+		<line linenr="001" indent="">
+			<text>while</text>
+			<text> </text>
+			<var>[TRUE]</var>
+		</line>
+		<line linenr="002" indent="&#160;">
+			<var>$allNews</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'tv.mayhem_news'</text>
+		</line>
+		<line linenr="003" indent="&#160;" />
+		<line linenr="004" indent="&#160;">
+			<var>$i</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>size</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<var>$allNews</var>
+		</line>
+		<line linenr="005" indent="&#160;&#160;">
+			<text>while</text>
+			<text> </text>
+			<var>$i</var>
+		</line>
+		<line linenr="006" indent="&#160;&#160;">
+			<text>dec</text>
+			<text> </text>
+			<var>$i</var>
+		</line>
+		<line linenr="007" indent="&#160;&#160;">
+			<var>$news</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$allNews</var>
+			<text>[</text>
+			<var>$i</var>
+			<text>]</text>
+		</line>
+		<line linenr="008" indent="&#160;&#160;" />
+		<line linenr="009" indent="&#160;&#160;">
+			<text>display</text>
+			<text> </text>
+			<text>info</text>
+			<text> </text>
+			<text>box</text>
+			<text>:</text>
+			<text> </text>
+			<text>text</text>
+			<text>=</text>
+			<text> </text>
+			<var>$news</var>
+			<text>,</text>
+			<text> </text>
+			<text>icon</text>
+			<text>=</text>
+			<text> </text>
+			<var>77</var>
+			<text>,</text>
+			<text> </text>
+			<text>timeout</text>
+			<text>=</text>
+			<text> </text>
+			<var>10000</var>
+			<text>,</text>
+			<text> </text>
+			<text>fadeout</text>
+			<text>=</text>
+			<text> </text>
+			<var>1000</var>
+		</line>
+		<line linenr="010" indent="&#160;&#160;">
+			<text>write</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>player</text>
+			<text> </text>
+			<text>logbook</text>
+			<text> </text>
+			<var>$news</var>
+		</line>
+		<line linenr="011" indent="&#160;&#160;" />
+		<line linenr="012" indent="&#160;">
+			<text>remove</text>
+			<text> </text>
+			<text>element</text>
+			<text> </text>
+			<text>from</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<var>$allNews</var>
+			<text> </text>
+			<text>at</text>
+			<text> </text>
+			<text>index</text>
+			<text> </text>
+			<var>$i</var>
+		</line>
+		<line linenr="013" indent="&#160;" />
+		<line linenr="014" indent="&#160;" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<text>wait</text>
+			<text> </text>
+			<var>9000</var>
+			<text> </text>
+			<text>ms</text>
+		</line>
+		<line linenr="015" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="016" indent="" />
+		<line linenr="017" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<text>wait</text>
+			<text> </text>
+			<var>1000</var>
+			<text> </text>
+			<text>ms</text>
+		</line>
+		<line linenr="018" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="019" indent="" />
+		<line linenr="020" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="021" indent="" />
+	</sourcetext>
+	<codearray>
+		<sval type="array" size="10">
+			<sval type="string" val="tv.sepa.monitor.news" />
+			<sval type="int" val="50" />
+			<sval type="string" val="" />
+			<sval type="int" val="4" />
+			<sval type="int" val="0" />
+			<sval type="array" size="3">
+				<sval type="string" val="allNews" />
+				<sval type="string" val="news" />
+				<sval type="string" val="i" />
+			</sval>
+			<sval type="array" size="14">
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610609399" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="10" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="5" />
+					<sval type="string" val="tv.mayhem_news" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="131" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610609911" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="143" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="129" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="9">
+					<sval type="int" val="1861" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="77" />
+					<sval type="int" val="4" />
+					<sval type="int" val="10000" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1000" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="400" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="136" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="105" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="4" />
+					<sval type="int" val="9000" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="3" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="105" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1000" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+			<sval type="array" size="9">
+				<sval type="array" size="2">
+					<sval type="int" val="2" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="6" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="8" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="9" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="11" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="11" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="13" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="13" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="14" />
+					<sval type="int" val="2" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+		</sval>
+	</codearray>
+</script>

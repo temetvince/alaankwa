@@ -1,6 +1,5 @@
 # Acronyms
 
-* X3 = Base X3 without Litcube's Universe
 * LU = Litcube's Universe
 * GiC = Galaxy in Chaos
 * SWLU = Star Wars Litcube's Universe

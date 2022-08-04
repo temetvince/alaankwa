@@ -1,0 +1,798 @@
+<?xml version="1.0" standalone="yes"?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
+<!-- Generated using X-Studio -->
+<script>
+	<name>tv.set.commands.temetvince</name>
+	<version>1</version>
+	<engineversion>50</engineversion>
+	<description></description>
+	<arguments />
+	<sourcetext>
+		<line linenr="001" indent="">
+			<text>global</text>
+			<text> </text>
+			<text>secondary</text>
+			<text> </text>
+			<text>signal</text>
+			<text> </text>
+			<text>map</text>
+			<text>:</text>
+			<text> </text>
+			<text>remove</text>
+			<text> </text>
+			<text>signal</text>
+			<text>=</text>
+			<var>[SIGNAL_CHANGESECTOR]</var>
+			<text> </text>
+			<text>race</text>
+			<text>=</text>
+			<var>[Player]</var>
+			<text> </text>
+			<text>class</text>
+			<text>=</text>
+			<var>[Moveable Ship]</var>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'tv.signal.sector.changed'</text>
+		</line>
+		<line linenr="002" indent="">
+			<text>global</text>
+			<text> </text>
+			<text>secondary</text>
+			<text> </text>
+			<text>signal</text>
+			<text> </text>
+			<text>map</text>
+			<text>:</text>
+			<text> </text>
+			<text>add</text>
+			<text> </text>
+			<text>signal</text>
+			<text>=</text>
+			<var>[SIGNAL_CHANGESECTOR]</var>
+			<text> </text>
+			<text>race</text>
+			<text>=</text>
+			<var>[Player]</var>
+			<text> </text>
+			<text>class</text>
+			<text>=</text>
+			<var>[Moveable Ship]</var>
+			<text> </text>
+			<text>script</text>
+			<text>=</text>
+			<call>tv.monitor.sector.start</call>
+			<text> </text>
+			<text>prio</text>
+			<text>=</text>
+			<var>150</var>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'tv.signal.sector.changed'</text>
+		</line>
+		<line linenr="003" indent="" />
+		<line linenr="004" indent="" interruptable="@">
+			<text>if</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>tv.get.global.boolean</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>param.name</text>
+			<text>=</text>
+			<text>'tv.feature.command.selfdestruct'</text>
+		</line>
+		<line linenr="005" indent="&#160;">
+			<text>global</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>map</text>
+			<text>:</text>
+			<text> </text>
+			<text>set</text>
+			<text>:</text>
+			<text> </text>
+			<text>key</text>
+			<text>=</text>
+			<var>[COMMAND_TYPE_SPECIAL_63]</var>
+			<text>,</text>
+			<text> </text>
+			<text>class</text>
+			<text>=</text>
+			<var>[Ship]</var>
+			<text>,</text>
+			<text> </text>
+			<text>race</text>
+			<text>=</text>
+			<var>[Player]</var>
+			<text>,</text>
+			<text> </text>
+			<text>script</text>
+			<text>=</text>
+			<call>tv.cmd.destruct</call>
+			<text>,</text>
+			<text> </text>
+			<text>prio</text>
+			<text>=</text>
+			<var>0</var>
+		</line>
+		<line linenr="006" indent="&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>upgrade</text>
+			<text>:</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_TYPE_SPECIAL_63]</var>
+			<text>  </text>
+			<text>upgrade</text>
+			<text>=</text>
+			<var>[TRUE]</var>
+		</line>
+		<line linenr="007" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="008" indent="" />
+		<line linenr="009" indent="" interruptable="@">
+			<text>if</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>tv.get.global.boolean</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>param.name</text>
+			<text>=</text>
+			<text>'tv.feature.command.mapgates'</text>
+		</line>
+		<line linenr="010" indent="&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>upgrade</text>
+			<text>:</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_TYPE_NAV_63]</var>
+			<text>  </text>
+			<text>upgrade</text>
+			<text>=</text>
+			<var>[TRUE]</var>
+		</line>
+		<line linenr="011" indent="&#160;">
+			<text>global</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>map</text>
+			<text>:</text>
+			<text> </text>
+			<text>set</text>
+			<text>:</text>
+			<text> </text>
+			<text>key</text>
+			<text>=</text>
+			<var>[COMMAND_TYPE_NAV_63]</var>
+			<text>,</text>
+			<text> </text>
+			<text>class</text>
+			<text>=</text>
+			<var>[Ship]</var>
+			<text>,</text>
+			<text> </text>
+			<text>race</text>
+			<text>=</text>
+			<var>[Player]</var>
+			<text>,</text>
+			<text> </text>
+			<text>script</text>
+			<text>=</text>
+			<call>tv.cmd.map.gates</call>
+			<text>,</text>
+			<text> </text>
+			<text>prio</text>
+			<text>=</text>
+			<var>1</var>
+		</line>
+		<line linenr="012" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="013" indent="" />
+		<line linenr="014" indent="" interruptable="@">
+			<text>skip</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>tv.get.game.group.lu</call>
+			<text> </text>
+			<text>:</text>
+		</line>
+		<line linenr="015" indent="&#160;">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="016" indent="" />
+		<line linenr="017" indent="" interruptable="@">
+			<text>if</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>tv.get.global.boolean</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>param.name</text>
+			<text>=</text>
+			<text>'tv.feature.command.managemothership'</text>
+		</line>
+		<line linenr="018" indent="&#160;">
+			<comment>* this script returns FALSE everytime - no need to change current orders for ship, we just want to manage the Mothership</comment>
+		</line>
+		<line linenr="019" indent="&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>ship</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>preload</text>
+			<text> </text>
+			<text>script</text>
+			<text>:</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_TYPE_SPECIAL_62]</var>
+			<text> </text>
+			<text>script</text>
+			<text>=</text>
+			<call>tv.sepa.menu.mothershipmanagement</call>
+		</line>
+		<line linenr="020" indent="&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>upgrade</text>
+			<text>:</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_TYPE_SPECIAL_62]</var>
+			<text>  </text>
+			<text>upgrade</text>
+			<text>=</text>
+			<var>{Carrier Command Software}</var>
+			<text>  </text>
+			<text>script</text>
+			<text>=</text>
+			<call>tv.sepa.cmdchk.mothershipmanagement</call>
+		</line>
+		<line linenr="021" indent="&#160;" />
+		<line linenr="022" indent="&#160;">
+			<text>global</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>map</text>
+			<text>:</text>
+			<text> </text>
+			<text>set</text>
+			<text>:</text>
+			<text> </text>
+			<text>key</text>
+			<text>=</text>
+			<var>[COMMAND_TYPE_SPECIAL_62]</var>
+			<text>,</text>
+			<text> </text>
+			<text>class</text>
+			<text>=</text>
+			<var>[Carrier]</var>
+			<text>,</text>
+			<text> </text>
+			<text>race</text>
+			<text>=</text>
+			<var>[Player]</var>
+			<text>,</text>
+			<text> </text>
+			<text>script</text>
+			<text>=</text>
+			<call>tv.sepa.dummycmd</call>
+			<text>,</text>
+			<text> </text>
+			<text>prio</text>
+			<text>=</text>
+			<var>0</var>
+		</line>
+		<line linenr="023" indent="&#160;" />
+		<line linenr="024" indent="&#160;" />
+		<line linenr="025" indent="&#160;">
+			<text>global</text>
+			<text> </text>
+			<text>secondary</text>
+			<text> </text>
+			<text>signal</text>
+			<text> </text>
+			<text>map</text>
+			<text>:</text>
+			<text> </text>
+			<text>remove</text>
+			<text> </text>
+			<text>signal</text>
+			<text>=</text>
+			<var>[SIGNAL_CAPTURED]</var>
+			<text> </text>
+			<text>race</text>
+			<text>=</text>
+			<var>null</var>
+			<text> </text>
+			<text>class</text>
+			<text>=</text>
+			<var>[Moveable Ship]</var>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'tv.signal.bailed'</text>
+		</line>
+		<line linenr="026" indent="&#160;">
+			<text>global</text>
+			<text> </text>
+			<text>secondary</text>
+			<text> </text>
+			<text>signal</text>
+			<text> </text>
+			<text>map</text>
+			<text>:</text>
+			<text> </text>
+			<text>add</text>
+			<text> </text>
+			<text>signal</text>
+			<text>=</text>
+			<var>[SIGNAL_CAPTURED]</var>
+			<text> </text>
+			<text>race</text>
+			<text>=</text>
+			<var>null</var>
+			<text> </text>
+			<text>class</text>
+			<text>=</text>
+			<var>[Moveable Ship]</var>
+			<text> </text>
+			<text>script</text>
+			<text>=</text>
+			<call>tv.joubarbe.mayhem.signal.bailed</call>
+			<text> </text>
+			<text>prio</text>
+			<text>=</text>
+			<var>0</var>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'tv.signal.balied'</text>
+		</line>
+		<line linenr="027" indent="&#160;" />
+		<line linenr="028" indent="&#160;" interruptable="@">
+			<text>if</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>tv.get.global.boolean</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>param.name</text>
+			<text>=</text>
+			<text>'tv.feature.command.dockwaremanager'</text>
+		</line>
+		<line linenr="029" indent="&#160;&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>ship</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>preload</text>
+			<text> </text>
+			<text>script</text>
+			<text>:</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_TYPE_SPECIAL_61]</var>
+			<text> </text>
+			<text>script</text>
+			<text>=</text>
+			<call>Menu.DWM</call>
+		</line>
+		<line linenr="030" indent="&#160;&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>upgrade</text>
+			<text>:</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_TYPE_SPECIAL_61]</var>
+			<text>  </text>
+			<text>upgrade</text>
+			<text>=</text>
+			<var>{Carrier Command Software}</var>
+			<text>  </text>
+			<text>script</text>
+			<text>=</text>
+			<call>tv.sepa.cmdchk.mothershipmanagement</call>
+		</line>
+		<line linenr="031" indent="&#160;&#160;" />
+		<line linenr="032" indent="&#160;&#160;">
+			<text>global</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>map</text>
+			<text>:</text>
+			<text> </text>
+			<text>set</text>
+			<text>:</text>
+			<text> </text>
+			<text>key</text>
+			<text>=</text>
+			<var>[COMMAND_TYPE_SPECIAL_61]</var>
+			<text>,</text>
+			<text> </text>
+			<text>class</text>
+			<text>=</text>
+			<var>[Carrier]</var>
+			<text>,</text>
+			<text> </text>
+			<text>race</text>
+			<text>=</text>
+			<var>[Player]</var>
+			<text>,</text>
+			<text> </text>
+			<text>script</text>
+			<text>=</text>
+			<call>tv.sepa.dummycmd</call>
+			<text>,</text>
+			<text> </text>
+			<text>prio</text>
+			<text>=</text>
+			<var>0</var>
+		</line>
+		<line linenr="033" indent="&#160;">
+			<text>end</text>
+		</line>
+		<line linenr="034" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="035" indent="" />
+		<line linenr="036" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+	</sourcetext>
+	<codearray>
+		<sval type="array" size="10">
+			<sval type="string" val="tv.set.commands.temetvince" />
+			<sval type="int" val="50" />
+			<sval type="string" val="" />
+			<sval type="int" val="1" />
+			<sval type="int" val="0" />
+			<sval type="int" val="0" />
+			<sval type="array" size="21">
+				<sval type="array" size="9">
+					<sval type="int" val="1408" />
+					<sval type="int" val="18" />
+					<sval type="int" val="1018" />
+					<sval type="int" val="10" />
+					<sval type="int" val="10" />
+					<sval type="int" val="12" />
+					<sval type="int" val="2134" />
+					<sval type="int" val="5" />
+					<sval type="string" val="tv.signal.sector.changed" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="1407" />
+					<sval type="int" val="18" />
+					<sval type="int" val="1018" />
+					<sval type="int" val="10" />
+					<sval type="int" val="10" />
+					<sval type="int" val="12" />
+					<sval type="int" val="2134" />
+					<sval type="string" val="tv.monitor.sector.start" />
+					<sval type="int" val="4" />
+					<sval type="int" val="150" />
+					<sval type="int" val="5" />
+					<sval type="string" val="tv.signal.sector.changed" />
+				</sval>
+				<sval type="array" size="8">
+					<sval type="int" val="102" />
+					<sval type="string" val="tv.get.global.boolean" />
+					<sval type="int" val="-1610611453" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="tv.feature.command.selfdestruct" />
+				</sval>
+				<sval type="array" size="10">
+					<sval type="int" val="118" />
+					<sval type="int" val="18" />
+					<sval type="int" val="563" />
+					<sval type="string" val="tv.cmd.destruct" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="12" />
+					<sval type="int" val="2004" />
+					<sval type="int" val="10" />
+					<sval type="int" val="10" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="144" />
+					<sval type="int" val="18" />
+					<sval type="int" val="563" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="10" />
+				</sval>
+				<sval type="array" size="8">
+					<sval type="int" val="102" />
+					<sval type="string" val="tv.get.global.boolean" />
+					<sval type="int" val="-1610610685" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="tv.feature.command.mapgates" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="144" />
+					<sval type="int" val="18" />
+					<sval type="int" val="263" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="10" />
+				</sval>
+				<sval type="array" size="10">
+					<sval type="int" val="118" />
+					<sval type="int" val="18" />
+					<sval type="int" val="263" />
+					<sval type="string" val="tv.cmd.map.gates" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="12" />
+					<sval type="int" val="2004" />
+					<sval type="int" val="10" />
+					<sval type="int" val="10" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="102" />
+					<sval type="string" val="tv.get.game.group.lu" />
+					<sval type="int" val="-536868345" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="8">
+					<sval type="int" val="102" />
+					<sval type="string" val="tv.get.global.boolean" />
+					<sval type="int" val="-1610607613" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="tv.feature.command.managemothership" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="1466" />
+					<sval type="int" val="18" />
+					<sval type="int" val="562" />
+					<sval type="string" val="tv.sepa.menu.mothershipmanagement" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="154" />
+					<sval type="int" val="18" />
+					<sval type="int" val="562" />
+					<sval type="int" val="9" />
+					<sval type="int" val="1048660" />
+					<sval type="string" val="tv.sepa.cmdchk.mothershipmanagement" />
+				</sval>
+				<sval type="array" size="10">
+					<sval type="int" val="118" />
+					<sval type="int" val="18" />
+					<sval type="int" val="562" />
+					<sval type="string" val="tv.sepa.dummycmd" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="12" />
+					<sval type="int" val="2033" />
+					<sval type="int" val="10" />
+					<sval type="int" val="10" />
+				</sval>
+				<sval type="array" size="9">
+					<sval type="int" val="1408" />
+					<sval type="int" val="18" />
+					<sval type="int" val="1004" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="12" />
+					<sval type="int" val="2134" />
+					<sval type="int" val="5" />
+					<sval type="string" val="tv.signal.bailed" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="1407" />
+					<sval type="int" val="18" />
+					<sval type="int" val="1004" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="12" />
+					<sval type="int" val="2134" />
+					<sval type="string" val="tv.joubarbe.mayhem.signal.bailed" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="5" />
+					<sval type="string" val="tv.signal.balied" />
+				</sval>
+				<sval type="array" size="8">
+					<sval type="int" val="102" />
+					<sval type="string" val="tv.get.global.boolean" />
+					<sval type="int" val="-1610607613" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="tv.feature.command.dockwaremanager" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="1466" />
+					<sval type="int" val="18" />
+					<sval type="int" val="561" />
+					<sval type="string" val="Menu.DWM" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="154" />
+					<sval type="int" val="18" />
+					<sval type="int" val="561" />
+					<sval type="int" val="9" />
+					<sval type="int" val="1048660" />
+					<sval type="string" val="tv.sepa.cmdchk.mothershipmanagement" />
+				</sval>
+				<sval type="array" size="10">
+					<sval type="int" val="118" />
+					<sval type="int" val="18" />
+					<sval type="int" val="561" />
+					<sval type="string" val="tv.sepa.dummycmd" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="12" />
+					<sval type="int" val="2033" />
+					<sval type="int" val="10" />
+					<sval type="int" val="10" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+			<sval type="array" size="15">
+				<sval type="array" size="2">
+					<sval type="int" val="2" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="5" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="5" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="8" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="8" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="10" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="11" />
+					<sval type="int" val="1" />
+					<sval type="string" val="this script returns FALSE everytime - no need to change current orders for ship, we just want to manage the Mothership" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="13" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="14" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="14" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="16" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="19" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="20" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="20" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="20" />
+					<sval type="int" val="2" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+		</sval>
+	</codearray>
+</script>

@@ -1,0 +1,537 @@
+<?xml version="1.0" standalone="yes"?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
+<!-- Generated using X-Studio -->
+<script>
+	<name>tv.joubarbe.mayhem.addshipdata</name>
+	<version>1</version>
+	<engineversion>50</engineversion>
+	<description></description>
+	<arguments>
+		<argument index="1" name="shipOrType" type="Var/Ship" desc="" />
+	</arguments>
+	<sourcetext>
+		<line linenr="001" indent="">
+			<var>$allProjects</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'tv.mayhem_projects'</text>
+		</line>
+		<line linenr="002" indent="">
+			<var>$scans</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'tv.mayhem_scans'</text>
+		</line>
+		<line linenr="003" indent="">
+			<var>$scans.max</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'tv.feature.mothership.scans.max'</text>
+		</line>
+		<line linenr="004" indent="" />
+		<line linenr="005" indent="">
+			<text>skip</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<text>is</text>
+			<text> </text>
+			<text>datatype</text>
+			<text>[</text>
+			<var>$shipOrType</var>
+			<text>]</text>
+			<text> </text>
+			<text>==</text>
+			<text> </text>
+			<var>[DATATYPE_WARE]</var>
+		</line>
+		<line linenr="006" indent="&#160;">
+			<var>$shipOrType</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$shipOrType</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>ware</text>
+			<text> </text>
+			<text>type</text>
+			<text> </text>
+			<text>code</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>object</text>
+		</line>
+		<line linenr="007" indent="" />
+		<line linenr="008" indent="">
+			<var>$shipOrType.scans</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<var>$scans</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<var>$shipOrType</var>
+			<text> </text>
+			<text>)</text>
+		</line>
+		<line linenr="009" indent="" />
+		<line linenr="010" indent="">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$shipOrType.scans</var>
+			<text> </text>
+			<text>&gt;=</text>
+			<text> </text>
+			<var>0</var>
+		</line>
+		<line linenr="011" indent="&#160;">
+			<var>$shipOrType.scans</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$scans.max</var>
+		</line>
+		<line linenr="012" indent="" />
+		<line linenr="013" indent="">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$shipOrType.scans</var>
+		</line>
+		<line linenr="014" indent="&#160;">
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$scans</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<var>$shipOrType</var>
+			<text> </text>
+			<text>)</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$shipOrType.scans</var>
+		</line>
+		<line linenr="015" indent="" />
+		<line linenr="016" indent="">
+			<var>$alreadyKnown</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<var>$allProjects</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<var>$shipOrType</var>
+			<text> </text>
+			<text>)</text>
+		</line>
+		<line linenr="017" indent="" />
+		<line linenr="018" indent="">
+			<text>if</text>
+			<text> </text>
+			<var>$alreadyKnown</var>
+			<text> </text>
+			<text>==</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="019" indent="&#160;">
+			<var>$cost.project</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>average</text>
+			<text> </text>
+			<text>price</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>ware</text>
+			<text> </text>
+			<var>$shipOrType</var>
+		</line>
+		<line linenr="020" indent="&#160;" />
+		<line linenr="021" indent="&#160;">
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$allProjects</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<var>$shipOrType</var>
+			<text> </text>
+			<text>)</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$cost.project</var>
+		</line>
+		<line linenr="022" indent="&#160;" />
+		<line linenr="023" indent="&#160;">
+			<text>skip</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<text>player</text>
+			<text> </text>
+			<text>HQ</text>
+			<text> </text>
+			<text>has</text>
+			<text> </text>
+			<text>blueprints</text>
+			<text> </text>
+			<text>for</text>
+			<text>:</text>
+			<text> </text>
+			<text>type</text>
+			<text>=</text>
+			<var>$shipOrType</var>
+		</line>
+		<line linenr="024" indent="&#160;&#160;">
+			<text>add</text>
+			<text> </text>
+			<text>blueprints</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>player</text>
+			<text> </text>
+			<text>HQ</text>
+			<text>:</text>
+			<text> </text>
+			<text>type</text>
+			<text>=</text>
+			<var>$shipOrType</var>
+		</line>
+		<line linenr="025" indent="&#160;" />
+		<line linenr="026" indent="&#160;" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>tv.set.message</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>param.name</text>
+			<text>=</text>
+			<text>'tv.i18n.datascanner.added'</text>
+			<text> </text>
+			<text>param.popup</text>
+			<text>=</text>
+			<var>[FALSE]</var>
+			<text> </text>
+			<text>param.show</text>
+			<text>=</text>
+			<var>[TRUE]</var>
+			<text> </text>
+			<text>param.format.1</text>
+			<text>=</text>
+			<var>$scans.max</var>
+			<text> </text>
+			<text>param.format.2</text>
+			<text>=</text>
+			<var>$scans.max</var>
+		</line>
+		<line linenr="027" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="028" indent="" />
+		<line linenr="029" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="030" indent="" />
+	</sourcetext>
+	<codearray>
+		<sval type="array" size="10">
+			<sval type="string" val="tv.joubarbe.mayhem.addshipdata" />
+			<sval type="int" val="50" />
+			<sval type="string" val="" />
+			<sval type="int" val="1" />
+			<sval type="int" val="0" />
+			<sval type="array" size="7">
+				<sval type="string" val="shipOrType" />
+				<sval type="string" val="allProjects" />
+				<sval type="string" val="scans" />
+				<sval type="string" val="scans.max" />
+				<sval type="string" val="shipOrType.scans" />
+				<sval type="string" val="alreadyKnown" />
+				<sval type="string" val="cost.project" />
+			</sval>
+			<sval type="array" size="18">
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="5" />
+					<sval type="string" val="tv.mayhem_projects" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="5" />
+					<sval type="string" val="tv.mayhem_scans" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="5" />
+					<sval type="string" val="tv.feature.mothership.scans.max" />
+					<sval type="int" val="3" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="125" />
+					<sval type="int" val="-536869625" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="20" />
+					<sval type="int" val="9" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="707" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="1709" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610610680" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="15" />
+					<sval type="int" val="4" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610610168" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1708" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="1709" />
+					<sval type="int" val="5" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610608381" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="15" />
+					<sval type="int" val="0" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="0" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="629" />
+					<sval type="int" val="6" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1708" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="1218" />
+					<sval type="int" val="-536866809" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="1217" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="16">
+					<sval type="int" val="102" />
+					<sval type="string" val="tv.set.message" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="int" val="5" />
+					<sval type="string" val="tv.i18n.datascanner.added" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="9" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="10" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+			</sval>
+			<sval type="array" size="1">
+				<sval type="array" size="2">
+					<sval type="int" val="21" />
+					<sval type="string" val="" />
+				</sval>
+			</sval>
+			<sval type="array" size="12">
+				<sval type="array" size="2">
+					<sval type="int" val="3" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="5" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="6" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="8" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="10" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="11" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="13" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="14" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="16" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="17" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="17" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="18" />
+					<sval type="int" val="2" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+		</sval>
+	</codearray>
+</script>
