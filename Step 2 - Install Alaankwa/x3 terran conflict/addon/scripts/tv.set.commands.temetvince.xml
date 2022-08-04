@@ -89,84 +89,9 @@
 			<text> </text>
 			<text>param.name</text>
 			<text>=</text>
-			<text>'tv.feature.command.mapgates'</text>
-		</line>
-		<line linenr="005" indent="&#160;">
-			<text>set</text>
-			<text> </text>
-			<text>script</text>
-			<text> </text>
-			<text>command</text>
-			<text> </text>
-			<text>upgrade</text>
-			<text>:</text>
-			<text> </text>
-			<text>command</text>
-			<text>=</text>
-			<var>[COMMAND_TYPE_NAV_63]</var>
-			<text>  </text>
-			<text>upgrade</text>
-			<text>=</text>
-			<var>[TRUE]</var>
-		</line>
-		<line linenr="006" indent="&#160;">
-			<text>global</text>
-			<text> </text>
-			<text>script</text>
-			<text> </text>
-			<text>map</text>
-			<text>:</text>
-			<text> </text>
-			<text>set</text>
-			<text>:</text>
-			<text> </text>
-			<text>key</text>
-			<text>=</text>
-			<var>[COMMAND_TYPE_NAV_63]</var>
-			<text>,</text>
-			<text> </text>
-			<text>class</text>
-			<text>=</text>
-			<var>[Ship]</var>
-			<text>,</text>
-			<text> </text>
-			<text>race</text>
-			<text>=</text>
-			<var>[Player]</var>
-			<text>,</text>
-			<text> </text>
-			<text>script</text>
-			<text>=</text>
-			<call>tv.cmd.map.gates</call>
-			<text>,</text>
-			<text> </text>
-			<text>prio</text>
-			<text>=</text>
-			<var>1</var>
-		</line>
-		<line linenr="007" indent="">
-			<text>end</text>
-		</line>
-		<line linenr="008" indent="" />
-		<line linenr="009" indent="" interruptable="@">
-			<text>if</text>
-			<text> </text>
-			<var>[THIS]</var>
-			<text>-&gt;</text>
-			<text> </text>
-			<text>call</text>
-			<text> </text>
-			<text>script</text>
-			<text> </text>
-			<call>tv.get.global.boolean</call>
-			<text> </text>
-			<text>:</text>
-			<text> </text>
-			<text>param.name</text>
-			<text>=</text>
 			<text>'tv.feature.command.selfdestruct'</text>
 		</line>
-		<line linenr="010" indent="&#160;">
+		<line linenr="005" indent="&#160;">
 			<text>global</text>
 			<text> </text>
 			<text>script</text>
@@ -201,7 +126,7 @@
 			<text>=</text>
 			<var>0</var>
 		</line>
-		<line linenr="011" indent="&#160;">
+		<line linenr="006" indent="&#160;">
 			<text>set</text>
 			<text> </text>
 			<text>script</text>
@@ -218,6 +143,81 @@
 			<text>upgrade</text>
 			<text>=</text>
 			<var>[TRUE]</var>
+		</line>
+		<line linenr="007" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="008" indent="" />
+		<line linenr="009" indent="" interruptable="@">
+			<text>if</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>tv.get.global.boolean</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>param.name</text>
+			<text>=</text>
+			<text>'tv.feature.command.mapgates'</text>
+		</line>
+		<line linenr="010" indent="&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>upgrade</text>
+			<text>:</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_TYPE_NAV_63]</var>
+			<text>  </text>
+			<text>upgrade</text>
+			<text>=</text>
+			<var>[TRUE]</var>
+		</line>
+		<line linenr="011" indent="&#160;">
+			<text>global</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>map</text>
+			<text>:</text>
+			<text> </text>
+			<text>set</text>
+			<text>:</text>
+			<text> </text>
+			<text>key</text>
+			<text>=</text>
+			<var>[COMMAND_TYPE_NAV_63]</var>
+			<text>,</text>
+			<text> </text>
+			<text>class</text>
+			<text>=</text>
+			<var>[Ship]</var>
+			<text>,</text>
+			<text> </text>
+			<text>race</text>
+			<text>=</text>
+			<var>[Player]</var>
+			<text>,</text>
+			<text> </text>
+			<text>script</text>
+			<text>=</text>
+			<call>tv.cmd.map.gates</call>
+			<text>,</text>
+			<text> </text>
+			<text>prio</text>
+			<text>=</text>
+			<var>1</var>
 		</line>
 		<line linenr="012" indent="">
 			<text>end</text>
@@ -562,35 +562,6 @@
 					<sval type="int" val="1" />
 					<sval type="int" val="1" />
 					<sval type="int" val="5" />
-					<sval type="string" val="tv.feature.command.mapgates" />
-				</sval>
-				<sval type="array" size="5">
-					<sval type="int" val="144" />
-					<sval type="int" val="18" />
-					<sval type="int" val="263" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="10" />
-				</sval>
-				<sval type="array" size="10">
-					<sval type="int" val="118" />
-					<sval type="int" val="18" />
-					<sval type="int" val="263" />
-					<sval type="string" val="tv.cmd.map.gates" />
-					<sval type="int" val="4" />
-					<sval type="int" val="1" />
-					<sval type="int" val="12" />
-					<sval type="int" val="2004" />
-					<sval type="int" val="10" />
-					<sval type="int" val="10" />
-				</sval>
-				<sval type="array" size="8">
-					<sval type="int" val="102" />
-					<sval type="string" val="tv.get.global.boolean" />
-					<sval type="int" val="-1610610685" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="1" />
-					<sval type="int" val="1" />
-					<sval type="int" val="5" />
 					<sval type="string" val="tv.feature.command.selfdestruct" />
 				</sval>
 				<sval type="array" size="10">
@@ -610,6 +581,35 @@
 					<sval type="int" val="18" />
 					<sval type="int" val="563" />
 					<sval type="int" val="131075" />
+					<sval type="int" val="10" />
+				</sval>
+				<sval type="array" size="8">
+					<sval type="int" val="102" />
+					<sval type="string" val="tv.get.global.boolean" />
+					<sval type="int" val="-1610610685" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="tv.feature.command.mapgates" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="144" />
+					<sval type="int" val="18" />
+					<sval type="int" val="263" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="10" />
+				</sval>
+				<sval type="array" size="10">
+					<sval type="int" val="118" />
+					<sval type="int" val="18" />
+					<sval type="int" val="263" />
+					<sval type="string" val="tv.cmd.map.gates" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="12" />
+					<sval type="int" val="2004" />
+					<sval type="int" val="10" />
 					<sval type="int" val="10" />
 				</sval>
 				<sval type="array" size="6">
