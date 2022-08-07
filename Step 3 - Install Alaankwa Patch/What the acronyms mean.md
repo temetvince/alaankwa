@@ -1,5 +1,8 @@
 # Acronyms
 
+* FL = Farnham's Legacy
+* AP = Albion Prelude
+* TC = Terran Conflict
 * LU = Litcube's Universe
 * GiC = Galaxy in Chaos
 * SWLU = Star Wars Litcube's Universe
