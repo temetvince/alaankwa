@@ -7,7 +7,7 @@
 	<engineversion>50</engineversion>
 	<description></description>
 	<arguments>
-		<argument index="1" name="ship" type="Var/Ship" desc="" />
+		<argument index="1" name="shipOrType" type="Var/Ship" desc="" />
 	</arguments>
 	<sourcetext>
 		<line linenr="001" indent="">
@@ -66,7 +66,7 @@
 			<text> </text>
 			<text>datatype</text>
 			<text>[</text>
-			<var>$ship</var>
+			<var>$shipOrType</var>
 			<text>]</text>
 			<text> </text>
 			<text>==</text>
@@ -78,7 +78,7 @@
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>$ship</var>
+			<var>$shipOrType</var>
 		</line>
 		<line linenr="007" indent="">
 			<text>else</text>
@@ -88,7 +88,7 @@
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>$ship</var>
+			<var>$shipOrType</var>
 			<text>-&gt;</text>
 			<text> </text>
 			<text>get</text>
@@ -363,7 +363,7 @@
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
 			<sval type="array" size="9">
-				<sval type="string" val="ship" />
+				<sval type="string" val="shipOrType" />
 				<sval type="string" val="allProjects" />
 				<sval type="string" val="scans" />
 				<sval type="string" val="scans.max" />
