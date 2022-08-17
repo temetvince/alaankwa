@@ -97,7 +97,7 @@
         * Phanon Industrial Espionage
             * This hotkey activates the Phanon Debug Menu, which shows detailed Phanon corp information.
         * Satellite Monitoring Plus
-            * This hotkey activates the Satellite Monitoring+ Menu respecting all player property, not just satellites.
+            * This hotkey activates the Satellite Monitoring+ Menu respecting all player property, not just satellites. It also shows average salvage value per sector in millions.
         * Ship Compendium Plus
             * This hotkey activates the Ship Compendium+ Menu where ships are shown even if not yet discovered.
         * All of Time
