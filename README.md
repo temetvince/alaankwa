@@ -145,6 +145,7 @@
 * Universe Traders proactively sell off unneeded wares in their cargo bay.
 * Universe Traders move to a random core sector within their jump range if no trades are found.
 * Player Space Suit has SETA, trading capabilies, video enchancement goggles, and a bioware scanner. (LU only)
+* TL Class ships are eligable to become Couriers.
 * The Player Headquarters, Equipment Docks, and Trading Stations are now available as Sources in the Dockware Manager.
 
 
