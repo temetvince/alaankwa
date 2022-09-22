@@ -36,7 +36,7 @@
 4. Install all other desired mods besides Alaankwa
 5. Optionally install ReShade
 6. Install Alaankwa
-7. Install Alaankwa Patch if playing LU, STLU, SWLU, GIC, M3, or M3ZH
+7. Install Alaankwa Patch
 8. If you don't like the new font, delete the 'f' folder in your 'x3 terran conflict' root install directory
 
 ## Features
