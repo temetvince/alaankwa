@@ -105,7 +105,7 @@
         * Joubarbe's Player Journal
             * This hotkey activates the Player Journal.
         * Show/Hide Miners
-	        * This hotkey toggles showing or hidding miners from the player property list.
+	        * This hotkey toggles showing or hiding miners from the player property list.
 * TOP NOTCH RECRUITERS
     * All recruited Trade Mrk III Pilots are level 8 (enough to start Galaxy trading).
 * TRADE EMBARGO
