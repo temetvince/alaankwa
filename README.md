@@ -104,6 +104,8 @@
             * CHEAT: This hotkey saves your point in time to the next slot even if you don't have Salvage Insurance.
         * Joubarbe's Player Journal
             * This hotkey activates the Player Journal.
+        * Show/Hide Miners
+	        * This hotkey toggles showing or hidding miners from the player property list.
 * TOP NOTCH RECRUITERS
     * All recruited Trade Mrk III Pilots are level 8 (enough to start Galaxy trading).
 * TRADE EMBARGO
