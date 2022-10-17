@@ -111,7 +111,7 @@
 * TRADE EMBARGO
     * Removes all NPC ships docked at player stations which are not open to race traders.
 * SEPA'S MOTHERSHIP
-    * Motherships are mobile factories which can produce lasers, missiles, shields, and ships (must be able to dock on the Mothership).
+    * Motherships are TL class mobile factories which can produce lasers, missiles, shields, and ships (must be able to dock on the Mothership).
         * Alaankwa Corsairs
             * A unique gamestart which focuses on unlocking blueprints by scanning ships in order to build them instead of buying/selling them.
         * Assembly Lines
