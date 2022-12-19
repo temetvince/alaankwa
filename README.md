@@ -38,21 +38,6 @@
             * CHEAT: This hotkey adds satellites to all sectors with jumpgates which don't already have one.
 * LITCUBE'S BOUNCE
     * Ships avoid collisions.
-  
-### M3 specific
-* TERRAN MEMORY CARTOGRAPHERS
-    * Allows Workers to use jump beacons during their job search
-    * Disables jump beacons not located in sectors with Terran Memories!
-* SMUGGLING RUNS
-    * Allows workers to use Pirate bases during their job search
-    * Disabled by default
-        * Enable for normal M3 behavior
-* MINING DRONES
-    * Player owned outposts build mining drones which collect minerals from miners in sector
-* Outposts show themselves as a candidate for export or import jobs
-    * This is helpful for making generic templates that include the outpost where you are creating the template
-* Fixed multiple Supply Drone bugs
-* Economy flowcharts for Mayhem 3
 
 ### LU + Mods specific
 * ROTATIONAL THRUSTERS
@@ -93,6 +78,8 @@
     * Motherships are TL class mobile factories which can produce lasers, missiles, shields, and ships (must be able to dock on the Mothership).
         * Alaankwa Corsairs
             * A unique gamestart which focuses on unlocking blueprints by scanning ships in order to build them instead of buying/selling them.
+        * Alaankwa Corporation
+            * An advanced gamestart where you are given a small functioning empire. Phanon is extremely difficult.
         * Assembly Lines
             * The Ship Building Speed is a function of the population where the population is the max marines a ship can hold multiplied by the Assembly Lines.
         * Just in Time (JIT) Manufacturing
