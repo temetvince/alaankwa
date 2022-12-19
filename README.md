@@ -7,16 +7,18 @@
 
 ## Installation
 ### Pre-Install
-1. Optionally Install Litcube's Universe (X3AP ONLY!)
-2. Optionally Install Star Trek LU, Star Wars LU, or SWLU + Galaxy in Chaos
+* Optionally download and install ReShade
+  * https://reshade.me/
+  * When asked for the game, browse and select X3AP.exe in your x3 install folder
+  * The game uses Direct3D 9
+  * When asked, install all the shaders. Everything. All of them
 
 ### Install
-1. Optionally install ReShade
-2. Install Alaankwa by copying over the x3 terran conflict game folder
-3. Install the Alaankwa Patch for your game version
+1. Install Litcube's Universe
+2. Copy the contents of 'this' directory to 'x3 terran conflict'
 
 ### Post-Install
-1. If you don't like the new font, delete the 'f' folder in your 'x3 terran conflict' root install directory
+* If you don't like the new font, delete the 'f' folder in your 'x3 terran conflict' root install directory
 
 ## Features
 ### General
