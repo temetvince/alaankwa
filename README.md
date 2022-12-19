@@ -5,39 +5,18 @@
 ## Discord
 * https://discord.gg/S587CRb
 
-## Credits
-* Special thanks to Joubarbe for making Mayhem and allowing me to do whatever with his code.
-    * You can show your support by buying Joubarbe a coffee:
-        * https://www.buymeacoffee.com/Joubarbe
-* Also thanks to Sepa for graciously allowing me to redistribute his Mothership mod!
-
 ## Installation
-### Downloads
-* No-Steam Exe: https://www.egosoft.com/download/x3ap/bonus_en.php
-* ReShade: https://reshade.me/
-* Alaankwa: https://github.com/temetvince/alaankwa/releases
-* LU: http://litcube.xtimelines.net/wiki/index.php/Download
-* STLU: https://www.moddb.com/mods/star-trek-litcubes-universe/downloads
-* SWLU: https://www.moddb.com/mods/star-wars-lu-swlu/downloads
-* GiC: https://www.moddb.com/mods/star-wars-lu-swlu/addons
-* M3: https://www.moddb.com/mods/mayhem/downloads
-* M3ZH: https://github.com/Hector839/Mayhem-3-Zero-Hour/releases
+### Pre-Install
+1. Optionally Install Litcube's Universe (X3AP ONLY!)
+2. Optionally Install Star Trek LU, Star Wars LU, or SWLU + Galaxy in Chaos
 
-### Instructions
-1. Optionally Install Litcube's Universe
-    * Optionally Install STLU, SWLU, or M3 (Not M2/SWM2!)
-        * (STLU) Star Trek Litcube's Universe - Requires LU
-        * (SWLU) Star Wars Litcube's Universe - Requires LU
-        * (M3) Mayhem 3 - Requires LU
-        * (M2/SWM2) Mayhem 2 / Star Wars Mayhem 2 - Requires LU
-    * Optionally install GiC or M3ZH
-        * (GiC) Galaxy in Chaos - Requires SWLU
-        * (M3ZH) M3 Zero Hour - Requires M3
-4. Install all other desired mods besides Alaankwa
-5. Optionally install ReShade
-6. Install Alaankwa
-7. Install Alaankwa Patch
-8. If you don't like the new font, delete the 'f' folder in your 'x3 terran conflict' root install directory
+### Install
+1. Optionally install ReShade
+2. Install Alaankwa by copying over the x3 terran conflict game folder
+3. Install the Alaankwa Patch for your game version
+
+### Post-Install
+1. If you don't like the new font, delete the 'f' folder in your 'x3 terran conflict' root install directory
 
 ## Features
 ### General
@@ -150,16 +129,16 @@
 * Miners no longer run into asteriods when the player is in sector.
 * The Player Headquarters, Equipment Docks, and Trading Stations are now available as Sources in the Dockware Manager.
 
+## Downloads
+* No-Steam Exe: https://www.egosoft.com/download/x3ap/bonus_en.php
+* ReShade: https://reshade.me/
+* LU: http://litcube.xtimelines.net/wiki/index.php/Download
+* STLU: https://www.moddb.com/mods/star-trek-litcubes-universe/downloads
+* SWLU: https://www.moddb.com/mods/star-wars-lu-swlu/downloads
+* GiC: https://www.moddb.com/mods/star-wars-lu-swlu/addons
 
-## Links
-* temetvince Youtube Playlists (X3 Mod Install Videos):
-	* https://www.youtube.com/channel/UCw7tARIJee8gd1OpeSjAEMw/playlists
-* temetvince Egosoft Forums:
-    * X3FL: https://forum.egosoft.com/viewtopic.php?f=201&t=448941
-    * X3AP: https://forum.egosoft.com/viewtopic.php?f=94&t=441824
-* Star Wars Mayhem 2 ModDB:
-    * https://www.moddb.com/mods/star-wars-mayhem-2
-* X3 Mod Github Repositories:
-    * Alaankwa: https://github.com/temetvince/x3ap-lu
-    * Star Wars Mayhem 2: https://github.com/temetvince/x3ap-swm2
-
+## Credits
+* Special thanks to Joubarbe for making Mayhem and allowing me to do whatever with his code.
+    * You can show your support by buying Joubarbe a coffee:
+        * https://www.buymeacoffee.com/Joubarbe
+* Also thanks to Sepa for graciously allowing me to redistribute his Mothership mod!
