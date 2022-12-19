@@ -128,6 +128,7 @@
 * Player Space Suit has SETA, trading capabilies, video enchancement goggles, and a bioware scanner. (LU only)
 * Miners no longer run into asteriods when the player is in sector.
 * The Player Headquarters, Equipment Docks, and Trading Stations are now available as Sources in the Dockware Manager.
+* MLCC ships set to Assist Escort will no longer attempt to escort themselves.
 
 ## Downloads
 * No-Steam Exe: https://www.egosoft.com/download/x3ap/bonus_en.php
