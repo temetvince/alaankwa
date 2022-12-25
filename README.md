@@ -76,6 +76,8 @@
     * All recruited Trade Mrk III Pilots are level 8 (enough to start Galaxy trading).
 * TRADE EMBARGO
     * Removes all NPC ships docked at player stations which are not open to race traders.
+* RAPID DEPLOYMENT
+    * Ships following another ship will no longer check if their followers can jump prior to jumping themselves.
 * SEPA'S MOTHERSHIP
     * Motherships are TL class mobile factories which can produce lasers, missiles, shields, and ships (must be able to dock on the Mothership).
         * Alaankwa Corsairs
