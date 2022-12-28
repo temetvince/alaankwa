@@ -14,8 +14,9 @@
   * When asked, install all the shaders. Everything. All of them
 
 ### Install
-1. Install Litcube's Universe
-2. Copy the contents of 'this' directory to 'x3 terran conflict'
+* If playing LU, download and run the installer at https://www.alaankwa.com.
+* If playing vanilla, copy the contents of the 'Manual Install - Vanilla' folder into your 'x3 terran conflict' folder.
+* If playing GiC, copy the contents of the 'Manual Install - GiC' folder into your 'x3 terran conflict' folder.
 
 ### Post-Install
 * If you don't like the new font, delete the 'f' folder in your 'x3 terran conflict' root install directory
