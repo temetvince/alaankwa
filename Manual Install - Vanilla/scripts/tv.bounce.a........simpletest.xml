@@ -1,0 +1,264 @@
+<?xml version="1.0" standalone="yes"?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
+<!-- Generated using X-Studio -->
+<script>
+	<name>tv.bounce.a........simpletest</name>
+	<version>11</version>
+	<engineversion>44</engineversion>
+	<description>Description</description>
+	<arguments />
+	<sourcetext>
+		<line linenr="001" indent="">
+			<comment>* $sec = [PLAYERSHIP]-&gt; get sector</comment>
+		</line>
+		<line linenr="002" indent="">
+			<comment>* $st = $sec-&gt; get ship array from sector/ship/station</comment>
+		</line>
+		<line linenr="003" indent="">
+			<comment>* $c = size of array $st</comment>
+		</line>
+		<line linenr="004" indent="">
+			<comment>* while $c</comment>
+		</line>
+		<line linenr="005" indent="">
+			<comment>* dec $c</comment>
+		</line>
+		<line linenr="006" indent="">
+			<comment>* $s = $st[$c]</comment>
+		</line>
+		<line linenr="007" indent="">
+			<comment>* skip if $s == [PLAYERSHIP]</comment>
+		</line>
+		<line linenr="008" indent="">
+			<comment>* $s-&gt; destruct: show no explosion=[TRUE]</comment>
+		</line>
+		<line linenr="009" indent="">
+			<comment>* end</comment>
+		</line>
+		<line linenr="010" indent="" />
+		<line linenr="011" indent="" />
+		<line linenr="012" indent="" />
+		<line linenr="013" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>tv.bounce.z.bounce.testcollision.ship</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>EnemyShipType</text>
+			<text>=</text>
+			<var>{Argon Elite Enhanced}</var>
+			<text> </text>
+			<text>EnemyShipCount</text>
+			<text>=</text>
+			<var>60</var>
+			<text> </text>
+			<text>EquipEnemyWithWeapons</text>
+			<text>=</text>
+			<var>[TRUE]</var>
+			<text> </text>
+			<text>PlayerShipType</text>
+			<text>=</text>
+			<var>{Split Jaguar Vanguard}</var>
+			<text> </text>
+			<text>PlayerShipCount</text>
+			<text>=</text>
+			<var>60</var>
+		</line>
+		<line linenr="014" indent="" />
+		<line linenr="015" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>tv.bounce.z.bounce.testcollision.ship</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>EnemyShipType</text>
+			<text>=</text>
+			<var>{Teladi Phoenix}</var>
+			<text> </text>
+			<text>EnemyShipCount</text>
+			<text>=</text>
+			<var>2</var>
+			<text> </text>
+			<text>EquipEnemyWithWeapons</text>
+			<text>=</text>
+			<var>[FALSE]</var>
+			<text> </text>
+			<text>PlayerShipType</text>
+			<text>=</text>
+			<var>{Split Jaguar Vanguard}</var>
+			<text> </text>
+			<text>PlayerShipCount</text>
+			<text>=</text>
+			<var>60</var>
+		</line>
+		<line linenr="016" indent="" />
+		<line linenr="017" indent="" />
+		<line linenr="018" indent="" />
+		<line linenr="019" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="020" indent="" />
+		<line linenr="021" indent="" />
+		<line linenr="022" indent="" />
+	</sourcetext>
+	<codearray>
+		<sval type="array" size="10">
+			<sval type="string" val="tv.bounce.a........simpletest" />
+			<sval type="int" val="44" />
+			<sval type="string" val="Description" />
+			<sval type="int" val="11" />
+			<sval type="int" val="0" />
+			<sval type="int" val="0" />
+			<sval type="array" size="3">
+				<sval type="array" size="16">
+					<sval type="int" val="102" />
+					<sval type="string" val="tv.bounce.z.bounce.testcollision.ship" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="int" val="9" />
+					<sval type="int" val="459086" />
+					<sval type="int" val="4" />
+					<sval type="int" val="60" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="10" />
+					<sval type="int" val="9" />
+					<sval type="int" val="458819" />
+					<sval type="int" val="4" />
+					<sval type="int" val="60" />
+				</sval>
+				<sval type="array" size="16">
+					<sval type="int" val="102" />
+					<sval type="string" val="tv.bounce.z.bounce.testcollision.ship" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="int" val="9" />
+					<sval type="int" val="458899" />
+					<sval type="int" val="4" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="9" />
+					<sval type="int" val="9" />
+					<sval type="int" val="458819" />
+					<sval type="int" val="4" />
+					<sval type="int" val="60" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+			<sval type="array" size="19">
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="$sec = [PLAYERSHIP]-&gt; get sector" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="$st = $sec-&gt; get ship array from sector/ship/station" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="$c = size of array $st" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="while $c" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="dec $c" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="$s = $st[$c]" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="skip if $s == [PLAYERSHIP]" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="$s-&gt; destruct: show no explosion=[TRUE]" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="end" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="0" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="0" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="0" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="1" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="2" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="2" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="2" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="3" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="3" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="3" />
+					<sval type="int" val="2" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+		</sval>
+	</codearray>
+</script>
