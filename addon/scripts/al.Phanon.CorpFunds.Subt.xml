@@ -1,0 +1,1059 @@
+<?xml version="1.0" standalone="yes"?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
+<!-- Generated using X-Studio -->
+<script>
+	<name>al.Phanon.CorpFunds.Subt</name>
+	<version>11</version>
+	<engineversion>50</engineversion>
+	<description>LitQB's Phanon Corporation: Subtracts corporation funds</description>
+	<arguments>
+		<argument index="1" name="Amount" type="Var/Number" desc="Amount" />
+	</arguments>
+	<sourcetext>
+		<line linenr="001" indent="">
+			<comment>* $txt = format number: number=$Amount, format wrapper='%s Cr'</comment>
+		</line>
+		<line linenr="002" indent="">
+			<comment>* write to player logbook: printf: fmt='Subtracted: %s', $txt, null, null, null, null</comment>
+		</line>
+		<line linenr="003" indent="" />
+		<line linenr="004" indent="">
+			<var>$CorporationMoney</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'PhanonCorp.Money'</text>
+		</line>
+		<line linenr="005" indent="" />
+		<line linenr="006" indent="" />
+		<line linenr="007" indent="">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'PhanonCorp.AMTAStart'</text>
+		</line>
+		<line linenr="008" indent="&#160;">
+			<text>return</text>
+			<text> </text>
+			<var>$CorporationMoney</var>
+		</line>
+		<line linenr="009" indent="" />
+		<line linenr="010" indent="" />
+		<line linenr="011" indent="">
+			<var>$OneBillion</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>1000000000</var>
+		</line>
+		<line linenr="012" indent="" interruptable="@">
+			<var>$Lowest</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>tv.overwrite.al.phanon.corpfunds.get.lowest</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>param.original</text>
+			<text>=</text>
+			<var>-500000000</var>
+		</line>
+		<line linenr="013" indent="">
+			<var>$Highest</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>2000000000</var>
+		</line>
+		<line linenr="014" indent="" />
+		<line linenr="015" indent="">
+			<var>$CorporationMoney</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'PhanonCorp.Money'</text>
+		</line>
+		<line linenr="016" indent="">
+			<var>$Billions</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'PhanonCorp.Billions'</text>
+		</line>
+		<line linenr="017" indent="" />
+		<line linenr="018" indent="" />
+		<line linenr="019" indent="">
+			<text>if</text>
+			<text> </text>
+			<var>$Amount</var>
+			<text> </text>
+			<text>==</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="020" indent="&#160;">
+			<text>write</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>player</text>
+			<text> </text>
+			<text>logbook</text>
+			<text> </text>
+			<text>'Phanon corp error amount nul was requested in CorpFunds.Subt'</text>
+		</line>
+		<line linenr="021" indent="&#160;">
+			<text>return</text>
+			<text> </text>
+			<var>$CorporationMoney</var>
+		</line>
+		<line linenr="022" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="023" indent="" />
+		<line linenr="024" indent="">
+			<var>$CorporationMoney</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$CorporationMoney</var>
+			<text> </text>
+			<text>-</text>
+			<text> </text>
+			<var>$Amount</var>
+		</line>
+		<line linenr="025" indent="" />
+		<line linenr="026" indent="">
+			<comment>* $txt = format number: number=$CorporationMoney, format wrapper='%s Cr'</comment>
+		</line>
+		<line linenr="027" indent="">
+			<comment>* write to player logbook: printf: fmt='Corporation money: %s', $txt, null, null, null, null</comment>
+		</line>
+		<line linenr="028" indent="" />
+		<line linenr="029" indent="" />
+		<line linenr="030" indent="">
+			<text>if</text>
+			<text> </text>
+			<var>$CorporationMoney</var>
+			<text> </text>
+			<text>&lt;</text>
+			<text> </text>
+			<var>$Lowest</var>
+			<text> </text>
+			<text>AND</text>
+			<text> </text>
+			<var>$CorporationMoney</var>
+			<text> </text>
+			<text>&lt;</text>
+			<text> </text>
+			<var>0</var>
+		</line>
+		<line linenr="031" indent="&#160;">
+			<var>$CorporationMoney</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$Lowest</var>
+		</line>
+		<line linenr="032" indent="&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'PhanonCorp.Money'</text>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$CorporationMoney</var>
+		</line>
+		<line linenr="033" indent="&#160;">
+			<comment>* write to player logbook: printf: fmt='Lowest!', $txt, null, null, null, null</comment>
+		</line>
+		<line linenr="034" indent="&#160;">
+			<text>return</text>
+			<text> </text>
+			<var>$CorporationMoney</var>
+		</line>
+		<line linenr="035" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="036" indent="" />
+		<line linenr="037" indent="">
+			<text>if</text>
+			<text> </text>
+			<var>$CorporationMoney</var>
+			<text> </text>
+			<text>&gt;</text>
+			<text> </text>
+			<var>$Highest</var>
+			<text> </text>
+			<text>AND</text>
+			<text> </text>
+			<var>$CorporationMoney</var>
+			<text> </text>
+			<text>&gt;</text>
+			<text> </text>
+			<var>0</var>
+		</line>
+		<line linenr="038" indent="&#160;">
+			<var>$CorporationMoney</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$Highest</var>
+		</line>
+		<line linenr="039" indent="&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'PhanonCorp.Money'</text>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$CorporationMoney</var>
+		</line>
+		<line linenr="040" indent="&#160;">
+			<comment>* write to player logbook: printf: fmt='Highest!', $txt, null, null, null, null</comment>
+		</line>
+		<line linenr="041" indent="&#160;">
+			<text>return</text>
+			<text> </text>
+			<var>$CorporationMoney</var>
+		</line>
+		<line linenr="042" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="043" indent="" />
+		<line linenr="044" indent="">
+			<comment>* $txt = format number: number=$CorporationMoney, format wrapper='%s Cr'</comment>
+		</line>
+		<line linenr="045" indent="">
+			<comment>* write to player logbook: printf: fmt='Corporation money: %s', $txt, null, null, null, null</comment>
+		</line>
+		<line linenr="046" indent="" />
+		<line linenr="047" indent="" />
+		<line linenr="048" indent="">
+			<text>if</text>
+			<text> </text>
+			<var>$CorporationMoney</var>
+			<text> </text>
+			<text>&lt;</text>
+			<text> </text>
+			<var>$OneBillion</var>
+			<text> </text>
+			<text>AND</text>
+			<text> </text>
+			<var>$Billions</var>
+			<text> </text>
+			<text>&gt;</text>
+			<text> </text>
+			<var>0</var>
+		</line>
+		<line linenr="049" indent="&#160;">
+			<var>$CorporationMoney</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$CorporationMoney</var>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>$OneBillion</var>
+		</line>
+		<line linenr="050" indent="&#160;">
+			<text>dec</text>
+			<text> </text>
+			<var>$Billions</var>
+		</line>
+		<line linenr="051" indent="&#160;">
+			<comment>* set global variable: name='PhanonCorp.Billions' value=$Billions</comment>
+		</line>
+		<line linenr="052" indent="&#160;">
+			<comment>* display subtitle text: text='added a billion' duration=2000 ms</comment>
+		</line>
+		<line linenr="053" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="054" indent="" />
+		<line linenr="055" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'PhanonCorp.Money'</text>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$CorporationMoney</var>
+		</line>
+		<line linenr="056" indent="" />
+		<line linenr="057" indent="">
+			<comment>* $txt = format number: number=$CorporationMoney, format wrapper='%s Cr'</comment>
+		</line>
+		<line linenr="058" indent="">
+			<comment>* write to player logbook: printf: fmt='Corporation money: %s', $txt, null, null, null, null</comment>
+		</line>
+		<line linenr="059" indent="" />
+		<line linenr="060" indent="" />
+		<line linenr="061" indent="" interruptable="@">
+			<text>if</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>al.Phanon.GetDebugState</call>
+			<text> </text>
+			<text>:</text>
+		</line>
+		<line linenr="062" indent="&#160;">
+			<var>$FmtCorpMoney</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>format</text>
+			<text> </text>
+			<text>number</text>
+			<text>:</text>
+			<text> </text>
+			<text>number</text>
+			<text>=</text>
+			<var>$CorporationMoney</var>
+			<text>,</text>
+			<text> </text>
+			<text>format</text>
+			<text> </text>
+			<text>wrapper</text>
+			<text>=</text>
+			<text>'%s Cr'</text>
+		</line>
+		<line linenr="063" indent="&#160;">
+			<var>$FmtAmount</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>format</text>
+			<text> </text>
+			<text>number</text>
+			<text>:</text>
+			<text> </text>
+			<text>number</text>
+			<text>=</text>
+			<var>$Amount</var>
+			<text>,</text>
+			<text> </text>
+			<text>format</text>
+			<text> </text>
+			<text>wrapper</text>
+			<text>=</text>
+			<text>'%s Cr'</text>
+		</line>
+		<line linenr="064" indent="&#160;">
+			<var>$Msg</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>sprintf</text>
+			<text>:</text>
+			<text> </text>
+			<text>fmt</text>
+			<text>=</text>
+			<text>'Down...... %s  Object: %s   Total funds: %s'</text>
+			<text>,</text>
+			<text> </text>
+			<var>$FmtAmount</var>
+			<text>,</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>,</text>
+			<text> </text>
+			<var>$FmtCorpMoney</var>
+			<text>,</text>
+			<text> </text>
+			<var>null</var>
+			<text>,</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="065" indent="&#160;">
+			<text>write</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>log</text>
+			<text> </text>
+			<text>file</text>
+			<text> </text>
+			<var>8384</var>
+			<text> </text>
+			<text>append</text>
+			<text>=</text>
+			<var>[TRUE]</var>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$Msg</var>
+		</line>
+		<line linenr="066" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="067" indent="" />
+		<line linenr="068" indent="">
+			<text>if</text>
+			<text> </text>
+			<var>$Amount</var>
+			<text> </text>
+			<text>==</text>
+			<text> </text>
+			<var>0</var>
+		</line>
+		<line linenr="069" indent="&#160;">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>is</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>class</text>
+			<text> </text>
+			<var>[TS]</var>
+		</line>
+		<line linenr="070" indent="&#160;&#160;" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>al.Phanon.Task.Mothball</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>Reason</text>
+			<text>=</text>
+			<text>'From CorpFunds.Subt, subtracted 0. Nothing bought.'</text>
+		</line>
+		<line linenr="071" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="072" indent="" />
+		<line linenr="073" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>$CorporationMoney</var>
+		</line>
+		<line linenr="074" indent="" />
+	</sourcetext>
+	<codearray>
+		<sval type="array" size="10">
+			<sval type="string" val="al.Phanon.CorpFunds.Subt" />
+			<sval type="int" val="50" />
+			<sval type="string" val="LitQB's Phanon Corporation: Subtracts corporation funds" />
+			<sval type="int" val="11" />
+			<sval type="int" val="0" />
+			<sval type="array" size="9">
+				<sval type="string" val="Amount" />
+				<sval type="string" val="CorporationMoney" />
+				<sval type="string" val="OneBillion" />
+				<sval type="string" val="Lowest" />
+				<sval type="string" val="Highest" />
+				<sval type="string" val="Billions" />
+				<sval type="string" val="FmtCorpMoney" />
+				<sval type="string" val="FmtAmount" />
+				<sval type="string" val="Msg" />
+			</sval>
+			<sval type="array" size="33">
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="5" />
+					<sval type="string" val="PhanonCorp.Money" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="5" />
+					<sval type="string" val="PhanonCorp.AMTAStart" />
+					<sval type="int" val="-1610611960" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="2" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1000000000" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="8">
+					<sval type="int" val="102" />
+					<sval type="string" val="tv.overwrite.al.phanon.corpfunds.get.lowest" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="-500000000" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="2000000000" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="5" />
+					<sval type="string" val="PhanonCorp.Money" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="5" />
+					<sval type="string" val="PhanonCorp.Billions" />
+					<sval type="int" val="5" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610609917" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="15" />
+					<sval type="int" val="0" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="0" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="400" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Phanon corp error amount nul was requested in CorpFunds.Subt" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="15" />
+					<sval type="int" val="12" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="12" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="25">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610608637" />
+					<sval type="int" val="7" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+					<sval type="int" val="15" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="15" />
+					<sval type="int" val="3" />
+					<sval type="int" val="15" />
+					<sval type="int" val="9" />
+					<sval type="int" val="7" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-2" />
+					<sval type="int" val="9" />
+					<sval type="int" val="-4" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-5" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="5" />
+					<sval type="string" val="PhanonCorp.Money" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="25">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610607613" />
+					<sval type="int" val="7" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="15" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="15" />
+					<sval type="int" val="2" />
+					<sval type="int" val="15" />
+					<sval type="int" val="9" />
+					<sval type="int" val="7" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="2" />
+					<sval type="int" val="-2" />
+					<sval type="int" val="9" />
+					<sval type="int" val="-4" />
+					<sval type="int" val="2" />
+					<sval type="int" val="-5" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="5" />
+					<sval type="string" val="PhanonCorp.Money" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="25">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610606845" />
+					<sval type="int" val="7" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="15" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="15" />
+					<sval type="int" val="2" />
+					<sval type="int" val="15" />
+					<sval type="int" val="9" />
+					<sval type="int" val="7" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-2" />
+					<sval type="int" val="9" />
+					<sval type="int" val="-4" />
+					<sval type="int" val="2" />
+					<sval type="int" val="-5" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="143" />
+					<sval type="int" val="5" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="5" />
+					<sval type="string" val="PhanonCorp.Money" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="102" />
+					<sval type="string" val="al.Phanon.GetDebugState" />
+					<sval type="int" val="-1610605309" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="1855" />
+					<sval type="int" val="6" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="%s Cr" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="1855" />
+					<sval type="int" val="7" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="5" />
+					<sval type="string" val="%s Cr" />
+				</sval>
+				<sval type="array" size="14">
+					<sval type="int" val="149" />
+					<sval type="int" val="8" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Down...... %s  Object: %s   Total funds: %s" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="7" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="404" />
+					<sval type="int" val="4" />
+					<sval type="int" val="8384" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="10" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="8" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610604541" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="15" />
+					<sval type="int" val="0" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="0" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="705" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1610604536" />
+					<sval type="int" val="12" />
+					<sval type="int" val="2031" />
+				</sval>
+				<sval type="array" size="8">
+					<sval type="int" val="102" />
+					<sval type="string" val="al.Phanon.Task.Mothball" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="From CorpFunds.Subt, subtracted 0. Nothing bought." />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+			</sval>
+			<sval type="array" size="1">
+				<sval type="array" size="2">
+					<sval type="int" val="10" />
+					<sval type="string" val="Amount" />
+				</sval>
+			</sval>
+			<sval type="array" size="41">
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="$txt = format number: number=$Amount, format wrapper='%s Cr'" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="write to player logbook: printf: fmt='Subtracted: %s', $txt, null, null, null, null" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="0" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="1" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="1" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="3" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="3" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="6" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="8" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="8" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="11" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="11" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="12" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="12" />
+					<sval type="int" val="1" />
+					<sval type="string" val="$txt = format number: number=$CorporationMoney, format wrapper='%s Cr'" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="12" />
+					<sval type="int" val="1" />
+					<sval type="string" val="write to player logbook: printf: fmt='Corporation money: %s', $txt, null, null, null, null" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="12" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="12" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="15" />
+					<sval type="int" val="1" />
+					<sval type="string" val="write to player logbook: printf: fmt='Lowest!', $txt, null, null, null, null" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="16" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="16" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="19" />
+					<sval type="int" val="1" />
+					<sval type="string" val="write to player logbook: printf: fmt='Highest!', $txt, null, null, null, null" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="20" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="20" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="20" />
+					<sval type="int" val="1" />
+					<sval type="string" val="$txt = format number: number=$CorporationMoney, format wrapper='%s Cr'" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="20" />
+					<sval type="int" val="1" />
+					<sval type="string" val="write to player logbook: printf: fmt='Corporation money: %s', $txt, null, null, null, null" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="20" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="20" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="23" />
+					<sval type="int" val="1" />
+					<sval type="string" val="set global variable: name='PhanonCorp.Billions' value=$Billions" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="23" />
+					<sval type="int" val="1" />
+					<sval type="string" val="display subtitle text: text='added a billion' duration=2000 ms" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="23" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="23" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="24" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="24" />
+					<sval type="int" val="1" />
+					<sval type="string" val="$txt = format number: number=$CorporationMoney, format wrapper='%s Cr'" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="24" />
+					<sval type="int" val="1" />
+					<sval type="string" val="write to player logbook: printf: fmt='Corporation money: %s', $txt, null, null, null, null" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="24" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="24" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="29" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="29" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="32" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="32" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="33" />
+					<sval type="int" val="2" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+		</sval>
+	</codearray>
+</script>
