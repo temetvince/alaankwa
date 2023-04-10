@@ -96,13 +96,20 @@
 			<text>'tv.feature.autotrader.galaxy'</text>
 		</line>
 		<line linenr="013" indent="&#160;">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<var>$experience</var>
+		</line>
+		<line linenr="014" indent="&#160;&#160;">
 			<var>$experience</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>8</var>
 		</line>
-		<line linenr="014" indent="&#160;">
+		<line linenr="015" indent="&#160;&#160;">
 			<var>$ship</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -121,11 +128,14 @@
 			<text>=</text>
 			<var>$experience</var>
 		</line>
-		<line linenr="015" indent="">
+		<line linenr="016" indent="&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="016" indent="" />
 		<line linenr="017" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="018" indent="" />
+		<line linenr="019" indent="">
 			<text>if</text>
 			<text> </text>
 			<var>$experience</var>
@@ -141,23 +151,23 @@
 			<var>$experience</var>
 			<text>)</text>
 		</line>
-		<line linenr="018" indent="&#160;">
+		<line linenr="020" indent="&#160;">
 			<var>$returnval</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>[CmdConCheck.Disabled]</var>
 		</line>
-		<line linenr="019" indent="">
+		<line linenr="021" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="020" indent="" />
-		<line linenr="021" indent="">
+		<line linenr="022" indent="" />
+		<line linenr="023" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>$returnval</var>
 		</line>
-		<line linenr="022" indent="" />
+		<line linenr="024" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
@@ -172,7 +182,7 @@
 				<sval type="string" val="returnval" />
 				<sval type="string" val="experience" />
 			</sval>
-			<sval type="array" size="12">
+			<sval type="array" size="13">
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
 					<sval type="int" val="2" />
@@ -231,7 +241,16 @@
 					<sval type="int" val="158" />
 					<sval type="int" val="5" />
 					<sval type="string" val="tv.feature.autotrader.galaxy" />
-					<sval type="int" val="-1610610429" />
+					<sval type="int" val="-1610610173" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-536868348" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
@@ -253,7 +272,7 @@
 				</sval>
 				<sval type="array" size="24">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610609917" />
+					<sval type="int" val="-1610609661" />
 					<sval type="int" val="6" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="3" />
@@ -302,7 +321,7 @@
 					<sval type="string" val="upgrade" />
 				</sval>
 			</sval>
-			<sval type="array" size="10">
+			<sval type="array" size="11">
 				<sval type="array" size="2">
 					<sval type="int" val="1" />
 					<sval type="int" val="2" />
@@ -324,23 +343,27 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="9" />
+					<sval type="int" val="10" />
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="9" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="11" />
+					<sval type="int" val="10" />
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="11" />
+					<sval type="int" val="10" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="12" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="12" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="13" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>
