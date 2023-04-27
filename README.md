@@ -11,7 +11,7 @@
   * https://reshade.me/
   * When asked for the game, browse and select X3AP.exe in your x3 install folder
   * The game uses Direct3D 9
-  * When asked, install all the shaders. Everything. All of them
+  * When asked, select the temetvince.ini preset and install the pre-selected shaders.
 
 ### Install
 * If playing LU, download and run the installer at https://www.alaankwa.com.
