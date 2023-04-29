@@ -14,7 +14,7 @@
 <!--  _____________________________________________________________________________________________ -->
 <!--  Improved Piloting applies to the playership -->
 <!--  Should Overachiever be enabled? 0 for off or 1 for on. Must enter/re-enter a sector to take effect. Default: 0 -->
-      <t id="101">1</t>
+      <t id="101">0</t>
 <!--  _____________________________________________________________________________________________ -->
 <!--  ############################################################################################################################################# -->
 
@@ -26,7 +26,7 @@
 <!--  _____________________________________________________________________________________________ -->
 <!--  Escorts will attempt to follow at reasonable speeds instead of flying all over the place. -->
 <!--  Should Standardized Fleet Operations be enabled? 0 for off or 1 for on. Must enter/re-enter a sector to take effect. Default: 1 -->
-      <t id="120">0</t>
+      <t id="120">1</t>
 <!--  _____________________________________________________________________________________________ -->
 <!--  ############################################################################################################################################# -->
 
@@ -317,9 +317,21 @@
 <!--  ############################################################################################################################################# -->
 <!--  RAPID DEPLOYMENT -->
 <!--  _____________________________________________________________________________________________ -->
-<!--  Ships following another ship will no longer check if their followers can jump prior to jupming themselves. -->
+<!--  Ships following another ship will no longer check if their followers can jump prior to jumping themselves. -->
 <!--  Should RAPID DEPLOYMENT be enabled? 0 for off or 1 for on. Default: 1 -->
       <t id="210">1</t>
+<!--  _____________________________________________________________________________________________ -->
+<!--  ############################################################################################################################################# -->
+
+
+
+
+<!--  ############################################################################################################################################# -->
+<!--  REMEMBER HOMEBASE -->
+<!--  _____________________________________________________________________________________________ -->
+<!--  Ships will remember their homebase when the player takes command of the ship. -->
+<!--  Should REMEMBER HOMEBASE be enabled? 0 for off or 1 for on. Default: 1 -->
+      <t id="220">1</t>
 <!--  _____________________________________________________________________________________________ -->
 <!--  ############################################################################################################################################# -->
 
@@ -458,7 +470,7 @@
 
     <page id="997900" title="Internationalization Strings" descr="For i18n, translate this ids in this page!" voice="no">
       <!-- tv.i18n.message.alaankwa.start -->
-      <t id="0">[author]\033Otemetvince\033X[/author]\033MHello\033G, and welcome to the \033YAlaankwa\033G game start! This is quite a unique start. You cannot buy new ships, and you cannot sell any ships. Aside from finding the secret hidden ships in the galaxy, you can only get new ships in \033B4\033G ways:\n\033B1.\033C Buying used ships through missions\n\033B2.\033C Claiming bailed ships\n\033B3.\033C Piracy\n\033B4.\033C Building them yourself\033G\nYou can build ships using either the \033MPlayer Headquarters\033G or a \033Mcarrier\033G. To order new production in a \033Mcarrier\033G, see the \033RManage Mothership\033G command in the \033RSpecial\033G commands menu of the \033Mcarrier's\033R Command Console\033G.\n\nTo build a ship, you need a ship \033Oblueprint\033G, and not all \033Oblueprints\033G are created equal. \033OBlueprints\033G differ not only by ship \033Wtype\033G but also by \033Cefficiency\033G. A more \033Cefficient \033Oblueprint\033G will cost fewer resources to produce the same ship \033Wtype\033G. There are \033B%s\033G \033Cefficiency\033G levels of \033Oblueprints\033G per ship \033Wtype\033G.\n\nYou can use the \033YData Scanner\033G found on all shipboard computers to \033Yscan\033G ships with less than \033B%s\%\033G shields. Of course, most factions consider instrusive \033Yscanning\033G like this a hostile act! If you don't yet have the best \033Oblueprint\033G for a given ship \033Wtype\033G, then each \033Yscan\033G of that \033Wtype\033G yields a more \033Cefficient \033Oblueprint\033G. \033YScanning\033G a ship you own, even one with full shields, gives you the next most \033Cefficient\033G \033Oblueprint\033G. \ Obtaining the most \033Cefficient \033Oblueprint\033G unlocks the ship for production in the \033MPlayer Headquarters\033G. Note that you can only \033Yscan\033G each individual ship once. \033RThe \033YData Scanner\033R is a hotkey, don't forget to set it!\033X</t>
+      <t id="0">[author]\033Otemetvince\033X[/author]\033MHello\033G, and welcome to the \033YAlaankwa\033G game start! This is quite a unique start. You cannot buy new ships, and you cannot sell any ships. Aside from finding the secret hidden ships in the galaxy, you can only get new ships in \033B4\033G ways:\n\033B1.\033C Buying used ships through missions\n\033B2.\033C Claiming bailed ships\n\033B3.\033C Piracy\n\033B4.\033C Building them yourself\033G\nYou can build ships using either the \033MPlayer Headquarters\033G or a \033Mcarrier\033G. To order new production in a \033Mcarrier\033G, see the \033RManage Mothership\033G command in the \033RSpecial\033G commands menu of the \033Mcarrier's\033R Command Console\033G.\n\nTo build a ship, you need a ship \033Oblueprint\033G, and not all \033Oblueprints\033G are created equal. \033OBlueprints\033G differ not only by ship \033Wtype\033G but also by \033Cefficiency\033G. A more \033Cefficient \033Oblueprint\033G will cost fewer resources to produce the same ship \033Wtype\033G. There are \033B%s\033G \033Cefficiency\033G levels of \033Oblueprints\033G per ship \033Wtype\033G. If you manufacture a ship, then you automatically gain the next most \033Cefficient\033G \033Oblueprint\033G for that ship \033Wtype\033G.\n\nYou can use the \033YData Scanner\033G found on all shipboard computers to \033Yscan\033G ships with less than \033B%s\%\033G shields. Of course, most factions consider instrusive \033Yscanning\033G like this a hostile act! If you don't yet have the best \033Oblueprint\033G for a given ship \033Wtype\033G, then each \033Yscan\033G of that \033Wtype\033G yields a more \033Cefficient \033Oblueprint\033G. \033YScanning\033G a ship you own, even one with full shields, gives you the next most \033Cefficient\033G \033Oblueprint\033G. \ Obtaining the most \033Cefficient \033Oblueprint\033G unlocks the ship for production in the \033MPlayer Headquarters\033G. Note that you can only \033Yscan\033G each individual ship once. \033RThe \033YData Scanner\033R is a hotkey, don't forget to set it!\033X</t>
       <!-- tv.i18n.message.alaankwa.shipsold -->
       <t id="1">\033RSHIP SOLD ILLEGALLY! \033OFunds frozen in the amount of $%s. %s forfeited.</t>
       <!-- tv.i18n.message.alaankwa.shipbought -->
@@ -573,6 +585,7 @@
       <t id="1003">12300</t> <!-- Lowest task number for tv.mayhem.task.claimable -->
       <t id="1004">12400</t> <!-- Lowest task number for Monitor Mothership -->
       <t id="1005">12500</t> <!-- Lowest task number for Captains -->
+      <t id="1006">12600</t> <!-- Lowest task number for Remember Homebase -->
 
 	<t id="13">100</t> <!-- Mayhem 2: Milliseconds between each scan step (default: 100) -->
 	<t id="10">10000</t> <!-- Mayhem 2: Ship research cost divider (default: 10000) -->
