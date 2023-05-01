@@ -122,6 +122,7 @@
 * The Player Headquarters, Equipment Docks, and Trading Stations are now available as Sources in the Dockware Manager.
 * MLCC ships set to Assist Escort will no longer attempt to escort themselves.
 * Ships will remember their homebase when the player transfers into the ship.
+* Removed ATF Mapping Service mammoths from the game (a mission bug)
 
 ## Downloads
 * No-Steam Exe: https://www.egosoft.com/download/x3ap/bonus_en.php
