@@ -104,6 +104,8 @@
         * Well Connected Leadership
             * Well Connected Leadership commands a premium in salaries.
 ### AND MORE
+* The OCV should operate a bit smarter and expand a bit better
+* An optional set of Phanon Extreme scripts are included
 * An optional graphics improvement utilizing ReShade is included
     * You can take before/after screenshots that save to your root install folder with the PrintScrn button on your keyboard. To access the options in game, press [SHIFT]+[~] (or [SHIFT]+[`])
 * A new game font, Fantasque Sans Mono
