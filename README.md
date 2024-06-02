@@ -52,8 +52,6 @@
 - **FRESH HOTKEYS, GET YOUR HOTKEYS**
     - Decide which hotkeys are configurable in the Hotkeys Menu.
         - All of Space: CHEAT: This hotkey adds satellites to all sectors with jumpgates which don't already have one.
-- **LITCUBE'S BOUNCE**
-    - Ships avoid collisions.
 
 ### LU + Mods Specific
 - **ROTATIONAL THRUSTERS**
