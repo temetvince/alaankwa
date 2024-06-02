@@ -130,9 +130,9 @@
 		</line>
 		<line linenr="014" indent="" />
 		<line linenr="015" indent="">
-			<text>skip</text>
-			<text> </text>
 			<text>if</text>
+			<text> </text>
+			<text>not</text>
 			<text> </text>
 			<text>player</text>
 			<text> </text>
@@ -150,6 +150,39 @@
 			<var>$type</var>
 		</line>
 		<line linenr="016" indent="&#160;">
+			<var>$blueprints.archived</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'LitQB.HQ.ArchivedBlueprints'</text>
+		</line>
+		<line linenr="017" indent="&#160;">
+			<text>skip</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<var>$blueprints.archived</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<var>$type</var>
+			<text> </text>
+			<text>)</text>
+		</line>
+		<line linenr="018" indent="&#160;&#160;">
 			<text>add</text>
 			<text> </text>
 			<text>blueprints</text>
@@ -165,8 +198,11 @@
 			<text>=</text>
 			<var>$type</var>
 		</line>
-		<line linenr="017" indent="" />
-		<line linenr="018" indent="">
+		<line linenr="019" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="020" indent="" />
+		<line linenr="021" indent="">
 			<var>$alreadyKnown</var>
 			<text> </text>
 			<text>=</text>
@@ -183,8 +219,8 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="019" indent="" />
-		<line linenr="020" indent="">
+		<line linenr="022" indent="" />
+		<line linenr="023" indent="">
 			<text>if</text>
 			<text> </text>
 			<var>$alreadyKnown</var>
@@ -193,7 +229,7 @@
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="021" indent="&#160;">
+		<line linenr="024" indent="&#160;">
 			<var>$cost.project</var>
 			<text> </text>
 			<text>=</text>
@@ -210,8 +246,8 @@
 			<text> </text>
 			<var>$type</var>
 		</line>
-		<line linenr="022" indent="&#160;" />
-		<line linenr="023" indent="&#160;">
+		<line linenr="025" indent="&#160;" />
+		<line linenr="026" indent="&#160;">
 			<text>table</text>
 			<text> </text>
 			<text>set</text>
@@ -228,8 +264,8 @@
 			<text> </text>
 			<var>$cost.project</var>
 		</line>
-		<line linenr="024" indent="&#160;" />
-		<line linenr="025" indent="&#160;">
+		<line linenr="027" indent="&#160;" />
+		<line linenr="028" indent="&#160;">
 			<var>$message</var>
 			<text> </text>
 			<text>=</text>
@@ -245,7 +281,7 @@
 			<text>=</text>
 			<text>'tv.i18n.datascanner.added'</text>
 		</line>
-		<line linenr="026" indent="&#160;">
+		<line linenr="029" indent="&#160;">
 			<var>$message</var>
 			<text> </text>
 			<text>=</text>
@@ -272,8 +308,8 @@
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="027" indent="&#160;" />
-		<line linenr="028" indent="&#160;">
+		<line linenr="030" indent="&#160;" />
+		<line linenr="031" indent="&#160;">
 			<text>display</text>
 			<text> </text>
 			<text>info</text>
@@ -304,16 +340,16 @@
 			<text> </text>
 			<var>1000</var>
 		</line>
-		<line linenr="029" indent="">
+		<line linenr="032" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="030" indent="" />
-		<line linenr="031" indent="">
+		<line linenr="033" indent="" />
+		<line linenr="034" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="032" indent="" />
+		<line linenr="035" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
@@ -322,18 +358,19 @@
 			<sval type="string" val="" />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
-			<sval type="array" size="9">
+			<sval type="array" size="10">
 				<sval type="string" val="shipOrType" />
 				<sval type="string" val="allProjects" />
 				<sval type="string" val="scans" />
 				<sval type="string" val="scans.max" />
 				<sval type="string" val="type" />
 				<sval type="string" val="shipOrType.scans" />
+				<sval type="string" val="blueprints.archived" />
 				<sval type="string" val="alreadyKnown" />
 				<sval type="string" val="cost.project" />
 				<sval type="string" val="message" />
 			</sval>
-			<sval type="array" size="19">
+			<sval type="array" size="21">
 				<sval type="array" size="4">
 					<sval type="int" val="158" />
 					<sval type="int" val="5" />
@@ -413,7 +450,21 @@
 				</sval>
 				<sval type="array" size="4">
 					<sval type="int" val="1218" />
-					<sval type="int" val="-536868089" />
+					<sval type="int" val="-536867580" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="5" />
+					<sval type="string" val="LitQB.HQ.ArchivedBlueprints" />
+					<sval type="int" val="6" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="1709" />
+					<sval type="int" val="-536867577" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="4" />
 				</sval>
@@ -424,7 +475,7 @@
 				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="1709" />
-					<sval type="int" val="6" />
+					<sval type="int" val="7" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
@@ -432,10 +483,10 @@
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610608125" />
+					<sval type="int" val="-1610607613" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="6" />
+					<sval type="int" val="7" />
 					<sval type="int" val="0" />
 					<sval type="int" val="0" />
 					<sval type="int" val="15" />
@@ -447,7 +498,7 @@
 				</sval>
 				<sval type="array" size="4">
 					<sval type="int" val="629" />
-					<sval type="int" val="7" />
+					<sval type="int" val="8" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="4" />
 				</sval>
@@ -458,19 +509,19 @@
 					<sval type="int" val="131074" />
 					<sval type="int" val="4" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="7" />
+					<sval type="int" val="8" />
 				</sval>
 				<sval type="array" size="4">
 					<sval type="int" val="158" />
 					<sval type="int" val="5" />
 					<sval type="string" val="tv.i18n.datascanner.added" />
-					<sval type="int" val="8" />
+					<sval type="int" val="9" />
 				</sval>
 				<sval type="array" size="14">
 					<sval type="int" val="149" />
-					<sval type="int" val="8" />
+					<sval type="int" val="9" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="8" />
+					<sval type="int" val="9" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
@@ -485,7 +536,7 @@
 				<sval type="array" size="9">
 					<sval type="int" val="1861" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="8" />
+					<sval type="int" val="9" />
 					<sval type="int" val="4" />
 					<sval type="int" val="57" />
 					<sval type="int" val="4" />
@@ -505,7 +556,7 @@
 					<sval type="string" val="" />
 				</sval>
 			</sval>
-			<sval type="array" size="13">
+			<sval type="array" size="14">
 				<sval type="array" size="2">
 					<sval type="int" val="3" />
 					<sval type="int" val="2" />
@@ -527,11 +578,11 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="11" />
-					<sval type="int" val="2" />
+					<sval type="int" val="13" />
+					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="12" />
+					<sval type="int" val="13" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
@@ -539,7 +590,7 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="15" />
+					<sval type="int" val="16" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
@@ -547,15 +598,19 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="18" />
-					<sval type="int" val="4" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="18" />
+					<sval type="int" val="19" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="19" />
+					<sval type="int" val="20" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="20" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="21" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>

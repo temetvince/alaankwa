@@ -1,0 +1,1646 @@
+<?xml version="1.0" standalone="yes"?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
+<!-- Generated using X-Studio -->
+<script>
+	<name>Mayhem.UpdateEncyclopedia</name>
+	<version>1</version>
+	<engineversion>50</engineversion>
+	<description></description>
+	<arguments />
+	<sourcetext>
+		<line linenr="001" indent="">
+			<comment>* Section 1</comment>
+		</line>
+		<line linenr="002" indent="">
+			<var>$id</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>1</var>
+		</line>
+		<line linenr="003" indent="">
+			<text>while</text>
+			<text> </text>
+			<var>1</var>
+		</line>
+		<line linenr="004" indent="&#160;" />
+		<line linenr="005" indent="&#160;">
+			<var>$entry</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'mayhem_tutorial'</text>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>$id</var>
+		</line>
+		<line linenr="006" indent="&#160;" />
+		<line linenr="007" indent="&#160;">
+			<var>$title</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>read</text>
+			<text> </text>
+			<text>text</text>
+			<text>:</text>
+			<text> </text>
+			<text>page</text>
+			<text>=</text>
+			<var>9981</var>
+			<text> </text>
+			<text>id</text>
+			<text>=</text>
+			<var>$id</var>
+		</line>
+		<line linenr="008" indent="&#160;">
+			<var>$titleId</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$id</var>
+		</line>
+		<line linenr="009" indent="&#160;">
+			<var>$pos</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>find</text>
+			<text> </text>
+			<text>position</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>pattern</text>
+			<text> </text>
+			<text>'ReadText'</text>
+			<text> </text>
+			<text>in</text>
+			<text> </text>
+			<var>$title</var>
+		</line>
+		<line linenr="010" indent="&#160;">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$pos</var>
+			<text> </text>
+			<text>!=</text>
+			<text> </text>
+			<var>-1</var>
+		</line>
+		<line linenr="011" indent="&#160;&#160;">
+			<text>break</text>
+		</line>
+		<line linenr="012" indent="&#160;">
+			<text>inc</text>
+			<text> </text>
+			<var>$id</var>
+		</line>
+		<line linenr="013" indent="&#160;">
+			<var>$text</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>read</text>
+			<text> </text>
+			<text>text</text>
+			<text>:</text>
+			<text> </text>
+			<text>page</text>
+			<text>=</text>
+			<var>9981</var>
+			<text> </text>
+			<text>id</text>
+			<text>=</text>
+			<var>$id</var>
+		</line>
+		<line linenr="014" indent="&#160;">
+			<var>$textId</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$id</var>
+		</line>
+		<line linenr="015" indent="&#160;">
+			<var>$pos</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>find</text>
+			<text> </text>
+			<text>position</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>pattern</text>
+			<text> </text>
+			<text>'ReadText'</text>
+			<text> </text>
+			<text>in</text>
+			<text> </text>
+			<var>$text</var>
+		</line>
+		<line linenr="016" indent="&#160;">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$pos</var>
+			<text> </text>
+			<text>!=</text>
+			<text> </text>
+			<var>-1</var>
+		</line>
+		<line linenr="017" indent="&#160;&#160;">
+			<text>break</text>
+		</line>
+		<line linenr="018" indent="&#160;" />
+		<line linenr="019" indent="&#160;">
+			<text>add</text>
+			<text> </text>
+			<text>encyclopedia</text>
+			<text> </text>
+			<text>custom</text>
+			<text> </text>
+			<text>article</text>
+			<text>:</text>
+			<text> </text>
+			<text>News</text>
+			<text>,</text>
+			<text> </text>
+			<text>id</text>
+			<text>=</text>
+			<var>$entry</var>
+			<text>,</text>
+			<text> </text>
+			<text>title</text>
+			<text> </text>
+			<text>page</text>
+			<text>=</text>
+			<var>9981</var>
+			<text>,</text>
+			<text> </text>
+			<text>title</text>
+			<text> </text>
+			<text>id</text>
+			<text>=</text>
+			<var>$titleId</var>
+			<text>,</text>
+			<text> </text>
+			<text>text</text>
+			<text> </text>
+			<text>page</text>
+			<text>=</text>
+			<var>9981</var>
+			<text>,</text>
+			<text> </text>
+			<text>text</text>
+			<text> </text>
+			<text>id</text>
+			<text>=</text>
+			<var>$textId</var>
+			<text>,</text>
+			<text> </text>
+			<text>timeout</text>
+			<text>=</text>
+			<var>null</var>
+		</line>
+		<line linenr="020" indent="&#160;" />
+		<line linenr="021" indent="&#160;">
+			<text>inc</text>
+			<text> </text>
+			<var>$id</var>
+		</line>
+		<line linenr="022" indent="&#160;" />
+		<line linenr="023" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="024" indent="" />
+		<line linenr="025" indent="">
+			<comment>* Section 2</comment>
+		</line>
+		<line linenr="026" indent="">
+			<var>$id</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>1001</var>
+		</line>
+		<line linenr="027" indent="">
+			<text>while</text>
+			<text> </text>
+			<var>1</var>
+		</line>
+		<line linenr="028" indent="&#160;" />
+		<line linenr="029" indent="&#160;">
+			<var>$entry</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'mayhem_tutorial'</text>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>$id</var>
+		</line>
+		<line linenr="030" indent="&#160;" />
+		<line linenr="031" indent="&#160;">
+			<var>$title</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>read</text>
+			<text> </text>
+			<text>text</text>
+			<text>:</text>
+			<text> </text>
+			<text>page</text>
+			<text>=</text>
+			<var>9981</var>
+			<text> </text>
+			<text>id</text>
+			<text>=</text>
+			<var>$id</var>
+		</line>
+		<line linenr="032" indent="&#160;">
+			<var>$titleId</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$id</var>
+		</line>
+		<line linenr="033" indent="&#160;">
+			<var>$pos</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>find</text>
+			<text> </text>
+			<text>position</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>pattern</text>
+			<text> </text>
+			<text>'ReadText'</text>
+			<text> </text>
+			<text>in</text>
+			<text> </text>
+			<var>$title</var>
+		</line>
+		<line linenr="034" indent="&#160;">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$pos</var>
+			<text> </text>
+			<text>!=</text>
+			<text> </text>
+			<var>-1</var>
+		</line>
+		<line linenr="035" indent="&#160;&#160;">
+			<text>break</text>
+		</line>
+		<line linenr="036" indent="&#160;">
+			<text>inc</text>
+			<text> </text>
+			<var>$id</var>
+		</line>
+		<line linenr="037" indent="&#160;">
+			<var>$text</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>read</text>
+			<text> </text>
+			<text>text</text>
+			<text>:</text>
+			<text> </text>
+			<text>page</text>
+			<text>=</text>
+			<var>9981</var>
+			<text> </text>
+			<text>id</text>
+			<text>=</text>
+			<var>$id</var>
+		</line>
+		<line linenr="038" indent="&#160;">
+			<var>$textId</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$id</var>
+		</line>
+		<line linenr="039" indent="&#160;">
+			<var>$pos</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>find</text>
+			<text> </text>
+			<text>position</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>pattern</text>
+			<text> </text>
+			<text>'ReadText'</text>
+			<text> </text>
+			<text>in</text>
+			<text> </text>
+			<var>$text</var>
+		</line>
+		<line linenr="040" indent="&#160;">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$pos</var>
+			<text> </text>
+			<text>!=</text>
+			<text> </text>
+			<var>-1</var>
+		</line>
+		<line linenr="041" indent="&#160;&#160;">
+			<text>break</text>
+		</line>
+		<line linenr="042" indent="&#160;" />
+		<line linenr="043" indent="&#160;">
+			<text>add</text>
+			<text> </text>
+			<text>encyclopedia</text>
+			<text> </text>
+			<text>custom</text>
+			<text> </text>
+			<text>article</text>
+			<text>:</text>
+			<text> </text>
+			<text>History</text>
+			<text>,</text>
+			<text> </text>
+			<text>id</text>
+			<text>=</text>
+			<var>$entry</var>
+			<text>,</text>
+			<text> </text>
+			<text>title</text>
+			<text> </text>
+			<text>page</text>
+			<text>=</text>
+			<var>9981</var>
+			<text>,</text>
+			<text> </text>
+			<text>title</text>
+			<text> </text>
+			<text>id</text>
+			<text>=</text>
+			<var>$titleId</var>
+			<text>,</text>
+			<text> </text>
+			<text>text</text>
+			<text> </text>
+			<text>page</text>
+			<text>=</text>
+			<var>9981</var>
+			<text>,</text>
+			<text> </text>
+			<text>text</text>
+			<text> </text>
+			<text>id</text>
+			<text>=</text>
+			<var>$textId</var>
+			<text>,</text>
+			<text> </text>
+			<text>timeout</text>
+			<text>=</text>
+			<var>null</var>
+		</line>
+		<line linenr="044" indent="&#160;" />
+		<line linenr="045" indent="&#160;">
+			<text>inc</text>
+			<text> </text>
+			<var>$id</var>
+		</line>
+		<line linenr="046" indent="&#160;" />
+		<line linenr="047" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="048" indent="" />
+		<line linenr="049" indent="">
+			<comment>* Section 3</comment>
+		</line>
+		<line linenr="050" indent="">
+			<var>$id</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>2001</var>
+		</line>
+		<line linenr="051" indent="">
+			<text>while</text>
+			<text> </text>
+			<var>1</var>
+		</line>
+		<line linenr="052" indent="&#160;" />
+		<line linenr="053" indent="&#160;">
+			<var>$entry</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'mayhem_tutorial'</text>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>$id</var>
+		</line>
+		<line linenr="054" indent="&#160;" />
+		<line linenr="055" indent="&#160;">
+			<var>$title</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>read</text>
+			<text> </text>
+			<text>text</text>
+			<text>:</text>
+			<text> </text>
+			<text>page</text>
+			<text>=</text>
+			<var>9981</var>
+			<text> </text>
+			<text>id</text>
+			<text>=</text>
+			<var>$id</var>
+		</line>
+		<line linenr="056" indent="&#160;">
+			<var>$titleId</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$id</var>
+		</line>
+		<line linenr="057" indent="&#160;">
+			<var>$pos</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>find</text>
+			<text> </text>
+			<text>position</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>pattern</text>
+			<text> </text>
+			<text>'ReadText'</text>
+			<text> </text>
+			<text>in</text>
+			<text> </text>
+			<var>$title</var>
+		</line>
+		<line linenr="058" indent="&#160;">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$pos</var>
+			<text> </text>
+			<text>!=</text>
+			<text> </text>
+			<var>-1</var>
+		</line>
+		<line linenr="059" indent="&#160;&#160;">
+			<text>break</text>
+		</line>
+		<line linenr="060" indent="&#160;">
+			<text>inc</text>
+			<text> </text>
+			<var>$id</var>
+		</line>
+		<line linenr="061" indent="&#160;">
+			<var>$text</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>read</text>
+			<text> </text>
+			<text>text</text>
+			<text>:</text>
+			<text> </text>
+			<text>page</text>
+			<text>=</text>
+			<var>9981</var>
+			<text> </text>
+			<text>id</text>
+			<text>=</text>
+			<var>$id</var>
+		</line>
+		<line linenr="062" indent="&#160;">
+			<var>$textId</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$id</var>
+		</line>
+		<line linenr="063" indent="&#160;">
+			<var>$pos</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>find</text>
+			<text> </text>
+			<text>position</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>pattern</text>
+			<text> </text>
+			<text>'ReadText'</text>
+			<text> </text>
+			<text>in</text>
+			<text> </text>
+			<var>$text</var>
+		</line>
+		<line linenr="064" indent="&#160;">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$pos</var>
+			<text> </text>
+			<text>!=</text>
+			<text> </text>
+			<var>-1</var>
+		</line>
+		<line linenr="065" indent="&#160;&#160;">
+			<text>break</text>
+		</line>
+		<line linenr="066" indent="&#160;" />
+		<line linenr="067" indent="&#160;">
+			<text>add</text>
+			<text> </text>
+			<text>encyclopedia</text>
+			<text> </text>
+			<text>custom</text>
+			<text> </text>
+			<text>article</text>
+			<text>:</text>
+			<text> </text>
+			<text>Information</text>
+			<text>,</text>
+			<text> </text>
+			<text>id</text>
+			<text>=</text>
+			<var>$entry</var>
+			<text>,</text>
+			<text> </text>
+			<text>title</text>
+			<text> </text>
+			<text>page</text>
+			<text>=</text>
+			<var>9981</var>
+			<text>,</text>
+			<text> </text>
+			<text>title</text>
+			<text> </text>
+			<text>id</text>
+			<text>=</text>
+			<var>$titleId</var>
+			<text>,</text>
+			<text> </text>
+			<text>text</text>
+			<text> </text>
+			<text>page</text>
+			<text>=</text>
+			<var>9981</var>
+			<text>,</text>
+			<text> </text>
+			<text>text</text>
+			<text> </text>
+			<text>id</text>
+			<text>=</text>
+			<var>$textId</var>
+			<text>,</text>
+			<text> </text>
+			<text>timeout</text>
+			<text>=</text>
+			<var>null</var>
+		</line>
+		<line linenr="068" indent="&#160;" />
+		<line linenr="069" indent="&#160;">
+			<text>inc</text>
+			<text> </text>
+			<var>$id</var>
+		</line>
+		<line linenr="070" indent="&#160;" />
+		<line linenr="071" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="072" indent="" />
+		<line linenr="073" indent="">
+			<comment>* Section 4</comment>
+		</line>
+		<line linenr="074" indent="">
+			<var>$id</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>3001</var>
+		</line>
+		<line linenr="075" indent="">
+			<text>while</text>
+			<text> </text>
+			<var>1</var>
+		</line>
+		<line linenr="076" indent="&#160;" />
+		<line linenr="077" indent="&#160;">
+			<var>$entry</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'mayhem_tutorial'</text>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>$id</var>
+		</line>
+		<line linenr="078" indent="&#160;" />
+		<line linenr="079" indent="&#160;">
+			<var>$title</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>read</text>
+			<text> </text>
+			<text>text</text>
+			<text>:</text>
+			<text> </text>
+			<text>page</text>
+			<text>=</text>
+			<var>9981</var>
+			<text> </text>
+			<text>id</text>
+			<text>=</text>
+			<var>$id</var>
+		</line>
+		<line linenr="080" indent="&#160;">
+			<var>$titleId</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$id</var>
+		</line>
+		<line linenr="081" indent="&#160;">
+			<var>$pos</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>find</text>
+			<text> </text>
+			<text>position</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>pattern</text>
+			<text> </text>
+			<text>'ReadText'</text>
+			<text> </text>
+			<text>in</text>
+			<text> </text>
+			<var>$title</var>
+		</line>
+		<line linenr="082" indent="&#160;">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$pos</var>
+			<text> </text>
+			<text>!=</text>
+			<text> </text>
+			<var>-1</var>
+		</line>
+		<line linenr="083" indent="&#160;&#160;">
+			<text>break</text>
+		</line>
+		<line linenr="084" indent="&#160;">
+			<text>inc</text>
+			<text> </text>
+			<var>$id</var>
+		</line>
+		<line linenr="085" indent="&#160;">
+			<var>$text</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>read</text>
+			<text> </text>
+			<text>text</text>
+			<text>:</text>
+			<text> </text>
+			<text>page</text>
+			<text>=</text>
+			<var>9981</var>
+			<text> </text>
+			<text>id</text>
+			<text>=</text>
+			<var>$id</var>
+		</line>
+		<line linenr="086" indent="&#160;">
+			<var>$textId</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$id</var>
+		</line>
+		<line linenr="087" indent="&#160;">
+			<var>$pos</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>find</text>
+			<text> </text>
+			<text>position</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>pattern</text>
+			<text> </text>
+			<text>'ReadText'</text>
+			<text> </text>
+			<text>in</text>
+			<text> </text>
+			<var>$text</var>
+		</line>
+		<line linenr="088" indent="&#160;">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$pos</var>
+			<text> </text>
+			<text>!=</text>
+			<text> </text>
+			<var>-1</var>
+		</line>
+		<line linenr="089" indent="&#160;&#160;">
+			<text>break</text>
+		</line>
+		<line linenr="090" indent="&#160;" />
+		<line linenr="091" indent="&#160;">
+			<text>add</text>
+			<text> </text>
+			<text>encyclopedia</text>
+			<text> </text>
+			<text>custom</text>
+			<text> </text>
+			<text>article</text>
+			<text>:</text>
+			<text> </text>
+			<text>Stories</text>
+			<text>,</text>
+			<text> </text>
+			<text>id</text>
+			<text>=</text>
+			<var>$entry</var>
+			<text>,</text>
+			<text> </text>
+			<text>title</text>
+			<text> </text>
+			<text>page</text>
+			<text>=</text>
+			<var>9981</var>
+			<text>,</text>
+			<text> </text>
+			<text>title</text>
+			<text> </text>
+			<text>id</text>
+			<text>=</text>
+			<var>$titleId</var>
+			<text>,</text>
+			<text> </text>
+			<text>text</text>
+			<text> </text>
+			<text>page</text>
+			<text>=</text>
+			<var>9981</var>
+			<text>,</text>
+			<text> </text>
+			<text>text</text>
+			<text> </text>
+			<text>id</text>
+			<text>=</text>
+			<var>$textId</var>
+			<text>,</text>
+			<text> </text>
+			<text>timeout</text>
+			<text>=</text>
+			<var>null</var>
+		</line>
+		<line linenr="092" indent="&#160;" />
+		<line linenr="093" indent="&#160;">
+			<text>inc</text>
+			<text> </text>
+			<var>$id</var>
+		</line>
+		<line linenr="094" indent="&#160;" />
+		<line linenr="095" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="096" indent="" />
+		<line linenr="097" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+	</sourcetext>
+	<codearray>
+		<sval type="array" size="10">
+			<sval type="string" val="Mayhem.UpdateEncyclopedia" />
+			<sval type="int" val="50" />
+			<sval type="string" val="" />
+			<sval type="int" val="1" />
+			<sval type="int" val="0" />
+			<sval type="array" size="7">
+				<sval type="string" val="id" />
+				<sval type="string" val="entry" />
+				<sval type="string" val="title" />
+				<sval type="string" val="titleId" />
+				<sval type="string" val="pos" />
+				<sval type="string" val="text" />
+				<sval type="string" val="textId" />
+			</sval>
+			<sval type="array" size="69">
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610608375" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="mayhem_tutorial" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="126" />
+					<sval type="int" val="2" />
+					<sval type="int" val="4" />
+					<sval type="int" val="9981" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="3" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="1076" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="5" />
+					<sval type="string" val="ReadText" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610610680" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="4" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="15" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="17" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="142" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="126" />
+					<sval type="int" val="5" />
+					<sval type="int" val="4" />
+					<sval type="int" val="9981" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="6" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="1076" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+					<sval type="int" val="5" />
+					<sval type="string" val="ReadText" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610609144" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="4" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="15" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="17" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="1531" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="9981" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+					<sval type="int" val="4" />
+					<sval type="int" val="9981" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="142" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1001" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610604023" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="mayhem_tutorial" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="126" />
+					<sval type="int" val="2" />
+					<sval type="int" val="4" />
+					<sval type="int" val="9981" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="3" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="1076" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="5" />
+					<sval type="string" val="ReadText" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610606328" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="4" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="15" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="34" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="142" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="126" />
+					<sval type="int" val="5" />
+					<sval type="int" val="4" />
+					<sval type="int" val="9981" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="6" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="1076" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+					<sval type="int" val="5" />
+					<sval type="string" val="ReadText" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610604792" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="4" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="15" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="34" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="1533" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="9981" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+					<sval type="int" val="4" />
+					<sval type="int" val="9981" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="142" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="18" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="2001" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610599671" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="mayhem_tutorial" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="126" />
+					<sval type="int" val="2" />
+					<sval type="int" val="4" />
+					<sval type="int" val="9981" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="3" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="1076" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="5" />
+					<sval type="string" val="ReadText" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610601976" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="4" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="15" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="51" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="142" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="126" />
+					<sval type="int" val="5" />
+					<sval type="int" val="4" />
+					<sval type="int" val="9981" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="6" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="1076" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+					<sval type="int" val="5" />
+					<sval type="string" val="ReadText" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610600440" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="4" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="15" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="51" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="1532" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="9981" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+					<sval type="int" val="4" />
+					<sval type="int" val="9981" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="142" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="35" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="3001" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610595319" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="mayhem_tutorial" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="126" />
+					<sval type="int" val="2" />
+					<sval type="int" val="4" />
+					<sval type="int" val="9981" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="3" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="1076" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="5" />
+					<sval type="string" val="ReadText" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610597624" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="4" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="15" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="68" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="142" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="126" />
+					<sval type="int" val="5" />
+					<sval type="int" val="4" />
+					<sval type="int" val="9981" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="6" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="1076" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+					<sval type="int" val="5" />
+					<sval type="string" val="ReadText" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610596088" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="4" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="15" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="68" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="1534" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="9981" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+					<sval type="int" val="4" />
+					<sval type="int" val="9981" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="142" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="52" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+			<sval type="array" size="40">
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="Section 1" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="2" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="3" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="8" />
+					<sval type="int" val="7" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="14" />
+					<sval type="int" val="7" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="14" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="15" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="16" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="17" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="17" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="17" />
+					<sval type="int" val="1" />
+					<sval type="string" val="Section 2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="19" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="20" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="25" />
+					<sval type="int" val="7" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="31" />
+					<sval type="int" val="7" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="31" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="32" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="33" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="34" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="34" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="34" />
+					<sval type="int" val="1" />
+					<sval type="string" val="Section 3" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="36" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="37" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="42" />
+					<sval type="int" val="7" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="48" />
+					<sval type="int" val="7" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="48" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="49" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="50" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="51" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="51" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="51" />
+					<sval type="int" val="1" />
+					<sval type="string" val="Section 4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="53" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="54" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="59" />
+					<sval type="int" val="7" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="65" />
+					<sval type="int" val="7" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="65" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="66" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="67" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="68" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="68" />
+					<sval type="int" val="2" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+		</sval>
+	</codearray>
+</script>

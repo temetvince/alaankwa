@@ -100,7 +100,8 @@
 			<text> </text>
 			<call>tv.joubarbe.mayhem.datascanner</call>
 		</line>
-		<line linenr="011" indent="">
+		<line linenr="011" indent="&#160;" />
+		<line linenr="012" indent="">
 			<text>else</text>
 			<text> </text>
 			<text>if</text>
@@ -111,7 +112,7 @@
 			<text> </text>
 			<text>'tv.hotkey.satellitemonitoring'</text>
 		</line>
-		<line linenr="012" indent="&#160;">
+		<line linenr="013" indent="&#160;">
 			<var>$name</var>
 			<text> </text>
 			<text>=</text>
@@ -127,8 +128,8 @@
 			<text>=</text>
 			<text>'tv.i18n.hotkey.satellitemonitoring.name'</text>
 		</line>
-		<line linenr="013" indent="&#160;" />
-		<line linenr="014" indent="&#160;">
+		<line linenr="014" indent="&#160;" />
+		<line linenr="015" indent="&#160;">
 			<var>$key</var>
 			<text> </text>
 			<text>=</text>
@@ -144,8 +145,8 @@
 			<text>=</text>
 			<var>$name</var>
 		</line>
-		<line linenr="015" indent="&#160;" />
-		<line linenr="016" indent="&#160;">
+		<line linenr="016" indent="&#160;" />
+		<line linenr="017" indent="&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -156,7 +157,7 @@
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="017" indent="&#160;&#160;">
+		<line linenr="018" indent="&#160;&#160;">
 			<var>$key</var>
 			<text> </text>
 			<text>=</text>
@@ -175,7 +176,8 @@
 			<text> </text>
 			<call>tv.joubarbe.menu.satellitesmonitoring</call>
 		</line>
-		<line linenr="018" indent="">
+		<line linenr="019" indent="&#160;" />
+		<line linenr="020" indent="">
 			<text>else</text>
 			<text> </text>
 			<text>if</text>
@@ -186,7 +188,7 @@
 			<text> </text>
 			<text>'tv.hotkey.cheat.save'</text>
 		</line>
-		<line linenr="019" indent="&#160;">
+		<line linenr="021" indent="&#160;">
 			<var>$name</var>
 			<text> </text>
 			<text>=</text>
@@ -202,8 +204,8 @@
 			<text>=</text>
 			<text>'tv.i18n.hotkey.cheat.save.name'</text>
 		</line>
-		<line linenr="020" indent="&#160;" />
-		<line linenr="021" indent="&#160;">
+		<line linenr="022" indent="&#160;" />
+		<line linenr="023" indent="&#160;">
 			<var>$key</var>
 			<text> </text>
 			<text>=</text>
@@ -219,8 +221,8 @@
 			<text>=</text>
 			<var>$name</var>
 		</line>
-		<line linenr="022" indent="&#160;" />
-		<line linenr="023" indent="&#160;">
+		<line linenr="024" indent="&#160;" />
+		<line linenr="025" indent="&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -231,7 +233,7 @@
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="024" indent="&#160;&#160;">
+		<line linenr="026" indent="&#160;&#160;">
 			<var>$key</var>
 			<text> </text>
 			<text>=</text>
@@ -250,158 +252,8 @@
 			<text> </text>
 			<call>tv.cheat.save</call>
 		</line>
-		<line linenr="025" indent="">
-			<text>else</text>
-			<text> </text>
-			<text>if</text>
-			<text> </text>
-			<var>$param.global</var>
-			<text> </text>
-			<text>==</text>
-			<text> </text>
-			<text>'tv.hotkey.cheat.addsats'</text>
-		</line>
-		<line linenr="026" indent="&#160;">
-			<var>$name</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<text>get</text>
-			<text> </text>
-			<text>global</text>
-			<text> </text>
-			<text>variable</text>
-			<text>:</text>
-			<text> </text>
-			<text>name</text>
-			<text>=</text>
-			<text>'tv.i18n.hotkey.cheat.addsats.name'</text>
-		</line>
 		<line linenr="027" indent="&#160;" />
-		<line linenr="028" indent="&#160;">
-			<var>$key</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<text>get</text>
-			<text> </text>
-			<text>global</text>
-			<text> </text>
-			<text>variable</text>
-			<text>:</text>
-			<text> </text>
-			<text>name</text>
-			<text>=</text>
-			<var>$name</var>
-		</line>
-		<line linenr="029" indent="&#160;" />
-		<line linenr="030" indent="&#160;">
-			<text>do</text>
-			<text> </text>
-			<text>if</text>
-			<text> </text>
-			<var>$key</var>
-			<text> </text>
-			<text>==</text>
-			<text> </text>
-			<var>null</var>
-		</line>
-		<line linenr="031" indent="&#160;&#160;">
-			<var>$key</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<text>register</text>
-			<text> </text>
-			<text>hotkey</text>
-			<text> </text>
-			<var>$name</var>
-			<text> </text>
-			<text>to</text>
-			<text> </text>
-			<text>call</text>
-			<text> </text>
-			<text>script</text>
-			<text> </text>
-			<call>tv.cheat.addsats</call>
-		</line>
-		<line linenr="032" indent="&#160;" />
-		<line linenr="033" indent="">
-			<text>else</text>
-			<text> </text>
-			<text>if</text>
-			<text> </text>
-			<var>$param.global</var>
-			<text> </text>
-			<text>==</text>
-			<text> </text>
-			<text>'tv.hotkey.phanon.debug'</text>
-		</line>
-		<line linenr="034" indent="&#160;">
-			<var>$name</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<text>get</text>
-			<text> </text>
-			<text>global</text>
-			<text> </text>
-			<text>variable</text>
-			<text>:</text>
-			<text> </text>
-			<text>name</text>
-			<text>=</text>
-			<text>'tv.i18n.hotkey.phanon.debug.name'</text>
-		</line>
-		<line linenr="035" indent="&#160;" />
-		<line linenr="036" indent="&#160;">
-			<var>$key</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<text>get</text>
-			<text> </text>
-			<text>global</text>
-			<text> </text>
-			<text>variable</text>
-			<text>:</text>
-			<text> </text>
-			<text>name</text>
-			<text>=</text>
-			<var>$name</var>
-		</line>
-		<line linenr="037" indent="&#160;" />
-		<line linenr="038" indent="&#160;">
-			<text>do</text>
-			<text> </text>
-			<text>if</text>
-			<text> </text>
-			<var>$key</var>
-			<text> </text>
-			<text>==</text>
-			<text> </text>
-			<var>null</var>
-		</line>
-		<line linenr="039" indent="&#160;&#160;">
-			<var>$key</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<text>register</text>
-			<text> </text>
-			<text>hotkey</text>
-			<text> </text>
-			<var>$name</var>
-			<text> </text>
-			<text>to</text>
-			<text> </text>
-			<text>call</text>
-			<text> </text>
-			<text>script</text>
-			<text> </text>
-			<call>Menu.PhanonCorpSpy</call>
-		</line>
-		<line linenr="040" indent="">
+		<line linenr="028" indent="">
 			<text>else</text>
 			<text> </text>
 			<text>if</text>
@@ -412,7 +264,7 @@
 			<text> </text>
 			<text>'tv.hotkey.show.miners'</text>
 		</line>
-		<line linenr="041" indent="&#160;">
+		<line linenr="029" indent="&#160;">
 			<var>$name</var>
 			<text> </text>
 			<text>=</text>
@@ -428,8 +280,8 @@
 			<text>=</text>
 			<text>'tv.i18n.hotkey.showminers.name'</text>
 		</line>
-		<line linenr="042" indent="&#160;" />
-		<line linenr="043" indent="&#160;">
+		<line linenr="030" indent="&#160;" />
+		<line linenr="031" indent="&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -440,7 +292,7 @@
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="044" indent="&#160;&#160;">
+		<line linenr="032" indent="&#160;&#160;">
 			<var>$key</var>
 			<text> </text>
 			<text>=</text>
@@ -459,134 +311,19 @@
 			<text> </text>
 			<call>tv.show.miners</call>
 		</line>
-		<line linenr="045" indent="">
-			<text>else</text>
-			<text> </text>
-			<text>if</text>
-			<text> </text>
-			<var>$param.global</var>
-			<text> </text>
-			<text>==</text>
-			<text> </text>
-			<text>'tv.hotkey.journal'</text>
-		</line>
-		<line linenr="046" indent="&#160;">
-			<var>$name</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<text>get</text>
-			<text> </text>
-			<text>global</text>
-			<text> </text>
-			<text>variable</text>
-			<text>:</text>
-			<text> </text>
-			<text>name</text>
-			<text>=</text>
-			<text>'tv.i18n.hotkey.journal.name'</text>
-		</line>
-		<line linenr="047" indent="&#160;" />
-		<line linenr="048" indent="&#160;">
-			<text>do</text>
-			<text> </text>
-			<text>if</text>
-			<text> </text>
-			<var>$key</var>
-			<text> </text>
-			<text>==</text>
-			<text> </text>
-			<var>null</var>
-		</line>
-		<line linenr="049" indent="&#160;&#160;">
-			<var>$key</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<text>register</text>
-			<text> </text>
-			<text>hotkey</text>
-			<text> </text>
-			<var>$name</var>
-			<text> </text>
-			<text>to</text>
-			<text> </text>
-			<text>call</text>
-			<text> </text>
-			<text>script</text>
-			<text> </text>
-			<call>tv.joubarbe.menu.pc.journal</call>
-		</line>
-		<line linenr="050" indent="">
-			<text>else</text>
-			<text> </text>
-			<text>if</text>
-			<text> </text>
-			<var>$param.global</var>
-			<text> </text>
-			<text>==</text>
-			<text> </text>
-			<text>'tv.hotkey.shipcompendium'</text>
-		</line>
-		<line linenr="051" indent="&#160;">
-			<var>$name</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<text>get</text>
-			<text> </text>
-			<text>global</text>
-			<text> </text>
-			<text>variable</text>
-			<text>:</text>
-			<text> </text>
-			<text>name</text>
-			<text>=</text>
-			<text>'tv.i18n.hotkey.shipcompendium.name'</text>
-		</line>
-		<line linenr="052" indent="&#160;" />
-		<line linenr="053" indent="&#160;">
-			<text>do</text>
-			<text> </text>
-			<text>if</text>
-			<text> </text>
-			<var>$key</var>
-			<text> </text>
-			<text>==</text>
-			<text> </text>
-			<var>null</var>
-		</line>
-		<line linenr="054" indent="&#160;&#160;">
-			<var>$key</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<text>register</text>
-			<text> </text>
-			<text>hotkey</text>
-			<text> </text>
-			<var>$name</var>
-			<text> </text>
-			<text>to</text>
-			<text> </text>
-			<text>call</text>
-			<text> </text>
-			<text>script</text>
-			<text> </text>
-			<call>tv.menu.pc.shipcompendium</call>
-		</line>
-		<line linenr="055" indent="">
+		<line linenr="033" indent="&#160;" />
+		<line linenr="034" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="056" indent="" />
-		<line linenr="057" indent="">
+		<line linenr="035" indent="" />
+		<line linenr="036" indent="">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
 			<text> </text>
 			<var>$key</var>
 		</line>
-		<line linenr="058" indent="&#160;">
+		<line linenr="037" indent="&#160;">
 			<text>set</text>
 			<text> </text>
 			<text>global</text>
@@ -602,13 +339,13 @@
 			<text>=</text>
 			<var>$key</var>
 		</line>
-		<line linenr="059" indent="" />
-		<line linenr="060" indent="">
+		<line linenr="038" indent="" />
+		<line linenr="039" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="061" indent="" />
+		<line linenr="040" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
@@ -622,7 +359,7 @@
 				<sval type="string" val="name" />
 				<sval type="string" val="key" />
 			</sval>
-			<sval type="array" size="49">
+			<sval type="array" size="27">
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
 					<sval type="int" val="-1610612216" />
@@ -694,7 +431,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="46" />
+					<sval type="int" val="24" />
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
@@ -747,7 +484,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="46" />
+					<sval type="int" val="24" />
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
@@ -800,117 +537,11 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="46" />
+					<sval type="int" val="24" />
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610606075" />
-					<sval type="int" val="3" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="0" />
-					<sval type="int" val="5" />
-					<sval type="string" val="tv.hotkey.cheat.addsats" />
-					<sval type="int" val="15" />
-					<sval type="int" val="0" />
-					<sval type="int" val="3" />
-					<sval type="int" val="-1" />
-					<sval type="int" val="0" />
-					<sval type="int" val="-2" />
-				</sval>
-				<sval type="array" size="4">
-					<sval type="int" val="158" />
-					<sval type="int" val="5" />
-					<sval type="string" val="tv.i18n.hotkey.cheat.addsats.name" />
-					<sval type="int" val="1" />
-				</sval>
-				<sval type="array" size="4">
-					<sval type="int" val="158" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="1" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="13">
-					<sval type="int" val="104" />
-					<sval type="int" val="-1610606328" />
-					<sval type="int" val="3" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="2" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="15" />
-					<sval type="int" val="0" />
-					<sval type="int" val="3" />
-					<sval type="int" val="-1" />
-					<sval type="int" val="0" />
-					<sval type="int" val="-2" />
-				</sval>
-				<sval type="array" size="5">
-					<sval type="int" val="1100" />
-					<sval type="int" val="2" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="1" />
-					<sval type="string" val="tv.cheat.addsats" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="112" />
-					<sval type="int" val="46" />
-				</sval>
-				<sval type="array" size="13">
-					<sval type="int" val="104" />
-					<sval type="int" val="-1610604539" />
-					<sval type="int" val="3" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="0" />
-					<sval type="int" val="5" />
-					<sval type="string" val="tv.hotkey.phanon.debug" />
-					<sval type="int" val="15" />
-					<sval type="int" val="0" />
-					<sval type="int" val="3" />
-					<sval type="int" val="-1" />
-					<sval type="int" val="0" />
-					<sval type="int" val="-2" />
-				</sval>
-				<sval type="array" size="4">
-					<sval type="int" val="158" />
-					<sval type="int" val="5" />
-					<sval type="string" val="tv.i18n.hotkey.phanon.debug.name" />
-					<sval type="int" val="1" />
-				</sval>
-				<sval type="array" size="4">
-					<sval type="int" val="158" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="1" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="13">
-					<sval type="int" val="104" />
-					<sval type="int" val="-1610604792" />
-					<sval type="int" val="3" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="2" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="15" />
-					<sval type="int" val="0" />
-					<sval type="int" val="3" />
-					<sval type="int" val="-1" />
-					<sval type="int" val="0" />
-					<sval type="int" val="-2" />
-				</sval>
-				<sval type="array" size="5">
-					<sval type="int" val="1100" />
-					<sval type="int" val="2" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="1" />
-					<sval type="string" val="Menu.PhanonCorpSpy" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="112" />
-					<sval type="int" val="46" />
-				</sval>
-				<sval type="array" size="13">
-					<sval type="int" val="104" />
-					<sval type="int" val="-1610603259" />
+					<sval type="int" val="-1610606587" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="0" />
@@ -931,7 +562,7 @@
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610603512" />
+					<sval type="int" val="-1610606584" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="2" />
@@ -951,103 +582,9 @@
 					<sval type="int" val="1" />
 					<sval type="string" val="tv.show.miners" />
 				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="112" />
-					<sval type="int" val="46" />
-				</sval>
-				<sval type="array" size="13">
-					<sval type="int" val="104" />
-					<sval type="int" val="-1610601979" />
-					<sval type="int" val="3" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="0" />
-					<sval type="int" val="5" />
-					<sval type="string" val="tv.hotkey.journal" />
-					<sval type="int" val="15" />
-					<sval type="int" val="0" />
-					<sval type="int" val="3" />
-					<sval type="int" val="-1" />
-					<sval type="int" val="0" />
-					<sval type="int" val="-2" />
-				</sval>
-				<sval type="array" size="4">
-					<sval type="int" val="158" />
-					<sval type="int" val="5" />
-					<sval type="string" val="tv.i18n.hotkey.journal.name" />
-					<sval type="int" val="1" />
-				</sval>
-				<sval type="array" size="13">
-					<sval type="int" val="104" />
-					<sval type="int" val="-1610602232" />
-					<sval type="int" val="3" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="2" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="15" />
-					<sval type="int" val="0" />
-					<sval type="int" val="3" />
-					<sval type="int" val="-1" />
-					<sval type="int" val="0" />
-					<sval type="int" val="-2" />
-				</sval>
-				<sval type="array" size="5">
-					<sval type="int" val="1100" />
-					<sval type="int" val="2" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="1" />
-					<sval type="string" val="tv.joubarbe.menu.pc.journal" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="112" />
-					<sval type="int" val="46" />
-				</sval>
-				<sval type="array" size="13">
-					<sval type="int" val="104" />
-					<sval type="int" val="-1610600955" />
-					<sval type="int" val="3" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="0" />
-					<sval type="int" val="5" />
-					<sval type="string" val="tv.hotkey.shipcompendium" />
-					<sval type="int" val="15" />
-					<sval type="int" val="0" />
-					<sval type="int" val="3" />
-					<sval type="int" val="-1" />
-					<sval type="int" val="0" />
-					<sval type="int" val="-2" />
-				</sval>
-				<sval type="array" size="4">
-					<sval type="int" val="158" />
-					<sval type="int" val="5" />
-					<sval type="string" val="tv.i18n.hotkey.shipcompendium.name" />
-					<sval type="int" val="1" />
-				</sval>
-				<sval type="array" size="13">
-					<sval type="int" val="104" />
-					<sval type="int" val="-1610600952" />
-					<sval type="int" val="3" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="2" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="15" />
-					<sval type="int" val="0" />
-					<sval type="int" val="3" />
-					<sval type="int" val="-1" />
-					<sval type="int" val="0" />
-					<sval type="int" val="-2" />
-				</sval>
-				<sval type="array" size="5">
-					<sval type="int" val="1100" />
-					<sval type="int" val="2" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="1" />
-					<sval type="string" val="tv.menu.pc.shipcompendium" />
-				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610600440" />
+					<sval type="int" val="-1610606072" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="2" />
@@ -1073,7 +610,7 @@
 					<sval type="string" val="" />
 				</sval>
 			</sval>
-			<sval type="array" size="19">
+			<sval type="array" size="16">
 				<sval type="array" size="2">
 					<sval type="int" val="2" />
 					<sval type="int" val="2" />
@@ -1087,11 +624,19 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
+					<sval type="int" val="7" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
 					<sval type="int" val="10" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="11" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="13" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
@@ -1103,51 +648,31 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
+					<sval type="int" val="19" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
 					<sval type="int" val="22" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="23" />
+					<sval type="int" val="24" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="25" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="28" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="29" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="34" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="39" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="44" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="46" />
+					<sval type="int" val="24" />
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="46" />
+					<sval type="int" val="24" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="48" />
+					<sval type="int" val="26" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="49" />
+					<sval type="int" val="27" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>
