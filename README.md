@@ -29,7 +29,11 @@
    - When asked, select the temetvince.ini preset and install the pre-selected shaders.
 
 ### Install
-1. Install Litcube's Universe.
+1. Install Litcube's Universe or Star Wars Litcube's Universe.
+2. RECOMMENDED: [Use the Alaankwa installer](https://github.com/temetvince/alaankwa-installer)
+
+OR
+
 2. Copy the contents of the Alaankwa 'x3 terran conflict' folder into your LU's 'x3 terran conflict' folder.
 
 ### Post-Install
