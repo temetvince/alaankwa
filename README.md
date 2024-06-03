@@ -3,7 +3,7 @@
 * 'Alaankwa' means 'star' in the Miami-Peoria language (Myaamia)
 
 ## Table of Contents
-1. [Discord](#discord)
+1. [Communities](#communities)
 2. [Installation](#installation)
     - [Pre-Install](#pre-install)
     - [Install](#install)
@@ -15,8 +15,9 @@
 4. [Downloads](#downloads)
 5. [Credits](#credits)
 
-## Discord
+## Communities
 * [Join the Discord](https://discord.gg/S587CRb)
+* [Egosoft Forum thread](https://forum.egosoft.com/viewtopic.php?f=94&t=441824)
 
 ## Installation
 
