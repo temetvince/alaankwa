@@ -39,8 +39,8 @@ OR
 
 ### Post-Install
 - If you don't like the new font, delete the `f` folder in your `x3 terran conflict` root install directory.
-- To enable Phanon Extreme for a challenge, modify entry `150` (Phanon Extreme) in `addon/t/9979-L044.xml` and set it to `1` instead of `0`.
-- To enable AutoRotation of your player ship, modify entry `101` (Overachiever) in `addon/t/9979-L044.xml` and set it to `1` instead of `0`.
+- To enable Phanon Extreme for a challenge, modify `Phanon Extreme` entry `150` in `addon/t/9979-L044.xml` and set it to `1` instead of `0`.
+- To enable AutoRotation of your player ship, modify `Overachiever` entry `101` in `addon/t/9979-L044.xml` and set it to `1` instead of `0`.
 - Alternatively, replace `addon/t/9979-L044.xml` with a renamed `addon/t/9979-L044 (Phanon Extreme).xml`, `addon/t/9979-L044 (Overachiever).xml`, or `addon/t/9979-L044 (Overachiever + Phanon Extreme).xml`.
 > **Note**: The default settings are duplicated in `addon/t/9979-L044 (Default).xml`.
 
