@@ -44,6 +44,16 @@ OR
 
 ## Features
 
+### LU Specific
+- **ROTATIONAL THRUSTERS**
+    - Class rotation variables have been increased:
+        - M1/M2/TL = 200%
+        - M7 = 50%
+        - M6 = 25%
+        - M3 = 40%
+        - M4 = 25%
+        - TM/TP/TS = 10%
+
 ### General
 - **IMPROVED PILOTING**
     - Ships automatically orient "upright" in the game like they do in the movies.
@@ -57,16 +67,6 @@ OR
 - **FRESH HOTKEYS, GET YOUR HOTKEYS**
     - Decide which hotkeys are configurable in the Hotkeys Menu.
         - All of Space: CHEAT: This hotkey adds satellites to all sectors with jumpgates which don't already have one.
-
-### LU + Mods Specific
-- **ROTATIONAL THRUSTERS**
-    - Class rotation variables have been increased:
-        - M1/M2/TL = 200%
-        - M7 = 50%
-        - M6 = 25%
-        - M3 = 40%
-        - M4 = 25%
-        - TM/TP/TS = 10%
 - **SHIP COMPUTER UPGRADES**
     - New commands for the Ship Command Menu:
         - Manage Mothership: Allows you to manage a Mothership. (Feature: Sepa's Mothership)
@@ -105,6 +105,7 @@ OR
 - The OCV should operate a bit smarter and expand a bit better.
 - An optional graphics improvement utilizing ReShade is included.
 - A new game font, [Fantasque Sans Mono](https://github.com/belluzj/fantasque-sans).
+- Longer range combat with cool looking stagger fire.
 - Debugging scripts for development.
 - Updated LU Export/Import to support Alaankwa.
 - Quickshuttles notify the player when they have completed their task and have returned home.
