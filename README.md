@@ -1,6 +1,6 @@
 # Alaankwa
 * **Click [HERE](https://github.com/temetvince/alaankwa/archive/refs/heads/main.zip "The equivalent of clicking the Code button then Download ZIP") to download this repository.**
-* 'Alaankwa' means 'star' in the Miami-Peoria language (Myaamia)
+* *'Alaankwa' means 'star' in the Miami-Peoria language (Myaamia)*
 
 ## Table of Contents
 1. [Communities](#communities)
@@ -35,12 +35,14 @@
 
 OR
 
-2. Copy the contents of the Alaankwa 'x3 terran conflict' folder into your LU's 'x3 terran conflict' folder.
+2. Copy the contents of the Alaankwa `x3 terran conflict` folder into your LU's `x3 terran conflict` folder.
 
 ### Post-Install
-1. If you don't like the new font, delete the 'f' folder in your 'x3 terran conflict' root install directory.
-2. To enable Phanon Extreme for a challenge, modify entry 150 (Phanon Extreme) in 'addon/t/9979-L044.xml' and set it to 1 instead of 0.
-3. To enable autorotation of your player ship, modify entry 101 (Overachiever) in 'addon/t/9979-L044.xml' and set it to 1 instead of 0.
+- If you don't like the new font, delete the `f` folder in your `x3 terran conflict` root install directory.
+- To enable Phanon Extreme for a challenge, modify entry `150` (Phanon Extreme) in `addon/t/9979-L044.xml` and set it to `1` instead of `0`.
+- To enable AutoRotation of your player ship, modify entry `101` (Overachiever) in `addon/t/9979-L044.xml` and set it to `1` instead of `0`.
+- Alternatively, replace `addon/t/9979-L044.xml` with a renamed `addon/t/9979-L044 (Phanon Extreme).xml`, `addon/t/9979-L044 (Overachiever).xml`, or `addon/t/9979-L044 (Overachiever + Phanon Extreme).xml`.
+> **Note**: The default settings are duplicated in `addon/t/9979-L044 (Default).xml`.
 
 ## Features
 
