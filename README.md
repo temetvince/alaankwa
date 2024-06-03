@@ -126,4 +126,5 @@ OR
 ## Credits
 * Special thanks to Joubarbe for making Mayhem and allowing me to do whatever with his code.
     * You can show your support by buying Joubarbe a coffee: [Buy Joubarbe a coffee](https://www.buymeacoffee.com/Joubarbe)
-* Also thanks to Sepa for graciously allowing me to redistribute his Mothership mod!
+* Thanks to Ashakar for bullet staggering and long range weapon targeting.
+* Thanks to Sepa for graciously allowing me to redistribute the Mothership mod!

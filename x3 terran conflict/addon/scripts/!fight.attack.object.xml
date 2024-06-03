@@ -1,0 +1,1355 @@
+<?xml version="1.0" standalone="yes"?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
+<!-- Generated using X-Studio -->
+<script>
+	<name>!fight.attack.object</name>
+	<version>12</version>
+	<engineversion>50</engineversion>
+	<description>Attack an object switch</description>
+	<arguments>
+		<argument index="1" name="victim" type="Var/Ship/Station" desc="the victim" />
+		<argument index="2" name="follow" type="Var/Number" desc="follow in new sector" />
+		<argument index="3" name="onlyShields" type="Var/Boolean" desc="Only attack shields" />
+	</arguments>
+	<sourcetext>
+		<line linenr="001" indent="">
+			<text>skip</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$victim</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>exists</text>
+		</line>
+		<line linenr="002" indent="&#160;">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="003" indent="">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<var>$victim</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>is</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>class</text>
+			<text> </text>
+			<var>[Ship]</var>
+		</line>
+		<line linenr="004" indent="&#160;">
+			<text>skip</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$victim</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>is</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>class</text>
+			<text> </text>
+			<var>[Station]</var>
+		</line>
+		<line linenr="005" indent="&#160;&#160;">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="006" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="007" indent="" />
+		<line linenr="008" indent="">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>is</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>class</text>
+			<text> </text>
+			<var>[Kha'ak Cluster]</var>
+		</line>
+		<line linenr="009" indent="&#160;">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>is</text>
+			<text> </text>
+			<text>missile</text>
+			<text> </text>
+			<text>boat</text>
+		</line>
+		<line linenr="010" indent="&#160;&#160;">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>maximum</text>
+			<text> </text>
+			<text>laser</text>
+			<text> </text>
+			<text>strength</text>
+		</line>
+		<line linenr="011" indent="&#160;&#160;&#160;" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<text>wait</text>
+			<text> </text>
+			<text>randomly</text>
+			<text> </text>
+			<text>from</text>
+			<text> </text>
+			<var>100</var>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<var>200</var>
+			<text> </text>
+			<text>ms</text>
+		</line>
+		<line linenr="012" indent="&#160;&#160;&#160;">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="013" indent="&#160;&#160;">
+			<text>end</text>
+		</line>
+		<line linenr="014" indent="&#160;">
+			<text>end</text>
+		</line>
+		<line linenr="015" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="016" indent="" />
+		<line linenr="017" indent="" />
+		<line linenr="018" indent="" />
+		<line linenr="019" indent="" />
+		<line linenr="020" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>target</text>
+			<text>:</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="021" indent="" />
+		<line linenr="022" indent="">
+			<comment>* incase script is called before startup, wait for the playership to exist</comment>
+		</line>
+		<line linenr="023" indent="">
+			<text>while</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<var>[PLAYERSHIP]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>exists</text>
+		</line>
+		<line linenr="024" indent="&#160;" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<text>wait</text>
+			<text> </text>
+			<var>1000</var>
+			<text> </text>
+			<text>ms</text>
+		</line>
+		<line linenr="025" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="026" indent="" />
+		<line linenr="027" indent="">
+			<comment>* Switch for different classes</comment>
+		</line>
+		<line linenr="028" indent="">
+			<text>if</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>is</text>
+			<text> </text>
+			<text>missile</text>
+			<text> </text>
+			<text>boat</text>
+		</line>
+		<line linenr="029" indent="&#160;">
+			<text>goto</text>
+			<text> </text>
+			<text>label</text>
+			<text> </text>
+			<var>missile.bomber</var>
+			<text>:</text>
+		</line>
+		<line linenr="030" indent="">
+			<text>else</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>max</text>
+			<text> </text>
+			<text>speed</text>
+		</line>
+		<line linenr="031" indent="&#160;">
+			<text>goto</text>
+			<text> </text>
+			<text>label</text>
+			<text> </text>
+			<var>owp</var>
+			<text>:</text>
+		</line>
+		<line linenr="032" indent="">
+			<text>else</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>is</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>class</text>
+			<text> </text>
+			<var>[Kha'ak Cluster]</var>
+		</line>
+		<line linenr="033" indent="&#160;">
+			<text>goto</text>
+			<text> </text>
+			<text>label</text>
+			<text> </text>
+			<var>khaak</var>
+			<text>:</text>
+		</line>
+		<line linenr="034" indent="">
+			<text>else</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>is</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>class</text>
+			<text> </text>
+			<var>[Fighter]</var>
+		</line>
+		<line linenr="035" indent="&#160;">
+			<text>goto</text>
+			<text> </text>
+			<text>label</text>
+			<text> </text>
+			<var>fighter</var>
+			<text>:</text>
+		</line>
+		<line linenr="036" indent="">
+			<text>else</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>is</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>class</text>
+			<text> </text>
+			<var>[Fighter Drone]</var>
+		</line>
+		<line linenr="037" indent="&#160;">
+			<text>goto</text>
+			<text> </text>
+			<text>label</text>
+			<text> </text>
+			<var>fighter</var>
+			<text>:</text>
+		</line>
+		<line linenr="038" indent="">
+			<text>else</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>is</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>class</text>
+			<text> </text>
+			<var>[Big Ship]</var>
+		</line>
+		<line linenr="039" indent="&#160;">
+			<text>gosub</text>
+			<text> </text>
+			<var>activate.ej</var>
+			<text>:</text>
+		</line>
+		<line linenr="040" indent="&#160;">
+			<text>goto</text>
+			<text> </text>
+			<text>label</text>
+			<text> </text>
+			<var>default</var>
+			<text>:</text>
+		</line>
+		<line linenr="041" indent="">
+			<text>else</text>
+		</line>
+		<line linenr="042" indent="&#160;">
+			<text>goto</text>
+			<text> </text>
+			<text>label</text>
+			<text> </text>
+			<var>default</var>
+			<text>:</text>
+		</line>
+		<line linenr="043" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="044" indent="" />
+		<line linenr="045" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="046" indent="" />
+		<line linenr="047" indent="">
+			<var>fighter</var>
+			<text>:</text>
+		</line>
+		<line linenr="048" indent="">
+			<comment>* if the player does not see the fight, why use high performance scripts?</comment>
+		</line>
+		<line linenr="049" indent="">
+			<var>$player.ships</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[SECTOR]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>player</text>
+			<text> </text>
+			<text>owned</text>
+			<text> </text>
+			<text>ship</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>from</text>
+			<text> </text>
+			<text>sector</text>
+		</line>
+		<line linenr="050" indent="">
+			<var>$player.ships</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>size</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<var>$player.ships</var>
+		</line>
+		<line linenr="051" indent="">
+			<var>$player.stations</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[SECTOR]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>player</text>
+			<text> </text>
+			<text>owned</text>
+			<text> </text>
+			<text>station</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>from</text>
+			<text> </text>
+			<text>sector</text>
+		</line>
+		<line linenr="052" indent="">
+			<var>$player.stations</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>size</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<var>$player.stations</var>
+		</line>
+		<line linenr="053" indent="">
+			<var>$player.isowner</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$victim</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>owner</text>
+			<text> </text>
+			<text>race</text>
+		</line>
+		<line linenr="054" indent="">
+			<var>$player.isowner</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>(</text>
+			<var>$player.isowner</var>
+			<text> </text>
+			<text>==</text>
+			<text> </text>
+			<var>[Player]</var>
+			<text>)</text>
+		</line>
+		<line linenr="055" indent="">
+			<var>$player.jumps</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[PLAYERSHIP]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>sector</text>
+		</line>
+		<line linenr="056" indent="">
+			<var>$player.jumps</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>jumps</text>
+			<text> </text>
+			<text>from</text>
+			<text> </text>
+			<text>sector</text>
+			<text> </text>
+			<var>[SECTOR]</var>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>sector</text>
+			<text> </text>
+			<var>$player.jumps</var>
+		</line>
+		<line linenr="057" indent="" />
+		<line linenr="058" indent="">
+			<text>if</text>
+			<text> </text>
+			<var>$player.ships</var>
+			<text> </text>
+			<text>OR</text>
+			<text> </text>
+			<var>$player.stations</var>
+			<text> </text>
+			<text>OR</text>
+			<text> </text>
+			<var>$player.isowner</var>
+			<text> </text>
+			<text>OR</text>
+			<text> </text>
+			<var>$player.jumps</var>
+			<text> </text>
+			<text>&lt;</text>
+			<text> </text>
+			<var>2</var>
+		</line>
+		<line linenr="059" indent="&#160;" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>!plugin.acp.fight.attack.object</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>victim</text>
+			<text>=</text>
+			<var>$victim</var>
+			<text> </text>
+			<text>follow</text>
+			<text>=</text>
+			<var>$follow</var>
+			<text> </text>
+			<text>onlyShields</text>
+			<text>=</text>
+			<var>$onlyShields</var>
+		</line>
+		<line linenr="060" indent="">
+			<text>else</text>
+		</line>
+		<line linenr="061" indent="&#160;" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>!fight.attack.object.std</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>victim</text>
+			<text>=</text>
+			<var>$victim</var>
+			<text> </text>
+			<text>follow</text>
+			<text>=</text>
+			<var>$follow</var>
+			<text> </text>
+			<text>shields</text>
+			<text>=</text>
+			<var>$onlyShields</var>
+		</line>
+		<line linenr="062" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="063" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="064" indent="" />
+		<line linenr="065" indent="">
+			<var>khaak</var>
+			<text>:</text>
+		</line>
+		<line linenr="066" indent="">
+			<var>default</var>
+			<text>:</text>
+		</line>
+		<line linenr="067" indent="">
+			<var>missile.bomber</var>
+			<text>:</text>
+		</line>
+		<line linenr="068" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>!fight.attack.object.std</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>victim</text>
+			<text>=</text>
+			<var>$victim</var>
+			<text> </text>
+			<text>follow</text>
+			<text>=</text>
+			<var>$follow</var>
+			<text> </text>
+			<text>shields</text>
+			<text>=</text>
+			<var>$onlyShields</var>
+		</line>
+		<line linenr="069" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="070" indent="" />
+		<line linenr="071" indent="">
+			<var>owp</var>
+			<text>:</text>
+		</line>
+		<line linenr="072" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>!fight.attack.object.owp</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>victim</text>
+			<text>=</text>
+			<var>$victim</var>
+		</line>
+		<line linenr="073" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="074" indent="" />
+		<line linenr="075" indent="" />
+		<line linenr="076" indent="">
+			<var>activate.ej</var>
+			<text>:</text>
+		</line>
+		<line linenr="077" indent="&#160;">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<var>[OWNER]</var>
+			<text> </text>
+			<text>==</text>
+			<text> </text>
+			<var>[Player]</var>
+		</line>
+		<line linenr="078" indent="&#160;&#160;">
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<text>emergency</text>
+			<text> </text>
+			<text>jump</text>
+			<text> </text>
+			<text>active</text>
+			<text>:</text>
+			<text> </text>
+			<var>[TRUE]</var>
+		</line>
+		<line linenr="079" indent="&#160;&#160;">
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>autojump</text>
+			<text> </text>
+			<text>emergency</text>
+			<text> </text>
+			<text>jump</text>
+			<text> </text>
+			<text>shield</text>
+			<text> </text>
+			<text>threshold</text>
+			<text>=</text>
+			<var>30</var>
+		</line>
+		<line linenr="080" indent="&#160;">
+			<text>end</text>
+		</line>
+		<line linenr="081" indent="">
+			<text>endsub</text>
+		</line>
+		<line linenr="082" indent="" />
+		<line linenr="083" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="084" indent="" />
+		<line linenr="085" indent="">
+			<comment>* changelog</comment>
+		</line>
+		<line linenr="086" indent="">
+			<comment>* 5. activate emerg.jump on NPC bigships</comment>
+		</line>
+		<line linenr="087" indent="">
+			<comment>* 6. removed double activation of EJD</comment>
+		</line>
+		<line linenr="088" indent="">
+			<comment>* 7. removed bomber code, added OWP code</comment>
+		</line>
+		<line linenr="089" indent="">
+			<comment>* 8. fixed player.isowner problem</comment>
+		</line>
+		<line linenr="090" indent="" />
+		<line linenr="091" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="092" indent="" />
+		<line linenr="093" indent="" />
+	</sourcetext>
+	<codearray>
+		<sval type="array" size="10">
+			<sval type="string" val="!fight.attack.object" />
+			<sval type="int" val="50" />
+			<sval type="string" val="Attack an object switch" />
+			<sval type="int" val="12" />
+			<sval type="int" val="0" />
+			<sval type="array" size="7">
+				<sval type="string" val="victim" />
+				<sval type="string" val="follow" />
+				<sval type="string" val="onlyShields" />
+				<sval type="string" val="player.ships" />
+				<sval type="string" val="player.stations" />
+				<sval type="string" val="player.isowner" />
+				<sval type="string" val="player.jumps" />
+			</sval>
+			<sval type="array" size="64">
+				<sval type="array" size="4">
+					<sval type="int" val="706" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="-536870393" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="705" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="-536869628" />
+					<sval type="int" val="12" />
+					<sval type="int" val="2004" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="705" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="-536869625" />
+					<sval type="int" val="12" />
+					<sval type="int" val="2016" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="705" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-536868348" />
+					<sval type="int" val="12" />
+					<sval type="int" val="2131" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="1482" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-536868348" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="717" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-536868348" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="107" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="4" />
+					<sval type="int" val="100" />
+					<sval type="int" val="4" />
+					<sval type="int" val="200" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="122" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="706" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-536867318" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="105" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1000" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="11" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="1482" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1610608381" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="100" />
+					<sval type="int" val="51" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="34" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="785" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-536865786" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="100" />
+					<sval type="int" val="54" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="34" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="705" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1610606843" />
+					<sval type="int" val="12" />
+					<sval type="int" val="2131" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="100" />
+					<sval type="int" val="49" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="34" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="705" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1610606075" />
+					<sval type="int" val="12" />
+					<sval type="int" val="2034" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="100" />
+					<sval type="int" val="35" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="34" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="705" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1610605307" />
+					<sval type="int" val="12" />
+					<sval type="int" val="2067" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="100" />
+					<sval type="int" val="35" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="34" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="705" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1610604283" />
+					<sval type="int" val="12" />
+					<sval type="int" val="2073" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="1167" />
+					<sval type="int" val="57" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="100" />
+					<sval type="int" val="50" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="34" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="100" />
+					<sval type="int" val="50" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="101" />
+					<sval type="string" val="fighter" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="1012" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="6" />
+					<sval type="int" val="3" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="131" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="1013" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="6" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="131" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="701" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="5" />
+				</sval>
+				<sval type="array" size="15">
+					<sval type="int" val="104" />
+					<sval type="int" val="5" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+					<sval type="int" val="10" />
+					<sval type="int" val="10" />
+					<sval type="int" val="15" />
+					<sval type="int" val="0" />
+					<sval type="int" val="5" />
+					<sval type="int" val="16" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="0" />
+					<sval type="int" val="-2" />
+					<sval type="int" val="17" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="703" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="3" />
+					<sval type="int" val="6" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="711" />
+					<sval type="int" val="6" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="6" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+				</sval>
+				<sval type="array" size="31">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610600701" />
+					<sval type="int" val="9" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="15" />
+					<sval type="int" val="10" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+					<sval type="int" val="15" />
+					<sval type="int" val="10" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+					<sval type="int" val="4" />
+					<sval type="int" val="2" />
+					<sval type="int" val="15" />
+					<sval type="int" val="3" />
+					<sval type="int" val="15" />
+					<sval type="int" val="10" />
+					<sval type="int" val="9" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="10" />
+					<sval type="int" val="-2" />
+					<sval type="int" val="10" />
+					<sval type="int" val="-4" />
+					<sval type="int" val="10" />
+					<sval type="int" val="-6" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-7" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="!plugin.acp.fight.attack.object" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="48" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="!fight.attack.object.std" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="101" />
+					<sval type="string" val="khaak" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="101" />
+					<sval type="string" val="default" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="101" />
+					<sval type="string" val="missile.bomber" />
+				</sval>
+				<sval type="array" size="12">
+					<sval type="int" val="102" />
+					<sval type="string" val="!fight.attack.object.std" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="101" />
+					<sval type="string" val="owp" />
+				</sval>
+				<sval type="array" size="8">
+					<sval type="int" val="102" />
+					<sval type="string" val="!fight.attack.object.owp" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="101" />
+					<sval type="string" val="activate.ej" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-536855292" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="7" />
+					<sval type="int" val="10" />
+					<sval type="int" val="10" />
+					<sval type="int" val="15" />
+					<sval type="int" val="0" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="0" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1367" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="10" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1369" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="30" />
+				</sval>
+				<sval type="array" size="1">
+					<sval type="int" val="1168" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+			</sval>
+			<sval type="array" size="3">
+				<sval type="array" size="2">
+					<sval type="int" val="22" />
+					<sval type="string" val="the victim" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="10" />
+					<sval type="string" val="follow in new sector" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="63" />
+					<sval type="string" val="Only attack shields" />
+				</sval>
+			</sval>
+			<sval type="array" size="37">
+				<sval type="array" size="2">
+					<sval type="int" val="5" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="5" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="10" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="10" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="10" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="10" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="10" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="10" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="10" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="11" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="11" />
+					<sval type="int" val="1" />
+					<sval type="string" val="incase script is called before startup, wait for the playership to exist" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="14" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="14" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="14" />
+					<sval type="int" val="1" />
+					<sval type="string" val="Switch for different classes" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="33" />
+					<sval type="int" val="5" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="34" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="34" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="35" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="36" />
+					<sval type="int" val="1" />
+					<sval type="string" val="if the player does not see the fight, why use high performance scripts?" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="44" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="47" />
+					<sval type="int" val="5" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="48" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="49" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="54" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="57" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="57" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="61" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="62" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="63" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="63" />
+					<sval type="int" val="1" />
+					<sval type="string" val="changelog" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="63" />
+					<sval type="int" val="1" />
+					<sval type="string" val="5. activate emerg.jump on NPC bigships" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="63" />
+					<sval type="int" val="1" />
+					<sval type="string" val="6. removed double activation of EJD" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="63" />
+					<sval type="int" val="1" />
+					<sval type="string" val="7. removed bomber code, added OWP code" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="63" />
+					<sval type="int" val="1" />
+					<sval type="string" val="8. fixed player.isowner problem" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="63" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="64" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="64" />
+					<sval type="int" val="2" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+		</sval>
+	</codearray>
+</script>
