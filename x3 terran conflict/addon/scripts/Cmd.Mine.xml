@@ -83,11 +83,11 @@
 			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>Args</text>
+			<text>argument1</text>
 			<text>=</text>
 			<var>$Args</var>
 			<text> </text>
-			<text>ScriptName</text>
+			<text>argument2</text>
 			<text>=</text>
 			<var>$ScriptName</var>
 		</line>
@@ -253,7 +253,7 @@
 			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>targetstation</text>
+			<text>argument1</text>
 			<text>=</text>
 			<var>[HOMEBASE]</var>
 		</line>
@@ -391,7 +391,7 @@
 			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>targetstation</text>
+			<text>argument1</text>
 			<text>=</text>
 			<var>[HOMEBASE]</var>
 		</line>
@@ -472,7 +472,7 @@
 			<comment>* temetvince</comment>
 		</line>
 		<line linenr="053" indent="&#160;">
-			<comment>*$Return = [THIS]-&gt; call script 'Lib.Cmd.Mine' :</comment>
+			<comment>* $Return = [THIS]-&gt; call script 'Lib.Cmd.Mine' :</comment>
 		</line>
 		<line linenr="054" indent="&#160;" interruptable="@">
 			<var>$Return</var>
@@ -487,8 +487,8 @@
 			<text>script</text>
 			<text> </text>
 			<call>tv.overwrite.lib.cmd.mine</call>
-			<text>:</text>
 			<text> </text>
+			<text>:</text>
 		</line>
 		<line linenr="055" indent="&#160;" interruptable="@">
 			<var>$Code</var>
@@ -506,7 +506,7 @@
 			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>ErrorArray</text>
+			<text>argument1</text>
 			<text>=</text>
 			<var>$Return</var>
 		</line>
@@ -562,7 +562,7 @@
 			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>targetstation</text>
+			<text>argument1</text>
 			<text>=</text>
 			<var>[HOMEBASE]</var>
 		</line>
@@ -699,7 +699,7 @@
 			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>targetstation</text>
+			<text>argument1</text>
 			<text>=</text>
 			<var>[HOMEBASE]</var>
 		</line>
@@ -771,7 +771,7 @@
 			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>targetstation</text>
+			<text>argument1</text>
 			<text>=</text>
 			<var>[HOMEBASE]</var>
 		</line>
@@ -989,7 +989,7 @@
 			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>ErrorArray</text>
+			<text>argument1</text>
 			<text>=</text>
 			<var>$Return</var>
 		</line>
@@ -1067,43 +1067,43 @@
 			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>ScriptName</text>
+			<text>argument1</text>
 			<text>=</text>
 			<var>$ScriptName</var>
 			<text> </text>
-			<text>TaskWatch</text>
+			<text>argument2</text>
 			<text>=</text>
 			<var>$TaskID</var>
 			<text> </text>
-			<text>TaskRun</text>
+			<text>argument3</text>
 			<text>=</text>
 			<var>$TaskID</var>
 			<text> </text>
-			<text>ObjectWatch</text>
+			<text>argument4</text>
 			<text>=</text>
 			<var>[THIS]</var>
 			<text> </text>
-			<text>ObjectRun</text>
+			<text>argument5</text>
 			<text>=</text>
 			<var>[THIS]</var>
 			<text> </text>
-			<text>arg1</text>
+			<text>argument6</text>
 			<text>=</text>
 			<var>$Sector</var>
 			<text> </text>
-			<text>arg2</text>
+			<text>argument7</text>
 			<text>=</text>
 			<var>null</var>
 			<text> </text>
-			<text>arg3</text>
+			<text>argument8</text>
 			<text>=</text>
 			<var>null</var>
 			<text> </text>
-			<text>arg4</text>
+			<text>argument9</text>
 			<text>=</text>
 			<var>null</var>
 			<text> </text>
-			<text>arg5</text>
+			<text>argument10</text>
 			<text>=</text>
 			<var>null</var>
 		</line>
@@ -1348,15 +1348,15 @@
 			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>TargetShip</text>
+			<text>argument1</text>
 			<text>=</text>
 			<var>[HOMEBASE]</var>
 			<text> </text>
-			<text>Ware</text>
+			<text>argument2</text>
 			<text>=</text>
 			<var>$Ware</var>
 			<text> </text>
-			<text>Amount</text>
+			<text>argument3</text>
 			<text>=</text>
 			<var>$Amount</var>
 		</line>
@@ -1500,11 +1500,11 @@
 			<text> </text>
 			<text>value</text>
 			<text> </text>
-			<text>from</text>
+			<text>between</text>
 			<text> </text>
-			<text>zero</text>
+			<var>0</var>
 			<text> </text>
-			<text>to</text>
+			<text>and</text>
 			<text> </text>
 			<var>9</var>
 		</line>
@@ -2871,9 +2871,11 @@
 					<sval type="int" val="131074" />
 					<sval type="int" val="16" />
 				</sval>
-				<sval type="array" size="4">
-					<sval type="int" val="106" />
+				<sval type="array" size="6">
+					<sval type="int" val="110" />
 					<sval type="int" val="20" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
 					<sval type="int" val="4" />
 					<sval type="int" val="10" />
 				</sval>
