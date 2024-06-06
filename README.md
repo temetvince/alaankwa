@@ -119,6 +119,7 @@ OR
 - MLCC ships set to Assist Escort will no longer attempt to escort themselves.
 - Ships will remember their homebase when the player transfers into the ship.
 - Removed ATF Mapping Service mammoths from the game (a mission bug).
+- Fixed export/import OCV Mammoth bug.
 
 ## Downloads
 * [No-Steam Exe](https://www.egosoft.com/download/x3ap/bonus_en.php)
