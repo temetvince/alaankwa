@@ -106,6 +106,7 @@ OR
 ### AND MORE
 - The OCV should operate a bit smarter and expand a bit better.
 - An optional graphics improvement utilizing ReShade is included.
+- The map is prettier and less dark overall.
 - A new game font, [Fantasque Sans Mono](https://github.com/belluzj/fantasque-sans).
 - Longer range combat with cool looking stagger fire.
 - Debugging scripts for development.
