@@ -388,14 +388,31 @@
 			<var>{Silicon Wafers}</var>
 		</line>
 		<line linenr="028" indent="" />
-		<line linenr="029" indent="">
-			<comment>*$return = [THIS]-&gt; call script 'tv.joubarbe.mayhem.addscandata' : ship=null</comment>
+		<line linenr="029" indent="" interruptable="@">
+			<var>$return</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>tv.joubarbe.mayhem.addscandata</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>ship</text>
+			<text>=</text>
+			<var>null</var>
 		</line>
 		<line linenr="030" indent="" />
 		<line linenr="031" indent="">
 			<text>return</text>
 			<text> </text>
-			<var>[FALSE]</var>
+			<var>$return</var>
 		</line>
 		<line linenr="032" indent="" />
 	</sourcetext>
@@ -406,7 +423,7 @@
 			<sval type="string" val="" />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
-			<sval type="array" size="16">
+			<sval type="array" size="17">
 				<sval type="string" val="sanctuary" />
 				<sval type="string" val="recycleFactor" />
 				<sval type="string" val="buildDividerShip" />
@@ -423,8 +440,9 @@
 				<sval type="string" val="costF.ore" />
 				<sval type="string" val="costF.quantumTubes" />
 				<sval type="string" val="costF.siliconWafers" />
+				<sval type="string" val="return" />
 			</sval>
-			<sval type="array" size="22">
+			<sval type="array" size="23">
 				<sval type="array" size="6">
 					<sval type="int" val="102" />
 					<sval type="string" val="Cmd.StripShip" />
@@ -698,10 +716,20 @@
 					<sval type="int" val="9" />
 					<sval type="int" val="983041" />
 				</sval>
+				<sval type="array" size="8">
+					<sval type="int" val="102" />
+					<sval type="string" val="tv.joubarbe.mayhem.addscandata" />
+					<sval type="int" val="16" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="103" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="9" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="16" />
 				</sval>
 			</sval>
 			<sval type="array" size="1">
@@ -710,7 +738,7 @@
 					<sval type="string" val="" />
 				</sval>
 			</sval>
-			<sval type="array" size="10">
+			<sval type="array" size="9">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
@@ -740,17 +768,12 @@
 					<sval type="int" val="21" />
 					<sval type="int" val="2" />
 				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="21" />
-					<sval type="int" val="1" />
-					<sval type="string" val="$return = [THIS]-&gt; call script 'tv.joubarbe.mayhem.addscandata' : ship=null" />
-				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="21" />
+					<sval type="int" val="22" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="22" />
+					<sval type="int" val="23" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>
