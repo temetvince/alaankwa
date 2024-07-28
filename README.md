@@ -38,7 +38,6 @@ OR
 2. Copy the contents of the Alaankwa `x3 terran conflict` folder into your LU's `x3 terran conflict` folder.
 
 ### Post-Install
-- If you don't like the new font, delete the `f` folder in your `x3 terran conflict` root install directory.
 - To enable Phanon Extreme for a challenge, modify `Phanon Extreme` entry `150` in `addon/t/9979-L044.xml` and set it to `1` instead of `0`.
 - To enable AutoRotation of your player ship, modify `Overachiever` entry `101` in `addon/t/9979-L044.xml` and set it to `1` instead of `0`.
 - Alternatively, replace `addon/t/9979-L044.xml` with a renamed `addon/t/9979-L044 (Phanon Extreme).xml`, `addon/t/9979-L044 (Overachiever).xml`, or `addon/t/9979-L044 (Overachiever + Phanon Extreme).xml`.
@@ -107,7 +106,6 @@ OR
 - The OCV should operate a bit smarter and expand a bit better.
 - An optional graphics improvement utilizing ReShade is included.
 - The map is prettier and less dark overall.
-- A new game font, [Fantasque Sans Mono](https://github.com/belluzj/fantasque-sans).
 - Longer range combat with cool looking stagger fire.
 - Debugging scripts for development.
 - Updated LU Export/Import to support Alaankwa.
