@@ -13,9 +13,11 @@
 	</arguments>
 	<sourcetext>
 		<line linenr="001" indent="">
-			<text>do</text>
+			<text>skip</text>
 			<text> </text>
 			<text>if</text>
+			<text> </text>
+			<text>not</text>
 			<text> </text>
 			<var>$param.shields</var>
 			<text> </text>
@@ -32,9 +34,11 @@
 		</line>
 		<line linenr="003" indent="" />
 		<line linenr="004" indent="">
-			<text>do</text>
+			<text>skip</text>
 			<text> </text>
 			<text>if</text>
+			<text> </text>
+			<text>not</text>
 			<text> </text>
 			<var>$param.lasers</var>
 			<text> </text>
@@ -51,9 +55,11 @@
 		</line>
 		<line linenr="006" indent="" />
 		<line linenr="007" indent="">
-			<text>do</text>
+			<text>skip</text>
 			<text> </text>
 			<text>if</text>
+			<text> </text>
+			<text>not</text>
 			<text> </text>
 			<var>[OWNER]</var>
 			<text> </text>
@@ -117,9 +123,11 @@
 		</line>
 		<line linenr="012" indent="" />
 		<line linenr="013" indent="">
-			<text>do</text>
+			<text>skip</text>
 			<text> </text>
 			<text>if</text>
+			<text> </text>
+			<text>not</text>
 			<text> </text>
 			<var>$param.shields</var>
 		</line>
@@ -172,9 +180,11 @@
 		</line>
 		<line linenr="018" indent="&#160;" />
 		<line linenr="019" indent="&#160;">
-			<text>do</text>
+			<text>skip</text>
 			<text> </text>
 			<text>if</text>
+			<text> </text>
+			<text>not</text>
 			<text> </text>
 			<var>$param.equip.all</var>
 		</line>
@@ -317,9 +327,11 @@
 			<var>0</var>
 		</line>
 		<line linenr="029" indent="&#160;&#160;">
-			<text>do</text>
+			<text>skip</text>
 			<text> </text>
 			<text>if</text>
+			<text> </text>
+			<text>not</text>
 			<text> </text>
 			<var>$param.lasers</var>
 		</line>
@@ -346,9 +358,11 @@
 			<text>else</text>
 		</line>
 		<line linenr="033" indent="&#160;">
-			<text>do</text>
+			<text>skip</text>
 			<text> </text>
 			<text>if</text>
+			<text> </text>
+			<text>not</text>
 			<text> </text>
 			<var>$param.lasers</var>
 		</line>
@@ -432,9 +446,11 @@
 		</line>
 		<line linenr="043" indent="" />
 		<line linenr="044" indent="">
-			<text>do</text>
+			<text>skip</text>
 			<text> </text>
 			<text>if</text>
+			<text> </text>
+			<text>not</text>
 			<text> </text>
 			<var>$param.equip.all</var>
 		</line>
@@ -775,15 +791,7 @@
 			<text> </text>
 			<var>{Video Enhancement Goggles}</var>
 		</line>
-		<line linenr="074" indent="">
-			<text>endsub</text>
-		</line>
-		<line linenr="075" indent="" />
-		<line linenr="076" indent="">
-			<var>AddWaresSpecial</var>
-			<text>:</text>
-		</line>
-		<line linenr="077" indent="&#160;">
+		<line linenr="074" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -797,7 +805,15 @@
 			<text> </text>
 			<text>of</text>
 			<text> </text>
-			<var>{Emergency Retreat Drive}</var>
+			<var>{Triplex Scanner}</var>
+		</line>
+		<line linenr="075" indent="">
+			<text>endsub</text>
+		</line>
+		<line linenr="076" indent="" />
+		<line linenr="077" indent="">
+			<var>AddWaresSpecial</var>
+			<text>:</text>
 		</line>
 		<line linenr="078" indent="&#160;">
 			<text>=</text>
@@ -813,7 +829,7 @@
 			<text> </text>
 			<text>of</text>
 			<text> </text>
-			<var>{Best Buys Locator}</var>
+			<var>{Emergency Retreat Drive}</var>
 		</line>
 		<line linenr="079" indent="&#160;">
 			<text>=</text>
@@ -829,7 +845,7 @@
 			<text> </text>
 			<text>of</text>
 			<text> </text>
-			<var>{Best Selling Price Locator}</var>
+			<var>{Best Buys Locator}</var>
 		</line>
 		<line linenr="080" indent="&#160;">
 			<text>=</text>
@@ -845,7 +861,7 @@
 			<text> </text>
 			<text>of</text>
 			<text> </text>
-			<var>{Station Agent Software}</var>
+			<var>{Best Selling Price Locator}</var>
 		</line>
 		<line linenr="081" indent="&#160;">
 			<text>=</text>
@@ -861,7 +877,7 @@
 			<text> </text>
 			<text>of</text>
 			<text> </text>
-			<var>{Supply Command Software}</var>
+			<var>{Station Agent Software}</var>
 		</line>
 		<line linenr="082" indent="&#160;">
 			<text>=</text>
@@ -877,7 +893,7 @@
 			<text> </text>
 			<text>of</text>
 			<text> </text>
-			<var>{Trade Command Software MK3}</var>
+			<var>{Supply Command Software}</var>
 		</line>
 		<line linenr="083" indent="&#160;">
 			<text>=</text>
@@ -893,7 +909,7 @@
 			<text> </text>
 			<text>of</text>
 			<text> </text>
-			<var>{Trading System Extension}</var>
+			<var>{Trade Command Software MK3}</var>
 		</line>
 		<line linenr="084" indent="&#160;">
 			<text>=</text>
@@ -909,7 +925,7 @@
 			<text> </text>
 			<text>of</text>
 			<text> </text>
-			<var>{Trade Run Extension}</var>
+			<var>{Trading System Extension}</var>
 		</line>
 		<line linenr="085" indent="&#160;">
 			<text>=</text>
@@ -925,7 +941,7 @@
 			<text> </text>
 			<text>of</text>
 			<text> </text>
-			<var>{Triplex Scanner}</var>
+			<var>{Trade Run Extension}</var>
 		</line>
 		<line linenr="086" indent="&#160;">
 			<text>=</text>
@@ -1255,7 +1271,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="53" />
+					<sval type="int" val="54" />
 				</sval>
 				<sval type="array" size="5">
 					<sval type="int" val="551" />
@@ -1459,6 +1475,16 @@
 					<sval type="int" val="9" />
 					<sval type="int" val="1048598" />
 				</sval>
+				<sval type="array" size="8">
+					<sval type="int" val="647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="9" />
+					<sval type="int" val="1048628" />
+				</sval>
 				<sval type="array" size="1">
 					<sval type="int" val="1168" />
 				</sval>
@@ -1545,16 +1571,6 @@
 					<sval type="int" val="1" />
 					<sval type="int" val="9" />
 					<sval type="int" val="1048639" />
-				</sval>
-				<sval type="array" size="8">
-					<sval type="int" val="647" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="1" />
-					<sval type="int" val="-2147483647" />
-					<sval type="int" val="4" />
-					<sval type="int" val="1" />
-					<sval type="int" val="9" />
-					<sval type="int" val="1048628" />
 				</sval>
 				<sval type="array" size="8">
 					<sval type="int" val="647" />
@@ -1694,7 +1710,7 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="53" />
+					<sval type="int" val="54" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>
