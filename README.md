@@ -1,47 +1,42 @@
 # Alaankwa
-* **Click [HERE](https://github.com/temetvince/alaankwa/archive/refs/heads/main.zip "The equivalent of clicking the Code button then Download ZIP") to download this repository.**
-* *'Alaankwa' means 'star' in the Miami-Peoria language (Myaamia)*
 
-## Table of Contents
-1. [Communities](#communities)
-2. [Installation](#installation)
-    - [Pre-Install](#pre-install)
-    - [Install](#install)
-    - [Post-Install](#post-install)
-3. [Features](#features)
-    - [LU + Mods Specific](#lu--mods-specific)
-    - [General](#general)
-    - [And More](#and-more)
-4. [Downloads](#downloads)
-5. [Credits](#credits)
+## Downloads
+* English: **Use the [Alaankwa Installer](https://github.com/temetvince/alaankwa-installer)**, otherwise click [HERE](https://github.com/temetvince/alaankwa/archive/refs/heads/main.zip "The equivalent of clicking the Code button then Download ZIP") to download this repository.
+* Pусский / Russian: [Russian GitHub](https://github.com/alexalsp2/x3ap-lu-swlu-alaankwa-rus)
 
 ## Communities
 * [Join the Discord](https://discord.gg/S587CRb)
 * [Egosoft Forum thread](https://forum.egosoft.com/viewtopic.php?f=94&t=441824)
 
+## Description
+Alaankwa is an "all but the kitchen sink" mod for X3: Albion Prelude which enhances the game with new features, gamestarts, and bug fixes. It requires the Litcube's Universe (LU) or Star Wars Litcube's Universe (SWLU) mods, and it includes many quality of life improvements and new gameplay mechanics. It is also compatible with the Galaxy in Chaos (GiC) addon for SWLU. Alaankwa means 'star' in the Miami-Peoria language (Myaamia).
+
 ## Installation
+1. Install [X3: Albion Prelude](https://store.steampowered.com/app/201310/X3_Albion_Prelude/) from Steam.
+    - IMPORTANT: Check your X3:AP DLC and ensure the Bonus Pack is **NOT** installed!
+2. Launch the game from the Steam at least once.
+3. Copy the Steam *x3 terran conflict* folder to a new location.
+    - This is known as your *root* folder.
+    - Only use you new *root* folder you just created going forward; ignore the original Steam folder.
+4. Copy the [No-Steam Exe](https://www.egosoft.com/download/x3ap/bonus_en.php) into your *root* folder.
+5. *Optional:* Install [ReShade](https://reshade.me/)
+   - When asked to select the game, browse and select the No-Steam Exe in your *root* folder.
+   - The game uses DirectX 9.
+   - When asked, select the temetvince.ini preset in your *root* folder and install the pre-selected shaders.
+6. Install [Litcube's Universe](https://www.x3collective.com/lu-setup/lu-downloads/) or [Star Wars Litcube's Universe](https://www.moddb.com/mods/star-wars-lu-swlu/downloads) into your *root* folder.
+    - LU GUI install options are illustrated in the [Litcube's Universe Manual](https://x3collective.com/lu-features/gui/).
+7. Place the [Alaankwa Installer](https://github.com/temetvince/alaankwa-installer) inside your *root* folder and run it.
+8. *Optional:* If using Star Wars Litcube's Universe, install the [Galaxy in Chaos](https://www.moddb.com/mods/star-wars-lu-swlu/addons) addon into your *root* folder.
 
-### Pre-Install
-1. Ensure the Bonus Pack is **NOT** installed!
-2. Optionally download and install ReShade:
-   - [ReShade](https://reshade.me/)
-   - When asked for the game, browse and select X3AP.exe in your X3 install folder.
-   - The game uses Direct3D 9.
-   - When asked, select the temetvince.ini preset and install the pre-selected shaders.
-
-### Install
-1. Install Litcube's Universe or Star Wars Litcube's Universe.
-2. RECOMMENDED: [Use the Alaankwa installer](https://github.com/temetvince/alaankwa-installer)
-
-OR
-
-2. Copy the contents of the Alaankwa `x3 terran conflict` folder into your LU's `x3 terran conflict` folder.
-
-### Post-Install
-- To enable Phanon Extreme for a challenge, modify `Phanon Extreme` entry `150` in `addon/t/9979-L044.xml` and set it to `1` instead of `0`.
-- To enable AutoRotation of your player ship, modify `Overachiever` entry `101` in `addon/t/9979-L044.xml` and set it to `1` instead of `0`.
-- Alternatively, replace `addon/t/9979-L044.xml` with a renamed `addon/t/9979-L044 (Phanon Extreme).xml`, `addon/t/9979-L044 (Overachiever).xml`, or `addon/t/9979-L044 (Overachiever + Phanon Extreme).xml`.
-> **Note**: The default settings are duplicated in `addon/t/9979-L044 (Default).xml`.
+## Configuration
+Only for LU/SLWU, NOT for the optional Galaxy in Chaos addon
+- Configuration is done via the *addon/t/9979-L044.xml* file.
+- For playing against a perpetual version of the hardest Phanon Corporation:
+  - Replace *addon/t/9979-L044.xml* with a renamed *addon/t/9979-L044 (Phanon Extreme).xml*.
+- To have Auto-Rotate apply to the playership:
+  - Replace *addon/t/9979-L044.xml* with a renamed *addon/t/9979-L044 (Overachiever).xml*.
+- To restore the default settings:
+  - Replace *addon/t/9979-L044.xml* with a renamed *addon/t/9979-L044 (Default).xml*.
 
 ## Features
 
@@ -104,9 +99,9 @@ OR
 
 ### AND MORE
 - The OCV should operate a bit smarter and expand a bit better.
+- Longer range combat with cool looking stagger fire.
 - An optional graphics improvement utilizing ReShade is included.
 - The map is prettier and less dark overall.
-- Longer range combat with cool looking stagger fire.
 - Debugging scripts for development.
 - Updated LU Export/Import to support Alaankwa.
 - Quickshuttles notify the player when they have completed their task and have returned home.
@@ -117,17 +112,12 @@ OR
 - The Player Headquarters, Equipment Docks, and Trading Stations are now available as Sources in the Dockware Manager.
 - MLCC ships set to Assist Escort will no longer attempt to escort themselves.
 - Ships will remember their homebase when the player transfers into the ship.
-- Removed ATF Mapping Service mammoths from the game (a mission bug).
+- Removed ATF Mapping Service Mammoths from the game (a mission bug).
 - Fixed export/import OCV Mammoth bug.
-
-## Downloads
-* [No-Steam Exe](https://www.egosoft.com/download/x3ap/bonus_en.php)
-* [ReShade](https://reshade.me/)
-* [LU](https://www.x3collective.com/lu-setup/lu-downloads/)
-* [SWLU](https://www.moddb.com/mods/star-wars-lu-swlu/downloads)
 
 ## Credits
 * Special thanks to Joubarbe for making Mayhem and allowing me to do whatever with his code.
     * You can show your support by buying Joubarbe a coffee: [Buy Joubarbe a coffee](https://www.buymeacoffee.com/Joubarbe)
 * Thanks to Ashakar for bullet staggering and long range weapon targeting.
 * Thanks to Sepa for graciously allowing me to redistribute the Mothership mod!
+* Thanks to Fallout(EG) for the Russian translation.
