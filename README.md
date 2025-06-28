@@ -112,12 +112,16 @@ Only for LU/SLWU, NOT for the optional Galaxy in Chaos addon
 - The Player Headquarters, Equipment Docks, and Trading Stations are now available as Sources in the Dockware Manager.
 - MLCC ships set to Assist Escort will no longer attempt to escort themselves.
 - Ships will remember their homebase when the player transfers into the ship.
+- Ships with a Quantum Jumpgate Extension can now jump to a TL whose cargo contains a jump beacon.
 - Removed ATF Mapping Service Mammoths from the game (a mission bug).
 - Fixed export/import OCV Mammoth bug.
+- Added an infinite script debug tool (for developers).
 
 ## Credits
 * Special thanks to Joubarbe for making Mayhem and allowing me to do whatever with his code.
     * You can show your support by buying Joubarbe a coffee: [Buy Joubarbe a coffee](https://www.buymeacoffee.com/Joubarbe)
 * Thanks to Ashakar for bullet staggering and long range weapon targeting.
 * Thanks to Sepa for graciously allowing me to redistribute the Mothership mod!
+* Thanks to Rocket Man for the code to allow jumping to a TL containing a jump beacon.
+* Thanks to Hector for the infinite script debug tool.
 * Thanks to Fallout(EG) for the Russian translation.
