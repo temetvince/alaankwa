@@ -52,6 +52,36 @@
 		</line>
 		<line linenr="004" indent="" />
 		<line linenr="005" indent="" interruptable="@">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>tv.get.game.gic</call>
+			<text> </text>
+			<text>:</text>
+		</line>
+		<line linenr="006" indent="&#160;" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>gic.alaankwa</call>
+			<text>:</text>
+		</line>
+		<line linenr="007" indent="" />
+		<line linenr="008" indent="" interruptable="@">
 			<text>START</text>
 			<text> </text>
 			<var>null</var>
@@ -65,7 +95,7 @@
 			<text> </text>
 			<text>:</text>
 		</line>
-		<line linenr="006" indent="" interruptable="@">
+		<line linenr="009" indent="" interruptable="@">
 			<text>START</text>
 			<text> </text>
 			<var>null</var>
@@ -79,8 +109,8 @@
 			<text> </text>
 			<text>:</text>
 		</line>
-		<line linenr="007" indent="" />
-		<line linenr="008" indent="" interruptable="@">
+		<line linenr="010" indent="" />
+		<line linenr="011" indent="" interruptable="@">
 			<text>if</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -94,7 +124,7 @@
 			<text> </text>
 			<text>:</text>
 		</line>
-		<line linenr="009" indent="&#160;" interruptable="@">
+		<line linenr="012" indent="&#160;" interruptable="@">
 			<text>if</text>
 			<text> </text>
 			<text>not</text>
@@ -110,7 +140,7 @@
 			<text> </text>
 			<text>:</text>
 		</line>
-		<line linenr="010" indent="&#160;&#160;">
+		<line linenr="013" indent="&#160;&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -126,7 +156,7 @@
 			<text>=</text>
 			<text>'tv.feature.bounce'</text>
 		</line>
-		<line linenr="011" indent="&#160;&#160;&#160;" interruptable="@">
+		<line linenr="014" indent="&#160;&#160;&#160;" interruptable="@">
 			<text>START</text>
 			<text> </text>
 			<var>null</var>
@@ -140,17 +170,17 @@
 			<text> </text>
 			<text>:</text>
 		</line>
-		<line linenr="012" indent="&#160;">
+		<line linenr="015" indent="&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="013" indent="">
+		<line linenr="016" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="014" indent="" />
-		<line linenr="015" indent="">
+		<line linenr="017" indent="" />
+		<line linenr="018" indent="">
 			<comment>* START null-&gt; call script 'tv.captains' :</comment>
 		</line>
-		<line linenr="016" indent="" interruptable="@">
+		<line linenr="019" indent="" interruptable="@">
 			<text>skip</text>
 			<text> </text>
 			<text>if</text>
@@ -166,13 +196,13 @@
 			<text> </text>
 			<text>:</text>
 		</line>
-		<line linenr="017" indent="&#160;">
+		<line linenr="020" indent="&#160;">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="018" indent="" />
-		<line linenr="019" indent="" interruptable="@">
+		<line linenr="021" indent="" />
+		<line linenr="022" indent="" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -186,11 +216,11 @@
 			<text> </text>
 			<text>:</text>
 		</line>
-		<line linenr="020" indent="" />
-		<line linenr="021" indent="">
+		<line linenr="023" indent="" />
+		<line linenr="024" indent="">
 			<comment>* Wait to be sure that the game knows where we are and that the galaxy is initialized.</comment>
 		</line>
-		<line linenr="022" indent="" interruptable="@">
+		<line linenr="025" indent="" interruptable="@">
 			<var>$player.sector</var>
 			<text> </text>
 			<text>=</text>
@@ -206,11 +236,11 @@
 			<text> </text>
 			<text>:</text>
 		</line>
-		<line linenr="023" indent="" />
-		<line linenr="024" indent="">
+		<line linenr="026" indent="" />
+		<line linenr="027" indent="">
 			<comment>* Wait longer to ensure global variables are set</comment>
 		</line>
-		<line linenr="025" indent="" interruptable="@">
+		<line linenr="028" indent="" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<text>wait</text>
@@ -219,8 +249,8 @@
 			<text> </text>
 			<text>ms</text>
 		</line>
-		<line linenr="026" indent="" />
-		<line linenr="027" indent="">
+		<line linenr="029" indent="" />
+		<line linenr="030" indent="">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -236,7 +266,7 @@
 			<text>=</text>
 			<text>'tv.feature.phanon.extreme'</text>
 		</line>
-		<line linenr="028" indent="&#160;">
+		<line linenr="031" indent="&#160;">
 			<text>set</text>
 			<text> </text>
 			<text>global</text>
@@ -252,8 +282,8 @@
 			<text>=</text>
 			<var>7</var>
 		</line>
-		<line linenr="029" indent="" />
-		<line linenr="030" indent="" interruptable="@">
+		<line linenr="032" indent="" />
+		<line linenr="033" indent="" interruptable="@">
 			<text>START</text>
 			<text> </text>
 			<var>null</var>
@@ -267,7 +297,7 @@
 			<text> </text>
 			<text>:</text>
 		</line>
-		<line linenr="031" indent="" interruptable="@">
+		<line linenr="034" indent="" interruptable="@">
 			<text>START</text>
 			<text> </text>
 			<var>null</var>
@@ -281,13 +311,13 @@
 			<text> </text>
 			<text>:</text>
 		</line>
-		<line linenr="032" indent="" />
-		<line linenr="033" indent="">
+		<line linenr="035" indent="" />
+		<line linenr="036" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="034" indent="" />
+		<line linenr="037" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
@@ -299,7 +329,7 @@
 			<sval type="array" size="1">
 				<sval type="string" val="player.sector" />
 			</sval>
-			<sval type="array" size="19">
+			<sval type="array" size="21">
 				<sval type="array" size="6">
 					<sval type="int" val="102" />
 					<sval type="string" val="tv.set.global.temetvince" />
@@ -326,6 +356,22 @@
 				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="102" />
+					<sval type="string" val="tv.get.game.gic" />
+					<sval type="int" val="-1610611448" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="102" />
+					<sval type="string" val="gic.alaankwa" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="102" />
 					<sval type="string" val="tv.joubarbe.journal.setup" />
 					<sval type="int" val="-2147483646" />
 					<sval type="int" val="0" />
@@ -343,7 +389,7 @@
 				<sval type="array" size="6">
 					<sval type="int" val="102" />
 					<sval type="string" val="tv.get.game.group.x3" />
-					<sval type="int" val="-1610610429" />
+					<sval type="int" val="-1610609917" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
 					<sval type="int" val="0" />
@@ -351,7 +397,7 @@
 				<sval type="array" size="6">
 					<sval type="int" val="102" />
 					<sval type="string" val="tv.get.game.stlu" />
-					<sval type="int" val="-536868604" />
+					<sval type="int" val="-536868092" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
 					<sval type="int" val="0" />
@@ -360,7 +406,7 @@
 					<sval type="int" val="158" />
 					<sval type="int" val="5" />
 					<sval type="string" val="tv.feature.bounce" />
-					<sval type="int" val="-1610610424" />
+					<sval type="int" val="-1610609912" />
 				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="102" />
@@ -373,7 +419,7 @@
 				<sval type="array" size="6">
 					<sval type="int" val="102" />
 					<sval type="string" val="tv.get.game.group.lu" />
-					<sval type="int" val="-536868089" />
+					<sval type="int" val="-536867577" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
 					<sval type="int" val="0" />
@@ -409,7 +455,7 @@
 					<sval type="int" val="158" />
 					<sval type="int" val="5" />
 					<sval type="string" val="tv.feature.phanon.extreme" />
-					<sval type="int" val="-1610608632" />
+					<sval type="int" val="-1610608120" />
 				</sval>
 				<sval type="array" size="5">
 					<sval type="int" val="157" />
@@ -441,7 +487,7 @@
 				</sval>
 			</sval>
 			<sval type="int" val="0" />
-			<sval type="array" size="15">
+			<sval type="array" size="16">
 				<sval type="array" size="2">
 					<sval type="int" val="3" />
 					<sval type="int" val="2" />
@@ -451,47 +497,47 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="9" />
-					<sval type="int" val="4" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="9" />
-					<sval type="int" val="4" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="9" />
+					<sval type="int" val="7" />
 					<sval type="int" val="2" />
 				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="9" />
-					<sval type="int" val="1" />
-					<sval type="string" val="START null-&gt; call script 'tv.captains' :" />
+				<sval type="array" size="2">
+					<sval type="int" val="11" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="11" />
+					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="11" />
 					<sval type="int" val="2" />
 				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="12" />
-					<sval type="int" val="2" />
-				</sval>
 				<sval type="array" size="3">
-					<sval type="int" val="12" />
+					<sval type="int" val="11" />
 					<sval type="int" val="1" />
-					<sval type="string" val="Wait to be sure that the game knows where we are and that the galaxy is initialized." />
+					<sval type="string" val="START null-&gt; call script 'tv.captains' :" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="13" />
 					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="13" />
-					<sval type="int" val="1" />
-					<sval type="string" val="Wait longer to ensure global variables are set" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="14" />
 					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="14" />
+					<sval type="int" val="1" />
+					<sval type="string" val="Wait to be sure that the game knows where we are and that the galaxy is initialized." />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="15" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="15" />
+					<sval type="int" val="1" />
+					<sval type="string" val="Wait longer to ensure global variables are set" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="16" />
@@ -502,7 +548,11 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="19" />
+					<sval type="int" val="20" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="21" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>

@@ -18,74 +18,64 @@
 			<text>=</text>
 			<var>9979</var>
 		</line>
-		<line linenr="002" indent="">
-			<text>load</text>
-			<text> </text>
-			<text>text</text>
-			<text>:</text>
-			<text> </text>
-			<text>id</text>
-			<text>=</text>
-			<var>9981</var>
-		</line>
-		<line linenr="003" indent="" />
-		<line linenr="004" indent="">
+		<line linenr="002" indent="" />
+		<line linenr="003" indent="">
 			<text>gosub</text>
 			<text> </text>
 			<var>textid.9979</var>
 			<text>:</text>
 		</line>
-		<line linenr="005" indent="">
+		<line linenr="004" indent="">
 			<text>gosub</text>
 			<text> </text>
 			<var>set.game</var>
 			<text>:</text>
 		</line>
-		<line linenr="006" indent="" />
-		<line linenr="007" indent="">
+		<line linenr="005" indent="" />
+		<line linenr="006" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="008" indent="" />
-		<line linenr="009" indent="">
+		<line linenr="007" indent="" />
+		<line linenr="008" indent="">
 			<var>textid.9979</var>
 			<text>:</text>
 		</line>
-		<line linenr="010" indent="&#160;">
+		<line linenr="009" indent="&#160;">
 			<text>gosub</text>
 			<text> </text>
 			<var>load.settings.user</var>
 			<text>:</text>
 		</line>
-		<line linenr="011" indent="&#160;">
+		<line linenr="010" indent="&#160;">
 			<text>gosub</text>
 			<text> </text>
 			<var>load.settings.config</var>
 			<text>:</text>
 		</line>
-		<line linenr="012" indent="&#160;">
+		<line linenr="011" indent="&#160;">
 			<text>gosub</text>
 			<text> </text>
 			<var>load.settings.i18n</var>
 			<text>:</text>
 		</line>
-		<line linenr="013" indent="&#160;">
+		<line linenr="012" indent="&#160;">
 			<text>gosub</text>
 			<text> </text>
 			<var>load.settings.mothership</var>
 			<text>:</text>
 		</line>
-		<line linenr="014" indent="">
+		<line linenr="013" indent="">
 			<text>endsub</text>
 		</line>
+		<line linenr="014" indent="" />
 		<line linenr="015" indent="" />
-		<line linenr="016" indent="" />
-		<line linenr="017" indent="">
+		<line linenr="016" indent="">
 			<var>set.game</var>
 			<text>:</text>
 		</line>
-		<line linenr="018" indent="&#160;">
+		<line linenr="017" indent="&#160;">
 			<text>set</text>
 			<text> </text>
 			<text>global</text>
@@ -101,7 +91,7 @@
 			<text>=</text>
 			<text>'LU'</text>
 		</line>
-		<line linenr="019" indent="&#160;">
+		<line linenr="018" indent="&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -115,7 +105,7 @@
 			<text> </text>
 			<call>al.SWLU.Main</call>
 		</line>
-		<line linenr="020" indent="&#160;&#160;">
+		<line linenr="019" indent="&#160;&#160;">
 			<text>set</text>
 			<text> </text>
 			<text>global</text>
@@ -131,23 +121,54 @@
 			<text>=</text>
 			<text>'SWLU'</text>
 		</line>
-		<line linenr="021" indent="">
+		<line linenr="020" indent="&#160;">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<text>does</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>exist</text>
+			<text>:</text>
+			<text> </text>
+			<call>gic.alaankwa</call>
+		</line>
+		<line linenr="021" indent="&#160;&#160;">
+			<text>    </text>
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'tv.game'</text>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<text>'GIC'</text>
+		</line>
+		<line linenr="022" indent="">
 			<text>endsub</text>
 		</line>
-		<line linenr="022" indent="" />
-		<line linenr="023" indent="">
+		<line linenr="023" indent="" />
+		<line linenr="024" indent="">
 			<var>load.settings.user</var>
 			<text>:</text>
 		</line>
-		<line linenr="024" indent="&#160;">
+		<line linenr="025" indent="&#160;">
 			<var>$page</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>9979</var>
 		</line>
-		<line linenr="025" indent="&#160;" />
-		<line linenr="026" indent="&#160;" interruptable="@">
+		<line linenr="026" indent="&#160;" />
+		<line linenr="027" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -177,7 +198,7 @@
 			<text>=</text>
 			<text>'tv.feature.command.managemothership'</text>
 		</line>
-		<line linenr="027" indent="&#160;" interruptable="@">
+		<line linenr="028" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -207,7 +228,7 @@
 			<text>=</text>
 			<text>'tv.feature.command.mapgates'</text>
 		</line>
-		<line linenr="028" indent="&#160;" interruptable="@">
+		<line linenr="029" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -237,7 +258,7 @@
 			<text>=</text>
 			<text>'tv.feature.command.selfdestruct'</text>
 		</line>
-		<line linenr="029" indent="&#160;" interruptable="@">
+		<line linenr="030" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -267,8 +288,8 @@
 			<text>=</text>
 			<text>'tv.feature.command.dockwaremanager'</text>
 		</line>
-		<line linenr="030" indent="&#160;" />
-		<line linenr="031" indent="&#160;" interruptable="@">
+		<line linenr="031" indent="&#160;" />
+		<line linenr="032" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -298,7 +319,7 @@
 			<text>=</text>
 			<text>'tv.hotkey.datascanner'</text>
 		</line>
-		<line linenr="032" indent="&#160;" interruptable="@">
+		<line linenr="033" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -328,7 +349,7 @@
 			<text>=</text>
 			<text>'tv.hotkey.satellitemonitoring'</text>
 		</line>
-		<line linenr="033" indent="&#160;" interruptable="@">
+		<line linenr="034" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -358,7 +379,7 @@
 			<text>=</text>
 			<text>'tv.hotkey.cheat.save'</text>
 		</line>
-		<line linenr="034" indent="&#160;" interruptable="@">
+		<line linenr="035" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -388,7 +409,7 @@
 			<text>=</text>
 			<text>'tv.hotkey.cheat.addsats'</text>
 		</line>
-		<line linenr="035" indent="&#160;" interruptable="@">
+		<line linenr="036" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -418,7 +439,7 @@
 			<text>=</text>
 			<text>'tv.hotkey.phanon.debug'</text>
 		</line>
-		<line linenr="036" indent="&#160;" interruptable="@">
+		<line linenr="037" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -448,7 +469,7 @@
 			<text>=</text>
 			<text>'tv.hotkey.journal'</text>
 		</line>
-		<line linenr="037" indent="&#160;" interruptable="@">
+		<line linenr="038" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -478,7 +499,7 @@
 			<text>=</text>
 			<text>'tv.hotkey.shipcompendium'</text>
 		</line>
-		<line linenr="038" indent="&#160;" interruptable="@">
+		<line linenr="039" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -508,8 +529,8 @@
 			<text>=</text>
 			<text>'tv.hotkey.show.miners'</text>
 		</line>
-		<line linenr="039" indent="&#160;" />
-		<line linenr="040" indent="&#160;" interruptable="@">
+		<line linenr="040" indent="&#160;" />
+		<line linenr="041" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -539,7 +560,7 @@
 			<text>=</text>
 			<text>'tv.feature.autorotate'</text>
 		</line>
-		<line linenr="041" indent="&#160;" interruptable="@">
+		<line linenr="042" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -569,8 +590,8 @@
 			<text>=</text>
 			<text>'tv.feature.autorotate.playership'</text>
 		</line>
-		<line linenr="042" indent="&#160;" />
-		<line linenr="043" indent="&#160;" interruptable="@">
+		<line linenr="043" indent="&#160;" />
+		<line linenr="044" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -600,8 +621,8 @@
 			<text>=</text>
 			<text>'tv.feature.escort'</text>
 		</line>
-		<line linenr="044" indent="&#160;" />
-		<line linenr="045" indent="&#160;" interruptable="@">
+		<line linenr="045" indent="&#160;" />
+		<line linenr="046" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -631,7 +652,7 @@
 			<text>=</text>
 			<text>'tv.feature.mothership'</text>
 		</line>
-		<line linenr="046" indent="&#160;" interruptable="@">
+		<line linenr="047" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -661,7 +682,7 @@
 			<text>=</text>
 			<text>'tv.feature.mothership.alaankwacorsairs'</text>
 		</line>
-		<line linenr="047" indent="&#160;" interruptable="@">
+		<line linenr="048" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -691,7 +712,7 @@
 			<text>=</text>
 			<text>'tv.feature.mothership.populationmultiplier'</text>
 		</line>
-		<line linenr="048" indent="&#160;" interruptable="@">
+		<line linenr="049" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -721,7 +742,7 @@
 			<text>=</text>
 			<text>'tv.feature.mothership.scans.max'</text>
 		</line>
-		<line linenr="049" indent="&#160;" interruptable="@">
+		<line linenr="050" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -751,7 +772,7 @@
 			<text>=</text>
 			<text>'tv.feature.mothership.scans.shield.max'</text>
 		</line>
-		<line linenr="050" indent="&#160;" interruptable="@">
+		<line linenr="051" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -781,8 +802,8 @@
 			<text>=</text>
 			<text>'tv.feature.mothership.paralleltasks'</text>
 		</line>
-		<line linenr="051" indent="&#160;" />
-		<line linenr="052" indent="&#160;" interruptable="@">
+		<line linenr="052" indent="&#160;" />
+		<line linenr="053" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -812,8 +833,8 @@
 			<text>=</text>
 			<text>'tv.feature.satellitemonitoring.plus'</text>
 		</line>
-		<line linenr="053" indent="&#160;" />
-		<line linenr="054" indent="&#160;" interruptable="@">
+		<line linenr="054" indent="&#160;" />
+		<line linenr="055" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -843,7 +864,7 @@
 			<text>=</text>
 			<text>'tv.feature.phanon.extreme'</text>
 		</line>
-		<line linenr="055" indent="&#160;" interruptable="@">
+		<line linenr="056" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -873,7 +894,7 @@
 			<text>=</text>
 			<text>'tv.feature.phanon.investors'</text>
 		</line>
-		<line linenr="056" indent="&#160;" interruptable="@">
+		<line linenr="057" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -903,7 +924,7 @@
 			<text>=</text>
 			<text>'tv.feature.phanon.cheaperships'</text>
 		</line>
-		<line linenr="057" indent="&#160;" interruptable="@">
+		<line linenr="058" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -933,7 +954,7 @@
 			<text>=</text>
 			<text>'tv.feature.phanon.startingbonus'</text>
 		</line>
-		<line linenr="058" indent="&#160;" interruptable="@">
+		<line linenr="059" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -963,7 +984,7 @@
 			<text>=</text>
 			<text>'tv.feature.phanon.basesalarybonus'</text>
 		</line>
-		<line linenr="059" indent="&#160;" interruptable="@">
+		<line linenr="060" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -993,8 +1014,8 @@
 			<text>=</text>
 			<text>'tv.feature.phanon.averageshipcosts'</text>
 		</line>
-		<line linenr="060" indent="&#160;" />
-		<line linenr="061" indent="&#160;" interruptable="@">
+		<line linenr="061" indent="&#160;" />
+		<line linenr="062" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1024,7 +1045,7 @@
 			<text>=</text>
 			<text>'tv.feature.workers.jumpbeacons.use'</text>
 		</line>
-		<line linenr="062" indent="&#160;" interruptable="@">
+		<line linenr="063" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1054,7 +1075,7 @@
 			<text>=</text>
 			<text>'tv.feature.workers.piratebases.use'</text>
 		</line>
-		<line linenr="063" indent="&#160;" interruptable="@">
+		<line linenr="064" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1084,7 +1105,7 @@
 			<text>=</text>
 			<text>'tv.feature.drone.mining'</text>
 		</line>
-		<line linenr="064" indent="&#160;" interruptable="@">
+		<line linenr="065" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1114,8 +1135,8 @@
 			<text>=</text>
 			<text>'tv.feature.escort.formations'</text>
 		</line>
-		<line linenr="065" indent="&#160;" />
-		<line linenr="066" indent="&#160;" interruptable="@">
+		<line linenr="066" indent="&#160;" />
+		<line linenr="067" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1145,8 +1166,8 @@
 			<text>=</text>
 			<text>'tv.feature.autotrader.galaxy'</text>
 		</line>
-		<line linenr="067" indent="&#160;" />
-		<line linenr="068" indent="&#160;" interruptable="@">
+		<line linenr="068" indent="&#160;" />
+		<line linenr="069" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1176,8 +1197,8 @@
 			<text>=</text>
 			<text>'tv.feature.docked.npc.removal'</text>
 		</line>
-		<line linenr="069" indent="&#160;" />
-		<line linenr="070" indent="&#160;" interruptable="@">
+		<line linenr="070" indent="&#160;" />
+		<line linenr="071" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1207,8 +1228,8 @@
 			<text>=</text>
 			<text>'tv.feature.captains'</text>
 		</line>
-		<line linenr="071" indent="&#160;" />
-		<line linenr="072" indent="&#160;" interruptable="@">
+		<line linenr="072" indent="&#160;" />
+		<line linenr="073" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1238,8 +1259,8 @@
 			<text>=</text>
 			<text>'tv.feature.bounce'</text>
 		</line>
-		<line linenr="073" indent="&#160;" />
-		<line linenr="074" indent="&#160;" interruptable="@">
+		<line linenr="074" indent="&#160;" />
+		<line linenr="075" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1269,8 +1290,8 @@
 			<text>=</text>
 			<text>'tv.feature.forcejump'</text>
 		</line>
-		<line linenr="075" indent="&#160;" />
-		<line linenr="076" indent="&#160;" interruptable="@">
+		<line linenr="076" indent="&#160;" />
+		<line linenr="077" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1300,8 +1321,8 @@
 			<text>=</text>
 			<text>'tv.feature.homebase'</text>
 		</line>
-		<line linenr="077" indent="&#160;" />
-		<line linenr="078" indent="&#160;" interruptable="@">
+		<line linenr="078" indent="&#160;" />
+		<line linenr="079" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1331,7 +1352,7 @@
 			<text>=</text>
 			<text>'tv.feature.friendsassist'</text>
 		</line>
-		<line linenr="079" indent="&#160;" interruptable="@">
+		<line linenr="080" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1361,7 +1382,7 @@
 			<text>=</text>
 			<text>'tv.feature.friendsassist.activation.average'</text>
 		</line>
-		<line linenr="080" indent="&#160;" interruptable="@">
+		<line linenr="081" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1391,7 +1412,7 @@
 			<text>=</text>
 			<text>'tv.feature.friendsassist.activation.variance'</text>
 		</line>
-		<line linenr="081" indent="&#160;" interruptable="@">
+		<line linenr="082" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1421,7 +1442,7 @@
 			<text>=</text>
 			<text>'tv.feature.friendsassist.activation.fightlength'</text>
 		</line>
-		<line linenr="082" indent="&#160;" interruptable="@">
+		<line linenr="083" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1451,23 +1472,23 @@
 			<text>=</text>
 			<text>'tv.feature.friendsassist.enemyshiptypes'</text>
 		</line>
-		<line linenr="083" indent="">
+		<line linenr="084" indent="">
 			<text>endsub</text>
 		</line>
-		<line linenr="084" indent="" />
-		<line linenr="085" indent="">
+		<line linenr="085" indent="" />
+		<line linenr="086" indent="">
 			<var>load.settings.config</var>
 			<text>:</text>
 		</line>
-		<line linenr="086" indent="&#160;">
+		<line linenr="087" indent="&#160;">
 			<var>$page</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>99790</var>
 		</line>
-		<line linenr="087" indent="&#160;" />
-		<line linenr="088" indent="&#160;" interruptable="@">
+		<line linenr="088" indent="&#160;" />
+		<line linenr="089" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1497,7 +1518,7 @@
 			<text>=</text>
 			<text>'tv.task.monitor.sector'</text>
 		</line>
-		<line linenr="089" indent="&#160;" interruptable="@">
+		<line linenr="090" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1527,7 +1548,7 @@
 			<text>=</text>
 			<text>'tv.task.autorotate'</text>
 		</line>
-		<line linenr="090" indent="&#160;" interruptable="@">
+		<line linenr="091" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1557,7 +1578,7 @@
 			<text>=</text>
 			<text>'tv.task.escort'</text>
 		</line>
-		<line linenr="091" indent="&#160;" interruptable="@">
+		<line linenr="092" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1587,7 +1608,7 @@
 			<text>=</text>
 			<text>'tv.task.joubarbe.mayhem.task.claimable'</text>
 		</line>
-		<line linenr="092" indent="&#160;" interruptable="@">
+		<line linenr="093" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1617,7 +1638,7 @@
 			<text>=</text>
 			<text>'tv.task.sepa.monitor.mothership'</text>
 		</line>
-		<line linenr="093" indent="&#160;" interruptable="@">
+		<line linenr="094" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1647,7 +1668,7 @@
 			<text>=</text>
 			<text>'tv.task.captains'</text>
 		</line>
-		<line linenr="094" indent="&#160;" interruptable="@">
+		<line linenr="095" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1677,8 +1698,8 @@
 			<text>=</text>
 			<text>'tv.task.homebase'</text>
 		</line>
-		<line linenr="095" indent="&#160;" />
-		<line linenr="096" indent="&#160;" interruptable="@">
+		<line linenr="096" indent="&#160;" />
+		<line linenr="097" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1708,7 +1729,7 @@
 			<text>=</text>
 			<text>'tv.mayhem_scanStepMS'</text>
 		</line>
-		<line linenr="097" indent="&#160;" interruptable="@">
+		<line linenr="098" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1738,7 +1759,7 @@
 			<text>=</text>
 			<text>'tv.mayhem_costDividerShip'</text>
 		</line>
-		<line linenr="098" indent="&#160;" interruptable="@">
+		<line linenr="099" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1768,7 +1789,7 @@
 			<text>=</text>
 			<text>'tv.mayhem_buildDividerShip'</text>
 		</line>
-		<line linenr="099" indent="&#160;" interruptable="@">
+		<line linenr="100" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1798,7 +1819,7 @@
 			<text>=</text>
 			<text>'tv.mayhem_buildDividerMissile'</text>
 		</line>
-		<line linenr="100" indent="&#160;" interruptable="@">
+		<line linenr="101" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1828,7 +1849,7 @@
 			<text>=</text>
 			<text>'tv.mayhem_buildDividerShield'</text>
 		</line>
-		<line linenr="101" indent="&#160;" interruptable="@">
+		<line linenr="102" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1858,7 +1879,7 @@
 			<text>=</text>
 			<text>'tv.mayhem_buildDividerWeapon'</text>
 		</line>
-		<line linenr="102" indent="&#160;" interruptable="@">
+		<line linenr="103" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1888,7 +1909,7 @@
 			<text>=</text>
 			<text>'tv.mayhem_cycleBuilding'</text>
 		</line>
-		<line linenr="103" indent="&#160;" interruptable="@">
+		<line linenr="104" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1918,7 +1939,7 @@
 			<text>=</text>
 			<text>'tv.mayhem_timeDividerShip'</text>
 		</line>
-		<line linenr="104" indent="&#160;" interruptable="@">
+		<line linenr="105" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1948,7 +1969,7 @@
 			<text>=</text>
 			<text>'tv.mayhem_timeDividerMissile'</text>
 		</line>
-		<line linenr="105" indent="&#160;" interruptable="@">
+		<line linenr="106" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -1978,7 +1999,7 @@
 			<text>=</text>
 			<text>'tv.mayhem_timeDividerShield'</text>
 		</line>
-		<line linenr="106" indent="&#160;" interruptable="@">
+		<line linenr="107" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2008,7 +2029,7 @@
 			<text>=</text>
 			<text>'tv.mayhem_timeDividerWeapon'</text>
 		</line>
-		<line linenr="107" indent="&#160;" interruptable="@">
+		<line linenr="108" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2038,7 +2059,7 @@
 			<text>=</text>
 			<text>'tv.mayhem_repairFactor'</text>
 		</line>
-		<line linenr="108" indent="&#160;" interruptable="@">
+		<line linenr="109" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2068,7 +2089,7 @@
 			<text>=</text>
 			<text>'tv.mayhem_recycleFactor'</text>
 		</line>
-		<line linenr="109" indent="&#160;" interruptable="@">
+		<line linenr="110" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2098,7 +2119,7 @@
 			<text>=</text>
 			<text>'tv.mayhem_workshopMultiplier'</text>
 		</line>
-		<line linenr="110" indent="&#160;" interruptable="@">
+		<line linenr="111" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2128,8 +2149,8 @@
 			<text>=</text>
 			<text>'tv.mayhem_noJumpdrive'</text>
 		</line>
-		<line linenr="111" indent="&#160;" />
-		<line linenr="112" indent="&#160;" interruptable="@">
+		<line linenr="112" indent="&#160;" />
+		<line linenr="113" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2159,7 +2180,7 @@
 			<text>=</text>
 			<text>'tv.format.none'</text>
 		</line>
-		<line linenr="113" indent="&#160;" interruptable="@">
+		<line linenr="114" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2189,7 +2210,7 @@
 			<text>=</text>
 			<text>'tv.format.red'</text>
 		</line>
-		<line linenr="114" indent="&#160;" interruptable="@">
+		<line linenr="115" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2219,7 +2240,7 @@
 			<text>=</text>
 			<text>'tv.format.green'</text>
 		</line>
-		<line linenr="115" indent="&#160;" interruptable="@">
+		<line linenr="116" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2249,7 +2270,7 @@
 			<text>=</text>
 			<text>'tv.format.blue'</text>
 		</line>
-		<line linenr="116" indent="&#160;" interruptable="@">
+		<line linenr="117" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2279,7 +2300,7 @@
 			<text>=</text>
 			<text>'tv.format.cyan'</text>
 		</line>
-		<line linenr="117" indent="&#160;" interruptable="@">
+		<line linenr="118" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2309,7 +2330,7 @@
 			<text>=</text>
 			<text>'tv.format.magenta'</text>
 		</line>
-		<line linenr="118" indent="&#160;" interruptable="@">
+		<line linenr="119" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2339,7 +2360,7 @@
 			<text>=</text>
 			<text>'tv.format.yellow'</text>
 		</line>
-		<line linenr="119" indent="&#160;" interruptable="@">
+		<line linenr="120" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2369,7 +2390,7 @@
 			<text>=</text>
 			<text>'tv.format.white'</text>
 		</line>
-		<line linenr="120" indent="&#160;" interruptable="@">
+		<line linenr="121" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2399,7 +2420,7 @@
 			<text>=</text>
 			<text>'tv.format.orange'</text>
 		</line>
-		<line linenr="121" indent="&#160;" interruptable="@">
+		<line linenr="122" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2429,23 +2450,23 @@
 			<text>=</text>
 			<text>'tv.format.silver'</text>
 		</line>
-		<line linenr="122" indent="">
+		<line linenr="123" indent="">
 			<text>endsub</text>
 		</line>
-		<line linenr="123" indent="" />
-		<line linenr="124" indent="">
+		<line linenr="124" indent="" />
+		<line linenr="125" indent="">
 			<var>load.settings.i18n</var>
 			<text>:</text>
 		</line>
-		<line linenr="125" indent="&#160;">
+		<line linenr="126" indent="&#160;">
 			<var>$page</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>997900</var>
 		</line>
-		<line linenr="126" indent="&#160;" />
-		<line linenr="127" indent="&#160;" interruptable="@">
+		<line linenr="127" indent="&#160;" />
+		<line linenr="128" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2475,7 +2496,7 @@
 			<text>=</text>
 			<text>'tv.i18n.message.alaankwa.start'</text>
 		</line>
-		<line linenr="128" indent="&#160;" interruptable="@">
+		<line linenr="129" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2505,7 +2526,7 @@
 			<text>=</text>
 			<text>'tv.i18n.message.alaankwa.shipsold'</text>
 		</line>
-		<line linenr="129" indent="&#160;" interruptable="@">
+		<line linenr="130" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2535,7 +2556,7 @@
 			<text>=</text>
 			<text>'tv.i18n.message.alaankwa.shipbought'</text>
 		</line>
-		<line linenr="130" indent="&#160;" interruptable="@">
+		<line linenr="131" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2565,7 +2586,7 @@
 			<text>=</text>
 			<text>'tv.i18n.message.phanon.debug.nohq'</text>
 		</line>
-		<line linenr="131" indent="&#160;" interruptable="@">
+		<line linenr="132" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2595,8 +2616,8 @@
 			<text>=</text>
 			<text>'tv.i18n.message.quickshuttle.ready'</text>
 		</line>
-		<line linenr="132" indent="&#160;" />
-		<line linenr="133" indent="&#160;" interruptable="@">
+		<line linenr="133" indent="&#160;" />
+		<line linenr="134" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2626,7 +2647,7 @@
 			<text>=</text>
 			<text>'tv.i18n.command.destruct.title'</text>
 		</line>
-		<line linenr="134" indent="&#160;" interruptable="@">
+		<line linenr="135" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2656,8 +2677,8 @@
 			<text>=</text>
 			<text>'tv.i18n.command.destruct.player'</text>
 		</line>
-		<line linenr="135" indent="&#160;" />
-		<line linenr="136" indent="&#160;" interruptable="@">
+		<line linenr="136" indent="&#160;" />
+		<line linenr="137" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2687,7 +2708,7 @@
 			<text>=</text>
 			<text>'tv.i18n.command.mapping.order'</text>
 		</line>
-		<line linenr="137" indent="&#160;" interruptable="@">
+		<line linenr="138" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2717,8 +2738,8 @@
 			<text>=</text>
 			<text>'tv.i18n.command.mapping.error'</text>
 		</line>
-		<line linenr="138" indent="&#160;" />
-		<line linenr="139" indent="&#160;" interruptable="@">
+		<line linenr="139" indent="&#160;" />
+		<line linenr="140" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2748,7 +2769,7 @@
 			<text>=</text>
 			<text>'tv.i18n.deploy.temp.order.waiting'</text>
 		</line>
-		<line linenr="140" indent="&#160;" interruptable="@">
+		<line linenr="141" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2778,8 +2799,8 @@
 			<text>=</text>
 			<text>'tv.i18n.deploy.temp.order.collecting'</text>
 		</line>
-		<line linenr="141" indent="&#160;" />
-		<line linenr="142" indent="&#160;" interruptable="@">
+		<line linenr="142" indent="&#160;" />
+		<line linenr="143" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2809,7 +2830,7 @@
 			<text>=</text>
 			<text>'tv.i18n.hotkey.datascanner.name'</text>
 		</line>
-		<line linenr="143" indent="&#160;" interruptable="@">
+		<line linenr="144" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2839,7 +2860,7 @@
 			<text>=</text>
 			<text>'tv.i18n.hotkey.satellitemonitoring.name'</text>
 		</line>
-		<line linenr="144" indent="&#160;" interruptable="@">
+		<line linenr="145" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2869,7 +2890,7 @@
 			<text>=</text>
 			<text>'tv.i18n.hotkey.cheat.save.name'</text>
 		</line>
-		<line linenr="145" indent="&#160;" interruptable="@">
+		<line linenr="146" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2899,7 +2920,7 @@
 			<text>=</text>
 			<text>'tv.i18n.hotkey.cheat.addsats.name'</text>
 		</line>
-		<line linenr="146" indent="&#160;" interruptable="@">
+		<line linenr="147" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2929,7 +2950,7 @@
 			<text>=</text>
 			<text>'tv.i18n.hotkey.phanon.debug.name'</text>
 		</line>
-		<line linenr="147" indent="&#160;" interruptable="@">
+		<line linenr="148" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2959,7 +2980,7 @@
 			<text>=</text>
 			<text>'tv.i18n.hotkey.journal.name'</text>
 		</line>
-		<line linenr="148" indent="&#160;" interruptable="@">
+		<line linenr="149" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -2989,7 +3010,7 @@
 			<text>=</text>
 			<text>'tv.i18n.hotkey.shipcompendium.name'</text>
 		</line>
-		<line linenr="149" indent="&#160;" interruptable="@">
+		<line linenr="150" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -3019,8 +3040,8 @@
 			<text>=</text>
 			<text>'tv.i18n.hotkey.showminers.name'</text>
 		</line>
-		<line linenr="150" indent="&#160;" />
-		<line linenr="151" indent="&#160;" interruptable="@">
+		<line linenr="151" indent="&#160;" />
+		<line linenr="152" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -3050,7 +3071,7 @@
 			<text>=</text>
 			<text>'tv.i18n.datascanner.lookingup'</text>
 		</line>
-		<line linenr="152" indent="&#160;" interruptable="@">
+		<line linenr="153" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -3080,7 +3101,7 @@
 			<text>=</text>
 			<text>'tv.i18n.datascanner.invalid'</text>
 		</line>
-		<line linenr="153" indent="&#160;" interruptable="@">
+		<line linenr="154" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -3110,7 +3131,7 @@
 			<text>=</text>
 			<text>'tv.i18n.datascanner.distance'</text>
 		</line>
-		<line linenr="154" indent="&#160;" interruptable="@">
+		<line linenr="155" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -3140,7 +3161,7 @@
 			<text>=</text>
 			<text>'tv.i18n.datascanner.distance.max'</text>
 		</line>
-		<line linenr="155" indent="&#160;" interruptable="@">
+		<line linenr="156" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -3170,7 +3191,7 @@
 			<text>=</text>
 			<text>'tv.i18n.datascanner.probing'</text>
 		</line>
-		<line linenr="156" indent="&#160;" interruptable="@">
+		<line linenr="157" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -3200,7 +3221,7 @@
 			<text>=</text>
 			<text>'tv.i18n.datascanner.bypassing'</text>
 		</line>
-		<line linenr="157" indent="&#160;" interruptable="@">
+		<line linenr="158" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -3230,7 +3251,7 @@
 			<text>=</text>
 			<text>'tv.i18n.datascanner.scanning'</text>
 		</line>
-		<line linenr="158" indent="&#160;" interruptable="@">
+		<line linenr="159" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -3260,7 +3281,7 @@
 			<text>=</text>
 			<text>'tv.i18n.datascanner.added'</text>
 		</line>
-		<line linenr="159" indent="&#160;" interruptable="@">
+		<line linenr="160" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -3290,7 +3311,7 @@
 			<text>=</text>
 			<text>'tv.i18n.datascanner.lost'</text>
 		</line>
-		<line linenr="160" indent="&#160;" interruptable="@">
+		<line linenr="161" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -3320,7 +3341,7 @@
 			<text>=</text>
 			<text>'tv.i18n.datascanner.error'</text>
 		</line>
-		<line linenr="161" indent="&#160;" interruptable="@">
+		<line linenr="162" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -3350,7 +3371,7 @@
 			<text>=</text>
 			<text>'tv.i18n.datascanner.notarget'</text>
 		</line>
-		<line linenr="162" indent="&#160;" interruptable="@">
+		<line linenr="163" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -3380,7 +3401,7 @@
 			<text>=</text>
 			<text>'tv.i18n.datascanner.outofrange'</text>
 		</line>
-		<line linenr="163" indent="&#160;" interruptable="@">
+		<line linenr="164" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -3410,7 +3431,7 @@
 			<text>=</text>
 			<text>'tv.i18n.datascanner.duplicate'</text>
 		</line>
-		<line linenr="164" indent="&#160;" interruptable="@">
+		<line linenr="165" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -3440,7 +3461,7 @@
 			<text>=</text>
 			<text>'tv.i18n.datascanner.malfunction'</text>
 		</line>
-		<line linenr="165" indent="&#160;" interruptable="@">
+		<line linenr="166" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -3470,7 +3491,7 @@
 			<text>=</text>
 			<text>'tv.i18n.datascanner.shieldderivation'</text>
 		</line>
-		<line linenr="166" indent="&#160;" interruptable="@">
+		<line linenr="167" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -3500,7 +3521,7 @@
 			<text>=</text>
 			<text>'tv.i18n.datascanner.dataintegrity'</text>
 		</line>
-		<line linenr="167" indent="&#160;" interruptable="@">
+		<line linenr="168" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -3530,23 +3551,23 @@
 			<text>=</text>
 			<text>'tv.i18n.datascanner.notinstalled'</text>
 		</line>
-		<line linenr="168" indent="">
+		<line linenr="169" indent="">
 			<text>endsub</text>
 		</line>
-		<line linenr="169" indent="" />
-		<line linenr="170" indent="">
+		<line linenr="170" indent="" />
+		<line linenr="171" indent="">
 			<var>load.settings.mothership</var>
 			<text>:</text>
 		</line>
-		<line linenr="171" indent="&#160;">
+		<line linenr="172" indent="&#160;">
 			<var>$page</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>9253</var>
 		</line>
-		<line linenr="172" indent="&#160;" />
-		<line linenr="173" indent="&#160;" interruptable="@">
+		<line linenr="173" indent="&#160;" />
+		<line linenr="174" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -3576,7 +3597,7 @@
 			<text>=</text>
 			<text>'tv.feature.mothership.mayhem1'</text>
 		</line>
-		<line linenr="174" indent="">
+		<line linenr="175" indent="">
 			<text>endsub</text>
 		</line>
 	</sourcetext>
@@ -3590,24 +3611,19 @@
 			<sval type="array" size="1">
 				<sval type="string" val="page" />
 			</sval>
-			<sval type="array" size="140">
+			<sval type="array" size="141">
 				<sval type="array" size="3">
 					<sval type="int" val="151" />
 					<sval type="int" val="4" />
 					<sval type="int" val="9979" />
 				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="151" />
+				<sval type="array" size="2">
+					<sval type="int" val="1167" />
 					<sval type="int" val="4" />
-					<sval type="int" val="9981" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="5" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="1167" />
-					<sval type="int" val="11" />
+					<sval type="int" val="10" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="103" />
@@ -3620,19 +3636,19 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="16" />
+					<sval type="int" val="17" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="62" />
+					<sval type="int" val="63" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="97" />
+					<sval type="int" val="98" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="136" />
+					<sval type="int" val="137" />
 				</sval>
 				<sval type="array" size="1">
 					<sval type="int" val="1168" />
@@ -3650,7 +3666,7 @@
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="1600" />
-					<sval type="int" val="-1610608888" />
+					<sval type="int" val="-1610609144" />
 					<sval type="string" val="al.SWLU.Main" />
 				</sval>
 				<sval type="array" size="5">
@@ -3659,6 +3675,18 @@
 					<sval type="string" val="tv.game" />
 					<sval type="int" val="5" />
 					<sval type="string" val="SWLU" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="1600" />
+					<sval type="int" val="-1610608632" />
+					<sval type="string" val="gic.alaankwa" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="5" />
+					<sval type="string" val="tv.game" />
+					<sval type="int" val="5" />
+					<sval type="string" val="GIC" />
 				</sval>
 				<sval type="array" size="1">
 					<sval type="int" val="1168" />
@@ -5523,7 +5551,11 @@
 			<sval type="int" val="0" />
 			<sval type="array" size="34">
 				<sval type="array" size="2">
+					<sval type="int" val="1" />
 					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="3" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
@@ -5531,35 +5563,27 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="5" />
+					<sval type="int" val="10" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="11" />
+					<sval type="int" val="10" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="11" />
+					<sval type="int" val="17" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="16" />
+					<sval type="int" val="19" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="18" />
+					<sval type="int" val="23" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="22" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="30" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="32" />
+					<sval type="int" val="31" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
@@ -5567,7 +5591,7 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="39" />
+					<sval type="int" val="34" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
@@ -5575,11 +5599,11 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="46" />
+					<sval type="int" val="41" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="50" />
+					<sval type="int" val="47" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
@@ -5607,55 +5631,59 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="62" />
+					<sval type="int" val="57" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="64" />
+					<sval type="int" val="63" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="71" />
+					<sval type="int" val="65" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="86" />
+					<sval type="int" val="72" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="97" />
+					<sval type="int" val="87" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="99" />
+					<sval type="int" val="98" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="104" />
+					<sval type="int" val="100" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="106" />
+					<sval type="int" val="105" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="108" />
+					<sval type="int" val="107" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="110" />
+					<sval type="int" val="109" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="118" />
+					<sval type="int" val="111" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="136" />
+					<sval type="int" val="119" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="138" />
+					<sval type="int" val="137" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="139" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>

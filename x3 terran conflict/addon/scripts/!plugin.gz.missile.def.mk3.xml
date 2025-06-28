@@ -9468,12 +9468,12 @@
 			<text> </text>
 			<var>$Index1</var>
 		</line>
-		<line linenr="1250" indent="&#160;">
+		<line linenr="1250" indent="&#160;&#160;">
 			<text>dec</text>
 			<text> </text>
 			<var>$Index1</var>
 		</line>
-		<line linenr="1251" indent="&#160;&#160;">
+		<line linenr="1251" indent="&#160;">
 			<var>$Dummy1</var>
 			<text> </text>
 			<text>=</text>
@@ -9483,12 +9483,12 @@
 			<var>$Index1</var>
 			<text>]</text>
 		</line>
-		<line linenr="1252" indent="&#160;&#160;">
+		<line linenr="1252" indent="&#160;">
 			<text>if</text>
 			<text> </text>
 			<var>$is.missile.turret</var>
 		</line>
-		<line linenr="1253" indent="&#160;&#160;">
+		<line linenr="1253" indent="">
 			<var>$Dummy2</var>
 			<text> </text>
 			<text>=</text>
@@ -9508,16 +9508,16 @@
 			<text> </text>
 			<text>me</text>
 		</line>
-		<line linenr="1254" indent="&#160;&#160;">
+		<line linenr="1254" indent="">
 			<comment>* do if $Dummy2-&gt; exists</comment>
 		</line>
-		<line linenr="1255" indent="&#160;">
+		<line linenr="1255" indent="">
 			<comment>* continue</comment>
 		</line>
-		<line linenr="1256" indent="&#160;">
+		<line linenr="1256" indent="">
 			<text>else</text>
 		</line>
-		<line linenr="1257" indent="&#160;">
+		<line linenr="1257" indent="">
 			<comment>* skip if [THIS]-&gt; is $Dummy1 in firing range of turret $turretid</comment>
 		</line>
 		<line linenr="1258" indent="">
@@ -9652,11 +9652,8 @@
 			<text> </text>
 			<var>[FALSE]</var>
 		</line>
-		<line linenr="1276" indent="">
-			<comment>*$victim.enemy = [FALSE]</comment>
-		</line>
-		<line linenr="1277" indent="" />
-		<line linenr="1278" indent="">
+		<line linenr="1276" indent="" />
+		<line linenr="1277" indent="">
 			<var>$victim.exists</var>
 			<text> </text>
 			<text>=</text>
@@ -9666,68 +9663,54 @@
 			<text> </text>
 			<text>exists</text>
 		</line>
-		<line linenr="1279" indent="">
+		<line linenr="1278" indent="">
+			<text>do</text>
+			<text> </text>
 			<text>if</text>
 			<text> </text>
-			<var>$victim.exits</var>
+			<var>$victim.exists</var>
 		</line>
-		<line linenr="1280" indent="">
-			<var>$victim.sector</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<var>$victim</var>
-			<text>-&gt;</text>
-			<text> </text>
-			<text>get</text>
-			<text> </text>
-			<text>sector</text>
-		</line>
-		<line linenr="1281" indent="">
+		<line linenr="1279" indent="">
 			<var>$victim.samesector</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>[SECTOR]</var>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
 			<text> </text>
-			<text>==</text>
+			<text>has</text>
 			<text> </text>
-			<var>$victim.sector</var>
+			<text>same</text>
+			<text> </text>
+			<text>environment</text>
+			<text> </text>
+			<text>as</text>
+			<text> </text>
+			<var>$victim</var>
 		</line>
-		<line linenr="1282" indent="">
-			<comment>*do if $victim.samesector</comment>
-		</line>
-		<line linenr="1283" indent="">
-			<comment>*$victim.enemy = [THIS]-&gt; is $victim a enemy</comment>
-		</line>
-		<line linenr="1284" indent="">
-			<text>end</text>
-		</line>
-		<line linenr="1285" indent="">
-			<comment>*$victim.valid = $victim.exists and $victim.samesector and $victim.enemy</comment>
-		</line>
-		<line linenr="1286" indent="">
+		<line linenr="1280" indent="" />
+		<line linenr="1281" indent="">
 			<var>$victim.valid</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>$victim.exists</var>
 			<text> </text>
-			<text>and</text>
+			<text>AND</text>
 			<text> </text>
 			<var>$victim.samesector</var>
 		</line>
-		<line linenr="1287" indent="">
+		<line linenr="1282" indent="">
 			<text>endsub</text>
 		</line>
-		<line linenr="1288" indent="" />
-		<line linenr="1289" indent="">
+		<line linenr="1283" indent="" />
+		<line linenr="1284" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="1290" indent="" />
-		<line linenr="1291" indent="" />
+		<line linenr="1285" indent="" />
+		<line linenr="1286" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
@@ -9736,7 +9719,7 @@
 			<sval type="string" val="Turret Missile Defense Mk3  -  main script" />
 			<sval type="int" val="331" />
 			<sval type="int" val="0" />
-			<sval type="array" size="127">
+			<sval type="array" size="125">
 				<sval type="string" val="turretid" />
 				<sval type="string" val="Script" />
 				<sval type="string" val="Return" />
@@ -9862,10 +9845,8 @@
 				<sval type="string" val="Distance.Min" />
 				<sval type="string" val="victim.exists" />
 				<sval type="string" val="victim.samesector" />
-				<sval type="string" val="victim.exits" />
-				<sval type="string" val="victim.sector" />
 			</sval>
-			<sval type="array" size="915">
+			<sval type="array" size="914">
 				<sval type="array" size="4">
 					<sval type="int" val="105" />
 					<sval type="int" val="-2147483647" />
@@ -17231,33 +17212,20 @@
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610379261" />
+					<sval type="int" val="-1610379512" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="125" />
+					<sval type="int" val="123" />
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
 				</sval>
-				<sval type="array" size="4">
-					<sval type="int" val="703" />
+				<sval type="array" size="6">
+					<sval type="int" val="732" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="124" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="41" />
-					<sval type="int" val="126" />
-				</sval>
-				<sval type="array" size="13">
-					<sval type="int" val="104" />
-					<sval type="int" val="124" />
-					<sval type="int" val="3" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="6" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="126" />
-					<sval type="int" val="15" />
-					<sval type="int" val="0" />
-					<sval type="int" val="3" />
-					<sval type="int" val="-1" />
-					<sval type="int" val="0" />
-					<sval type="int" val="-2" />
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
@@ -17293,7 +17261,7 @@
 					<sval type="string" val="Script" />
 				</sval>
 			</sval>
-			<sval type="array" size="523">
+			<sval type="array" size="519">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
@@ -19473,44 +19441,24 @@
 					<sval type="int" val="1" />
 					<sval type="string" val="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" />
 				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="908" />
-					<sval type="int" val="1" />
-					<sval type="string" val="$victim.enemy = [FALSE]" />
-				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="908" />
 					<sval type="int" val="2" />
 				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="912" />
-					<sval type="int" val="1" />
-					<sval type="string" val="do if $victim.samesector" />
-				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="912" />
-					<sval type="int" val="1" />
-					<sval type="string" val="$victim.enemy = [THIS]-&gt; is $victim a enemy" />
+				<sval type="array" size="2">
+					<sval type="int" val="911" />
+					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="912" />
-					<sval type="int" val="4" />
-				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="912" />
-					<sval type="int" val="1" />
-					<sval type="string" val="$victim.valid = $victim.exists and $victim.samesector and $victim.enemy" />
+					<sval type="int" val="913" />
+					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="914" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="915" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="915" />
+					<sval type="int" val="914" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>
