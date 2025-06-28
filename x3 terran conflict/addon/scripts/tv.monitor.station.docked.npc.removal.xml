@@ -205,7 +205,7 @@
 			<text> </text>
 			<var>$XS.Iterator1</var>
 		</line>
-		<line linenr="024" indent="&#160;">
+		<line linenr="024" indent="&#160;&#160;&#160;">
 			<text>dec</text>
 			<text> </text>
 			<var>$XS.Iterator1</var>
@@ -220,7 +220,23 @@
 			<var>$XS.Iterator1</var>
 			<text>]</text>
 		</line>
-		<line linenr="026" indent="&#160;" interruptable="@">
+		<line linenr="026" indent="&#160;">
+			<text>skip</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$station</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>is</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>type</text>
+			<text> </text>
+			<var>{Rebel Alliance Headquarters}</var>
+		</line>
+		<line linenr="027" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>$station</var>
@@ -238,11 +254,11 @@
 			<text>=</text>
 			<var>null</var>
 		</line>
-		<line linenr="027" indent="">
+		<line linenr="028" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="028" indent="" />
-		<line linenr="029" indent="" interruptable="@">
+		<line linenr="029" indent="" />
+		<line linenr="030" indent="" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<text>wait</text>
@@ -251,11 +267,11 @@
 			<text> </text>
 			<text>ms</text>
 		</line>
-		<line linenr="030" indent="">
+		<line linenr="031" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="031" indent="" />
-		<line linenr="032" indent="">
+		<line linenr="032" indent="" />
+		<line linenr="033" indent="">
 			<text>set</text>
 			<text> </text>
 			<text>global</text>
@@ -271,13 +287,13 @@
 			<text>=</text>
 			<var>[FALSE]</var>
 		</line>
-		<line linenr="033" indent="" />
-		<line linenr="034" indent="">
+		<line linenr="034" indent="" />
+		<line linenr="035" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="035" indent="" />
+		<line linenr="036" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
@@ -292,7 +308,7 @@
 				<sval type="string" val="station" />
 				<sval type="string" val="XS.Iterator1" />
 			</sval>
-			<sval type="array" size="23">
+			<sval type="array" size="24">
 				<sval type="array" size="8">
 					<sval type="int" val="102" />
 					<sval type="string" val="tv.get.global.boolean" />
@@ -342,7 +358,7 @@
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610607351" />
+					<sval type="int" val="-1610607095" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="10" />
@@ -394,7 +410,7 @@
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610607863" />
+					<sval type="int" val="-1610607607" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="3" />
@@ -412,6 +428,14 @@
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="3" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="710" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="-536866041" />
+					<sval type="int" val="9" />
+					<sval type="int" val="327700" />
 				</sval>
 				<sval type="array" size="8">
 					<sval type="int" val="102" />
@@ -485,20 +509,16 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="19" />
+					<sval type="int" val="20" />
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="19" />
+					<sval type="int" val="20" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="21" />
+					<sval type="int" val="22" />
 					<sval type="int" val="4" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="21" />
-					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="22" />
@@ -506,6 +526,10 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="23" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="24" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>
