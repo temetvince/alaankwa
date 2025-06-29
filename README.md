@@ -25,8 +25,9 @@ Alaankwa is an "all but the kitchen sink" mod for X3: Albion Prelude which enhan
    - When asked, select the temetvince.ini preset in your *root* folder and install the pre-selected shaders.
 6. Install [Litcube's Universe](https://www.x3collective.com/lu-setup/lu-downloads/) or [Star Wars Litcube's Universe](https://www.moddb.com/mods/star-wars-lu-swlu/downloads) into your *root* folder.
     - LU GUI install options are illustrated in the [Litcube's Universe Manual](https://x3collective.com/lu-features/gui/).
-7. Place the [Alaankwa Installer](https://github.com/temetvince/alaankwa-installer) inside your *root* folder and run it.
-8. *Optional:* If using Star Wars Litcube's Universe, install the [Galaxy in Chaos](https://www.moddb.com/mods/star-wars-lu-swlu/addons) addon into your *root* folder.
+7. *Optional:* If using Star Wars Litcube's Universe, install the [Galaxy in Chaos](https://www.moddb.com/mods/star-wars-lu-swlu/addons) addon into your *root* folder.
+8. Place the [Alaankwa Installer](https://github.com/temetvince/alaankwa-installer) inside your *root* folder and run it.
+    - The installer will automatically download the latest version of Alaankwa and install it into your *root* folder.
 
 ## Configuration
 Only for LU/SLWU, NOT for the optional Galaxy in Chaos addon
