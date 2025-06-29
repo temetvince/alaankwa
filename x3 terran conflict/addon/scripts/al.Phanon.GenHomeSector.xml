@@ -32,8 +32,8 @@
 			<text>script</text>
 			<text> </text>
 			<call>tv.get.int.max</call>
-			<text>:</text>
 			<text> </text>
+			<text>:</text>
 		</line>
 		<line linenr="004" indent="" />
 		<line linenr="005" indent="">
@@ -131,6 +131,48 @@
 		</line>
 		<line linenr="012" indent="" />
 		<line linenr="013" indent="" interruptable="@">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>tv.get.game.gic</call>
+			<text> </text>
+			<text>:</text>
+		</line>
+		<line linenr="014" indent="&#160;">
+			<var>$Sector</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>sector</text>
+			<text> </text>
+			<text>from</text>
+			<text> </text>
+			<text>universe</text>
+			<text> </text>
+			<text>index</text>
+			<text>:</text>
+			<text> </text>
+			<text>x</text>
+			<text>=</text>
+			<var>9</var>
+			<text>,</text>
+			<text> </text>
+			<text>y</text>
+			<text>=</text>
+			<var>8</var>
+		</line>
+		<line linenr="015" indent="" />
+		<line linenr="016" indent="" interruptable="@">
 			<var>$Placement</var>
 			<text> </text>
 			<text>=</text>
@@ -154,7 +196,7 @@
 			<text>=</text>
 			<var>3000</var>
 		</line>
-		<line linenr="014" indent="">
+		<line linenr="017" indent="">
 			<var>$RandomX</var>
 			<text> </text>
 			<text>=</text>
@@ -164,7 +206,7 @@
 			<var>0</var>
 			<text>]</text>
 		</line>
-		<line linenr="015" indent="">
+		<line linenr="018" indent="">
 			<var>$RandomY</var>
 			<text> </text>
 			<text>=</text>
@@ -174,7 +216,7 @@
 			<var>1</var>
 			<text>]</text>
 		</line>
-		<line linenr="016" indent="">
+		<line linenr="019" indent="">
 			<var>$RandomZ</var>
 			<text> </text>
 			<text>=</text>
@@ -184,7 +226,7 @@
 			<var>2</var>
 			<text>]</text>
 		</line>
-		<line linenr="017" indent="">
+		<line linenr="020" indent="">
 			<var>$HQ</var>
 			<text> </text>
 			<text>=</text>
@@ -218,8 +260,8 @@
 			<text>=</text>
 			<var>$RandomZ</var>
 		</line>
-		<line linenr="018" indent="" />
-		<line linenr="019" indent="" interruptable="@">
+		<line linenr="021" indent="" />
+		<line linenr="022" indent="" interruptable="@">
 			<var>$Generation</var>
 			<text> </text>
 			<text>=</text>
@@ -235,7 +277,7 @@
 			<text> </text>
 			<text>:</text>
 		</line>
-		<line linenr="020" indent="">
+		<line linenr="023" indent="">
 			<var>$ShieldsToInstall</var>
 			<text> </text>
 			<text>=</text>
@@ -252,8 +294,8 @@
 			<var>15</var>
 			<text>)</text>
 		</line>
-		<line linenr="021" indent="" />
-		<line linenr="022" indent="">
+		<line linenr="024" indent="" />
+		<line linenr="025" indent="">
 			<text>=</text>
 			<text> </text>
 			<var>$HQ</var>
@@ -269,7 +311,7 @@
 			<text> </text>
 			<var>{2 GJ Shield}</var>
 		</line>
-		<line linenr="023" indent="">
+		<line linenr="026" indent="">
 			<var>$HQ</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -288,7 +330,7 @@
 			<text> </text>
 			<var>{Energy Cells}</var>
 		</line>
-		<line linenr="024" indent="">
+		<line linenr="027" indent="">
 			<var>$Max</var>
 			<text> </text>
 			<text>=</text>
@@ -310,7 +352,7 @@
 			<text> </text>
 			<var>{Energy Cells}</var>
 		</line>
-		<line linenr="025" indent="">
+		<line linenr="028" indent="">
 			<text>=</text>
 			<text> </text>
 			<var>$HQ</var>
@@ -326,7 +368,7 @@
 			<text> </text>
 			<var>{Energy Cells}</var>
 		</line>
-		<line linenr="026" indent="">
+		<line linenr="029" indent="">
 			<var>$MaxShieldStrength</var>
 			<text> </text>
 			<text>=</text>
@@ -342,7 +384,7 @@
 			<text> </text>
 			<text>strength</text>
 		</line>
-		<line linenr="027" indent="">
+		<line linenr="030" indent="">
 			<var>$HQ</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -358,7 +400,7 @@
 			<text> </text>
 			<var>$MaxShieldStrength</var>
 		</line>
-		<line linenr="028" indent="">
+		<line linenr="031" indent="">
 			<var>$NameNumber</var>
 			<text> </text>
 			<text>=</text>
@@ -369,7 +411,7 @@
 			<text> </text>
 			<var>$Generation</var>
 		</line>
-		<line linenr="029" indent="">
+		<line linenr="032" indent="">
 			<var>$CompanyName</var>
 			<text> </text>
 			<text>=</text>
@@ -400,7 +442,7 @@
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="030" indent="">
+		<line linenr="033" indent="">
 			<var>$HQName</var>
 			<text> </text>
 			<text>=</text>
@@ -431,8 +473,8 @@
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="031" indent="" />
-		<line linenr="032" indent="">
+		<line linenr="034" indent="" />
+		<line linenr="035" indent="">
 			<var>$HQ</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -444,8 +486,8 @@
 			<text> </text>
 			<var>$HQName</var>
 		</line>
-		<line linenr="033" indent="" />
-		<line linenr="034" indent="">
+		<line linenr="036" indent="" />
+		<line linenr="037" indent="">
 			<var>$HQ</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -465,7 +507,7 @@
 			<text> </text>
 			<text>cr</text>
 		</line>
-		<line linenr="035" indent="" interruptable="@">
+		<line linenr="038" indent="" interruptable="@">
 			<text>START</text>
 			<text> </text>
 			<var>$HQ</var>
@@ -479,7 +521,7 @@
 			<text> </text>
 			<text>:</text>
 		</line>
-		<line linenr="036" indent="">
+		<line linenr="039" indent="">
 			<text>set</text>
 			<text> </text>
 			<text>global</text>
@@ -495,13 +537,13 @@
 			<text>=</text>
 			<var>$HQ</var>
 		</line>
-		<line linenr="037" indent="" />
-		<line linenr="038" indent="">
+		<line linenr="040" indent="" />
+		<line linenr="041" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>$HQ</var>
 		</line>
-		<line linenr="039" indent="" />
+		<line linenr="042" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
@@ -526,7 +568,7 @@
 				<sval type="string" val="CompanyName" />
 				<sval type="string" val="HQName" />
 			</sval>
-			<sval type="array" size="28">
+			<sval type="array" size="30">
 				<sval type="array" size="3">
 					<sval type="int" val="151" />
 					<sval type="int" val="4" />
@@ -586,6 +628,22 @@
 					<sval type="int" val="0" />
 					<sval type="int" val="10" />
 					<sval type="int" val="14" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="102" />
+					<sval type="string" val="tv.get.game.gic" />
+					<sval type="int" val="-1610610424" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="800" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="9" />
+					<sval type="int" val="4" />
+					<sval type="int" val="8" />
 				</sval>
 				<sval type="array" size="10">
 					<sval type="int" val="102" />
@@ -807,7 +865,7 @@
 				</sval>
 			</sval>
 			<sval type="int" val="0" />
-			<sval type="array" size="11">
+			<sval type="array" size="12">
 				<sval type="array" size="2">
 					<sval type="int" val="1" />
 					<sval type="int" val="2" />
@@ -829,7 +887,7 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="12" />
+					<sval type="int" val="9" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
@@ -837,19 +895,23 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="23" />
+					<sval type="int" val="16" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="24" />
+					<sval type="int" val="25" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="27" />
+					<sval type="int" val="26" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="28" />
+					<sval type="int" val="29" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="30" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>
